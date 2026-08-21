@@ -70,6 +70,8 @@ export default async function ServicesLandingPage({
       />
 
       <Section surface="light">
+        {/* Heading-order fix (QA AC-09): grids jump h1 to card h3 without it. */}
+        <h2 className="sr-only">The seven services</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <ServiceCard
@@ -98,7 +100,7 @@ export default async function ServicesLandingPage({
                 </span>
                 {row.onePartner}
               </p>
-              <p className="mt-3 flex items-start gap-2 text-sm leading-relaxed text-stone-400">
+              <p className="mt-3 flex items-start gap-2 text-sm leading-relaxed text-stone-500">
                 <span className="mt-0.5 shrink-0">
                   <Icon name="close" size={18} />
                 </span>

@@ -5,7 +5,7 @@ import type { FieldSpec } from "@/lib/enquiry/segments";
 export type FieldValue = string | string[] | boolean | number | undefined;
 
 const inputClasses =
-  "w-full rounded-sm border border-ice-300 bg-white px-3.5 py-2.5 text-sm text-navy-900 placeholder:text-stone-400 focus:border-navy-700";
+  "w-full rounded-sm border border-ice-300 bg-white px-3.5 py-2.5 text-sm text-navy-900 placeholder:text-stone-500 focus:border-navy-700";
 
 export function Field({
   field,
@@ -44,7 +44,7 @@ export function Field({
   ) : null;
 
   const helpElement = field.helpText ? (
-    <p id={helpId} className="mt-1.5 text-xs text-stone-400">
+    <p id={helpId} className="mt-1.5 text-xs text-stone-500">
       {field.helpText}
     </p>
   ) : null;
@@ -67,7 +67,7 @@ export function Field({
             className={`${inputClasses} mt-1.5`}
           />
           {field.maxLength ? (
-            <p className="mt-1 text-right text-xs text-stone-400">
+            <p className="mt-1 text-right text-xs text-stone-500">
               {typeof value === "string" ? value.length : 0}/{field.maxLength}
             </p>
           ) : null}

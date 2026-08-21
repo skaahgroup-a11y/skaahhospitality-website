@@ -8,7 +8,7 @@ export const governmentDelegations: ServiceContent = {
   seo: {
     metaTitle: "Government Delegation Support in Switzerland | SKAAH",
     metaDescription:
-      "Delegation-grade planning in Switzerland: protocol, visa and immigration liaison, secure ground transport, accommodation blocks, multi-cuisine catering and documentation. Proven at Davos Week.",
+      "Delegation-grade planning in Switzerland: protocol, immigration liaison, secure transport, accommodation and catering. Proven at Davos Week.",
     primaryKeyword: "government delegation support Switzerland",
     secondaryKeywords: [
       "diplomatic protocol services Switzerland",

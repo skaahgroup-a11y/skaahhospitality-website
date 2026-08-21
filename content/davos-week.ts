@@ -38,7 +38,7 @@ export interface HubCrossLink {
 export const davosWeekSeo: SeoFields = {
   metaTitle: "Davos Week Logistics: The Delegation Guide | SKAAH",
   metaDescription:
-    "How delegations and corporate groups actually operate in Davos during Davos Week: accommodation, transport, catering and protocol, from the Swiss partner behind six state delegations across four consecutive Davos Weeks.",
+    "How delegations actually operate during Davos Week: accommodation, movement, catering and protocol, from the partner behind six state delegations.",
   primaryKeyword: "Davos Week logistics partner",
   secondaryKeywords: [
     "delegation accommodation Davos",

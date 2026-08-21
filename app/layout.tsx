@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
+
+// Fallback metadata for routes outside the locale tree (the root 404 had no
+// title without this, QA SS-09).
+export const metadata: Metadata = {
+  title: "SKAAH Hospitality",
+};
 
 // Self-hosted per docs/04 section 6: 2 families, max 3 weights, WOFF2 only.
 const inter = localFont({

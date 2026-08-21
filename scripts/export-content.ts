@@ -10,13 +10,17 @@ async function main() {
   const outDir = join(root, "exports", new Date().toISOString().slice(0, 10));
   mkdirSync(outDir, { recursive: true });
 
+  // Every content module is imported without a fallback: a missing module
+  // must fail the export loudly, never silently thin the archive (QA CA-12).
   const { services } = await import("../content/services/index");
   const { destinations } = await import("../content/destinations/index");
   const { caseStudies } = await import("../content/work/index");
   const { articles } = await import("../content/articles/index");
   const { experiences } = await import("../content/experiences");
   const home = await import("../content/home");
-  const davos = await import("../content/davos-wef").catch(() => null);
+  const davosWeek = await import("../content/davos-week");
+  const globals = await import("../content/global");
+  const disclaimer = await import("../content/disclaimer");
 
   const write = (name: string, data: unknown) =>
     writeFileSync(join(outDir, name), JSON.stringify(data, null, 2), "utf8");
@@ -27,7 +31,9 @@ async function main() {
   write("articles.json", articles);
   write("experiences.json", experiences);
   write("home.json", home);
-  if (davos) write("davos-wef.json", davos);
+  write("davos-week.json", davosWeek);
+  write("globals.json", globals);
+  write("disclaimer.json", disclaimer);
 
   // Media: brand assets ship with the export; content photography follows
   // the CMS media collection in epic E2.

@@ -7,6 +7,7 @@ import { articleJsonLd, faqPageJsonLd } from "@/lib/seo/jsonld";
 import { PageHero } from "@/components/blocks/PageHero";
 import { Breadcrumbs } from "@/components/blocks/Breadcrumbs";
 import { ArticleTOC } from "@/components/blocks/ArticleTOC";
+import { ReadTracker } from "@/components/blocks/ReadTracker";
 import { FAQAccordion } from "@/components/blocks/FAQAccordion";
 import { InsightCard } from "@/components/blocks/InsightCard";
 import { CTABand } from "@/components/blocks/CTABand";
@@ -72,6 +73,7 @@ export default async function InsightArticlePage({
 
   return (
     <>
+      <ReadTracker event="article_read" slug={article.slug} />
       <JsonLd
         data={[
           articleJsonLd({

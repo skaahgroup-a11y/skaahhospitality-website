@@ -372,7 +372,7 @@ export function EnquiryWizard() {
     <div className="rounded-sm border border-ice-300 bg-white p-6 shadow-card md:p-8">
       {segment && phase.kind !== "pick" ? (
         <div className="mb-6">
-          <p className="text-xs font-medium uppercase tracking-wider text-stone-400">
+          <p className="text-xs font-medium uppercase tracking-wider text-stone-500">
             {segment.label} ·{" "}
             {t("stepOf", { current: currentStepNumber, total: totalSteps })}
           </p>
@@ -452,7 +452,7 @@ export function EnquiryWizard() {
           >
             {steps[phase.index]?.title}
           </h2>
-          <p className="mt-1 text-xs text-stone-400">{t("requiredNote")}</p>
+          <p className="mt-1 text-xs text-stone-500">{t("requiredNote")}</p>
           <div className="mt-6 space-y-5">
             {steps[phase.index]?.fields.map((field) => (
               <Field
@@ -469,7 +469,7 @@ export function EnquiryWizard() {
                 <p className="text-sm font-medium text-navy-900">
                   {t("attachmentsLabel")}
                 </p>
-                <p className="mt-1 text-xs text-stone-400">
+                <p className="mt-1 text-xs text-stone-500">
                   {segment.maxUploadMB === 25
                     ? t("attachmentsHintGeneral")
                     : t("attachmentsHint")}
@@ -502,7 +502,7 @@ export function EnquiryWizard() {
                           className="flex items-center justify-between gap-3 rounded-sm bg-ice-100 px-3 py-2 text-xs text-navy-900"
                         >
                           <span className="truncate">{file.name}</span>
-                          <span className="flex shrink-0 items-center gap-3 text-stone-400">
+                          <span className="flex shrink-0 items-center gap-3 text-stone-500">
                             {(file.size / (1024 * 1024)).toFixed(1)} MB
                             <button
                               type="button"
@@ -533,7 +533,7 @@ export function EnquiryWizard() {
                         }}
                       />
                     </div>
-                    <p className="mt-1 text-right text-xs text-stone-400">
+                    <p className="mt-1 text-right text-xs text-stone-500">
                       {(totalBytes / (1024 * 1024)).toFixed(1)} /{" "}
                       {segment.maxUploadMB} MB
                     </p>
@@ -569,7 +569,7 @@ export function EnquiryWizard() {
           >
             How do we reach you?
           </h2>
-          <p className="mt-1 text-xs text-stone-400">{t("requiredNote")}</p>
+          <p className="mt-1 text-xs text-stone-500">{t("requiredNote")}</p>
           <div className="mt-6 space-y-5">
             {CONTACT_FIELDS.map((field) => (
               <Field

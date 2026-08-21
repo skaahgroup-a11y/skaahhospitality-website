@@ -62,7 +62,7 @@ export function BudgetBandTable({
           </tbody>
         </table>
       </div>
-      <p className="mt-3 text-xs leading-relaxed text-stone-400">
+      <p className="mt-3 text-xs leading-relaxed text-stone-500">
         <Copy text={footnote} />
       </p>
     </div>

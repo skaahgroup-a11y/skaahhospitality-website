@@ -42,6 +42,8 @@ export default async function DestinationsLandingPage({
       />
 
       <Section surface="light">
+        {/* Heading-order fix (QA AC-09): grids jump h1 to card h3 without it. */}
+        <h2 className="sr-only">The eight destinations</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {destinations.map((destination) => (
             <DestinationCard

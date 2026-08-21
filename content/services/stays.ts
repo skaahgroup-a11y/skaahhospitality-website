@@ -6,7 +6,7 @@ export const stays: ServiceContent = {
   order: 4,
   icon: "stays",
   seo: {
-    metaTitle: "Group Hotels, Chalets & Serviced Apartments in Switzerland | SKAAH",
+    metaTitle: "Group Stays in Switzerland: Hotels & Chalets | SKAAH",
     metaDescription:
       "Delegation blocks, chalet buyouts and serviced apartments near Zurich Airport, contracted and managed under one master account. Proven at Davos Week.",
     primaryKeyword: "group accommodation Switzerland",

@@ -133,7 +133,7 @@ export default async function HomePage({
             className="group flex min-h-40 flex-col items-start justify-center rounded-sm border border-ice-200 bg-navy-900 p-6 text-ice-100 shadow-card transition-colors hover:bg-navy-800"
           >
             <span className="heading-3 text-white">All destinations</span>
-            <span className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-gold-500 transition-transform group-hover:translate-x-1">
+            <span className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-gold-400 transition-transform group-hover:translate-x-1">
               <Icon name="arrow-right" size={18} />
             </span>
           </Link>

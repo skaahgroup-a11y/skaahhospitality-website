@@ -17,7 +17,7 @@ export const davosDelegationCountdown: ArticleContent = {
   seo: {
     metaTitle: "The 180-Day Davos Delegation Countdown | SKAAH",
     metaDescription:
-      "Davos Week planning, month by month: a working checklist from 180 days to Week 0, from the Swiss partner behind four consecutive Davos Weeks of delegation work.",
+      "Davos Week planning month by month: a working checklist from 180 days to Week 0, from the partner behind four consecutive Davos Weeks.",
     primaryKeyword: "Davos Week planning",
     secondaryKeywords: [
       "Davos Week logistics partner",

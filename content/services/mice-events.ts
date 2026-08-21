@@ -8,7 +8,7 @@ export const miceEvents: ServiceContent = {
   seo: {
     metaTitle: "Corporate Events & Incentive Travel in Switzerland | SKAAH",
     metaDescription:
-      "DMC-grade planning for meetings, incentives, conferences and events across Switzerland: venues, production, transport and hotels under one proposal, indicative budgets published.",
+      "DMC-grade planning for meetings, incentives and events across Switzerland: venues, production, transport and hotels under one proposal.",
     primaryKeyword: "DMC Switzerland",
     secondaryKeywords: [
       "incentive travel Switzerland",

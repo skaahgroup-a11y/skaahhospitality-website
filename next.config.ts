@@ -5,7 +5,29 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 // DECISION: HSTS and TLS terminate at the Hostpoint Nginx proxy (docs/08 S3);
 // app-level headers cover what the proxy does not set.
+// DECISION (QA SR-04): docs/05 s6 asks for CSP with nonces. Nonce-based CSP
+// requires per-request dynamic rendering in the App Router, which would
+// forfeit the static prerendering the CWV budgets depend on. This policy
+// therefore allows inline scripts (Next bootstrap and JSON-LD) while locking
+// everything else to self plus Plausible; the nonce upgrade is scheduled with
+// the Hostpoint Nginx setup, where the proxy can inject per-request nonces
+// without dynamising the app. frame-ancestors none supersedes X-Frame-Options
+// on modern browsers; both are sent.
+const contentSecurityPolicy = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://plausible.io",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob:",
+  "font-src 'self'",
+  "connect-src 'self' https://plausible.io",
+  "frame-ancestors 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "object-src 'none'",
+].join("; ");
+
 const securityHeaders = [
+  { key: "Content-Security-Policy", value: contentSecurityPolicy },
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "DENY" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },

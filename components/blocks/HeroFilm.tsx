@@ -39,7 +39,7 @@ export function HeroFilm({
       {/* Navy multiply scrim slot over future photography (docs/04 section 2). */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(191,160,90,0.14),transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_srgb,var(--color-gold-500)_14%,transparent),transparent_55%)]"
       />
       <div className="container-site relative pb-24 pt-36 md:pt-40">
         <p className="eyebrow mb-5">{eyebrow}</p>
@@ -48,7 +48,7 @@ export function HeroFilm({
           {subline}
         </p>
         {proofLine ? (
-          <p className="mt-5 max-w-2xl border-l-2 border-gold-500 pl-4 text-sm text-gold-500">
+          <p className="mt-5 max-w-2xl border-l-2 border-gold-500 pl-4 text-sm text-gold-400">
             <Copy text={proofLine} />
           </p>
         ) : null}

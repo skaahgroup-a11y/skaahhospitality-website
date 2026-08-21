@@ -6,11 +6,13 @@ type Variant = "primary" | "gold" | "outline-gold" | "outline-navy";
 const base =
   "inline-flex min-h-11 items-center justify-center gap-2 rounded-sm px-6 py-3 text-sm font-medium tracking-wide transition-colors duration-200";
 
+// Gold buttons use gold-400 so 14 px label text clears WCAG AA against the
+// navy ink in both states (QA AC-05); gold-500 stays for the border line.
 const variants: Record<Variant, string> = {
   primary: "bg-navy-900 text-white hover:bg-navy-800",
-  gold: "bg-gold-500 text-navy-950 hover:bg-gold-600 hover:text-white",
+  gold: "bg-gold-400 text-navy-950 hover:bg-gold-500 hover:text-navy-950",
   "outline-gold":
-    "border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-navy-950",
+    "border border-gold-500 text-gold-400 hover:bg-gold-400 hover:text-navy-950",
   "outline-navy":
     "border border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white",
 };

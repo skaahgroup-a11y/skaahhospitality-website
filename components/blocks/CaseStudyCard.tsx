@@ -25,7 +25,7 @@ export function CaseStudyCard({ study }: { study: CaseStudyContent }) {
         <MediaPlaceholder brief={thumbnail} aspect="3:2" showBrief={false} />
       ) : null}
       <div className="flex flex-1 flex-col p-6">
-        <p className="flex flex-wrap items-center gap-2 text-xs text-stone-400">
+        <p className="flex flex-wrap items-center gap-2 text-xs text-stone-500">
           <span className="rounded-sm bg-ice-100 px-2 py-0.5 font-medium uppercase tracking-wider text-navy-900">
             {segmentLabels[study.segment] ?? study.segment}
           </span>

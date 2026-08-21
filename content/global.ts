@@ -39,6 +39,17 @@ export const DESTINATION_LINKS: NavLink[] = [
   { label: "Ticino & Lugano", href: "/destinations/ticino-lugano" },
 ];
 
+// C29 NoticeBar global (docs/05 section 4): CMS-toggled once Payload lands;
+// disabled by default.
+export const NOTICE_BAR: {
+  enabled: boolean;
+  message: string;
+  href?: string;
+} = {
+  enabled: false,
+  message: "",
+};
+
 export const COMPANY_LINKS: NavLink[] = [
   { label: "About", href: "/about" },
   { label: "Work", href: "/work" },

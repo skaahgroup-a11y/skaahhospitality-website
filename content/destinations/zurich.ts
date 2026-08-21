@@ -6,9 +6,9 @@ export const zurich: DestinationContent = {
   order: 1,
   tier: 1,
   seo: {
-    metaTitle: "Zurich for Delegations & Corporate Events: Organiser Guide | SKAAH",
+    metaTitle: "Zurich for Delegations & Events: Organiser Guide | SKAAH",
     metaDescription:
-      "An organiser's guide to Zurich: arrivals at scale, venue archetypes, five-star and serviced-apartment stays, and what SKAAH runs on the ground in its home city.",
+      "An organiser's guide to Zurich: arrivals at scale, venue archetypes, stays, and what SKAAH runs on the ground in its home city.",
     primaryKeyword: "corporate event management Zurich",
   },
   cardTitle: "Zurich",

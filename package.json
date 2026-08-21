@@ -15,7 +15,8 @@
     "test": "vitest run",
     "check:claims": "node scripts/check-claims.mjs",
     "seed:content": "node scripts/seed-content.mjs",
-    "export:content": "npx tsx scripts/export-content.ts"
+    "export:content": "npx tsx scripts/export-content.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "next": "^15.4.6",
@@ -30,6 +31,7 @@
     "@eslint/eslintrc": "^3.3.6",
     "@fontsource/cormorant-garamond": "^5.2.5",
     "@fontsource/inter": "^5.2.5",
+    "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4.1.4",
     "@types/node": "^22.15.0",
     "@types/nodemailer": "^8.0.1",
@@ -42,5 +44,11 @@
     "tsx": "^4.19.0",
     "typescript": "^5.8.0",
     "vitest": "^3.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss@8.4.31": "^8.5.6",
+      "sharp@0.34.5": "^0.35.3"
+    }
   }
 }

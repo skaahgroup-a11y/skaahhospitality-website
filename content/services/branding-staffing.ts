@@ -8,7 +8,7 @@ export const brandingStaffing: ServiceContent = {
   icon: "branding",
   seo: {
     metaTitle:
-      "Event Branding, Pavilions & Hospitality Staffing in Switzerland | SKAAH",
+      "Event Branding, Pavilions & Staffing in Switzerland | SKAAH",
     metaDescription:
       "Pavilion branding, signage, print and digital collateral, and trained multilingual hospitality staff who represent you the way you intend.",
     primaryKeyword: "event staffing Switzerland",

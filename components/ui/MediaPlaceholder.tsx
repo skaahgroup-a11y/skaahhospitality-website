@@ -32,9 +32,9 @@ export function MediaPlaceholder({
       <div className="absolute inset-0 flex items-center justify-center text-gold-500/40">
         <Icon name="compass" size={48} />
       </div>
-      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-950/70 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-950/90 to-transparent" />
       {showBrief && !isProduction ? (
-        <figcaption className="absolute inset-x-0 bottom-0 p-3 text-xs leading-snug text-ice-200/90">
+        <figcaption className="absolute inset-x-0 bottom-0 p-3 text-xs leading-snug text-ice-100">
           <span className="font-medium text-gold-500">
             Awaiting media ({brief.source}):
           </span>{" "}

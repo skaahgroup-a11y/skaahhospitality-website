@@ -16,7 +16,7 @@ import { RESPONSE_PROMISE } from "@/lib/site";
 const seo = {
   metaTitle: "Signature Swiss Experiences for Groups | SKAAH",
   metaDescription:
-    "Eight signature programmes for groups in Switzerland: private rail charters, alpine galas, lake evenings and Davos Week hosting, each designed and run by one Swiss partner.",
+    "Eight signature programmes for groups in Switzerland: private rail charters, alpine galas, lake evenings and Davos Week hosting, run by one partner.",
   primaryKeyword: "luxury group experiences Switzerland",
 };
 

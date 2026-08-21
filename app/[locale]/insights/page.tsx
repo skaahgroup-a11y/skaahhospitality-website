@@ -76,7 +76,7 @@ export default async function InsightsPage({
               {" · "}
               {t("updated")} {formatDate(featured.dateModified)}
             </p>
-            <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-gold-500 transition-transform group-hover:translate-x-1">
+            <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-gold-400 transition-transform group-hover:translate-x-1">
               {t("readMore")}
               <Icon name="arrow-right" size={18} />
             </span>

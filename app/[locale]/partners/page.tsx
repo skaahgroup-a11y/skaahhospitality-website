@@ -16,7 +16,7 @@ import { RESPONSE_PROMISE } from "@/lib/site";
 const seo = {
   metaTitle: "Swiss Ground Partner for Agencies & Incentive Houses | SKAAH",
   metaDescription:
-    "White-label Swiss execution for agencies and incentive houses: one costed proposal, protected commercials and delegation-grade operations under your brand or ours.",
+    "White-label Swiss execution for agencies and incentive houses: one costed proposal, protected commercials, your brand or ours.",
   primaryKeyword: "Swiss ground partner for agencies",
 };
 

@@ -5,6 +5,7 @@ import { pageMetadata } from "@/lib/seo/meta";
 import { Breadcrumbs } from "@/components/blocks/Breadcrumbs";
 import { EnquiryWizard } from "@/components/forms/EnquiryWizard";
 import { TrustRow } from "@/components/blocks/TrustRow";
+import { PhoneLink } from "@/components/blocks/PhoneLink";
 import { WhatsAppLink } from "@/components/blocks/WhatsAppLink";
 import { Copy } from "@/components/ui/Copy";
 import { CONTACT, RESPONSE_PROMISE } from "@/lib/site";
@@ -41,15 +42,20 @@ export default async function EnquiryPage({
         </p>
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_20rem]">
-          <Suspense
-            fallback={
-              <div className="rounded-sm border border-ice-300 bg-white p-8 shadow-card text-sm text-stone-400">
-                Loading the enquiry form
-              </div>
-            }
-          >
-            <EnquiryWizard />
-          </Suspense>
+          {/* The wrapper reserves the wizard's initial height so client
+              hydration does not push the side rail down (CLS budget 0.1,
+              QA finding PF-05). */}
+          <div className="min-h-[34rem]">
+            <Suspense
+              fallback={
+                <div className="min-h-[34rem] rounded-sm border border-ice-300 bg-white p-8 text-sm text-stone-500 shadow-card">
+                  Loading the enquiry form
+                </div>
+              }
+            >
+              <EnquiryWizard />
+            </Suspense>
+          </div>
 
           {/* Side rail: contact block, promise, office note (mobile: below). */}
           <aside className="space-y-8 lg:pt-2">
@@ -68,10 +74,10 @@ export default async function EnquiryPage({
                 </p>
               </address>
               <div className="mt-5">
-                <WhatsAppLink variant="outline" />
+                <WhatsAppLink variant="outline" surface="light" />
               </div>
               <p className="mt-4 text-sm text-stone-500">
-                {t("prefCall")} Phone <Copy text={CONTACT.phoneConfirm} />
+                {t("prefCall")} <PhoneLink />
               </p>
             </div>
 

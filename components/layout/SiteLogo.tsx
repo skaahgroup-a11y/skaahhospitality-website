@@ -19,7 +19,7 @@ export function SiteLogo({ variant = "light" }: { variant?: "light" | "dark" }) 
       <span className="flex flex-col leading-none">
         <span
           className={`font-display text-xl font-semibold tracking-[0.08em] ${
-            variant === "light" ? "text-gold-500" : "text-gold-600"
+            variant === "light" ? "text-gold-400" : "text-gold-700"
           }`}
         >
           SKAAH

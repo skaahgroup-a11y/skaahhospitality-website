@@ -8,7 +8,7 @@ export const travelTransportImmigration: ServiceContent = {
   icon: "transport",
   seo: {
     metaTitle:
-      "Group Travel, Transport & Immigration Support in Switzerland | SKAAH",
+      "Group Transport & Immigration Support in Switzerland | SKAAH",
     metaDescription:
       "Group travel in Switzerland: visa and documentation support, meet-and-assist at Zurich and Geneva, fleets, coaches and rail. Proven at Davos Week.",
     primaryKeyword: "group transport Switzerland",

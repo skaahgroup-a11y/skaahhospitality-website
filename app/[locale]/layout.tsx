@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { SiteHeader } from "@/components/layout/SiteHeader";
+import { NoticeBar } from "@/components/layout/NoticeBar";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { WhatsAppFab } from "@/components/layout/WhatsAppFab";
 import { ConsentBanner } from "@/components/layout/ConsentBanner";
@@ -50,6 +51,7 @@ export default async function LocaleLayout({
         {t("skipToContent")}
       </a>
       <SiteHeader />
+      <NoticeBar />
       <main id="main">{children}</main>
       <SiteFooter />
       <WhatsAppFab />

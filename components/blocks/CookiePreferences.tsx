@@ -100,7 +100,7 @@ export function CookiePreferences() {
         </p>
       </div>
 
-      <p className="mt-6 border-t border-ice-300 pt-4 text-xs leading-relaxed text-stone-400">
+      <p className="mt-6 border-t border-ice-300 pt-4 text-xs leading-relaxed text-stone-500">
         Saving is never final: you can reopen and change your choices at any
         time by returning to this page. If you clear your browser storage, the
         consent banner appears again on your next visit.

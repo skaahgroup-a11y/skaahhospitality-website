@@ -177,7 +177,7 @@ export default async function DavosWefHubPage({
             </li>
           ))}
         </ol>
-        <p className="mt-8 max-w-3xl border-t border-ice-300 pt-4 text-xs text-stone-400">
+        <p className="mt-8 max-w-3xl border-t border-ice-300 pt-4 text-xs text-stone-500">
           <Copy text={davosWeekLessons.confirm} />
         </p>
       </Section>
@@ -239,7 +239,7 @@ export default async function DavosWefHubPage({
               <p className="mt-3 text-sm leading-relaxed text-ice-200">
                 {study.description}
               </p>
-              <span className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-gold-500 transition-transform group-hover:translate-x-1">
+              <span className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-gold-400 transition-transform group-hover:translate-x-1">
                 <Icon name="arrow-right" size={18} />
               </span>
             </Link>

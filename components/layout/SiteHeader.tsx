@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { SiteLogo } from "@/components/layout/SiteLogo";
 import { Icon } from "@/components/ui/Icon";
 import { ButtonLink } from "@/components/ui/Button";
 import { SERVICE_LINKS, DESTINATION_LINKS } from "@/content/global";
+import { LangSwitcher } from "@/components/layout/LangSwitcher";
 import { CONTACT, whatsappHref } from "@/lib/site";
 import { trackEvent } from "@/lib/analytics";
 
@@ -21,6 +22,8 @@ function DesktopDropdown({
 }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLLIElement>(null);
+  // Button-panel association per the APG disclosure pattern (QA AC-07).
+  const panelId = useId();
 
   useEffect(() => {
     if (!open) return;
@@ -45,8 +48,10 @@ function DesktopDropdown({
       <button
         type="button"
         aria-expanded={open}
+        aria-controls={panelId}
+        aria-haspopup="true"
         onClick={() => setOpen((value) => !value)}
-        className="flex items-center gap-1 py-2 text-sm font-medium text-ice-100 transition-colors hover:text-gold-500"
+        className="flex items-center gap-1 py-2 text-sm font-medium text-ice-100 transition-colors hover:text-gold-400"
       >
         {label}
         <Icon
@@ -56,7 +61,10 @@ function DesktopDropdown({
         />
       </button>
       {open ? (
-        <ul className="absolute left-0 top-full z-50 mt-2 w-72 rounded-sm border-t border-gold-500 bg-navy-900 py-2 shadow-card">
+        <ul
+          id={panelId}
+          className="absolute left-0 top-full z-50 mt-2 w-72 rounded-sm border-t border-gold-500 bg-navy-900 py-2 shadow-card"
+        >
           {links.map((link) => (
             <li key={link.href}>
               <Link
@@ -65,7 +73,7 @@ function DesktopDropdown({
                   setOpen(false);
                   onNavigate();
                 }}
-                className="block px-4 py-2.5 text-sm text-ice-100 hover:bg-navy-800 hover:text-gold-500"
+                className="block px-4 py-2.5 text-sm text-ice-100 hover:bg-navy-800 hover:text-white"
               >
                 {link.label}
               </Link>
@@ -118,7 +126,7 @@ export function SiteHeader() {
       className={`fixed inset-x-0 top-0 z-40 transition-colors duration-200 ${
         scrolled || menuOpen
           ? "border-b border-gold-500/60 bg-navy-900"
-          : "bg-navy-950/40 backdrop-blur-sm"
+          : "bg-navy-950/90 backdrop-blur-sm"
       }`}
     >
       <div className="container-wide flex h-16 items-center justify-between gap-4 md:h-20">
@@ -137,7 +145,7 @@ export function SiteHeader() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="py-2 text-sm font-medium text-ice-100 transition-colors hover:text-gold-500"
+                  className="py-2 text-sm font-medium text-ice-100 transition-colors hover:text-gold-400"
                 >
                   {link.label}
                 </Link>
@@ -152,7 +160,7 @@ export function SiteHeader() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="py-2 text-sm font-medium text-ice-100 transition-colors hover:text-gold-500"
+                  className="py-2 text-sm font-medium text-ice-100 transition-colors hover:text-gold-400"
                 >
                   {link.label}
                 </Link>
@@ -162,13 +170,15 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
+          {/* C26: renders only when routing.locales exceeds 1. */}
+          <LangSwitcher />
           <a
             href={whatsappHref()}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t("whatsapp")}
             onClick={() => trackEvent("whatsapp_click", { page: pathname })}
-            className="hidden p-2 text-ice-100 transition-colors hover:text-gold-500 md:block"
+            className="hidden p-2 text-ice-100 transition-colors hover:text-gold-400 md:block"
           >
             <Icon name="whatsapp" size={22} />
           </a>
@@ -182,6 +192,7 @@ export function SiteHeader() {
           <button
             type="button"
             aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
             aria-label={menuOpen ? t("closeMenu") : t("openMenu")}
             onClick={() => setMenuOpen((value) => !value)}
             className="p-2 text-ice-100 lg:hidden"
@@ -192,7 +203,10 @@ export function SiteHeader() {
       </div>
 
       {menuOpen ? (
-        <div className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-navy-950 lg:hidden">
+        <div
+          id="mobile-menu"
+          className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-navy-950 lg:hidden"
+        >
           <nav aria-label="Mobile" className="container-site py-8">
             <ul className="space-y-6">
               <li>
@@ -203,7 +217,7 @@ export function SiteHeader() {
                       <Link
                         href={link.href}
                         onClick={closeMenu}
-                        className="font-display text-xl text-ice-100 hover:text-gold-500"
+                        className="font-display text-xl text-ice-100 hover:text-gold-400"
                       >
                         {link.label}
                       </Link>
@@ -219,7 +233,7 @@ export function SiteHeader() {
                       <Link
                         href={link.href}
                         onClick={closeMenu}
-                        className="font-display text-xl text-ice-100 hover:text-gold-500"
+                        className="font-display text-xl text-ice-100 hover:text-gold-400"
                       >
                         {link.label}
                       </Link>
@@ -232,7 +246,7 @@ export function SiteHeader() {
                   <Link
                     href={link.href}
                     onClick={closeMenu}
-                    className="font-display text-2xl text-ice-100 hover:text-gold-500"
+                    className="font-display text-2xl text-ice-100 hover:text-gold-400"
                   >
                     {link.label}
                   </Link>
@@ -243,7 +257,7 @@ export function SiteHeader() {
                   {t("startEnquiry")}
                 </ButtonLink>
               </li>
-              <li className="border-t border-navy-800 pt-6 text-sm text-stone-400">
+              <li className="border-t border-navy-800 pt-6 text-sm text-ice-200">
                 <p>{CONTACT.office}</p>
                 <p className="mt-1">
                   <a

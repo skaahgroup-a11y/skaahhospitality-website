@@ -50,6 +50,8 @@ export default async function WorkPage({
       />
 
       <Section surface="light">
+        {/* Heading-order fix (QA AC-09): grids jump h1 to card h3 without it. */}
+        <h2 className="sr-only">Selected engagements</h2>
         <WorkFilters studies={caseStudies} />
       </Section>
 

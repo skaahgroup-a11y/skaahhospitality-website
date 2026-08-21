@@ -22,9 +22,9 @@ import type { MediaBrief } from "@/content-schemas/types";
 
 // Content per docs/02-content/06-experiences-insights-about-partner.md section C.
 const seo = {
-  metaTitle: "About SKAAH Hospitality: Swiss Precision, Global Fluency | SKAAH",
+  metaTitle: "About SKAAH Hospitality: Swiss Precision | SKAAH",
   metaDescription:
-    "Founded 2016 in Opfikon by the runway of Zurich Airport: hospitality and logistics under one roof, and the company behind four consecutive Davos Weeks of delegation work in Switzerland.",
+    "Founded 2016 in Opfikon by Zurich Airport: hospitality and logistics under one roof, and the company behind four consecutive Davos Weeks.",
 };
 
 export const metadata: Metadata = pageMetadata(seo, "/about");
@@ -213,7 +213,7 @@ export default async function AboutPage({
               <MediaPlaceholder brief={leader.media} aspect="4:5" />
               <div className="p-6">
                 <h3 className="heading-3 text-navy-900">{leader.name}</h3>
-                <p className="mt-1 text-sm font-medium text-gold-600">
+                <p className="mt-1 text-sm font-medium text-gold-700">
                   {leader.role}
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-stone-500">
@@ -242,7 +242,7 @@ export default async function AboutPage({
             href={ORG.groupUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="link-draw mt-6 inline-flex items-center gap-2 text-sm font-medium text-gold-500"
+            className="link-draw mt-6 inline-flex items-center gap-2 text-sm font-medium text-gold-400"
           >
             skaah.com
             <Icon name="arrow-right" size={18} />

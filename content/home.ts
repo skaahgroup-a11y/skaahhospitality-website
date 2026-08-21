@@ -13,7 +13,7 @@ export const homeSeo: SeoFields = {
   metaTitle:
     "Swiss Hospitality & Logistics for Delegations & Corporate Groups | SKAAH",
   metaDescription:
-    "One accountable Swiss partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and staffing. Proven at Davos Week. First response within 48 hours.",
+    "One accountable Swiss partner for government delegations and corporate groups: events, stays, transport, cuisine and media. Proven at Davos Week.",
   primaryKeyword: "government delegation support Switzerland",
   secondaryKeywords: [
     "Swiss hospitality and logistics partner",

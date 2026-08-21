@@ -11,7 +11,7 @@ export function InsightCard({ article }: { article: ArticleContent }) {
       href={`/insights/${article.slug}`}
       className="group flex h-full flex-col rounded-sm border border-ice-200 bg-white p-6 shadow-card transition-shadow hover:shadow-lg"
     >
-      <p className="text-xs uppercase tracking-wider text-gold-600">
+      <p className="text-xs uppercase tracking-wider text-gold-700">
         {t("readTime", { minutes: article.readMinutes })}
       </p>
       <h3 className="heading-3 mt-3 text-navy-900">{article.title}</h3>

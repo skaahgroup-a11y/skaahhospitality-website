@@ -10,7 +10,7 @@ export const davos: DestinationContent = {
   seo: {
     metaTitle: "Davos for Delegations: Beyond Davos Week | SKAAH",
     metaDescription:
-      "Davos beyond Davos Week: year-round congress support, summer leadership retreats and pre-season recces, run by a partner with four consecutive Davos Weeks in the valley.",
+      "Davos beyond Davos Week: year-round congress support, summer retreats and pre-season recces, from the partner with four consecutive Davos Weeks.",
     primaryKeyword: "delegation accommodation Davos",
   },
   cardTitle: "Davos",

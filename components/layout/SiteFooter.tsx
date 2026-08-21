@@ -8,6 +8,7 @@ import {
   COMPANY_LINKS,
 } from "@/content/global";
 import { INDEPENDENCE_DISCLAIMER } from "@/content/disclaimer";
+import { PhoneLink } from "@/components/blocks/PhoneLink";
 import { CONTACT, DESCRIPTOR, GROUP_LINE, ORG } from "@/lib/site";
 
 export async function SiteFooter() {
@@ -22,7 +23,7 @@ export async function SiteFooter() {
             <Link href="/" className="inline-block">
               <SiteLogo variant="light" />
             </Link>
-            <p className="mt-6 max-w-sm text-sm leading-relaxed text-stone-400">
+            <p className="mt-6 max-w-sm text-sm leading-relaxed text-ice-200">
               {DESCRIPTOR}
             </p>
           </div>
@@ -34,7 +35,7 @@ export async function SiteFooter() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="link-draw text-sm text-ice-200 hover:text-gold-500"
+                    className="link-draw text-sm text-ice-200 hover:text-gold-400"
                   >
                     {link.label}
                   </Link>
@@ -50,7 +51,7 @@ export async function SiteFooter() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="link-draw text-sm text-ice-200 hover:text-gold-500"
+                    className="link-draw text-sm text-ice-200 hover:text-gold-400"
                   >
                     {link.label}
                   </Link>
@@ -67,7 +68,7 @@ export async function SiteFooter() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="link-draw text-sm text-ice-200 hover:text-gold-500"
+                      className="link-draw text-sm text-ice-200 hover:text-gold-400"
                     >
                       {link.label}
                     </Link>
@@ -82,7 +83,7 @@ export async function SiteFooter() {
                 <p>
                   <a
                     href={`mailto:${CONTACT.email}`}
-                    className="link-draw hover:text-gold-500"
+                    className="link-draw hover:text-gold-400"
                   >
                     {CONTACT.email}
                   </a>{" "}
@@ -92,7 +93,7 @@ export async function SiteFooter() {
                   WhatsApp <Copy text={CONTACT.whatsappConfirm} />
                 </p>
                 <p>
-                  Phone <Copy text={CONTACT.phoneConfirm} />
+                  <PhoneLink />
                 </p>
               </address>
             </div>
@@ -100,44 +101,44 @@ export async function SiteFooter() {
         </div>
 
         <div className="mt-14 border-t border-navy-800 pt-8">
-          <div className="flex flex-col gap-4 text-sm text-stone-400 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col gap-4 text-sm text-ice-200 md:flex-row md:items-center md:justify-between">
             <p>
               <a
                 href={ORG.groupUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link-draw hover:text-gold-500"
+                className="link-draw hover:text-gold-400"
               >
                 {GROUP_LINE}
               </a>
             </p>
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">
               <li>
-                <Link href="/privacy" className="link-draw hover:text-gold-500">
+                <Link href="/privacy" className="link-draw hover:text-gold-400">
                   {t("legalPrivacy")}
                 </Link>
               </li>
               <li>
-                <Link href="/imprint" className="link-draw hover:text-gold-500">
+                <Link href="/imprint" className="link-draw hover:text-gold-400">
                   {t("legalImprint")}
                 </Link>
               </li>
               <li>
-                <Link href="/cookies" className="link-draw hover:text-gold-500">
+                <Link href="/cookies" className="link-draw hover:text-gold-400">
                   {t("legalCookies")}
                 </Link>
               </li>
               <li>
-                <span className="text-stone-500">
+                <span className="text-ice-300">
                   {t("linkedin")} <Copy text="[TO CONFIRM: LinkedIn URL]" />
                 </span>
               </li>
             </ul>
           </div>
-          <p className="mt-6 max-w-4xl text-xs leading-relaxed text-stone-500">
+          <p className="mt-6 max-w-4xl text-xs leading-relaxed text-ice-300">
             <Copy text={INDEPENDENCE_DISCLAIMER} />
           </p>
-          <p className="mt-4 text-xs text-stone-500">
+          <p className="mt-4 text-xs text-ice-300">
             {String(year)} {ORG.name}. {t("allRights")}
           </p>
         </div>

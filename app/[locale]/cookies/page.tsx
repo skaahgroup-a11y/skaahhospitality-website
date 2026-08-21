@@ -103,7 +103,7 @@ export default async function CookiesPage({
             </tbody>
           </table>
         </div>
-        <p className="prose-site mt-6 text-sm leading-relaxed text-stone-400">
+        <p className="prose-site mt-6 text-sm leading-relaxed text-stone-500">
           How we handle the personal data behind these categories is described
           in the{" "}
           <Link href="/privacy" className="link-draw font-medium text-navy-900">
