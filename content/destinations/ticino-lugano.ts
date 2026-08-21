@@ -25,23 +25,23 @@ export const ticinoLugano: DestinationContent = {
     alt: "Lugano lakefront in the evening with promenade lights on the water",
   },
   whyGroups: [
-    "Cross the Alps and Switzerland changes language, menu and mood without changing its standards. Ticino runs formal programmes with a Mediterranean register: lakefront conference rooms, piazza evenings and service in Italian, with Swiss precision underneath. [TO CONFIRM: how to phrase local presence]",
+    "Cross the Alps and Switzerland changes language, menu and mood without changing its standards. Ticino runs formal programmes with a Mediterranean register: lakefront conference rooms, piazza evenings and service in Italian, with Swiss precision underneath. For boards and launch teams it is the change of scene that still counts as Switzerland on the invitation, and the easiest register shift in the country: the same rail network and the same contracting standards, with a different language on the menu. [TO CONFIRM: how to phrase local presence]",
   ],
   organiserFacts: [
     {
       title: "A Mediterranean register",
       description:
-        "South of the Alps the mood softens: Italian-speaking service, outdoor evenings and a pace that suits retreats and celebrations.",
+        "South of the Alps the mood softens: Italian-speaking service, outdoor evenings and a pace that suits retreats and celebrations. Menus, music and venues can lean Italian while contracts, timings and standards stay Swiss. The programme reads as abroad while operating as home, which is the whole appeal.",
     },
     {
       title: "Lakefront conference capacity",
       description:
-        "Lugano carries genuine lakefront conference capacity, so working sessions and reward moments share the same shoreline.",
+        "Lugano carries genuine lakefront conference capacity, so working sessions and reward moments share the same shoreline, with mornings in the conference room and evenings on the water minutes apart. The compact geography keeps movement short, which is exactly what a board agenda wants.",
     },
     {
       title: "Shoulder-season value",
       description:
-        "Spring and autumn offer strong value: warm enough for the lakefront, quieter than the summer peak, and kinder to budgets.",
+        "Spring and autumn offer strong value: warm enough for the lakefront, quieter than the summer peak, and kinder to budgets. For programmes that can move their dates, Ticino is the calendar's quiet win. Brief us with flexible dates and we will map the value honestly before anything is contracted.",
     },
   ],
   whatWeRun: [

@@ -46,7 +46,7 @@ export const geneva: DestinationContent = {
   staysSnapshot: [
     "The right bank holds the palace hotels that formal programmes expect: banqueting under the same roof, delegation floors under master accounts, and front desks fluent in precedence.",
     "Principals who prefer quiet often sit better on the left bank, in smaller residences minutes from the meeting rooms: privacy first, spectacle second. We hold the movement plan between residence and meeting room, so the quiet choice never costs the schedule anything.",
-    "For longer programmes we mix the two: the formal address for the delegation, quieter houses for principals and advance teams, one account across all of it.",
+    "For longer programmes we mix the two: the formal address for the delegation, quieter houses for principals and advance teams, one account across all of it. It is the pattern most returning delegations settle on, because it gives everyone the address they need without splitting the administration.",
   ],
   gettingAround: [
     "Geneva Airport has its own protocols for formal arrivals; we prepare the arrangements in advance and walk the route before your party lands.",

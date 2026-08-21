@@ -32,9 +32,9 @@ export const davos: DestinationContent = {
     cta: { label: "Go to Davos & WEF", href: "/davos-wef" },
   },
   whyGroups: [
-    "Organisers who know Davos best use the other fifty-one weeks. Outside January this is a working congress town with real infrastructure: meeting halls, hotel capacity and suppliers who spend the whole year hosting groups, not just the famous week.",
-    "The congress centre anchors a meeting calendar that runs well beyond winter, and the summer summit season suits leadership retreats particularly well: long days, a green valley and the kind of clear-headed distance from the office that mountain towns are for.",
-    "Sports and wellness programmes give Davos an edge most cities cannot copy: altitude, air and open space built into the agenda rather than bolted onto it.",
+    "Organisers who know Davos best use the other fifty-one weeks. Outside January this is a working congress town with real infrastructure: meeting halls, hotel capacity and suppliers who spend the whole year hosting groups, not just the famous week. Once the January circus has left, availability, negotiating positions and attention all move in the organiser's favour.",
+    "The congress centre anchors a meeting calendar that runs well beyond winter, and the summer summit season suits leadership retreats particularly well: long days, a green valley and the kind of clear-headed distance from the office that mountain towns are for. Agendas hold better here: fewer distractions, shorter internal distances and evenings that end in conversation rather than traffic.",
+    "Sports and wellness programmes give Davos an edge most cities cannot copy: altitude, air and open space built into the agenda rather than bolted onto it. Guided days on the mountain, wellness blocks and simple time outdoors all programme well here, in any season.",
     "We have worked four WEF years in this valley. That is why the other fifty-one run smoothly: we already know the rooms, the roads and the people.",
   ],
   venuesSnapshot: {
@@ -54,13 +54,13 @@ export const davos: DestinationContent = {
     ],
   },
   staysSnapshot: [
-    "Hotel inventory runs the length of the valley, from congress-adjacent houses to quieter addresses toward the edges of town. Outside the winter peak, securing the right rooms is a planning exercise rather than a battle.",
-    "Advance teams and long stays sit best in apartments and aparthotels, held under one master account with the same discipline we apply in Zurich.",
+    "Hotel inventory runs the length of the valley, from congress-adjacent houses to quieter addresses toward the edges of town. Outside the winter peak, securing the right rooms is a planning exercise rather than a battle: we contract the inventory, hold the allocations and keep the master account clean, so the valley's capacity works for the programme instead of against it. In winter the same discipline applies; it simply has to start earlier.",
+    "Advance teams and long stays sit best in apartments and aparthotels, held under one master account with the same discipline we apply in Zurich. Where a delegation returns each year, we hold the lessons of the last visit as the starting point for the next.",
   ],
   gettingAround: [
-    "Most programmes arrive through Zurich. We run the airport-to-valley transfer as one plan, by road or rail, with luggage moving separately when the schedule is tight.",
-    "Inside the valley, distances are short; the discipline is timing, not geography. One movement plan covers hotels, venues and the mountain.",
-    "Winter movements carry weather buffers as standard. Summer opens the passes, and the programme options widen with them.",
+    "Most programmes arrive through Zurich. We run the airport-to-valley transfer as one plan, by road or rail, with luggage moving separately when the schedule is tight; arrival timing, cases and the first night form a single sequence, because the transfer sets the tone for the whole visit.",
+    "Inside the valley, distances are short; the discipline is timing, not geography. One movement plan covers hotels, venues and the mountain, and the team that wrote it walks it before your group arrives.",
+    "Winter movements carry weather buffers as standard. Summer opens the passes, and the programme options widen with them: scenic transfers, mountain dinners and outdoor blocks that January could never hold.",
   ],
   whatWeRun: [
     "Year-round congress support",
@@ -79,30 +79,43 @@ export const davos: DestinationContent = {
       title: "Hotel and venue recce",
       description: "Rooms, function spaces and staging inspected with the team.",
     },
-    { marker: "13:00", title: "Working lunch on a terrace above town" },
-    { marker: "15:00", title: "Leadership session, valley views" },
+    {
+      marker: "13:00",
+      title: "Working lunch on a terrace above town",
+      description: "Menus tested against the group's dietary requirements.",
+    },
+    {
+      marker: "15:00",
+      title: "Leadership session, valley views",
+      description: "Facilitation, staging and recording arranged as required.",
+    },
     {
       marker: "18:30",
       title: "Alpine dinner",
       description: "Weather fallback held at valley level.",
     },
-    { marker: "21:30", title: "Debrief and next-day sheet" },
+    {
+      marker: "21:30",
+      title: "Debrief and next-day sheet",
+      description:
+        "Decisions logged, timings reconfirmed, the sheet issued to phones.",
+    },
   ],
   faqs: [
     {
       question: "Is Davos worth considering outside the winter season?",
       answer:
-        "Strongly. Outside the winter peak and WEF week, availability opens up, negotiating positions improve and the valley shows a different character: green, quiet and built for concentration. For retreats and congress programmes, the out-of-season weeks are often the best value Davos offers.",
+        "Strongly. Outside the winter peak and WEF week, availability opens up, negotiating positions improve and the valley shows a different character: green, quiet and built for concentration. For retreats and congress programmes, the out-of-season weeks are often the best value Davos offers. It is also the right season for recces: walking January's ground in July is how WEF weeks are won. Bring us your agenda first and we will tell you honestly which season serves it best.",
     },
     {
       question: "Does the altitude affect programme design?",
       answer:
-        "It should shape it, not scare it. Davos sits high enough that pacing matters: we build gentler first days, realistic timings and hydration into the schedule, and we flag altitude in the joining instructions so no guest is surprised. Handled that way, the altitude becomes the asset it is meant to be.",
+        "It should shape it, not scare it. Davos sits high enough that pacing matters: we build gentler first days, realistic timings and hydration into the schedule, and we flag altitude in the joining instructions so no guest is surprised. Handled that way, the altitude becomes the asset it is meant to be: clearer air, better sleep discipline and a sense of distance from the office that no lowland venue can fake.",
     },
     {
       question: "Where is the WEF-week information?",
       answer:
-        "In our Davos & WEF hub, which carries the January operation in full: accommodation, transport, hosting and the countdown to the week itself. This page covers everything else the valley does for the rest of the year.",
+        "In our Davos & WEF hub, which carries the January operation in full: accommodation, transport, hosting and the countdown to the week itself. This page covers everything else the valley does for the rest of the year. If your programme touches January at all, start in the hub; if it does not, this guide and one conversation with us are the fastest route to a plan.",
     },
   ],
 };
