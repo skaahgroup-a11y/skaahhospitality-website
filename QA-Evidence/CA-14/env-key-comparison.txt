@@ -1,0 +1,17 @@
+CA-14 .env.example keys vs docs/07 "Environment variables" list (full file copy in env-example-copy.txt)
+
+docs/07 list -> .env.example status
+- DATABASE_URL          -> ABSENT (Payload CMS / Postgres not yet embedded, epic E2 pending; no DB in current build)
+- PAYLOAD_SECRET        -> ABSENT (same reason)
+- S3_ENDPOINT/BUCKET/KEY/SECRET (EU) -> ABSENT (direct-to-storage deferred; DATA_DIR disk persistence instead, DECISION comment lib/enquiry/store.ts:52)
+- MAIL_PROVIDER creds   -> PRESENT as SMTP_HOST/SMTP_PORT/SMTP_USER/SMTP_PASS + MAIL_FROM (Hostpoint SMTP per docs/05 S8)
+- SEGMENT_MAILBOXES json-> PRESENT (example addresses, marked [TO CONFIRM: final addresses])
+- SHEET_WEBHOOK_URL     -> PRESENT (empty)
+- PLAUSIBLE_DOMAIN      -> PRESENT as NEXT_PUBLIC_PLAUSIBLE_DOMAIN (empty)
+- GA4_ID?               -> PRESENT as NEXT_PUBLIC_GA4_ID (empty)
+- MUX/STREAM creds      -> PRESENT as MUX_TOKEN_ID / MUX_TOKEN_SECRET (empty)
+- WHATSAPP_NUMBER       -> PRESENT as NEXT_PUBLIC_WHATSAPP_NUMBER (empty, [TO CONFIRM])
+- SITE_URL              -> PRESENT
+Extra keys beyond docs/07: NEXT_PUBLIC_ENV, DATA_DIR, NEXT_PUBLIC_PHONE_NUMBER (all explained by comments; phone links are in docs/01 s4.7).
+
+Real-value check: no credential values present. Non-empty values are the public site URL, a noreply from-address and example mailbox addresses explicitly marked [TO CONFIRM]. SMTP_PASS, MUX secrets, webhook all empty. PASS on "no real values"; FAIL on "all keys present" (6 keys across 3 groups absent, all tied to subsystems not yet built).

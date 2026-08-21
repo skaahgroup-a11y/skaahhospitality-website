@@ -1,0 +1,7 @@
+CA-01 round 2 retest, 2026-08-21
+Result: Pass
+
+Round 2 retest after fix: e2e/ scaffold added (playwright.config.ts, e2e/smoke.spec.ts, pnpm test:e2e per CLAUDE.md E0); suite runs green (4 passed) against the production build. All other structural deviations were already documented. Original finding stands as fixed.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

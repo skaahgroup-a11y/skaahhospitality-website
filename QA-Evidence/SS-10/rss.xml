@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SKAAH Insights</title>
+    <link>https://skaahhospitality.com/en/insights</link>
+    <description>Working guides for organisers of Swiss visits: specific, current and written from the ground.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://skaahhospitality.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bringing Indian Cuisine to Swiss Altitude: A Catering Playbook</title>
+      <link>https://skaahhospitality.com/en/insights/indian-cuisine-swiss-altitude</link>
+      <guid isPermaLink="true">https://skaahhospitality.com/en/insights/indian-cuisine-swiss-altitude</guid>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+      <description>How we serve Indian regional menus, Jain and halal tables and Swiss fine dining at alpine venues: menu governance, dietary law in practice, kitchen logistics and the tasting protocol that locks a menu before anyone travels.</description>
+    </item>
+    <item>
+      <title>The 180-Day Davos Delegation Countdown</title>
+      <link>https://skaahhospitality.com/en/insights/davos-delegation-countdown</link>
+      <guid isPermaLink="true">https://skaahhospitality.com/en/insights/davos-delegation-countdown</guid>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+      <description>A working checklist by month, from accommodation strategy at 180 days to the 24-hour rhythm of Week 0, drawn from four consecutive Davos Weeks on the ground in Davos.</description>
+    </item>
+  </channel>
+</rss>

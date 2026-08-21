@@ -1,0 +1,7 @@
+PF-05 round 2 retest, 2026-08-21
+Result: Pass
+
+Round 2 retest: the enquiry wizard column and its Suspense fallback reserve min-h-34rem so hydration cannot push the side rail. Lighthouse mobile: /en/enquiry CLS now 0 (was 0.3057), LCP 1.7 s; the other four templates unchanged at CLS 0.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

@@ -1,0 +1,7 @@
+SR-04 round 2 retest, 2026-08-21
+Result: Fail
+
+Round 2 improvement, requirement not yet literally met: Content-Security-Policy now sent (default-src self; script/connect allowances for Plausible only; frame-ancestors none; object-src none; base-uri and form-action self) with a documented DECISION: per-request nonces would force dynamic rendering and forfeit the static prerendering the CWV budgets depend on, so the nonce upgrade is scheduled at the Hostpoint Nginx layer (docs/08). docs/05 s6 asks for CSP with nonces, so the row stays Fail until that lands; header grade materially improved from round 1.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

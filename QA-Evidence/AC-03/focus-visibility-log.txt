@@ -1,0 +1,15 @@
+AC-03 focus visibility (corrected sampling): computed outline of keyboard-focused elements, sampled after the 200ms transition settles.
+CSS under test (app/globals.css:52-59): :focus-visible { outline: 2px solid var(--color-navy-900) /* #164069 */ }; [data-surface="dark"] :focus-visible { outline-color: var(--color-gold-500) /* #bfa05a */ }.
+Observation: elements with Tailwind "transition-colors" transition outline-color too, so the ring color fades in from currentColor over 200ms; the 2px solid ring itself is present from the first frame. Under prefers-reduced-motion the transition is disabled (globals.css:62-71).
+
+[light: skip link] {"text":"Skip to content","dark":false,"outline":"2px solid rgb(22, 64, 105)","offset":"2px","fv":true}
+[dark: header logo] {"text":"Home","dark":true,"outline":"2px solid rgb(191, 160, 90)","offset":"2px","fv":true}
+[dark: header Services] {"text":"Services","dark":true,"outline":"2px solid rgb(191, 160, 90)","offset":"2px","fv":true}
+[dark: hero CTA] {"text":"Start a delegation enquiry","dark":true,"outline":"2px solid rgb(191, 160, 90)","offset":"2px","fv":true}
+[light: /en/davos-week] {"text":"Home","dark":false,"outline":"2px solid rgb(22, 64, 105)","offset":"2px","fv":true}
+[dark: /en/davos-week] {"text":"Plan your Davos Week with us","dark":true,"outline":"2px solid rgb(191, 160, 90)","offset":"2px","fv":true}
+[light: /en/services/government-delegations] {"text":"Home","dark":false,"outline":"2px solid rgb(22, 64, 105)","offset":"2px","fv":true}
+[dark: /en/services/government-delegations] {"text":"Start a delegation enquiry","dark":true,"outline":"2px solid rgb(191, 160, 90)","offset":"2px","fv":true}
+
+Expected: rgb(191,160,90) (#bfa05a gold-500) on dark surfaces; rgb(22,64,105) (#164069 navy-900) on light surfaces; 2px solid, 2px offset.
+RESULT: PASS if all dark samples show gold and light samples show navy above.

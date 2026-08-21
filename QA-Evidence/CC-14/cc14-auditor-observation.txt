@@ -1,0 +1,29 @@
+CC-14 Hero standard read test — 2026-08-21 — auditor observation (test assigned to human functional
+reviewers; this row is BLOCKED pending that review; observation filed as required by the workbook)
+
+Screenshot: cc14-home-hero.jpg (1440x900, /en, staging build, cookie banner visible as first-visit state).
+
+Standard under test: the Home hero should read as "delegation capability, evidenced by India" —
+capability first, evidence second.
+
+Auditor observation (reading order as rendered):
+1. Eyebrow: "SWISS HOSPITALITY & LOGISTICS · OPFIKON, ZURICH" — category + place, neutral.
+2. H1: "Switzerland, handled." — a pure capability claim; no market or client nationality in it.
+3. Subline: "One accountable partner for government delegations and high-value corporate groups: events,
+   stays, transport, cuisine, media and people, delivered with Swiss precision." — capability, segment-led,
+   still nationality-neutral.
+4. Proof microline (visually subordinate: smaller type, gold accent, quote-bar treatment): "Proven at Davos
+   Week: six Indian state government delegations across four consecutive Davos Weeks." — the India evidence
+   arrives ONLY at step 4, clearly framed as proof ("Proven at..."), not as positioning.
+5. CTAs and trust row follow.
+
+Assessment: the hierarchy delivers capability first (H1 + subline carry zero India references) and evidence
+second (India appears once, in the subordinated microline, phrased as proof). In my reading the hero MEETS
+the "delegation capability, evidenced by India" standard. Caveats for the human panel: (a) the hero film is
+a placeholder (brief text renders where the film will sit), so the standard cannot yet be judged against
+moving imagery — the film brief's Devanagari name-card and tandoor shots will add India cues earlier in the
+visual read; (b) subjective 5-second read impressions need naive readers, which an auditor who has read the
+spec cannot simulate.
+
+RESULT: BLOCKED — prescribed method is a human functional review panel, unavailable in this environment.
+Programmatic pre-checks filed: rendered hero copy order captured above and in cc14-home-hero.jpg.

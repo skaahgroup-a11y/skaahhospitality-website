@@ -1,0 +1,38 @@
+=== FE-05 persisted JSON /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/enquiries/SKH-20260821-0005.json, checked 2026-08-21T22:52:17Z ===
+segment: agency | expected: agency
+reference: SKH-20260821-0005
+cuisines (catering only): None
+flags: {'verifiedDomain': False, 'manualCheck': False, 'utm': {}}
+locale: en
+--- full JSON ---
+{
+  "reference": "SKH-20260821-0005",
+  "segment": "agency",
+  "submittedAt": "2026-08-21T22:52:08.856Z",
+  "contact": {
+    "name": "TEST Vikram Singh",
+    "organisation": "TEST Horizon Incentives Pvt Ltd",
+    "role": "Director",
+    "email": "test.partner@horizon-example.in",
+    "phone": "+91 11 5555 0505",
+    "preferredChannel": "email"
+  },
+  "details": {
+    "agencyName": "TEST Horizon Incentives Pvt Ltd",
+    "markets": "India, GCC",
+    "clientMix": "corporate incentives, some government",
+    "opportunity": "TEST QA FE-05: 80-pax incentive to Interlaken Q2 2027",
+    "volume": "seasonal"
+  },
+  "attachments": [],
+  "flags": {
+    "verifiedDomain": false,
+    "manualCheck": false,
+    "utm": {}
+  },
+  "consent": {
+    "privacyVersion": "2026-08",
+    "acceptedAt": "2026-08-21T22:52:08.856Z"
+  },
+  "locale": "en"
+}

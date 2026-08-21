@@ -1,0 +1,9 @@
+SR-03 Signed URL policy — FAIL (genuine gap, 2026-08-21)
+docs/05 s6 requires: "signed URLs (30-day) for attachment access".
+Actual: lib/enquiry/store.ts persistAttachment() writes attachments to local disk under
+DATA_DIR/uploads/<reference>/ and returns url: `data://uploads/<reference>/<file>` — a pseudo-URL,
+not a signed URL. No signing code exists anywhere in the repo (grep "sign" over lib/ => no matches
+for URL signing). The code carries an explicit DECISION comment (store.ts lines 52-56) deferring
+signed URLs to task T4.3 pending the spike-S0 storage decision. The deferral is documented and the
+call shape is designed to swap without change, but as-built the docs/05 s6 control is NOT implemented.
+Evidence: store.ts.txt (full file copy, see lines 52-72).

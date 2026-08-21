@@ -1,0 +1,17 @@
+=== FE-07 API validation cases, 2026-08-21T22:52:27Z ===
+--- case 1: missing name (X-Forwarded-For: 10.3.7.1) ---
+payload: {"segment": "general", "contact": {"organisation": "", "role": "", "email": "test.val@example.ch", "phone": "", "preferredChannel": "email"}, "details": {"subject": "TEST FE-07", "message": "TEST validation case"}, "consentAccepted": true, "website": "", "elapsedMs": 30000, "utm": {}, "locale": "en"}
+{"error":"validation"}
+HTTP_STATUS:422
+--- case 2: missing email (X-Forwarded-For: 10.3.7.2) ---
+payload: {"segment": "general", "contact": {"name": "TEST Val Case", "organisation": "", "role": "", "phone": "", "preferredChannel": "email"}, "details": {"subject": "TEST FE-07", "message": "TEST validation case"}, "consentAccepted": true, "website": "", "elapsedMs": 30000, "utm": {}, "locale": "en"}
+{"error":"validation"}
+HTTP_STATUS:422
+--- case 3: invalid email (X-Forwarded-For: 10.3.7.3) ---
+payload: {"segment": "general", "contact": {"name": "TEST Val Case", "organisation": "", "role": "", "email": "not-an-email", "phone": "", "preferredChannel": "email"}, "details": {"subject": "TEST FE-07", "message": "TEST validation case"}, "consentAccepted": true, "website": "", "elapsedMs": 30000, "utm": {}, "locale": "en"}
+{"error":"validation"}
+HTTP_STATUS:422
+--- case 4: consent false (X-Forwarded-For: 10.3.7.4) ---
+payload: {"segment": "general", "contact": {"name": "TEST Val Case", "organisation": "", "role": "", "email": "test.val@example.ch", "phone": "", "preferredChannel": "email"}, "details": {"subject": "TEST FE-07", "message": "TEST validation case"}, "consentAccepted": false, "website": "", "elapsedMs": 30000, "utm": {}, "locale": "en"}
+{"error":"validation"}
+HTTP_STATUS:422

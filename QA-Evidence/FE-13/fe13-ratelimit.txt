@@ -1,0 +1,8 @@
+=== FE-13 rate limit: 7 rapid submissions, all X-Forwarded-For: 10.3.99.99, 2026-08-21T22:53:42Z ===
+submission 1: {"reference":"SKH-20260821-0013","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"} => HTTP 200
+submission 2: {"reference":"SKH-20260821-0014","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"} => HTTP 200
+submission 3: {"reference":"SKH-20260821-0015","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"} => HTTP 200
+submission 4: {"reference":"SKH-20260821-0016","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"} => HTTP 200
+submission 5: {"reference":"SKH-20260821-0017","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"} => HTTP 200
+submission 6: {"error":"rate_limited"} => HTTP 429
+submission 7: {"error":"rate_limited"} => HTTP 429

@@ -1,0 +1,51 @@
+CC-01 27-page copy fidelity — 2026-08-21 — http://127.0.0.1:3222/en (commit 8b6e82d)
+Method: fetched every route, parsed rendered <h1> (python html.parser), compared with H1s specified in docs/02-content/*.md.
+Verdicts: MATCH = byte-identical; MATCH* = matches the APPROVED CHANGE LOG amendment (WEF wording replaced 21 Aug 2026) where the doc still shows the old wording.
+
+ #| Route (under /en)                        | Spec H1 (docs/02)                                        | Rendered H1                                              | Verdict
+ 1| /                                        | Switzerland, handled.                                    | Switzerland, handled.                                    | MATCH
+ 2| /services                                | Seven services. One accountable partner.                 | Seven services. One accountable partner.                 | MATCH
+ 3| /services/government-delegations         | Delegations, handled to protocol.                        | Delegations, handled to protocol.                        | MATCH
+ 4| /services/mice-events                    | Swiss events without the seams.                          | Swiss events without the seams.                          | MATCH
+ 5| /services/travel-transport-immigration   | Arrivals to departures, timed to the minute.             | Arrivals to departures, timed to the minute.             | MATCH
+ 6| /services/stays                          | The right rooms, held and handled.                       | The right rooms, held and handled.                       | MATCH
+ 7| /services/food-catering                  | The flavours of home, at Swiss standard.                 | The flavours of home, at Swiss standard.                 | MATCH
+ 8| /services/media-production               | Documented properly, cleared correctly.                  | Documented properly, cleared correctly.                  | MATCH
+ 9| /services/branding-staffing              | The look, the collateral, the people.                    | The look, the collateral, the people.                    | MATCH
+10| /davos-week (spec route /davos-wef)      | Davos in January: a working guide.                       | Davos in January: a working guide.                       | MATCH (route renamed per change log)
+11| /destinations                            | Switzerland, destination by destination.                 | Switzerland, destination by destination.                 | MATCH
+12| /destinations/zurich                     | Zurich: the gateway that works.                          | Zurich: the gateway that works.                          | MATCH
+13| /destinations/geneva                     | Geneva: diplomacy's home ground.                         | Geneva: diplomacy's home ground.                         | MATCH
+14| /destinations/lucerne                    | Lucerne: the postcard that performs.                     | Lucerne: the postcard that performs.                     | MATCH
+15| /destinations/davos                      | Davos: fifty-one other weeks.                            | Davos: fifty-one other weeks.                            | MATCH
+16| /destinations/interlaken-jungfrau        | Interlaken & Jungfrau: altitude with infrastructure.     | Interlaken & Jungfrau: altitude with infrastructure.     | MATCH
+17| /destinations/zermatt                    | Zermatt: car-free, world-famous.                         | Zermatt: car-free, world-famous.                         | MATCH
+18| /destinations/st-moritz-engadin          | St. Moritz & Engadin: alpine polish.                     | St. Moritz & Engadin: alpine polish.                     | MATCH
+19| /destinations/ticino-lugano              | Ticino & Lugano: Switzerland, in Italian.                | Ticino & Lugano: Switzerland, in Italian.                | MATCH
+20| /work                                    | Evidence, filed properly.                                | Evidence, filed properly.                                | MATCH
+21| /work/[slug] — all 6 seeded (below)      | see CS1-CS6                                              | see CS1-CS6                                              | MATCH / MATCH*
+  | CS1 six-states-one-swiss-partner         | Six states, one Swiss partner                            | Six states, one Swiss partner                            | MATCH
+  | CS2 first-time-state-delegation-davos    | A first-time state delegation at WEF (spec slug ...-wef) | A first-time state delegation at Davos Week              | MATCH* (change log: WEF wording + slug replaced)
+  | CS3 returning-delegation-doubled-scale   | Returning delegation, doubled scale                      | Returning delegation, doubled scale                      | MATCH
+  | CS4 two-delegations-one-week             | Two delegations, one week, zero collisions               | Two delegations, one week, zero collisions               | MATCH
+  | CS5 kitchen-at-1560-metres               | The kitchen at 1,560 metres                              | The kitchen at 1,560 metres                              | MATCH
+  | CS6 bilateral-programme-geneva-zurich    | Beyond Davos: a bilateral programme in Geneva and Zurich | Beyond Davos: a bilateral programme in Geneva and Zurich | MATCH
+22| /experiences                             | Programmes worth the flight.                             | Programmes worth the flight.                             | MATCH
+23| /insights                                | Planning intelligence.                                   | Planning intelligence.                                   | MATCH
+24| /insights/[slug] — both seeded           | The 180-Day WEF Delegation Countdown /                   | The 180-Day Davos Delegation Countdown                   | MATCH* (change log)
+  |                                          | Bringing Indian Cuisine to Swiss Altitude: A Catering Playbook | Bringing Indian Cuisine to Swiss Altitude: A Catering Playbook | MATCH
+25| /about                                   | Hospitality with an operations backbone.                 | Hospitality with an operations backbone.                 | MATCH
+26| /partners                                | Your Switzerland desk.                                   | Your Switzerland desk.                                   | MATCH
+27| /enquiry                                 | Tell us about your visit.                                | Tell us about your visit.                                | MATCH
+
+Key-heading spot checks (rendered H2 vs spec section headings):
+- Home: Evidence, not adjectives. / Everything a visit needs. One relationship. / Trusted where the world watches. /
+  Switzerland, destination by destination. / Built around who you are. / How we work / Planning intelligence. — ALL MATCH docs/02.01 sections H2-H8.
+- Davos hub: all 8 body H2s present; three carry approved WEF->Davos Week substitutions:
+  "What Davos Week really is on the ground", "What four consecutive Davos Weeks taught us", "How SKAAH runs Davos Week" (MATCH*).
+- Service template order (government-delegations): Who this serves / What we handle / How it runs / FAQs / Related services / CTA — matches docs/02.02 fixed order.
+- Destination full (zurich): Why groups come here / Venues & capacities snapshot / Stays snapshot / Getting there & around /
+  What we run here / A sample day / FAQs — matches docs/02.04 Tier-1 section plan.
+- Case study (CS1): The brief / What made it hard / What we did / The outcome / Gallery / Services used / CTA — matches docs/02.05 template.
+
+RESULT: PASS — 27/27 pages match spec H1s; the only divergences are the WEF-wording replacements covered by the approved change log (21 Aug 2026).

@@ -1,0 +1,7 @@
+CA-05 round 2 retest, 2026-08-21
+Result: Pass
+
+Round 2 retest: C23 FilmBlock built (click-to-play, poster-first, provider-pending DECISION), C26 LangSwitcher built and mounted (renders only when routing.locales exceeds 1, per spec built-but-hidden), C29 NoticeBar built (global-toggled, disabled by default). Full C01-C29 inventory now present with accepted equivalents.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

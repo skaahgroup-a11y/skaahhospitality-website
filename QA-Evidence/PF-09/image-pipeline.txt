@@ -1,0 +1,10 @@
+PF-09 Image pipeline — photography pending (design-system placeholders); the only raster content image on the site is the SKAAH Group logo emblem.
+
+- next/image usage: components/layout/SiteLogo.tsx is the single next/image consumer (site-wide header/footer logo). width/height declared (40x40, no CLS), priority set (above the fold), alt="" with adjacent text label.
+- No raw <img> tags anywhere in app/ or components/ (grep clean).
+- Live serving check (Lighthouse home run, network-requests): the only Image request is
+  /_next/image?url=%2Fbrand%2Fskaah-group-logo-square.png&w=96&q=75 -> image/webp, 4235 B transfer.
+- Direct probe: curl -H "Accept: image/avif,image/webp" .../_next/image?...&w=96&q=75 -> content-type image/webp, 3630 B (optimizer active on the standalone server; PNG source re-encoded and resized).
+- next.config.ts has no images{} block: Next defaults apply (webp enabled; avif not explicitly enabled - worth revisiting when photography lands).
+- Remaining public assets are SVG lockups (no optimization needed). No photography, no remotePatterns needed yet.
+Verdict: for the assets that exist, the pipeline is correct (single optimized webp, sized, priority, zero image CLS). Full-pipeline judgement (responsive sizes, art direction, avif) deferred until the Davos archive / Phase 1 shoot media exists.

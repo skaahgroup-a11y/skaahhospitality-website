@@ -1,0 +1,7 @@
+SS-02 Canonicals — 2026-08-21, agent 5
+Extracted rel=canonical from all 36 crawled routes (crawl.mjs; Screaming Frog unavailable).
+All 36 canonicals are absolute https://skaahhospitality.com/en... URLs, exactly
+self-referencing (nonSelf: 0), and none carries a trailing slash (anyTrailingSlash: 0)
+=> single no-trailing-slash policy, consistent site-wide. See canonicals.json.
+Note: canonical host is the production SITE_URL constant (lib/site.ts), correct for a
+staging build of the production site.

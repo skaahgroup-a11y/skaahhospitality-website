@@ -1,0 +1,4 @@
+CC-05 long dash scan - 2026-08-21 - 36 routes under /en (visible text + title + meta description + JSON-LD)
+ALSO raw-HTML scan:
+TOTAL visible-layer hits: 0; raw HTML hits: 0
+Result: PASS - zero long dashes

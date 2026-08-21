@@ -1,0 +1,7 @@
+=== FE-11 file-type sniffing: real ELF (/bin/ls copy) renamed TEST-fake-document.pdf, 2026-08-21T22:53:18Z, X-Forwarded-For: 10.3.11.1 ===
+magic bytes of upload:  7f 45 4c 46
+{"error":"file_type","file":"TEST-fake-document.pdf"}
+HTTP_STATUS:422
+--- uploads dir after (no new entry expected) ---
+SKH-20260821-0001
+SKH-20260821-0007

@@ -1,0 +1,11 @@
+DO-03 Staging deploy on push to main — BLOCKED (2026-08-21)
+No Hostpoint server or HOSTPOINT_* secrets exist; the workflow self-reports inert until secrets
+are configured. Pre-check vs docs/08 s6: .github/workflows/deploy-staging.yml EXISTS, triggers on
+push to main, environment "staging", and implements: SSH via deploy key secret, git fetch into
+releases/<sha> ON the server, pnpm install + pnpm build on the server (FreeBSD-native modules),
+health-check 127.0.0.1:3002/api/health, flip "current" symlink, supervisorctl restart
+skaah-web-staging — matching docs/08 s6 step-for-step with two honest deviations:
+  1. "run Payload migrations" step absent (Payload is epic E2, not yet in the build);
+  2. the health-check uses "curl ... || true" so a failing health check does NOT abort the deploy
+     before the symlink flip — weaker than the docs/08 s6 intent (health-check then flip).
+Evidence: deploy-staging.yml.txt.

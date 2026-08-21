@@ -1,0 +1,16 @@
+CA-13 Seed content fidelity: 3 sample pages vs docs/02 (rendered text captured in *-rendered.txt)
+
+1. HOME (/en) vs docs/02-content/01-home.md
+   - metaTitle exact. Hero eyebrow/H1/subline exact. Proof microline amended per approved change log: "Proven at Davos Week: six Indian state government delegations across four consecutive Davos Weeks." (spec's WEF wording replaced).
+   - CTAs, trust row (3 items) exact. Proof strip: heading + 4 stat cards exact incl. 4th [TO CONFIRM] pair rendered with marker.
+   - Services grid: heading, intro and all 7 card one-liners verbatim. Flagship band: heading exact; body has "four WEF years" -> "four consecutive Davos Weeks"; CTA "Read the Davos Week guide" (route /davos-week per change log).
+   - Destinations teaser (4 + All destinations, Davos badge "Davos Week hub"), segment router 4 tiles, 3-step how-we-work verbatim, response promise line, insights teaser (2 seeded articles; spec says 3 latest, only 2 articles exist by design per docs/01 #24), closing CTA band verbatim, footer per spec + site-wide independence disclaimer (change log).
+2. GOVERNMENT-DELEGATIONS (/en/services/government-delegations) vs docs/02-content/02-services.md section B
+   - metaTitle exact (with "Proven at Davos Week" in description). H1/subline/CTA exact. Who-this-serves verbatim.
+   - All 8 capability cards verbatim, incl. [TO CONFIRM] marker in card 2; card 8 "WEF-week operations" -> "Davos Week operations" per change log.
+   - Process: the spec's arrow line rendered as 5 steps matching each stage. Proof block: approved fallback line "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner." + "Four consecutive Davos Weeks without a public misstep." with its [TO CONFIRM: approved phrasing] marker. All 5 FAQs verbatim (WEF week -> Davos Week in FAQ 1). Related services + hub link + CTA band present.
+3. ZURICH (/en/destinations/zurich) vs docs/02-content/04-destinations.md Tier 1 Zurich
+   - metaTitle exact. H1 exact. All destination-full sections in template order: why-groups (verbatim, marker preserved), venue snapshot (archetype table, no named venues, [TO CONFIRM: named venue list + capacities] preserved), stays, getting-around (10 min/12 min figures exact), what-we-run (3 items), sample day (all 6 timeline stops verbatim incl. airside marker), 3 FAQs covering exactly the 3 briefed topics, CTA band.
+   - Observation: archetype capacity ranges (e.g. 500 to 3,000) are generic figures not present in docs/02; the spec calls for "capacity ranges" without giving them, and named-venue facts stay behind the [TO CONFIRM] marker.
+
+Verdict: copy matches docs/02 exactly, with all divergences accounted for by the approved change log of 21 Aug 2026 (Davos Week vocabulary, /davos-week route, fallback proof line, footer disclaimer) or by [TO CONFIRM] markers rendered visibly (staging behaviour by design).

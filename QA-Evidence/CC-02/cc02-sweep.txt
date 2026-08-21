@@ -1,0 +1,18 @@
+CC-02 Forbidden claims sweep — 2026-08-21 — target http://127.0.0.1:3222 (commit 8b6e82d)
+Method: fetched all 36 rendered routes under /en (27 designed pages + privacy/imprint/cookies + slug pages),
+regex sweep over RAW HTML (so metadata, JSON-LD and script payloads are included).
+
+Patterns and hit counts:
+  international organi[sz]ations?               : 0 hits
+  united nations | U.N. | UNO | UNHCR | UNICEF  : 0 hits
+  \bUN\b (standalone token, case-sensitive-insensitive word match) : 0 hits
+  maharashtra|uttar pradesh|telangana|karnataka|assam|kerala : 0 hits
+
+Supplementary (approved change log check):
+  world economic forum | WEF : 222 hits, ALL of them inside the site-wide independence
+  disclaimer ("We are not affiliated with, endorsed by or otherwise connected to the
+  World Economic Forum ... WEF and World Economic Forum are trademarks of their owner.").
+  Nominative use inside the mandated disclaimer per approved change log 21 Aug 2026;
+  zero hits outside disclaimer context (classification in cc02-matches.json).
+
+Result: PASS — zero forbidden-claim occurrences in rendered HTML, metadata and JSON-LD.

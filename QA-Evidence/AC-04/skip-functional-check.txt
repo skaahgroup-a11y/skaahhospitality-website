@@ -1,0 +1,3 @@
+/en | first Tab: "Skip to content" | after Enter, next Tab: {"text":"Start a delegation enquiry","insideMain":true,"insideHeader":false}
+/en/davos-week | first Tab: "Skip to content" | after Enter, next Tab: {"text":"Home","insideMain":true,"insideHeader":false}
+/en/work | first Tab: "Skip to content" | after Enter, next Tab: {"text":"Home","insideMain":true,"insideHeader":false}

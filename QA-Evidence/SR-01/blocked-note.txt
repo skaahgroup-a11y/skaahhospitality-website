@@ -1,0 +1,6 @@
+SR-01 Swiss server evidence — BLOCKED (pre-staging audit, 2026-08-21)
+No Hostpoint Managed Flex Server exists yet; there is no hosting endpoint whose jurisdiction could be evidenced.
+Residency DESIGN verified in the baseline spec: docs/08 s1 (Swiss data centre, FINMA-relevant, ISO 27001) and
+docs/08 s5 (enquiry JSON, attachments, mail, backups all remain in Switzerland).
+Programmatic pre-check: the code stores all enquiry payloads and attachments under DATA_DIR on local disk
+(lib/enquiry/store.ts, dataDir()); on the Flex server that is Swiss NVMe. See SR-02 note and SR-03 evidence.

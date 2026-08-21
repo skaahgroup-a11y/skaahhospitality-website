@@ -1,0 +1,52 @@
+# Staging deploy per docs/08 section 6: push to main deploys to the Hostpoint
+# Managed Flex Server over SSH, with the build executed ON the server so
+# FreeBSD-native modules (sharp, better-sqlite3) compile correctly. This
+# workflow is inert until the HOSTPOINT_* secrets are configured after the
+# server order and spike S0 (docs/08 sections 1 and 7).
+name: Deploy staging
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - name: Check deploy secrets
+        id: secrets
+        run: |
+          if [ -z "${{ secrets.HOSTPOINT_SSH_HOST }}" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "Hostpoint secrets not configured; skipping deploy."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy over SSH
+        if: steps.secrets.outputs.configured == 'true'
+        env:
+          SSH_HOST: ${{ secrets.HOSTPOINT_SSH_HOST }}
+          SSH_USER: ${{ secrets.HOSTPOINT_SSH_USER }}
+          SSH_KEY: ${{ secrets.HOSTPOINT_SSH_KEY }}
+          STAGING_PATH: ${{ secrets.STAGING_PATH }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=accept-new "$SSH_USER@$SSH_HOST" bash -s <<'DEPLOY'
+          set -euo pipefail
+          SHA="${GITHUB_SHA:-main}"
+          cd "$STAGING_PATH"
+          git fetch origin main
+          RELEASE="releases/$(git rev-parse --short origin/main)"
+          git worktree add "$RELEASE" origin/main 2>/dev/null || true
+          cd "$RELEASE"
+          pnpm install --frozen-lockfile
+          pnpm build
+          curl -fsS "http://127.0.0.1:3002/api/health" || true
+          cd "$STAGING_PATH"
+          ln -sfn "$RELEASE" current
+          supervisorctl restart skaah-web-staging
+          DEPLOY

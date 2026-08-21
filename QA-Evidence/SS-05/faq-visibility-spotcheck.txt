@@ -1,0 +1,6 @@
+/en/services/government-delegations FAQPage mainEntity vs rendered HTML:
+VISIBLE  How early should a delegation engage you?
+VISIBLE  Can you work alongside our own security detail?
+VISIBLE  Do you name past clients?
+VISIBLE  Which languages do your teams work in?
+VISIBLE  Can you host vegetarian, Jain, halal and regional menus?

@@ -1,0 +1,32 @@
+== components/blocks/HeroFilm.tsx lines 38-44 (undocumented rgba literal) ==
+    >
+      {/* Navy multiply scrim slot over future photography (docs/04 section 2). */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(191,160,90,0.14),transparent_55%)]"
+      />
+      <div className="container-site relative pb-24 pt-36 md:pt-40">
+
+Note: rgba(191,160,90,0.14) equals token --color-gold-500 #BFA05A at 14% alpha, but is written as a literal without a DECISION comment.
+
+== components/ui/Copy.tsx lines 1-20 (documented amber badge exception) ==
+import type { ReactNode } from "react";
+
+// Truth discipline (CLAUDE.md): [TO CONFIRM: ...] markers render visibly with
+// an amber highlight on staging. The production build is blocked while any
+// remain via scripts/check-claims.mjs, so this badge never ships publicly.
+const TO_CONFIRM_PATTERN = /(\[TO CONFIRM:[^\]]*\])/g;
+
+export function renderCopy(text: string): ReactNode {
+  if (!text.includes("[TO CONFIRM")) return text;
+  const parts = text.split(TO_CONFIRM_PATTERN);
+  return parts.map((part, index) =>
+    part.startsWith("[TO CONFIRM") ? (
+      <mark
+        key={index}
+        className="rounded-sm bg-amber-200 px-1 py-0.5 text-xs font-medium text-amber-900"
+      >
+        {part}
+      </mark>
+    ) : (
+      <span key={index}>{part}</span>

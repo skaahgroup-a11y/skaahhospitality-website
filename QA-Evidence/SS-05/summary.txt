@@ -1,0 +1,17 @@
+SS-05 JSON-LD zero errors — 2026-08-21, agent 5
+Deviation: Google Rich Results Test unavailable; local structural validation instead
+(analyze.mjs): every application/ld+json block on all 36 routes JSON.parse'd, then each
+typed node checked for required properties (Organization: name,url; WebSite: name,url;
+TravelAgency: name,address,url; Service: name,provider,areaServed,serviceType;
+FAQPage: mainEntity; Article: headline,author,datePublished; BreadcrumbList:
+itemListElement).
+Result: 137 blocks, 0 parse errors, 0 missing required properties
+(jsonld-validation.json; typesByPage shows coverage per route).
+Coverage matches docs/06 s3: Organization+WebSite sitewide; TravelAgency on /about;
+Service+FAQPage on all 7 service pages; FAQPage on hub, Tier-1 destinations and both
+articles; Article on 6 case studies + 2 insights; BreadcrumbList everywhere except Home.
+Spot check: all 5 FAQPage questions on /en/services/government-delegations are visible
+in the rendered page (faq-visibility-spotcheck.txt).
+Notes: Organization.sameAs contains only https://skaah.com (LinkedIn [TO CONFIRM], by
+design); TravelAgency omits streetAddress/telephone/geo pending [TO CONFIRM] facts —
+truth-discipline behaviour, not a structural error.

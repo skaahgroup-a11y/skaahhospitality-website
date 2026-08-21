@@ -1,0 +1,9 @@
+[1] Loaded /en/enquiry, title="Start Your Enquiry | SKAAH Hospitality"
+[2] Picked "Government delegation" segment; step heading "The visit" shown; progress text: GOVERNMENT DELEGATION · STEP 1 OF 4
+[3] Step 2 "What you need": checked Accommodation + Protocol support, filled security notes
+[4] Step 3 "Documents": attached sample.pdf via setInputFiles; file listed; attachment meter aria-valuemax=100 MB
+[5] Contact step filled (name/org/role/email/phone, preferred channel e-mail), consent checked
+[6] POST /api/enquiry => HTTP 200; response: {"reference":"SKH-20260821-0010","segment":"delegation","ownerTeam":"The delegations team","promise":"48 hours"}
+[7] Success screen shown. Reference line: "Reference SKH-20260821-0010"
+[8] SKH reference visible: SKH-20260821-0010
+RESULT: PASS - full delegation UI journey incl. PDF attachment completed, SKH reference on success screen

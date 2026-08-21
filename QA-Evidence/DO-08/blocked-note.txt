@@ -1,0 +1,2 @@
+DO-08 — BLOCKED (2026-08-21): DNS cutover / domain wiring (apex, www 301, staging subdomain,
+docs/08 s27) requires the Hostpoint Control Panel and DNS zone; none exist pre-staging.

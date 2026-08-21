@@ -1,0 +1,7 @@
+CA-12 round 2 retest, 2026-08-21
+Result: Pass
+
+Round 2 retest: export imports content/davos-week directly (stale davos-wef import removed, silent catch removed so a missing module fails loudly) and now exports globals.json and disclaimer.json. Archive verified complete: 9 JSON files plus brand media.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

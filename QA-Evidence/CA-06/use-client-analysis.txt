@@ -1,0 +1,29 @@
+CA-06 "use client" audit vs docs/04 s6 allowed list (C03 video swap, C15, C17, C18, C22, C24, menus)
+
+16 files carry "use client" (full grep in use-client-audit.txt):
+
+ON THE ALLOWED LIST
+- components/blocks/FAQAccordion.tsx        C15
+- components/forms/EnquiryWizard.tsx        C17
+- components/forms/fields.tsx               C17 field primitives
+- components/layout/WhatsAppFab.tsx         C18
+- components/layout/ConsentBanner.tsx       C24
+- components/layout/SiteHeader.tsx          menus (mobile sheet, scroll state)
+
+BEYOND THE LIST, WITH IN-CODE JUSTIFICATION
+- app/[locale]/error.tsx                    Next.js requires error boundaries to be client components (framework constraint)
+- components/blocks/CookiePreferences.tsx   consent preferences UI, part of C24 consent surface
+- components/blocks/HubNav.tsx              hub sticky in-page nav (docs/04 s4 hub template), scroll-spy state; nav/menu-adjacent
+- components/blocks/WorkFilters.tsx         work-listing filter bar (docs/04 s4); comment documents server-rendered grid passed as props for SEO
+- components/blocks/BudgetBandTable.tsx     C09; client only to fire rfp_band_view analytics event (docs/06 s7)
+- components/blocks/HubTimeline.tsx         C14 wrapper; fires hub_timeline_engage event (docs/06 s7); underlying Timeline.tsx stays server
+- components/blocks/CaseStudyMetaRow.tsx    C11; DECISION comment: carries case_study_read 75%-scroll event (docs/06 s7)
+- components/blocks/PartnerCta.tsx          fires partner_cta_click event (docs/06 s7)
+- components/blocks/WhatsAppLink.tsx        fires whatsapp click events (docs/01 s4.7, docs/06 s7)
+- lib/analytics.ts                          client analytics helper (not a component)
+
+NOTABLE SERVER-BY-DEFAULT WINS
+- C03 HeroFilm is currently a server component: the video-swap does not exist yet because the hero film is a placeholder pending the archive (DECISION comment line 8).
+- C22 GalleryScroller is server (CSS scroll-snap only), stricter than the spec's allowance.
+
+Assessment: no static content component is client. Every extra directive is forced by a framework constraint or by the analytics-event wiring that docs/06 s7 and docs/01 s4 require; docs/04 s6's list predates the event wiring. Extras carry explanatory comments (one formal DECISION).

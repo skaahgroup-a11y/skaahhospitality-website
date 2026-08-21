@@ -1,0 +1,23 @@
+AC-05 contrast audit, 2026-08-21
+Part 1 — token combinations from docs/04 s1 computed with WCAG 2.x relative-luminance formula
+(token-contrast-computed.txt): every combination THE TOKEN RULES PERMIT passes at its intended size:
+  navy-900 on white 10.65 / on ice-100 9.83 (AA normal PASS)
+  ice-100 on navy-900 9.83 / on navy-950 13.12 (AA normal PASS)
+  gold-600 on white 4.00 / on ice-100 3.70 (AA large >=3.0 PASS — large text only)
+  gold-500 on navy-900 4.26 / navy-950 5.68 (AA large PASS — >=24px numerals only)
+  stone-500 on white 5.85 / on ice-100 5.40 (AA normal PASS)
+Part 2 — axe color-contrast findings on the live build (247 serious nodes) show the IMPLEMENTATION
+breaks the token rules in five ways (failing-nodes-sample.json, footer-stone500-on-navy.png):
+  1. stone-500 #5C6670 on navy-950 (footer secondary text/links, 12-14px): ratio 2.43 — violates
+     both AA and the token rule "on navy use ice-100 text". 48 nodes. WORST OFFENDER.
+  2. gold-500 #BFA05A on navy at 14px/500 link text: 4.25 < 4.5 AA normal — token rule limits
+     gold-500 on navy to lines/icons/numerals >=24px, not 14px links. 16 nodes.
+  3. gold-600 #9A7B2D at 12px on white/ice (text-xs labels): 4.00/3.69 < 4.5 — 12px is NOT WCAG
+     "large text" (needs >=24px, or >=18.66px bold), so the "AA large" allowance does not apply.
+     NOTE: the docs/04 eyebrow spec itself (13px caps, gold-600) can never satisfy AA under the
+     WCAG large-text definition — spec-internal inconsistency worth a client decision.
+  4. stone-400 #8A939C on white body-adjacent text: 3.12 < 4.5. 15 nodes.
+  5. ice-100/gold-500 text over the #9AA8B4 placeholder-image backgrounds (hero/nav overlays,
+     150 nodes) — partially attributable to placeholder imagery pending the Davos archive shoot,
+     but the overlay/scrim must guarantee contrast regardless of final photography.
+VERDICT: Fail — AA is met by the token rules on paper but not by the rendered build.

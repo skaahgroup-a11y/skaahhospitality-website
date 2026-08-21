@@ -1,0 +1,12 @@
+SS-08 Social cards — 2026-08-21, agent 5
+Checked 5 pages: /en, /en/davos-week, /en/services/government-delegations,
+/en/work/six-states-one-swiss-partner, /en/insights/davos-delegation-countdown
+(social-cards-5pages.json, from the full crawl).
+All 5 carry og:title, og:description, og:image, og:url, og:type=website,
+og:site_name, og:locale=en_GB, plus twitter:card=summary_large_image,
+twitter:title, twitter:description, twitter:image.
+og:image on every page is https://skaahhospitality.com/brand/skaah-group-logo-square.png
+— the square logo stand-in; the branded 1200x630 OG frame template (docs/06 s4, E1
+task) is not yet designed, as anticipated by the workbook. Local asset check:
+GET /brand/skaah-group-logo-square.png => 200.
+External card debuggers (Facebook/LinkedIn/X validators) unavailable; tag inspection only.

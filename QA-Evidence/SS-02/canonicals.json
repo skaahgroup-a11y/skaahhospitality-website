@@ -1,0 +1,258 @@
+{
+  "rows": [
+    {
+      "path": "/en",
+      "canonical": "https://skaahhospitality.com/en",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/services",
+      "canonical": "https://skaahhospitality.com/en/services",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/davos-week",
+      "canonical": "https://skaahhospitality.com/en/davos-week",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations",
+      "canonical": "https://skaahhospitality.com/en/destinations",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/work",
+      "canonical": "https://skaahhospitality.com/en/work",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/experiences",
+      "canonical": "https://skaahhospitality.com/en/experiences",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/insights",
+      "canonical": "https://skaahhospitality.com/en/insights",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/about",
+      "canonical": "https://skaahhospitality.com/en/about",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/partners",
+      "canonical": "https://skaahhospitality.com/en/partners",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/enquiry",
+      "canonical": "https://skaahhospitality.com/en/enquiry",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/privacy",
+      "canonical": "https://skaahhospitality.com/en/privacy",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/imprint",
+      "canonical": "https://skaahhospitality.com/en/imprint",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/cookies",
+      "canonical": "https://skaahhospitality.com/en/cookies",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/services/government-delegations",
+      "canonical": "https://skaahhospitality.com/en/services/government-delegations",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/services/mice-events",
+      "canonical": "https://skaahhospitality.com/en/services/mice-events",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/services/travel-transport-immigration",
+      "canonical": "https://skaahhospitality.com/en/services/travel-transport-immigration",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/services/stays",
+      "canonical": "https://skaahhospitality.com/en/services/stays",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/services/food-catering",
+      "canonical": "https://skaahhospitality.com/en/services/food-catering",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/services/media-production",
+      "canonical": "https://skaahhospitality.com/en/services/media-production",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/services/branding-staffing",
+      "canonical": "https://skaahhospitality.com/en/services/branding-staffing",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations/zurich",
+      "canonical": "https://skaahhospitality.com/en/destinations/zurich",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations/geneva",
+      "canonical": "https://skaahhospitality.com/en/destinations/geneva",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations/lucerne",
+      "canonical": "https://skaahhospitality.com/en/destinations/lucerne",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations/davos",
+      "canonical": "https://skaahhospitality.com/en/destinations/davos",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations/interlaken-jungfrau",
+      "canonical": "https://skaahhospitality.com/en/destinations/interlaken-jungfrau",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations/zermatt",
+      "canonical": "https://skaahhospitality.com/en/destinations/zermatt",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations/st-moritz-engadin",
+      "canonical": "https://skaahhospitality.com/en/destinations/st-moritz-engadin",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/destinations/ticino-lugano",
+      "canonical": "https://skaahhospitality.com/en/destinations/ticino-lugano",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/work/six-states-one-swiss-partner",
+      "canonical": "https://skaahhospitality.com/en/work/six-states-one-swiss-partner",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/work/first-time-state-delegation-davos",
+      "canonical": "https://skaahhospitality.com/en/work/first-time-state-delegation-davos",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/work/returning-delegation-doubled-scale",
+      "canonical": "https://skaahhospitality.com/en/work/returning-delegation-doubled-scale",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/work/two-delegations-one-week",
+      "canonical": "https://skaahhospitality.com/en/work/two-delegations-one-week",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/work/kitchen-at-1560-metres",
+      "canonical": "https://skaahhospitality.com/en/work/kitchen-at-1560-metres",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/work/bilateral-programme-geneva-zurich",
+      "canonical": "https://skaahhospitality.com/en/work/bilateral-programme-geneva-zurich",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/insights/indian-cuisine-swiss-altitude",
+      "canonical": "https://skaahhospitality.com/en/insights/indian-cuisine-swiss-altitude",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    },
+    {
+      "path": "/en/insights/davos-delegation-countdown",
+      "canonical": "https://skaahhospitality.com/en/insights/davos-delegation-countdown",
+      "selfReferencing": true,
+      "absolute": true,
+      "trailingSlash": false
+    }
+  ],
+  "nonSelf": [],
+  "anyTrailingSlash": []
+}

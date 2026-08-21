@@ -1,0 +1,68 @@
+CC-07 Response promise consistency — 2026-08-21 — all 36 rendered pages (visible text + meta descriptions)
+
+"Event and MICE RFPs within one business day."
+   -> 33 page(s): about, davos-week, destinations, destinations_davos, destinations_geneva, destinations_interlaken-jungfrau, destinations_lucerne, destinations_st-moritz-engadin, destinations_ticino-lugano, destinations_zermatt, destinations_zurich, enquiry...
+
+"Every enquiry receives a first response within 48 hours, and event and MICE RFPs within one business day."
+   -> 2 page(s): insights_davos-delegation-countdown, insights_indian-cuisine-swiss-altitude
+
+"Every enquiry receives a first response within 48 hours."
+   -> 32 page(s): about, davos-week, destinations, destinations_davos, destinations_geneva, destinations_interlaken-jungfrau, destinations_lucerne, destinations_st-moritz-engadin, destinations_ticino-lugano, destinations_zermatt, destinations_zurich, experiences...
+
+"Every enquiry receives a first response within 48 hours; Event and MICE RFPs within one business day."
+   -> 1 page(s): enquiry
+
+"First response within 48 hours."
+   -> 1 page(s): home
+
+"First response within 48 hours; Event and MICE RFPs within one business day."
+   -> 1 page(s): enquiry
+
+"How it runs 1 RFP and brief Send the outline; the first response arrives within one business day, with the right questions."
+   -> 1 page(s): services_mice-events
+
+"One costed proposal within 5 business days [TO CONFIRM: promise] One document across venues, stays, movements and menus, costed an"
+   -> 1 page(s): partners
+
+"Phone [TO CONFIRM: phone number] Our promise Every enquiry receives a first response within 48 hours."
+   -> 1 page(s): enquiry
+
+"Send your RFP, first response within one business day Awaiting hero media ( new-shoot ): Gala room at a Lake Lucerne venue, tables set, staff"
+   -> 1 page(s): services_mice-events
+
+"Share your dates and the first response will give you an honest calendar."
+   -> 1 page(s): services_branding-staffing
+
+"Start a delegation enquiry Explore our services First response within 48 hours CH/EU data handling A SKAAH Group company Awaiting hero film ( 18-25 s loop ): Dawn over"
+   -> 1 page(s): home
+
+"That said, we quote against real dates: send the RFP and the first response arrives within one business day, with an honest view of what the calendar allows."
+   -> 1 page(s): services_mice-events
+
+"We respond to every request."
+   -> 1 page(s): privacy
+
+"Why we use it We use personal data to: respond to your enquiry and prepare a proposal, plan and deliver the services you engage us for,"
+   -> 1 page(s): privacy
+
+"tion, a summit, an incentive or a private stay: send the outline and receive a considered response within 48 hours, one business day for MICE RFPs."
+   -> 1 page(s): home
+
+
+ANALYSIS AGAINST SPEC:
+- Canonical promise (docs/02-content/00-content-guidelines.md L17): "Every enquiry receives a first response
+  within 48 hours. Event and MICE RFPs within one business day." — renders byte-identically in the site-wide
+  footer on 32-33 pages.
+- Every other variant found is itself spec'd copy, verbatim:
+  * Home trust row "First response within 48 hours" (01-home.md L18)
+  * Home closing band "...considered response within 48 hours, one business day for MICE RFPs." (01-home.md L71)
+  * MICE hero CTA "Send your RFP, first response within one business day" (02-services.md L62)
+  * Enquiry intro "...within 48 hours; Event and MICE RFPs within one business day." (07-enquiry-legal-media.md L6)
+  * Partner value grid "One costed proposal within 5 business days [TO CONFIRM: promise]" (06 L57) — separate
+    partner-proposal promise, marker rendered by design on staging.
+- Only unspec'd micro-variant: the two insight articles join the two promise sentences with ", and"
+  ("...within 48 hours, and event and MICE RFPs within one business day.") — facts identical, cosmetic only.
+- Numbers are consistent on every page: 48 hours general / one business day MICE. No page contradicts another.
+
+VERDICT: PASS — 48-hour general promise and one-business-day MICE promise consistent site-wide; the standalone
+promise element is identical everywhere it appears; noted cosmetic conjunction variant in 2 article bodies.

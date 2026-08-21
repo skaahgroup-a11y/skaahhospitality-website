@@ -1,0 +1,46 @@
+=== FE-02 persisted JSON /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/enquiries/SKH-20260821-0002.json, checked 2026-08-21T22:52:17Z ===
+segment: mice | expected: mice
+reference: SKH-20260821-0002
+cuisines (catering only): None
+flags: {'verifiedDomain': False, 'manualCheck': False, 'utm': {'utm_source': 'qa-workbook'}}
+locale: en
+--- full JSON ---
+{
+  "reference": "SKH-20260821-0002",
+  "segment": "mice",
+  "submittedAt": "2026-08-21T22:52:08.793Z",
+  "contact": {
+    "name": "TEST Priya Mehta",
+    "organisation": "TEST Innovate Pharma Ltd",
+    "role": "Head of Events",
+    "email": "test.events@innovatepharma-example.com",
+    "phone": "+91 98 5555 0202",
+    "preferredChannel": "email"
+  },
+  "details": {
+    "eventType": "incentive",
+    "guestsBand": "31-150",
+    "nights": 3,
+    "dateFlexibility": "March 2027, flexible within the month",
+    "destinationPreference": "lucerne",
+    "budgetBand": "incentive",
+    "productionNeeds": [
+      "venue-search",
+      "transfers",
+      "rooms"
+    ]
+  },
+  "attachments": [],
+  "flags": {
+    "verifiedDomain": false,
+    "manualCheck": false,
+    "utm": {
+      "utm_source": "qa-workbook"
+    }
+  },
+  "consent": {
+    "privacyVersion": "2026-08",
+    "acceptedAt": "2026-08-21T22:52:08.793Z"
+  },
+  "locale": "en"
+}

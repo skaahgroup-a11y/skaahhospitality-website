@@ -1,0 +1,6 @@
+=== FE-02 submission, 2026-08-21T22:52:08Z, X-Forwarded-For: 10.3.02.1 ===
+--- payload ---
+{"segment":"mice","contact":{"name":"TEST Priya Mehta","organisation":"TEST Innovate Pharma Ltd","role":"Head of Events","email":"test.events@innovatepharma-example.com","phone":"+91 98 5555 0202","preferredChannel":"email"},"details":{"eventType":"incentive","guestsBand":"31-150","nights":3,"dateFlexibility":"March 2027, flexible within the month","destinationPreference":"lucerne","budgetBand":"incentive","productionNeeds":["venue-search","transfers","rooms"]},"consentAccepted":true,"website":"","elapsedMs":62000,"utm":{"utm_source":"qa-workbook"},"locale":"en"}
+--- response ---
+{"reference":"SKH-20260821-0002","segment":"mice","ownerTeam":"The events team","promise":"one business day"}
+HTTP_STATUS:200

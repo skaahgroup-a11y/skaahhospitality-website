@@ -1,0 +1,5 @@
+AC-04 skip link: first Tab reveals "Skip to content"; Enter moves focus/scroll to #main.
+
+[/en] first Tab => "Skip to content" href=#main visible=true rect=16,16 146x42; Enter => hash=#main activeElement=BODY focus-or-target-at-main=true
+[/en/davos-week] first Tab => "Skip to content" href=#main visible=true rect=16,16 146x42; Enter => hash=#main activeElement=BODY focus-or-target-at-main=true
+[/en/work] first Tab => "Skip to content" href=#main visible=true rect=16,16 146x42; Enter => hash=#main activeElement=BODY focus-or-target-at-main=true

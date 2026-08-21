@@ -1,0 +1,33 @@
+[
+ {
+  "route": "/en",
+  "scrollWidth": 640,
+  "clientWidth": 640,
+  "horizontalScroll": false,
+  "h1": "Switzerland, handled.",
+  "navVisible": true,
+  "ctaVisible": true
+ },
+ {
+  "route": "/en/davos-week",
+  "scrollWidth": 640,
+  "clientWidth": 640,
+  "horizontalScroll": false,
+  "h1": "Davos in January: a working guide.",
+  "navVisible": true,
+  "ctaVisible": true
+ },
+ {
+  "route": "/en/enquiry",
+  "scrollWidth": 640,
+  "clientWidth": 640,
+  "horizontalScroll": false,
+  "h1": "Tell us about your visit.",
+  "navVisible": true,
+  "ctaVisible": true
+ },
+ {
+  "check": "wizard advances to step 1 at 200% emulation",
+  "ok": true
+ }
+]

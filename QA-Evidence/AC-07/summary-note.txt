@@ -1,0 +1,11 @@
+AC-07 accordion + menu ARIA, 2026-08-21 (accordion-menu-aria.json, accordion-open.png, mobile-menu-open.png)
+FAQ accordion (/en/davos-week): FULLY APG-compliant — buttons inside heading elements, aria-expanded
+toggles false->true on click, aria-controls resolves to panel, panel role="region" with
+aria-labelledby back-referencing the button id (resolves). PASS.
+Header menus: Services/Destinations desktop buttons and the mobile burger expose aria-expanded
+(toggles correctly, Escape closes and returns state to false) BUT have NO aria-controls and no
+aria-haspopup; the flyout/sheet panels have no id association with their buttons. The workbook
+expected result explicitly lists aria-controls; APG's disclosure-navigation pattern marks
+aria-controls as optional, so this is a strict-reading failure of the workbook criterion,
+low user impact. Mobile burger has aria-label="Open menu".
+VERDICT: Fail on the strict workbook criterion (menu aria-controls absent); accordion passes fully.

@@ -1,0 +1,10 @@
+SS-12 hreflang readiness — 2026-08-21, agent 5
+i18n/routing.ts: defineRouting({ locales:["en"], defaultLocale:"en",
+localePrefix:"always" }) — single locale, always-prefixed URLs (/en/...), so
+additional locales attach without URL changes (comment cites CLAUDE.md guardrail).
+middleware.ts: next-intl createMiddleware(routing) with matcher skipping
+api/_next/_vercel/files — locale negotiation ready for locales > 1.
+Live check across all 36 crawled routes: 0 <link hreflang> tags emitted
+(hreflang-crawl.json) — correct per docs/06 s4 ("hreflang matrix auto-generated when
+locale >1"); emitting a single-locale hreflang would be wrong. sitemap.ts comments
+itself as per-locale-ready (URLs carry /en). Structure clean and ready.

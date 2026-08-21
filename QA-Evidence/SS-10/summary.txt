@@ -1,0 +1,7 @@
+SS-10 RSS valid — 2026-08-21, agent 5
+GET /rss.xml => 200, saved as rss.xml. xmllint --noout => well-formed (exit 0).
+RSS 2.0 checks: <rss version="2.0"> root; channel has required title
+("SKAAH Insights"), link (https://skaahhospitality.com/en/insights), description;
+plus language, lastBuildDate and atom:link rel=self. 2 items (matches the 2 seeded
+articles), each with title, link, guid (isPermaLink), pubDate, description.
+W3C feed validator unavailable (external SaaS); local parse + element checklist instead.

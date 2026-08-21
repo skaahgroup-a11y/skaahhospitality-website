@@ -1,0 +1,37 @@
+=== FE-20 tracking-sheet webhook row-shape pre-check (live sheet Blocked - no SHEET_WEBHOOK_URL), 2026-08-21T22:54:37Z ===
+--- deliver.ts webhook body (lines 96-121) ---
+  // 2. Tracking-sheet webhook (Google Sheets API relay); CSV-by-mail interim
+  // handled by the operations team while the sheet is unconfirmed.
+  const webhook = process.env.SHEET_WEBHOOK_URL;
+  if (webhook) {
+    try {
+      const response = await fetch(webhook, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          reference: payload.reference,
+          segment: payload.segment,
+          date: payload.submittedAt,
+          status: "new",
+          owner: "",
+          estimatedValue: "",
+          verifiedDomain: payload.flags.verifiedDomain,
+          manualCheck: payload.flags.manualCheck,
+        }),
+      });
+      if (!response.ok) {
+        throw new Error(`sheet webhook responded ${response.status}`);
+      }
+    } catch (error) {
+      await queueFailedJob("sheet", payload, String(error));
+    }
+  }
+
+SoW/docs/05 required sheet fields vs webhook body:
+  segment         -> present (payload.segment)
+  date            -> present (payload.submittedAt as 'date')
+  status          -> present ('new')
+  owner           -> present (empty string, to be assigned by ops)
+  estimated value -> present (estimatedValue, empty string initially)
+  plus reference, verifiedDomain, manualCheck
+Failure path: non-OK response throws and queueFailedJob('sheet', ...) queues under data/queue/ (exercised live in FE-21).

@@ -1,0 +1,5 @@
+PF-04 LCP Davos hub — same Lighthouse mobile/simulated-4G lab config as PF-01 (datacentre host, not a real device).
+URL: http://127.0.0.1:3222/en/davos-week
+LCP (simulated): 3004 ms -> FAILS the 2.0 s budget. FCP 912 ms | TBT 78 ms | CLS 0 | perf score 0.94
+Observed unthrottled breakdown: TTFB 11.8 ms + render delay 117 ms.
+LCP element: hero subline text (p.mt-5).

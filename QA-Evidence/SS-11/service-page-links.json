@@ -1,0 +1,132 @@
+[
+  {
+    "path": "/en/services/government-delegations",
+    "hubLink": true,
+    "destinationLinks": [],
+    "caseStudyLinks": [],
+    "articleLinks": [],
+    "pass": false,
+    "mainAnchorCount": 8,
+    "allMainAnchors": [
+      "/en",
+      "/en/services",
+      "/en/enquiry?segment=delegation",
+      "/en/services/travel-transport-immigration",
+      "/en/services/food-catering",
+      "/en/davos-week",
+      "/en/enquiry",
+      "https://wa.me/0"
+    ]
+  },
+  {
+    "path": "/en/services/mice-events",
+    "hubLink": true,
+    "destinationLinks": [],
+    "caseStudyLinks": [],
+    "articleLinks": [],
+    "pass": false,
+    "mainAnchorCount": 8,
+    "allMainAnchors": [
+      "/en",
+      "/en/services",
+      "/en/enquiry?segment=mice",
+      "/en/services/stays",
+      "/en/services/branding-staffing",
+      "/en/davos-week",
+      "/en/enquiry",
+      "https://wa.me/0"
+    ]
+  },
+  {
+    "path": "/en/services/travel-transport-immigration",
+    "hubLink": true,
+    "destinationLinks": [],
+    "caseStudyLinks": [],
+    "articleLinks": [],
+    "pass": false,
+    "mainAnchorCount": 7,
+    "allMainAnchors": [
+      "/en",
+      "/en/services",
+      "/en/enquiry",
+      "/en/services/government-delegations",
+      "/en/services/stays",
+      "/en/davos-week",
+      "https://wa.me/0"
+    ]
+  },
+  {
+    "path": "/en/services/stays",
+    "hubLink": true,
+    "destinationLinks": [],
+    "caseStudyLinks": [],
+    "articleLinks": [],
+    "pass": false,
+    "mainAnchorCount": 8,
+    "allMainAnchors": [
+      "/en",
+      "/en/services",
+      "/en/enquiry?segment=stay",
+      "/en/services/travel-transport-immigration",
+      "/en/services/food-catering",
+      "/en/davos-week",
+      "/en/enquiry",
+      "https://wa.me/0"
+    ]
+  },
+  {
+    "path": "/en/services/food-catering",
+    "hubLink": true,
+    "destinationLinks": [],
+    "caseStudyLinks": [],
+    "articleLinks": [],
+    "pass": false,
+    "mainAnchorCount": 8,
+    "allMainAnchors": [
+      "/en",
+      "/en/services",
+      "/en/enquiry?segment=catering",
+      "/en/services/government-delegations",
+      "/en/services/mice-events",
+      "/en/davos-week",
+      "/en/enquiry",
+      "https://wa.me/0"
+    ]
+  },
+  {
+    "path": "/en/services/media-production",
+    "hubLink": true,
+    "destinationLinks": [],
+    "caseStudyLinks": [],
+    "articleLinks": [],
+    "pass": false,
+    "mainAnchorCount": 7,
+    "allMainAnchors": [
+      "/en",
+      "/en/services",
+      "/en/enquiry",
+      "/en/services/branding-staffing",
+      "/en/services/mice-events",
+      "/en/davos-week",
+      "https://wa.me/0"
+    ]
+  },
+  {
+    "path": "/en/services/branding-staffing",
+    "hubLink": true,
+    "destinationLinks": [],
+    "caseStudyLinks": [],
+    "articleLinks": [],
+    "pass": false,
+    "mainAnchorCount": 7,
+    "allMainAnchors": [
+      "/en",
+      "/en/services",
+      "/en/enquiry",
+      "/en/services/media-production",
+      "/en/services/mice-events",
+      "/en/davos-week",
+      "https://wa.me/0"
+    ]
+  }
+]

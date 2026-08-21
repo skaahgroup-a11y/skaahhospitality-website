@@ -1,0 +1,10 @@
+PF-05 CLS key templates — Lighthouse mobile simulated-4G runs (same config/deviation as PF-01).
+/en                                   CLS 0      PASS
+/en/services/government-delegations   CLS 0      PASS
+/en/services/mice-events              CLS 0      PASS
+/en/davos-week                        CLS 0      PASS
+/en/enquiry                           CLS 0.3057 FAIL (budget < 0.1)
+Culprit (layout-shifts audit): single shift, score 0.3057, node:
+  main#main > div.container-site > div.mt-10 > aside.space-y-8  (the contact side rail)
+Mechanism: EnquiryWizard is a "use client" component using useSearchParams inside <Suspense>; the prerendered HTML ships only the small "Loading the enquiry form" fallback box. On hydration the full segment-picker renders and, on the mobile single-column layout, pushes the aside (rendered below the form) down by the height difference.
+See lighthouse-enquiry-trimmed.json (audits.layout-shifts, audits.cumulative-layout-shift).

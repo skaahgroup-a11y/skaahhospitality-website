@@ -1,0 +1,83 @@
+
+> skaahhospitality-website@0.1.0 build /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone-build
+> next build
+
+   ▲ Next.js 15.5.23
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.7s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/46) ...
+   Generating static pages (11/46) 
+   Generating static pages (22/46) 
+   Generating static pages (34/46) 
+ ✓ Generating static pages (46/46)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                           Size  First Load JS
+┌ ○ /_not-found                                      139 B         102 kB
+├ ● /[locale]                                      3.35 kB         123 kB
+├   └ /en
+├ ● /[locale]/about                                3.35 kB         123 kB
+├   └ /en/about
+├ ● /[locale]/cookies                              2.74 kB         122 kB
+├   └ /en/cookies
+├ ● /[locale]/davos-week                           4.75 kB         124 kB
+├   └ /en/davos-week
+├ ● /[locale]/destinations                         3.35 kB         123 kB
+├   └ /en/destinations
+├ ● /[locale]/destinations/[slug]                    128 B         123 kB
+├   ├ /en/destinations/zurich
+├   ├ /en/destinations/geneva
+├   ├ /en/destinations/lucerne
+├   └ [+5 more paths]
+├ ● /[locale]/enquiry                              10.2 kB         130 kB
+├   └ /en/enquiry
+├ ● /[locale]/experiences                          3.35 kB         123 kB
+├   └ /en/experiences
+├ ● /[locale]/imprint                                288 B         120 kB
+├   └ /en/imprint
+├ ● /[locale]/insights                             3.35 kB         123 kB
+├   └ /en/insights
+├ ● /[locale]/insights/[slug]                        126 B         123 kB
+├   ├ /en/insights/indian-cuisine-swiss-altitude
+├   └ /en/insights/davos-delegation-countdown
+├ ● /[locale]/partners                             3.67 kB         123 kB
+├   └ /en/partners
+├ ● /[locale]/privacy                                288 B         120 kB
+├   └ /en/privacy
+├ ● /[locale]/services                             3.35 kB         123 kB
+├   └ /en/services
+├ ● /[locale]/services/[slug]                      4.29 kB         124 kB
+├   ├ /en/services/government-delegations
+├   ├ /en/services/mice-events
+├   ├ /en/services/travel-transport-immigration
+├   └ [+4 more paths]
+├ ● /[locale]/work                                  5.2 kB         125 kB
+├   └ /en/work
+├ ● /[locale]/work/[slug]                          3.97 kB         123 kB
+├   ├ /en/work/six-states-one-swiss-partner
+├   ├ /en/work/first-time-state-delegation-davos
+├   ├ /en/work/returning-delegation-doubled-scale
+├   └ [+3 more paths]
+├ ƒ /api/enquiry                                     139 B         102 kB
+├ ƒ /api/health                                      139 B         102 kB
+├ ○ /apple-icon.png                                    0 B            0 B
+├ ○ /icon.png                                          0 B            0 B
+├ ○ /robots.txt                                      139 B         102 kB
+├ ○ /rss.xml                                         139 B         102 kB
+└ ○ /sitemap.xml                                     139 B         102 kB
++ First Load JS shared by all                       102 kB
+  ├ chunks/3466f3f1-c96f853f58dc03ee.js            54.2 kB
+  ├ chunks/706-669b7b2d1b550351.js                 46.1 kB
+  └ other shared chunks (total)                    1.92 kB
+
+
+ƒ Middleware                                       46.3 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -1,0 +1,16 @@
+CC-11 MICE budget bands — 2026-08-21 — GET /en/services/mice-events (HTTP 200)
+
+Rendered <table> (cells pipe-separated):
+  FormatGuestsIndicative per-person bandBoard retreat, 2 nights12-30[TO CONFIRM: CHF band]Incentive, 3 nights50-150[TO CONFIRM]Conference day + gala150-500[TO CONFIRM]
+
+Footnote rendered: YES — "Bands are indicative, for orientation before an RFP. Every proposal is costed line by line."
+
+Section heading 'Indicative budget bands' present: True
+
+NOTES: three format rows render (Board retreat 2 nights / Incentive 3 nights / Conference day + gala)
+with guest bands 12-30 / 50-150 / 150-500; the CHF per-person values render as [TO CONFIRM] amber-badge
+markers — EXPECTED at this stage per workbook (band values pending client confirmation).
+CMS editability of bands: DEFERRED — Payload CMS (epic E2) not yet embedded; bands live in the typed
+content layer (content/services/mice-events.ts).
+
+VERDICT: PASS — bands table with footnote renders as specified for this stage.

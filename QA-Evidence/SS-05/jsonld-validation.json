@@ -1,0 +1,216 @@
+{
+  "structuralErrors": 0,
+  "blocks": 137,
+  "typesByPage": {
+    "/en": [
+      "Organization",
+      "WebSite"
+    ],
+    "/en/services": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/davos-week": [
+      "Organization",
+      "WebSite",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/destinations": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/work": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/experiences": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/insights": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/about": [
+      "Organization",
+      "WebSite",
+      "TravelAgency",
+      "BreadcrumbList"
+    ],
+    "/en/partners": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/enquiry": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/privacy": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/imprint": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/cookies": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/services/government-delegations": [
+      "Organization",
+      "WebSite",
+      "Service",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/services/mice-events": [
+      "Organization",
+      "WebSite",
+      "Service",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/services/travel-transport-immigration": [
+      "Organization",
+      "WebSite",
+      "Service",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/services/stays": [
+      "Organization",
+      "WebSite",
+      "Service",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/services/food-catering": [
+      "Organization",
+      "WebSite",
+      "Service",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/services/media-production": [
+      "Organization",
+      "WebSite",
+      "Service",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/services/branding-staffing": [
+      "Organization",
+      "WebSite",
+      "Service",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/destinations/zurich": [
+      "Organization",
+      "WebSite",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/destinations/geneva": [
+      "Organization",
+      "WebSite",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/destinations/lucerne": [
+      "Organization",
+      "WebSite",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/destinations/davos": [
+      "Organization",
+      "WebSite",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/destinations/interlaken-jungfrau": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/destinations/zermatt": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/destinations/st-moritz-engadin": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/destinations/ticino-lugano": [
+      "Organization",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "/en/work/six-states-one-swiss-partner": [
+      "Organization",
+      "WebSite",
+      "Article",
+      "BreadcrumbList"
+    ],
+    "/en/work/first-time-state-delegation-davos": [
+      "Organization",
+      "WebSite",
+      "Article",
+      "BreadcrumbList"
+    ],
+    "/en/work/returning-delegation-doubled-scale": [
+      "Organization",
+      "WebSite",
+      "Article",
+      "BreadcrumbList"
+    ],
+    "/en/work/two-delegations-one-week": [
+      "Organization",
+      "WebSite",
+      "Article",
+      "BreadcrumbList"
+    ],
+    "/en/work/kitchen-at-1560-metres": [
+      "Organization",
+      "WebSite",
+      "Article",
+      "BreadcrumbList"
+    ],
+    "/en/work/bilateral-programme-geneva-zurich": [
+      "Organization",
+      "WebSite",
+      "Article",
+      "BreadcrumbList"
+    ],
+    "/en/insights/indian-cuisine-swiss-altitude": [
+      "Organization",
+      "WebSite",
+      "Article",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "/en/insights/davos-delegation-countdown": [
+      "Organization",
+      "WebSite",
+      "Article",
+      "FAQPage",
+      "BreadcrumbList"
+    ]
+  },
+  "problems": []
+}

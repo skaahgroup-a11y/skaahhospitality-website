@@ -1,0 +1,50 @@
+CC-04 Approved fallback proof line — 2026-08-21
+Approved amended line (change log 21 Aug 2026):
+  Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.
+
+A. Exact-line occurrences per page (visible text):
+  about: 1x EXACT
+  davos-week: 1x EXACT
+  services_branding-staffing: 1x EXACT
+  services_food-catering: 1x EXACT
+  services_government-delegations: 1x EXACT
+  services_media-production: 1x EXACT
+  services_stays: 1x EXACT
+  services_travel-transport-immigration: 1x EXACT
+
+B. Near-variant scan (any sentence containing 'Six' near 'delegation' or 'Davos Week' proof phrasing) to catch drift:
+  [EXACT] "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner." -> 8 page(s): about, davos-week, services_branding-staffing, services_food-catering, services_government-delegations, services_media-production, services_stays, services_travel-transport-immigration
+  [VARIANT] "Six states, one Swiss partner" -> 4 page(s): davos-week, work, work_six-states-one-swiss-partner, work_six-states-one-swiss-partner
+
+C. Required placements:
+  Home hero microline (home): CHECK MANUALLY
+  Home proof strip (stat cards) (home): CHECK MANUALLY
+  Davos hub proof rail (davos-week): PRESENT
+  Case study CS1 (work_six-states-one-swiss-partner): CHECK MANUALLY
+
+Home first occurrence context:
+  ... Swiss Hospitality & Logistics for Delegations & Corporate Groups | SKAAH Skip to content SKAAH HOSPITALITY Services Davos Week Destinations Work Exp ...
+Hub occurrence context:
+  ... ( davos-archive ): Operations room with radios, screens and the week's run sheets The operations room during Davos Week Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner. [TO CONFIRM: movements run] movements run across 4 Davos We ...
+CS1 occurrence context:
+  ... Six States, One Swiss Partner: Davos Week | SKAAH Skip to content SKAAH HOSPITALITY Services Davos Week Destinations Work Experiences Insights About ...
+
+D. Manual resolution of the three "CHECK MANUALLY" placements:
+- Home hero microline renders: "Proven at Davos Week: six Indian state government delegations across four
+  consecutive Davos Weeks." — this is the docs/02.01 hero microline element ("Proven at WEF Davos: six Indian
+  state government delegations across four WEF years.") with the approved WEF->Davos Week substitution.
+  It is a distinct spec element, not the fallback proof line; facts identical (6 / 4 consecutive / one partner).
+- Home proof strip stat cards: "6 Indian state government delegations supported" · "4 consecutive Davos Week
+  years, 2023 to 2026" · "1 accountable Swiss partner across every service" — matches docs/02.01 H2 spec with
+  approved substitution; 4th card correctly shows its [TO CONFIRM] placeholder (staging behaviour by design).
+- CS1 brief: "Across four consecutive Davos Weeks, six Indian state government delegations engaged SKAAH as
+  their single Swiss partner..." — docs/02.05 CS1 brief with approved substitution. CS1 outcome stats:
+  6 delegations / 4 Davos Weeks 2023-2026 / third metric [TO CONFIRM] — matches spec.
+
+VERDICT: PASS.
+- The amended approved fallback line renders BYTE-IDENTICALLY on all 8 pages that carry the fallback proof
+  element (6 service proof blocks, Davos hub proof rail, About). Zero drift between those pages.
+- Hero microline / proof strip / CS1 use their own spec'd wordings, each with the approved WEF->Davos Week
+  substitution; all numeric facts consistent site-wide (6 delegations, 4 consecutive Davos Weeks, 2023-2026,
+  one Swiss partner). "Six states, one Swiss partner" occurrences are the CS1 title, per spec.
+- No page still carries the old WEF phrasing of the proof line.

@@ -1,0 +1,6 @@
+check:claims passed: no long dashes or forbidden claims ([TO CONFIRM markers permitted on staging).
+CLEAN EXIT=0
+
+== method note ==
+Deviation observed: docs/07 T0.4 and CLAUDE.md describe check:claims as scanning "production build output"; the implemented script scans SOURCE trees (app, components, content, content-schemas, lib, messages, i18n) instead. Since all copy lives in the typed content layer within those trees, coverage is equivalent for current architecture, but build-output scanning would also catch env-injected strings. Recorded as an implementation deviation, not a gate failure.
+Seeded-failure proof (seeded-run.txt): temp branch qa/ca10-seed added one line to content/home.ts containing an em dash, "international organisations" and "WEF Davos". Gate exited 1 with 3 findings, one per seeded class, including the restricted-WEF-wording rule added by the approved change (content/disclaimer.ts is the sole allowed location). Checkout restored to 8b6e82d, working tree clean.

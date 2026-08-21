@@ -1,0 +1,6 @@
+CM-04 Safari macOS — BLOCKED (2026-08-21)
+Only Chromium is available in this audit environment (no Safari/Firefox/Edge binaries, no iOS/iPadOS
+devices or simulators, no BrowserStack-type SaaS reachable). Chromium-based coverage of the same
+templates was executed by agent 4 (sheet 8 Chrome rows); Edge shares the Blink engine so CM-02 risk
+is low but unverified; Safari/WebKit (CM-04/05/07) and Firefox/Gecko (CM-03) remain genuinely
+untested and must run on real browsers/devices before launch.

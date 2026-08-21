@@ -1,0 +1,3 @@
+DO-04 — BLOCKED (2026-08-21): requires the Hostpoint pipeline/server (production deploy on tag v*
+with manual approval per docs/08 s6). No production workflow file exists yet in .github/workflows/
+(only ci.yml and deploy-staging.yml) — noted as an open build item alongside the server order.

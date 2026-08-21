@@ -1,0 +1,7 @@
+[1] Step 1 filled: {"purposeDavosWeek":true,"destDavos":["Davos=true"],"sizeBand":"11-30","principals":"2"}
+[2] Step 2 filled: Accommodation checked, securityNotes="FE-08 draft text"
+[3] After Back to step 1, values intact: {"purposeDavosWeek":true,"destDavos":["Davos=true"],"sizeBand":"11-30","principals":"2"}
+[4] Forward to step 2 again, values intact: {"accommodation":true,"securityNotes":"FE-08 draft text"}
+[5] localStorage draft (skaah-enquiry-draft-v1): {"segment":"delegation","values":{"purpose":"davos-week","destinations":["davos"],"sizeBand":"11-30","principalsCount":2,"needs":["accommodation"],"securityNotes":"FE-08 draft text"},"updatedAt":"2026-08-21T22:54:24.225Z"}
+[6] After reload: draft-restored notice visible=true; step 1 values restored: {"purposeDavosWeek":true,"destDavos":["Davos=true"],"sizeBand":"11-30","principals":"2"}
+RESULT: PASS - back is lossless and reload restores draft with notice

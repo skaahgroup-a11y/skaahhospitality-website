@@ -1,0 +1,23 @@
+SS-07 Redirect map — 2026-08-21, agent 5
+
+== GET /davos-wef
+status=308 location=http://127.0.0.1:3222/en/davos-week
+== GET /en/davos-wef
+status=308 location=http://127.0.0.1:3222/en/davos-week
+== GET /en/insights/wef-delegation-countdown
+status=308 location=http://127.0.0.1:3222/en/insights/davos-delegation-countdown
+== GET /en/work/first-time-state-delegation-wef
+status=308 location=http://127.0.0.1:3222/en/work/first-time-state-delegation-davos
+
+== follow-through (curl -L) final URLs and statuses
+/davos-wef -> http://127.0.0.1:3222/en/davos-week status=200
+/en/davos-wef -> http://127.0.0.1:3222/en/davos-week status=200
+/en/insights/wef-delegation-countdown -> http://127.0.0.1:3222/en/insights/davos-delegation-countdown status=200
+/en/work/first-time-state-delegation-wef -> http://127.0.0.1:3222/en/work/first-time-state-delegation-davos status=200
+
+Config source: next.config.ts redirects() marks all four permanent:true
+(Next.js emits 308 for permanent redirects).
+
+skaah.com/hospitality and skaah.com/hospitality/* legacy 301s (docs/06 s5)
+are host-level rules on the group domain; no Hostpoint server/DNS exists yet
+pre-staging => that half is Blocked, untestable here.

@@ -1,0 +1,118 @@
+== app route tree (files) ==
+app/[locale]/about/page.tsx
+app/[locale]/cookies/page.tsx
+app/[locale]/davos-week/page.tsx
+app/[locale]/destinations/[slug]/page.tsx
+app/[locale]/destinations/page.tsx
+app/[locale]/enquiry/page.tsx
+app/[locale]/error.tsx
+app/[locale]/experiences/page.tsx
+app/[locale]/imprint/page.tsx
+app/[locale]/insights/[slug]/page.tsx
+app/[locale]/insights/page.tsx
+app/[locale]/layout.tsx
+app/[locale]/not-found.tsx
+app/[locale]/page.tsx
+app/[locale]/partners/page.tsx
+app/[locale]/privacy/page.tsx
+app/[locale]/services/[slug]/page.tsx
+app/[locale]/services/page.tsx
+app/[locale]/work/[slug]/page.tsx
+app/[locale]/work/page.tsx
+app/api/enquiry/route.ts
+app/api/health/route.ts
+app/apple-icon.png
+app/globals.css
+app/icon.png
+app/layout.tsx
+app/not-found.tsx
+app/robots.ts
+app/rss.xml/route.ts
+app/sitemap.ts
+
+== top-level dirs ==
+CLAUDE.md
+README.md
+app
+brand
+components
+content
+content-schemas
+docs
+eslint.config.mjs
+fonts
+i18n
+lib
+messages
+middleware.ts
+next-env.d.ts
+next.config.ts
+node_modules
+package.json
+pnpm-lock.yaml
+postcss.config.mjs
+public
+scripts
+tsconfig.json
+tsconfig.tsbuildinfo
+vitest.config.ts
+
+== lib/ ==
+lib/site.ts
+lib/analytics.ts
+lib/enquiry/reference.ts
+lib/enquiry/segments.ts
+lib/enquiry/reference.test.ts
+lib/enquiry/flags.ts
+lib/enquiry/sniff.ts
+lib/enquiry/store.ts
+lib/enquiry/flags.test.ts
+lib/enquiry/sniff.test.ts
+lib/enquiry/deliver.ts
+lib/seo/jsonld.ts
+lib/seo/meta.ts
+
+== docs/01 s3 route check (27 pages) ==
+/en/ -> 308
+/en/services -> 200
+/en/services/government-delegations -> 200
+/en/services/mice-events -> 200
+/en/services/travel-transport-immigration -> 200
+/en/services/stays -> 200
+/en/services/food-catering -> 200
+/en/services/media-production -> 200
+/en/services/branding-staffing -> 200
+/en/davos-week -> 200
+/en/destinations -> 200
+/en/destinations/zurich -> 200
+/en/destinations/geneva -> 200
+/en/destinations/lucerne -> 200
+/en/destinations/davos -> 200
+/en/destinations/interlaken-jungfrau -> 200
+/en/destinations/zermatt -> 200
+/en/destinations/st-moritz-engadin -> 200
+/en/destinations/ticino-lugano -> 200
+/en/work -> 200
+/en/experiences -> 200
+/en/insights -> 200
+/en/about -> 200
+/en/partners -> 200
+/en/enquiry -> 200
+/en/privacy -> 200
+/en/imprint -> 200
+/en/cookies -> 200
+seeded case studies: 6  seeded articles: 2
+
+== home route note ==
+/ -> 307 redirect to /en (next-intl locale prefix); /en -> 200. The 308 on /en/ is the trailing-slash normalisation to /en.
+
+== deviation analysis vs docs/04 s6 + docs/01 s3 ==
+1. app/(site)/[routes] (docs/04 s6)  -> built as app/[locale]/[routes]. Mandated by CLAUDE.md guardrail "locale-prefixed routing under /en" (next-intl), which supersedes docs/04. Documented in app/layout.tsx DECISION comment (root layout / lang attr).
+2. components/{layout,blocks,forms,ui} -> present, plus components/seo (JsonLd). Additive, harmless.
+3. lib/{cms,seo,analytics,upload}     -> built as lib/{enquiry,seo} + lib/analytics.ts + lib/site.ts.
+   - lib/cms absent: Payload CMS (E2) not yet embedded (known project state; content served from typed content/ layer + content-schemas/).
+   - lib/upload absent: direct-to-storage deferred, DECISION comment in lib/enquiry/store.ts line 52.
+4. content-schemas/, messages/en.json -> present.
+5. e2e/ (docs/04 s6, docs/07 s6)      -> ABSENT. No Playwright e2e folder, no e2e script in package.json, no DECISION comment documenting the deferral. CI comment documents axe/Lighthouse deferral only.
+6. Route /davos-wef (docs/01 s3 #10)  -> built as /davos-week per APPROVED CHANGE LOG (client instruction 21 Aug 2026, commit 8b6e82d).
+7. All 27 pages resolve (200) plus legal surfaces, 404/error, sitemap.ts, robots.ts, rss.xml route. Case studies 6 seeded, articles 2 seeded, per spec.

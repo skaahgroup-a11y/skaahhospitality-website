@@ -1,0 +1,32 @@
+MATCH  --color-navy-950       spec=#0E2C4A    build=#0e2c4a
+MATCH  --color-navy-900       spec=#164069    build=#164069
+MATCH  --color-navy-800       spec=#1E4F80    build=#1e4f80
+MATCH  --color-navy-700       spec=#2A6094    build=#2a6094
+MATCH  --color-ice-50         spec=#F8FAFB    build=#f8fafb
+MATCH  --color-ice-100        spec=#F4F6F8    build=#f4f6f8
+MATCH  --color-ice-200        spec=#E7ECF0    build=#e7ecf0
+MATCH  --color-ice-300        spec=#D9E0E7    build=#d9e0e7
+MATCH  --color-gold-500       spec=#BFA05A    build=#bfa05a
+MATCH  --color-gold-600       spec=#9A7B2D    build=#9a7b2d
+MATCH  --color-green-700      spec=#175A43    build=#175a43
+MATCH  --color-green-600      spec=#1E6E52    build=#1e6e52
+MATCH  --color-stone-500      spec=#5C6670    build=#5c6670
+MATCH  --color-stone-400      spec=#8A939C    build=#8a939c
+MATCH  --color-white          spec=#FFFFFF    build=#ffffff
+MATCH  --color-error          spec=#B4232A    build=#b4232a
+MATCH  --color-success        spec=#1E6E52    build=#1e6e52
+MATCH  --radius-sm            spec=2px        build=2px
+MATCH  --radius-md            spec=4px        build=4px
+MATCH  --container-max        spec=1200px     build=1200px
+MATCH  --container-wide       spec=1440px     build=1440px
+MATCH  --gutter               spec=24px       build=24px
+
+Other @theme tokens in build:
+  --font-display: var(--font-cormorant), Georgia, serif
+  --font-sans: var(--font-inter), system-ui, sans-serif
+  --shadow-card: 0 1px 2px rgb(15 23 32 / 0.06), 0 8px 24px rgb(15 23 32 / 0.08)
+
+Shadow token build value: 0 1px 2px rgb(15 23 32 / 0.06), 0 8px 24px rgb(15 23 32 / 0.08)
+Spec shadow: 0 1px 2px rgb(15 23 32/.06),0 8px 24px rgb(15 23 32/.08)
+
+RESULT: all colour/radius/container tokens EXACT

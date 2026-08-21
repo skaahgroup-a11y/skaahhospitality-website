@@ -1,0 +1,10 @@
+[/en] top: opacity=0 pointerEvents=none | at 300px: opacity=0 | at 900px (>600): opacity=1 pointerEvents=auto href=https://wa.me/0
+[/en] VERDICT: OK - hidden until >600px scroll, visible after, wa.me link
+[/en/services/government-delegations] top: opacity=0 pointerEvents=none | at 300px: opacity=0 | at 900px (>600): opacity=1 pointerEvents=auto href=https://wa.me/0
+[/en/services/government-delegations] VERDICT: OK - hidden until >600px scroll, visible after, wa.me link
+[/en/davos-week] top: opacity=0 pointerEvents=none | at 300px: opacity=0 | at 900px (>600): opacity=1 pointerEvents=auto href=https://wa.me/0
+[/en/davos-week] VERDICT: OK - hidden until >600px scroll, visible after, wa.me link
+[/en/enquiry] scrolled to 1200px: FAB exists=false (expected false)
+[links on /en/enquiry] wa.me / tel links: ["https://wa.me/0","https://wa.me/0"]
+[links on /en] wa.me / tel links: ["https://wa.me/0","https://wa.me/0","https://wa.me/0"]
+NOTE: wa.me deep link number is "0" (placeholder) because NEXT_PUBLIC_WHATSAPP_NUMBER / phone are [TO CONFIRM] placeholders in this pre-staging environment (lib/site.ts whatsappHref fallback).

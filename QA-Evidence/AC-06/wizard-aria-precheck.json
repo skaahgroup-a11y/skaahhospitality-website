@@ -1,0 +1,298 @@
+{
+ "step0Buttons": [
+  "Home",
+  "Government delegationOfficial visits, protocol-awa",
+  "Event / MICE RFPMeetings, incentives, conferences ",
+  "Stay requestHotels, chalets and serviced apartment",
+  "Catering briefMulti-cuisine kitchens, from working",
+  "Agency partnershipWhite-label Swiss execution for ",
+  "General enquiryAnything that does not fit the path",
+  "enquiry@skaahhospitality.com",
+  "WhatsApp us"
+ ],
+ "step1Fields": [
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "date",
+   "id": "arrivalDate",
+   "hasLabelFor": true,
+   "labelText": "Arrival date",
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "date",
+   "id": "departureDate",
+   "hasLabelFor": true,
+   "labelText": "Departure date",
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "checkbox",
+   "id": "datesNotFixed",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "id": "",
+   "hasLabelFor": false,
+   "req": null
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "id": "principalsCount",
+   "hasLabelFor": true,
+   "labelText": "Number of principals",
+   "req": null
+  }
+ ],
+ "nextButtonFound": 1,
+ "errors": {
+  "alerts": [
+   {
+    "id": "purpose-error",
+    "text": "Please complete this field."
+   },
+   {
+    "id": "sizeBand-error",
+    "text": "Please complete this field."
+   }
+  ],
+  "fields": [
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "arrivalDate",
+    "ariaInvalid": "false",
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "departureDate",
+    "ariaInvalid": "false",
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "datesNotFixed",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "",
+    "ariaInvalid": null,
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   },
+   {
+    "id": "principalsCount",
+    "ariaInvalid": "false",
+    "ariaDescribedby": null,
+    "describedbyResolvesToAlert": null
+   }
+  ],
+  "liveRegions": [],
+  "focused": {
+   "tag": "BUTTON",
+   "id": ""
+  }
+ }
+}

@@ -1,0 +1,15 @@
+WCAG contrast ratios for docs/04 s1 token combinations (computed 2026-08-21)
+
+navy-900 #164069 on white #FFFFFF (body)                   ratio 10.65  requirement AA normal 4.5  => PASS
+navy-900 #164069 on ice-100 #F4F6F8 (body)                 ratio 9.83  requirement AA normal 4.5  => PASS
+navy-900 #164069 on ice-50 #F8FAFB (body)                  ratio 10.17  requirement AA normal 4.5  => PASS
+ice-100 #F4F6F8 on navy-900 #164069 (body on navy)         ratio 9.83  requirement AA normal 4.5  => PASS
+ice-100 #F4F6F8 on navy-950 #0E2C4A (body on navy)         ratio 13.12  requirement AA normal 4.5  => PASS
+gold-600 #9A7B2D on white #FFFFFF (eyebrow/large)          ratio 4.00  requirement AA large 3.0  => PASS
+gold-600 #9A7B2D on ice-100 #F4F6F8 (eyebrow/large)        ratio 3.70  requirement AA large 3.0  => PASS
+gold-500 #BFA05A on navy-900 #164069 (>=24px numerals)     ratio 4.26  requirement AA large 3.0  => PASS
+gold-500 #BFA05A on navy-950 #0E2C4A (>=24px numerals)     ratio 5.68  requirement AA large 3.0  => PASS
+stone-500 #5C6670 on white #FFFFFF (secondary)             ratio 5.85  requirement AA normal 4.5  => PASS
+stone-500 #5C6670 on ice-100 #F4F6F8 (secondary)           ratio 5.40  requirement AA normal 4.5  => PASS
+stone-400 #8A939C on white #FFFFFF (secondary)             ratio 3.12  requirement AA normal 4.5  => FAIL
+stone-500 #5C6670 on navy-950 #0E2C4A (SEEN IN BUILD via axe) ratio 2.43  requirement AA normal 4.5  => FAIL

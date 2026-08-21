@@ -1,0 +1,7 @@
+CC-10 round 2 retest, 2026-08-21
+Result: Pass
+
+Round 2 retest: 15 over-length metas trimmed (5 titles, 10 descriptions). Full re-crawl of all 36 routes with HTML entities decoded: zero violations (Home title exempt as written per docs/06 s2). Round 1 rendered-length figures overcounted & entities on 8 titles; corrected methodology filed.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

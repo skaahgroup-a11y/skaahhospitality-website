@@ -1,0 +1,5 @@
+SR-13 Mail authentication (SPF/DKIM/DMARC) — BLOCKED (2026-08-21)
+No Hostpoint mailboxes, DNS zone or SMTP exist yet (docs/08 s30: SPF, DKIM, DMARC records set
+with the mail cluster; spike S0 step 5 tests deliverability to Gmail/Outlook). mail-tester.com
+unreachable from this environment and there is no sending domain to test. No SMTP configured in
+this QA environment (SMTP_* unset; mail fan-out queues to DATA_DIR/queue instead).

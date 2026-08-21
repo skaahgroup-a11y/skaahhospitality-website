@@ -1,0 +1,21 @@
+=== FE-21 failure fallback: second instance on :3223, SHEET_WEBHOOK_URL=http://127.0.0.1:9/dead, DATA_DIR=data-fe21, 2026-08-21T22:55:25Z ===
+--- submission (X-Forwarded-For: 10.3.21.1) ---
+{"reference":"SKH-20260821-0001","segment":"mice","ownerTeam":"The events team","promise":"one business day"}
+HTTP_STATUS:200 time_total:0.021734s
+--- data-fe21/ tree ---
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data-fe21/enquiries/SKH-20260821-0001.json
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data-fe21/queue/sheet-1787352925347.json
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data-fe21/reference-counter.json
+--- queued job(s) under data-fe21/queue/ ---
+[/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data-fe21/queue/sheet-1787352925347.json]
+kind: sheet
+error: TypeError: fetch failed
+queuedAt: 2026-08-21T22:55:25.348Z
+payload reference: SKH-20260821-0001
+--- enquiry row persisted ---
+SKH-20260821-0001.json
+
+=== FE-21 teardown, 2026-08-21T22:56:19Z ===
+nohup wrapper pid killed; orphaned next-server child (pid 4077) killed explicitly.
+port 3223 now: connection refused (verified with curl --noproxy '*')
+main server 3222 health: 200 (unaffected)
