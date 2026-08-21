@@ -16,7 +16,7 @@ import { RESPONSE_PROMISE } from "@/lib/site";
 const seo = {
   metaTitle: "Signature Swiss Experiences for Groups | SKAAH",
   metaDescription:
-    "Eight signature programmes for groups in Switzerland: private rail charters, alpine galas, lake evenings and WEF-week hosting, each designed and run by one Swiss partner.",
+    "Eight signature programmes for groups in Switzerland: private rail charters, alpine galas, lake evenings and Davos Week hosting, each designed and run by one Swiss partner.",
   primaryKeyword: "luxury group experiences Switzerland",
 };
 
@@ -63,14 +63,14 @@ export default async function ExperiencesPage({
                 <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
                   <Copy text={experience.description} />
                 </p>
-                {/* DECISION: the spec's "(cross-link hub)" note on WEF-Week
+                {/* DECISION: the spec's "(cross-link hub)" note on Davos Week
                     Hosting renders as this link rather than as body copy. */}
-                {experience.title === "WEF-Week Hosting" ? (
+                {experience.title === "Davos Week Hosting" ? (
                   <Link
-                    href="/davos-wef"
+                    href="/davos-week"
                     className="link-draw mt-5 inline-flex items-center gap-2 text-sm font-medium text-navy-900"
                   >
-                    See the Davos &amp; WEF Week hub
+                    See the Davos &amp; Davos Week hub
                     <Icon name="arrow-right" size={18} />
                   </Link>
                 ) : null}

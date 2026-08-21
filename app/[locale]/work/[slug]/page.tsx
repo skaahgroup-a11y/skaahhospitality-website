@@ -142,7 +142,7 @@ export default async function CaseStudyPage({
       <Section surface="light" wide>
         <SectionHeading
           heading="Gallery"
-          intro="Frames are selected from the WEF archive. Nothing ships without a manifest row and consent review."
+          intro="Frames are selected from the Davos archive. Nothing ships without a manifest row and consent review."
         />
         <div className="mt-10">
           <GalleryScroller frames={study.gallery} />

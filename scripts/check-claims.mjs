@@ -78,6 +78,15 @@ function scanFile(file) {
     if (/United Nations|\bUN-type\b|\bUN agency\b/.test(line)) {
       failures.push(`${where}: forbidden claim (UN-type reference)`);
     }
+    // Restricted trademark wordings: the event organiser's marks appear only
+    // inside the independence disclaimer (content/disclaimer.ts), which
+    // exists to state that no affiliation exists.
+    if (
+      relative !== "content/disclaimer.ts" &&
+      /\bWEF\b|world economic forum/i.test(line)
+    ) {
+      failures.push(`${where}: restricted trademark wording (WEF marks)`);
+    }
     for (const state of NAMED_STATES) {
       if (line.includes(state)) {
         failures.push(

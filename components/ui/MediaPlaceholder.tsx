@@ -1,7 +1,7 @@
 import type { MediaBrief } from "@/content-schemas/types";
 import { Icon } from "@/components/ui/Icon";
 
-// Placeholder media wired pending the WEF archive and Phase 1 shoot
+// Placeholder media wired pending the Davos archive and Phase 1 shoot
 // (docs/07 T2.4). Carries the media brief so the CMS swap is one-to-one:
 // the alt text and brief ship now, the photography replaces the gradient.
 const aspects = {

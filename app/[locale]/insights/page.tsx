@@ -20,7 +20,7 @@ const seo = {
 
 export const metadata: Metadata = pageMetadata(seo, "/insights");
 
-const FEATURED_SLUG = "wef-delegation-countdown";
+const FEATURED_SLUG = "davos-delegation-countdown";
 
 function formatDate(iso: string): string {
   return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-GB", {

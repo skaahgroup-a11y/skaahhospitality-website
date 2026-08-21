@@ -3,7 +3,7 @@ import type { MediaBrief } from "@/content-schemas/types";
 import { MediaPlaceholder } from "@/components/ui/MediaPlaceholder";
 import { Icon } from "@/components/ui/Icon";
 
-// C13: destination card with the badge slot (WEF Week hub on Davos).
+// C13: destination card with the badge slot (Davos Week hub on Davos).
 export function DestinationCard({
   title,
   oneLiner,

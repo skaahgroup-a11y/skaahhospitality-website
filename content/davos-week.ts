@@ -1,4 +1,4 @@
-// Content drafted from docs/02-content/03-davos-wef-hub.md (the evergreen
+// Content drafted from docs/02-content/03-davos-week-hub.md (the evergreen
 // authority page). Hero, metadata, calendar markers and FAQs are verbatim from
 // the spec; the 8 H2 sections are drafted long-form from the spec's outlines.
 // Claim discipline: fallback phrasing only, no named states, no named hotels.
@@ -35,43 +35,43 @@ export interface HubCrossLink {
   icon: IconName;
 }
 
-export const davosWefSeo: SeoFields = {
-  metaTitle: "Davos & WEF Week Logistics: The Delegation Guide | SKAAH",
+export const davosWeekSeo: SeoFields = {
+  metaTitle: "Davos Week Logistics: The Delegation Guide | SKAAH",
   metaDescription:
-    "How delegations and corporate groups actually operate in Davos during WEF week: accommodation, transport, catering and protocol, from the Swiss partner behind six state delegations across four WEF years.",
-  primaryKeyword: "WEF Davos logistics partner",
+    "How delegations and corporate groups actually operate in Davos during Davos Week: accommodation, transport, catering and protocol, from the Swiss partner behind six state delegations across four consecutive Davos Weeks.",
+  primaryKeyword: "Davos Week logistics partner",
   secondaryKeywords: [
     "delegation accommodation Davos",
-    "Davos WEF week planning",
-    "WEF Davos ground transport",
+    "Davos Week planning",
+    "Davos Week ground transport",
   ],
 };
 
-export const davosWefHero: {
+export const davosWeekHero: {
   eyebrow: string;
   h1: string;
   subline: string;
   cta: Cta;
   media: MediaBrief;
 } = {
-  eyebrow: "Davos & WEF Week",
+  eyebrow: "Davos Week",
   h1: "Davos in January: a working guide.",
   subline:
-    "The most demanding week in Swiss hospitality, explained by the partner that has run it for six Indian state government delegations across four WEF years.",
+    "The most demanding week in Swiss hospitality, explained by the partner that has run it for six Indian state government delegations across four consecutive Davos Weeks.",
   cta: {
-    label: "Plan your WEF week with us",
-    href: "/enquiry?segment=delegation&context=wef",
+    label: "Plan your Davos Week with us",
+    href: "/enquiry?segment=delegation&context=davos-week",
   },
   media: {
-    slot: "wef-hero",
+    slot: "davos-hero",
     subject: "Pre-dawn Davos Promenade, snow banks, barriers and light rigs",
-    source: "wef-archive",
-    alt: "Davos Promenade prepared for WEF week before dawn",
+    source: "davos-archive",
+    alt: "Davos Promenade prepared for Davos Week before dawn",
   },
 };
 
 // Sticky in-page nav: 8 anchors in section order (docs/04 hub template).
-export const davosWefNav: { id: string; label: string }[] = [
+export const davosWeekNav: { id: string; label: string }[] = [
   { id: "on-the-ground", label: "On the ground" },
   { id: "calendar", label: "The calendar" },
   { id: "accommodation", label: "Accommodation" },
@@ -83,18 +83,18 @@ export const davosWefNav: { id: string; label: string }[] = [
 ];
 
 // Section 1 of 8.
-export const davosWefGround: HubProseSection = {
+export const davosWeekGround: HubProseSection = {
   id: "on-the-ground",
-  heading: "What WEF week really is on the ground",
+  heading: "What Davos Week really is on the ground",
   paragraphs: [
     "For most of the year, Davos is a working congress town in an alpine valley. For one week in January it becomes the most demanding address in Swiss hospitality. The population multiplies. The valley keeps its one road in. Security perimeters redraw the town daily, so a distance that looks like a short walk on the map can turn into a long detour through a checkpoint, and a venue that sat a few minutes away in December can sit behind an accreditation line in January.",
     "Every scarce resource in town obeys the same rule: it is contracted months out or it is gone. Beds, vehicles, kitchen capacity, trained staff, meeting rooms and even storage are spoken for long before the week begins. None of this is hidden; the town runs on it. Organisations that arrive assuming problems can be solved locally discover that the local solutions were sold in the autumn.",
-    "The teams that succeed treat Davos as an operation, not a trip. They plan against the constraints instead of hoping around them, they secure capacity early and precisely, and they arrive with decisions already made, so the week itself is execution rather than negotiation. That is the discipline this guide describes. We have run it for 6 Indian state government delegations across 4 WEF years, and the pattern holds every year: the week rewards preparation and punishes improvisation. The sections below walk through the parts that decide the outcome: the calendar, the beds, the movements, the food and the protocol.",
+    "The teams that succeed treat Davos as an operation, not a trip. They plan against the constraints instead of hoping around them, they secure capacity early and precisely, and they arrive with decisions already made, so the week itself is execution rather than negotiation. That is the discipline this guide describes. We have run it for 6 Indian state government delegations across 4 Davos Weeks, and the pattern holds every year: the week rewards preparation and punishes improvisation. The sections below walk through the parts that decide the outcome: the calendar, the beds, the movements, the food and the protocol.",
   ],
 };
 
 // Section 2 of 8: the working countdown, markers verbatim from the spec.
-export const davosWefCalendar: {
+export const davosWeekCalendar: {
   id: string;
   heading: string;
   intro: string[];
@@ -104,7 +104,7 @@ export const davosWefCalendar: {
   id: "calendar",
   heading: "The calendar that matters",
   intro: [
-    "WEF week is decided long before January. The countdown below is the working calendar we hold for delegations and corporate groups, and it exists because every one of its deadlines is enforced by the town, not by us. Miss the 180-day mark and the accommodation strategy becomes a compromise. Miss the 120-day mark and the remaining blocks and vehicles carry premiums that no negotiation will remove.",
+    "Davos Week is decided long before January. The countdown below is the working calendar we hold for delegations and corporate groups, and it exists because every one of its deadlines is enforced by the town, not by us. Miss the 180-day mark and the accommodation strategy becomes a compromise. Miss the 120-day mark and the remaining blocks and vehicles carry premiums that no negotiation will remove.",
   ],
   items: [
     {
@@ -124,22 +124,22 @@ export const davosWefCalendar: {
 };
 
 // Section 3 of 8.
-export const davosWefAccommodation: HubProseSection = {
+export const davosWeekAccommodation: HubProseSection = {
   id: "accommodation",
   heading: "Accommodation reality",
   paragraphs: [
-    "No delegation of any size stays in one building during WEF week, and it is rarely wise to try. The working pattern is a split: a core in Davos itself, close to the programme; a second group in Klosters, one reliable connection down the line; and the remainder along the valley corridor, where capacity is more available and the budget goes further. The art is matching people to places: principals and protocol staff near the centre, advance and support teams where the beds are, and everyone on a movement plan that makes the geography irrelevant.",
+    "No delegation of any size stays in one building during Davos Week, and it is rarely wise to try. The working pattern is a split: a core in Davos itself, close to the programme; a second group in Klosters, one reliable connection down the line; and the remainder along the valley corridor, where capacity is more available and the budget goes further. The art is matching people to places: principals and protocol staff near the centre, advance and support teams where the beds are, and everyone on a movement plan that makes the geography irrelevant.",
     "Each ring of the split trades something. Davos itself buys proximity, costs the most and contracts the earliest. Klosters buys calm: a delegation can breathe there in a way the Promenade does not allow, at the price of a scheduled connection. The valley corridor buys capacity and value, and demands the most disciplined transport plan. There is no single right answer; there is a right answer for each delegation, and it falls out of the programme, the precedence list and the budget envelope.",
     "Commercially, everything sits under a master account: one negotiated agreement per property, one line of accountability, and no official settling a bill in a lobby at midnight. Operationally, floor protocol does the quiet work: who stays on which floor and in what order, where the delegation office works, and where the delegation's own staff sit. We hold both, and we brief each property before arrival, so the hotel experiences the delegation as one organised guest rather than many individual ones. We name specific properties only inside a live proposal [TO CONFIRM: named hotels await commercial clearance].",
   ],
 };
 
 // Section 4 of 8.
-export const davosWefMovement: HubProseSection = {
+export const davosWeekMovement: HubProseSection = {
   id: "movement",
   heading: "Movement and the one-road problem",
   paragraphs: [
-    "One road connects Davos to the rest of Switzerland, and during WEF week that road carries everything: principals, staff, supplies and the security operation itself. Closures happen, sometimes scheduled and sometimes not. A movement plan that assumes the road is open is not a plan; it is a hope. We time convoys against the published security picture and then against our own reading of it, and every movement we run carries a fallback that assumes the closure has already happened.",
+    "One road connects Davos to the rest of Switzerland, and during Davos Week that road carries everything: principals, staff, supplies and the security operation itself. Closures happen, sometimes scheduled and sometimes not. A movement plan that assumes the road is open is not a plan; it is a hope. We time convoys against the published security picture and then against our own reading of it, and every movement we run carries a fallback that assumes the closure has already happened.",
     "Inside the town, shuttle discipline matters more than vehicle count. A modest fleet running a fixed loop to a timetable moves a delegation better than a large fleet waiting on calls, because waiting vehicles attract waiting passengers and the loop collapses. We fix the rhythm, publish it inside the delegation and hold it, so nobody stands in the snow wondering where the car is.",
     "Rail is the underrated arrival. The train reaches the valley on its own right of way, indifferent to road traffic, it carries no convoy overhead, and for many members of a delegation it is faster door to door. We use it deliberately: principals by road where protocol requires it, everyone else by rail where it serves them better.",
     "Luggage moves separately from principals, always. Cases travel on their own vehicle and their own schedule, tagged and reconciled at both ends, so arrivals stay light and checkpoints stay quick. It is the least glamorous discipline in this guide and one of the most valuable: a principal who lands, moves and arrives unencumbered starts the week differently.",
@@ -147,30 +147,30 @@ export const davosWefMovement: HubProseSection = {
 };
 
 // Section 5 of 8.
-export const davosWefCatering: HubProseSection = {
+export const davosWeekCatering: HubProseSection = {
   id: "catering",
   heading: "Catering at altitude",
   paragraphs: [
     "Kitchen capacity is the scarcest commodity in Davos in January. The town's kitchens are excellent and entirely spoken for: they cook for the houses that own them and for the events contracted onto them months before. A delegation that needs its own table, its own cuisine and its own timings cannot assume a share of that capacity, because there is no spare share to have.",
-    "This is why we bring our own. SKAAH runs its own multi-cuisine capability through WEF week, including regional Indian, Jain and halal tables alongside Swiss and continental service. Dietary rules are treated as requirements, not preferences: a Jain table is planned from the ingredients upward, halal service is sourced and kept properly separate, and a regional cuisine is cooked by people who know it rather than approximated from a general menu.",
-    "Feeding a delegation properly during WEF week is a logistics exercise before it is a culinary one. Ingredients come up the same one road as everything else, cold chain and storage are planned like any other movement, and service times flex around a programme that will change daily. We build the catering plan into the operations plan rather than beside it, which is the difference between dinner arriving because the schedule held and dinner arriving because the kitchen was told the schedule had slipped.",
+    "This is why we bring our own. SKAAH runs its own multi-cuisine capability through Davos Week, including regional Indian, Jain and halal tables alongside Swiss and continental service. Dietary rules are treated as requirements, not preferences: a Jain table is planned from the ingredients upward, halal service is sourced and kept properly separate, and a regional cuisine is cooked by people who know it rather than approximated from a general menu.",
+    "Feeding a delegation properly during Davos Week is a logistics exercise before it is a culinary one. Ingredients come up the same one road as everything else, cold chain and storage are planned like any other movement, and service times flex around a programme that will change daily. We build the catering plan into the operations plan rather than beside it, which is the difference between dinner arriving because the schedule held and dinner arriving because the kitchen was told the schedule had slipped.",
   ],
 };
 
 // Section 6 of 8.
-export const davosWefProtocol: HubProseSection = {
+export const davosWeekProtocol: HubProseSection = {
   id: "protocol",
   heading: "Protocol in a compressed town",
   paragraphs: [
     "Davos in January compresses more seniority into fewer square metres than anywhere else in Switzerland, and ordinary precedence rules strain under the load. When everyone is a principal, order of address, seating and who waits for whom must be settled before the week, not negotiated during it. We prepare precedence for each engagement in advance, in writing, and we rehearse the moments where it becomes visible: arrivals, greetings, seating, signings and photographs.",
-    "Bilateral meetings need rooms, and during WEF week rooms are scarce in exactly the way beds and kitchens are. A bilateral programme is therefore an inventory exercise: spaces held early, set to a consistent standard, and turned around between meetings on a schedule of minutes. Flags, nameplates and titles are checked against the delegation's own protocol office, twice, because a wrong flag or a misspelt title photographs badly and travels quickly.",
+    "Bilateral meetings need rooms, and during Davos Week rooms are scarce in exactly the way beds and kitchens are. A bilateral programme is therefore an inventory exercise: spaces held early, set to a consistent standard, and turned around between meetings on a schedule of minutes. Flags, nameplates and titles are checked against the delegation's own protocol office, twice, because a wrong flag or a misspelt title photographs badly and travels quickly.",
     "Gifting follows rules that vary by delegation and by counterpart, so we manage it as inventory with provenance: what is given, to whom, and recorded properly. Documentation follows the client's rules, not ours: photography and film are cleared in advance, consent governs what is captured and what is kept, and anything sensitive is handled on the delegation's own terms. Discretion is not a promise we add at the end; it is the default the whole operation is built on.",
   ],
 };
 
 // Section 7 of 8: 5 lessons, fallback-safe, one sentence of situation plus one
 // of practice; the operations sign-off marker is appended once for the set.
-export const davosWefLessons: {
+export const davosWeekLessons: {
   id: string;
   heading: string;
   intro: string;
@@ -178,9 +178,9 @@ export const davosWefLessons: {
   confirm: string;
 } = {
   id: "lessons",
-  heading: "What four WEF years taught us",
+  heading: "What four consecutive Davos Weeks taught us",
   intro:
-    "Four WEF years produce specific lessons. These are ours, stated as practice rather than war stories, and each one is now standard in every WEF plan we write.",
+    "Four consecutive Davos Weeks produce specific lessons. These are ours, stated as practice rather than war stories, and each one is now standard in every Davos Week plan we write.",
   items: [
     {
       situation:
@@ -190,7 +190,7 @@ export const davosWefLessons: {
     },
     {
       situation:
-        "An accommodation strategy that starts late is the most common way a WEF week goes wrong before it begins.",
+        "An accommodation strategy that starts late is the most common way a Davos Week goes wrong before it begins.",
       practice:
         "We put the bed strategy and the budget envelope on paper at the 180-day mark, and we treat every later start as a recovery exercise with a plan of its own.",
     },
@@ -217,7 +217,7 @@ export const davosWefLessons: {
 };
 
 // Section 8 of 8: the operating model, with the section CTA.
-export const davosWefOperatingModel: {
+export const davosWeekOperatingModel: {
   id: string;
   heading: string;
   intro: string[];
@@ -226,9 +226,9 @@ export const davosWefOperatingModel: {
   cta: Cta;
 } = {
   id: "how-we-run",
-  heading: "How SKAAH runs WEF week",
+  heading: "How SKAAH runs Davos Week",
   intro: [
-    "Everything above condenses into one operating model, and it is deliberately simple, because WEF week punishes complexity. You get one accountable lead, a fixed daily rhythm, a short escalation path and a debrief that closes the loop while the week is still warm. The same model has carried 6 Indian state government delegations across 4 WEF years, and it serves corporate groups without modification.",
+    "Everything above condenses into one operating model, and it is deliberately simple, because Davos Week punishes complexity. You get one accountable lead, a fixed daily rhythm, a short escalation path and a debrief that closes the loop while the week is still warm. The same model has carried 6 Indian state government delegations across 4 Davos Weeks, and it serves corporate groups without modification.",
   ],
   items: [
     {
@@ -255,17 +255,17 @@ export const davosWefOperatingModel: {
   outro:
     "If January is on your calendar, the useful next step is a conversation with the countdown above open on the table. Tell us where you stand against it, and we will tell you honestly what is comfortable, what is recoverable and what it will cost.",
   cta: {
-    label: "Plan your WEF week with us",
-    href: "/enquiry?segment=delegation&context=wef",
+    label: "Plan your Davos Week with us",
+    href: "/enquiry?segment=delegation&context=davos-week",
   },
 };
 
 // Proof rail: fallback proof line (from lib/site), 2 stat cards awaiting
 // operations sign-off, and the 2 strongest case studies.
-export const davosWefProofStats: Stat[] = [
+export const davosWeekProofStats: Stat[] = [
   {
     value: "[TO CONFIRM: movements run]",
-    label: "movements run across 4 WEF years",
+    label: "movements run across 4 Davos Weeks",
     verified: false,
   },
   {
@@ -275,7 +275,7 @@ export const davosWefProofStats: Stat[] = [
   },
 ];
 
-export const davosWefCaseStudies: {
+export const davosWeekCaseStudies: {
   title: string;
   description: string;
   href: string;
@@ -283,21 +283,21 @@ export const davosWefCaseStudies: {
   {
     title: "Six states, one Swiss partner",
     description:
-      "The aggregate record: 6 state government delegations across 4 consecutive WEF years, delivered by one Swiss partner.",
+      "The aggregate record: 6 state government delegations across 4 consecutive Davos Weeks, delivered by one Swiss partner.",
     href: "/work/six-states-one-swiss-partner",
   },
   {
-    title: "A first-time state delegation at WEF",
+    title: "A first-time state delegation at Davos Week",
     description:
       "A first-time delegation ran its Davos week to a playbook it did not have to write.",
-    href: "/work/first-time-state-delegation-wef",
+    href: "/work/first-time-state-delegation-davos",
   },
 ];
 
 // FAQs verbatim from the spec; rendered with FAQAccordion + FAQPage JSON-LD.
-export const davosWefFaqs: Faq[] = [
+export const davosWeekFaqs: Faq[] = [
   {
-    question: "When should we book for WEF?",
+    question: "When should we book for Davos Week?",
     answer:
       "Accommodation strategy should be settled 6 months out; serious blocks sign at 4 months. Late is solvable, but expensive.",
   },
@@ -312,19 +312,19 @@ export const davosWefFaqs: Faq[] = [
       "No. Our proof is Indian state delegations; our capability is delegation-grade operations for any government or corporate group.",
   },
   {
-    question: "Do you handle WEF participation itself?",
+    question: "Do you handle participation in the annual meeting itself?",
     answer:
-      "No. Accreditation and Forum participation sit with WEF; we handle everything around it on the ground.",
+      "No. Accreditation and participation sit with the meeting's organiser; we handle everything around the week on the ground.",
   },
 ];
 
 // Cross-links per the spec: Davos destination, Government Delegations, Stays,
 // Food & Catering and Insights.
-export const davosWefCrossLinks: HubCrossLink[] = [
+export const davosWeekCrossLinks: HubCrossLink[] = [
   {
     title: "Davos beyond January",
     description:
-      "The valley for the other fifty-one weeks: congress seasons, leadership retreats and pre-WEF recces.",
+      "The valley for the other fifty-one weeks: congress seasons, leadership retreats and pre-season recces.",
     href: "/destinations/davos",
     icon: "pin",
   },
@@ -359,64 +359,64 @@ export const davosWefCrossLinks: HubCrossLink[] = [
 ];
 
 // Media set: 6 archive frames (docs/02-content/03, media set).
-export const davosWefGallery: { heading: string; frames: MediaBrief[] } = {
+export const davosWeekGallery: { heading: string; frames: MediaBrief[] } = {
   heading: "The week, on file",
   frames: [
     {
-      slot: "wef-convoy",
+      slot: "davos-convoy",
       subject: "Convoy staging area before dawn, marshals checking a run sheet",
-      source: "wef-archive",
-      alt: "Vehicles staged before dawn for a delegation movement during WEF week",
+      source: "davos-archive",
+      alt: "Vehicles staged before dawn for a delegation movement during Davos Week",
     },
     {
-      slot: "wef-kitchen",
+      slot: "davos-kitchen",
       subject: "Kitchen pass in full service, plated courses under the lamps",
-      source: "wef-archive",
-      alt: "Chefs at the kitchen pass during a WEF week service",
+      source: "davos-archive",
+      alt: "Chefs at the kitchen pass during a Davos Week service",
     },
     {
-      slot: "wef-promenade",
-      subject: "Davos Promenade at night during WEF week, snow banks and lit facades",
-      source: "wef-archive",
-      alt: "The Davos Promenade at night during WEF week",
+      slot: "davos-promenade",
+      subject: "Davos Promenade at night during Davos Week, snow banks and lit facades",
+      source: "davos-archive",
+      alt: "The Davos Promenade at night during Davos Week",
     },
     {
-      slot: "wef-signage",
+      slot: "davos-signage",
       subject: "Team installing event signage in falling snow",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Event signage being installed in falling snow in Davos",
     },
     {
-      slot: "wef-luggage",
+      slot: "davos-luggage",
       subject: "Luggage operation, tagged cases lined up in a service corridor",
-      source: "wef-archive",
-      alt: "Tagged delegation luggage lined up during a WEF week arrival",
+      source: "davos-archive",
+      alt: "Tagged delegation luggage lined up during a Davos Week arrival",
     },
     {
-      slot: "wef-control",
+      slot: "davos-control",
       subject: "Operations room with radios, screens and the week's run sheets",
-      source: "wef-archive",
-      alt: "The operations room during WEF week",
+      source: "davos-archive",
+      alt: "The operations room during Davos Week",
     },
   ],
 };
 
 // Optional ambient film (deferred load; not rendered until the asset lands).
-export const davosWefAmbientFilm: FilmBrief = {
+export const davosWeekAmbientFilm: FilmBrief = {
   duration: "40 to 60 seconds",
   content:
-    "A WEF-week day compressed: staging before dawn, movements, service, the Promenade at night",
+    "A Davos Week day compressed: staging before dawn, movements, service, the Promenade at night",
   audio: "none at autoplay",
-  poster: "wef-film-poster",
+  poster: "davos-film-poster",
   fallback: "Static hero image when reduced motion or Save-Data is set",
 };
 
-export const davosWefClosing: {
+export const davosWeekClosing: {
   headline: string;
   ctaLabel: string;
   ctaHref: string;
 } = {
   headline: "January rewards the prepared.",
-  ctaLabel: "Plan your WEF week with us",
-  ctaHref: "/enquiry?segment=delegation&context=wef",
+  ctaLabel: "Plan your Davos Week with us",
+  ctaHref: "/enquiry?segment=delegation&context=davos-week",
 };

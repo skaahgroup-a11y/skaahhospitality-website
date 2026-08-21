@@ -55,16 +55,16 @@ export const experiences: ExperienceContent[] = [
     },
   },
   {
-    title: "WEF-Week Hosting",
+    title: "Davos Week Hosting",
     description:
       "A delegation lounge run to protocol during the world's busiest week.",
     destinationTag: "Davos",
     media: {
-      slot: "exp-wef-hosting",
+      slot: "exp-davos-hosting",
       subject:
-        "Calm delegation lounge interior during WEF week, staff briefing in the background",
+        "Calm delegation lounge interior during Davos Week, staff briefing in the background",
       source: "new-shoot",
-      alt: "Delegation lounge prepared for WEF week hosting in Davos",
+      alt: "Delegation lounge prepared for Davos Week hosting in Davos",
     },
   },
   {

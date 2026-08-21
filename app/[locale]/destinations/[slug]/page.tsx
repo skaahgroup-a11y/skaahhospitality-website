@@ -103,7 +103,7 @@ export default async function DestinationPage({
         media={destination.heroMedia}
       />
 
-      {/* Davos: the WEF-week operation lives in the hub; prominent cross-link. */}
+      {/* Davos: the Davos Week operation lives in the hub; prominent cross-link. */}
       {destination.crossLinkBanner ? (
         <div className="bg-gold-500">
           <div className="container-site flex flex-wrap items-center justify-between gap-4 py-5">

@@ -24,10 +24,10 @@ export function RelatedServices({ services }: { services: ServiceContent[] }) {
       </div>
       <p className="mt-8">
         <Link
-          href="/davos-wef"
+          href="/davos-week"
           className="link-draw inline-flex items-center gap-2 font-medium text-navy-900"
         >
-          Davos & WEF Week hub
+          Davos Week hub
           <Icon name="arrow-right" size={18} />
         </Link>
       </p>

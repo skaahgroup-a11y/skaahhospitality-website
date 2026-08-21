@@ -82,7 +82,7 @@ export const SEGMENTS: SegmentSpec[] = [
             type: "radio",
             required: true,
             options: [
-              { value: "wef-week", label: "WEF week" },
+              { value: "davos-week", label: "Davos Week" },
               {
                 value: "bilateral-trade",
                 label: "Bilateral or trade mission",

@@ -8,7 +8,7 @@ export const governmentDelegations: ServiceContent = {
   seo: {
     metaTitle: "Government Delegation Support in Switzerland | SKAAH",
     metaDescription:
-      "Delegation-grade planning in Switzerland: protocol, visa and immigration liaison, secure ground transport, accommodation blocks, multi-cuisine catering and documentation. Proven at WEF Davos.",
+      "Delegation-grade planning in Switzerland: protocol, visa and immigration liaison, secure ground transport, accommodation blocks, multi-cuisine catering and documentation. Proven at Davos Week.",
     primaryKeyword: "government delegation support Switzerland",
     secondaryKeywords: [
       "diplomatic protocol services Switzerland",
@@ -64,9 +64,9 @@ export const governmentDelegations: ServiceContent = {
         "Photography and film cleared to your rules (see Media & Production).",
     },
     {
-      title: "WEF-week operations",
+      title: "Davos Week operations",
       description:
-        "The specific discipline of Davos in January (see the Davos & WEF Week hub).",
+        "The specific discipline of Davos in January (see the Davos Week hub).",
     },
   ],
   processSteps: [
@@ -93,13 +93,13 @@ export const governmentDelegations: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four WEF years. One Swiss partner.",
-      "Four consecutive WEF years without a public misstep. [TO CONFIRM: approved phrasing]",
+      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Four consecutive Davos Weeks without a public misstep. [TO CONFIRM: approved phrasing]",
     ],
     media: {
       slot: "deleg-proof",
       subject: "Convoy staging area at dawn, marshals with clipboards",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Vehicles staged at dawn for a delegation movement in Davos",
     },
   },
@@ -107,7 +107,7 @@ export const governmentDelegations: ServiceContent = {
     {
       question: "How early should a delegation engage you?",
       answer:
-        "For WEF week, 90 days or more. For other visits, 30 days is comfortable; we have delivered on far less.",
+        "For Davos Week, 90 days or more. For other visits, 30 days is comfortable; we have delivered on far less.",
     },
     {
       question: "Can you work alongside our own security detail?",
@@ -134,7 +134,7 @@ export const governmentDelegations: ServiceContent = {
     slot: "deleg-hero",
     subject:
       "Delegation walking away from camera into a lit venue, Davos night",
-    source: "wef-archive",
+    source: "davos-archive",
     alt: "A delegation entering a lit venue in the evening",
   },
 };

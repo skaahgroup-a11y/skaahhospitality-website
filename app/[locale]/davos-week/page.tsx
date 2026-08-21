@@ -20,28 +20,29 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import { Copy } from "@/components/ui/Copy";
 import { FALLBACK_PROOF_LINE, RESPONSE_PROMISE } from "@/lib/site";
+import { INDEPENDENCE_DISCLAIMER } from "@/content/disclaimer";
 import {
-  davosWefSeo,
-  davosWefHero,
-  davosWefNav,
-  davosWefGround,
-  davosWefCalendar,
-  davosWefAccommodation,
-  davosWefMovement,
-  davosWefCatering,
-  davosWefProtocol,
-  davosWefLessons,
-  davosWefOperatingModel,
-  davosWefProofStats,
-  davosWefCaseStudies,
-  davosWefFaqs,
-  davosWefCrossLinks,
-  davosWefGallery,
-  davosWefClosing,
+  davosWeekSeo,
+  davosWeekHero,
+  davosWeekNav,
+  davosWeekGround,
+  davosWeekCalendar,
+  davosWeekAccommodation,
+  davosWeekMovement,
+  davosWeekCatering,
+  davosWeekProtocol,
+  davosWeekLessons,
+  davosWeekOperatingModel,
+  davosWeekProofStats,
+  davosWeekCaseStudies,
+  davosWeekFaqs,
+  davosWeekCrossLinks,
+  davosWeekGallery,
+  davosWeekClosing,
   type HubProseSection,
-} from "@/content/davos-wef";
+} from "@/content/davos-week";
 
-export const metadata: Metadata = pageMetadata(davosWefSeo, "/davos-wef");
+export const metadata: Metadata = pageMetadata(davosWeekSeo, "/davos-week");
 
 // Anchored sections clear the fixed header (h-16/h-20) plus the sticky nav.
 const ANCHOR_OFFSET = "scroll-mt-32 md:scroll-mt-36";
@@ -77,36 +78,46 @@ export default async function DavosWefHubPage({
 
   return (
     <>
-      <JsonLd data={[faqPageJsonLd(davosWefFaqs)]} />
+      <JsonLd data={[faqPageJsonLd(davosWeekFaqs)]} />
       <Breadcrumbs
         items={[
           { name: "Home", path: "/" },
-          { name: "Davos & WEF Week", path: "/davos-wef" },
+          { name: "Davos Week", path: "/davos-week" },
         ]}
       />
       <PageHero
-        eyebrow={davosWefHero.eyebrow}
-        title={davosWefHero.h1}
-        subline={davosWefHero.subline}
-        cta={davosWefHero.cta}
-        media={davosWefHero.media}
+        eyebrow={davosWeekHero.eyebrow}
+        title={davosWeekHero.h1}
+        subline={davosWeekHero.subline}
+        cta={davosWeekHero.cta}
+        media={davosWeekHero.media}
       />
 
-      {/* Sticky in-page nav: 8 anchors (docs/04 hub template) */}
-      <HubNav items={davosWefNav} />
+      {/* Independence disclaimer, shown prominently on this page in addition
+          to the site-wide footer rendering. */}
+      <div className="border-b border-ice-200 bg-ice-100">
+        <div className="container-site py-4">
+          <p className="max-w-4xl text-xs leading-relaxed text-stone-500">
+            <Copy text={INDEPENDENCE_DISCLAIMER} />
+          </p>
+        </div>
+      </div>
 
-      {/* Section 1: what WEF week really is on the ground */}
-      <ProseSection section={davosWefGround} surface="light" />
+      {/* Sticky in-page nav: 8 anchors (docs/04 hub template) */}
+      <HubNav items={davosWeekNav} />
+
+      {/* Section 1: what Davos Week really is on the ground */}
+      <ProseSection section={davosWeekGround} surface="light" />
 
       {/* Section 2: the calendar, rendered as the countdown timeline (C14) */}
       <Section
         surface="ice"
-        id={davosWefCalendar.id}
+        id={davosWeekCalendar.id}
         className={ANCHOR_OFFSET}
       >
-        <SectionHeading heading={davosWefCalendar.heading} />
+        <SectionHeading heading={davosWeekCalendar.heading} />
         <div className="mt-6 max-w-3xl space-y-5">
-          {davosWefCalendar.intro.map((paragraph) => (
+          {davosWeekCalendar.intro.map((paragraph) => (
             <p
               key={paragraph}
               className="text-lg leading-relaxed text-stone-500"
@@ -116,10 +127,10 @@ export default async function DavosWefHubPage({
           ))}
         </div>
         <div className="mt-12">
-          <HubTimeline items={davosWefCalendar.items} />
+          <HubTimeline items={davosWeekCalendar.items} />
         </div>
         <div className="mt-12 max-w-3xl space-y-5">
-          {davosWefCalendar.outro.map((paragraph) => (
+          {davosWeekCalendar.outro.map((paragraph) => (
             <p
               key={paragraph}
               className="text-lg leading-relaxed text-stone-500"
@@ -131,23 +142,23 @@ export default async function DavosWefHubPage({
       </Section>
 
       {/* Sections 3 to 6 */}
-      <ProseSection section={davosWefAccommodation} surface="light" />
-      <ProseSection section={davosWefMovement} surface="ice" />
-      <ProseSection section={davosWefCatering} surface="light" />
-      <ProseSection section={davosWefProtocol} surface="ice" />
+      <ProseSection section={davosWeekAccommodation} surface="light" />
+      <ProseSection section={davosWeekMovement} surface="ice" />
+      <ProseSection section={davosWeekCatering} surface="light" />
+      <ProseSection section={davosWeekProtocol} surface="ice" />
 
       {/* Section 7: five lessons, sign-off marker appended once for the set */}
       <Section
         surface="light"
-        id={davosWefLessons.id}
+        id={davosWeekLessons.id}
         className={ANCHOR_OFFSET}
       >
         <SectionHeading
-          heading={davosWefLessons.heading}
-          intro={davosWefLessons.intro}
+          heading={davosWeekLessons.heading}
+          intro={davosWeekLessons.intro}
         />
         <ol className="mt-10 max-w-3xl space-y-8">
-          {davosWefLessons.items.map((lesson, index) => (
+          {davosWeekLessons.items.map((lesson, index) => (
             <li key={lesson.situation} className="flex gap-5">
               <span
                 aria-hidden="true"
@@ -167,19 +178,19 @@ export default async function DavosWefHubPage({
           ))}
         </ol>
         <p className="mt-8 max-w-3xl border-t border-ice-300 pt-4 text-xs text-stone-400">
-          <Copy text={davosWefLessons.confirm} />
+          <Copy text={davosWeekLessons.confirm} />
         </p>
       </Section>
 
       {/* Section 8: operating model + section CTA */}
       <Section
         surface="ice"
-        id={davosWefOperatingModel.id}
+        id={davosWeekOperatingModel.id}
         className={ANCHOR_OFFSET}
       >
-        <SectionHeading heading={davosWefOperatingModel.heading} />
+        <SectionHeading heading={davosWeekOperatingModel.heading} />
         <div className="mt-6 max-w-3xl space-y-5">
-          {davosWefOperatingModel.intro.map((paragraph) => (
+          {davosWeekOperatingModel.intro.map((paragraph) => (
             <p
               key={paragraph}
               className="text-lg leading-relaxed text-stone-500"
@@ -189,23 +200,23 @@ export default async function DavosWefHubPage({
           ))}
         </div>
         <div className="mt-12">
-          <CapabilityGrid items={davosWefOperatingModel.items} />
+          <CapabilityGrid items={davosWeekOperatingModel.items} />
         </div>
         <p className="mt-10 max-w-3xl text-lg leading-relaxed text-stone-500">
-          <Copy text={davosWefOperatingModel.outro} />
+          <Copy text={davosWeekOperatingModel.outro} />
         </p>
         <div className="mt-8">
-          <ButtonLink href={davosWefOperatingModel.cta.href} variant="primary">
-            {davosWefOperatingModel.cta.label}
+          <ButtonLink href={davosWeekOperatingModel.cta.href} variant="primary">
+            {davosWeekOperatingModel.cta.label}
           </ButtonLink>
         </div>
       </Section>
 
       {/* Media set: 6 archive frames */}
       <Section surface="light" wide>
-        <SectionHeading heading={davosWefGallery.heading} />
+        <SectionHeading heading={davosWeekGallery.heading} />
         <div className="mt-10">
-          <GalleryScroller frames={davosWefGallery.frames} />
+          <GalleryScroller frames={davosWeekGallery.frames} />
         </div>
       </Section>
 
@@ -215,10 +226,10 @@ export default async function DavosWefHubPage({
           {FALLBACK_PROOF_LINE}
         </p>
         <div className="mt-10 max-w-3xl">
-          <StatCards surface="dark" stats={davosWefProofStats} />
+          <StatCards surface="dark" stats={davosWeekProofStats} />
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {davosWefCaseStudies.map((study) => (
+          {davosWeekCaseStudies.map((study) => (
             <Link
               key={study.href}
               href={study.href}
@@ -240,7 +251,7 @@ export default async function DavosWefHubPage({
       <Section surface="light">
         <SectionHeading heading="Questions delegations ask" />
         <div className="mt-10 max-w-3xl">
-          <FAQAccordion faqs={davosWefFaqs} />
+          <FAQAccordion faqs={davosWeekFaqs} />
         </div>
       </Section>
 
@@ -248,7 +259,7 @@ export default async function DavosWefHubPage({
       <Section surface="ice">
         <SectionHeading heading="Where to go next" />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {davosWefCrossLinks.map((link) => (
+          {davosWeekCrossLinks.map((link) => (
             <ServiceCard
               key={link.href}
               title={link.title}
@@ -261,10 +272,10 @@ export default async function DavosWefHubPage({
       </Section>
 
       <CTABand
-        headline={davosWefClosing.headline}
+        headline={davosWeekClosing.headline}
         body={RESPONSE_PROMISE}
-        ctaLabel={davosWefClosing.ctaLabel}
-        ctaHref={davosWefClosing.ctaHref}
+        ctaLabel={davosWeekClosing.ctaLabel}
+        ctaHref={davosWeekClosing.ctaHref}
       />
     </>
   );

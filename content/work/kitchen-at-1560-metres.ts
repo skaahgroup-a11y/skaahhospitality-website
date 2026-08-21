@@ -13,9 +13,9 @@ export const kitchenAt1560Metres: CaseStudyContent = {
   destination: "Davos",
   groupSizeBand: "[TO CONFIRM: size band]",
   oneLineOutcome:
-    "Regional Indian, Jain, halal and Swiss tables served from our own kitchens through a full WEF week.",
+    "Regional Indian, Jain, halal and Swiss tables served from our own kitchens through a full Davos Week.",
   brief:
-    "Ask a delegation what it remembers about a hard week abroad and the honest answer is usually the food. At 1,560 metres in January, in a town where every kitchen is contracted out, we run our own: multi-cuisine kitchens serving regional Indian, Jain, halal and Swiss tables through the full WEF week. Menu governance is the real work. Jain requirements are absolute, halal standards must hold along the whole supply chain, regional Indian cooking has to taste of home rather than of a hotel banquet, and the Swiss tables have to stand comparison with the town around them. This entry is the kitchen's own story: the volumes are with operations for sign-off, the discipline is on record.",
+    "Ask a delegation what it remembers about a hard week abroad and the honest answer is usually the food. At 1,560 metres in January, in a town where every kitchen is contracted out, we run our own: multi-cuisine kitchens serving regional Indian, Jain, halal and Swiss tables through the full Davos Week. Menu governance is the real work. Jain requirements are absolute, halal standards must hold along the whole supply chain, regional Indian cooking has to taste of home rather than of a hotel banquet, and the Swiss tables have to stand comparison with the town around them. This entry is the kitchen's own story: the volumes are with operations for sign-off, the discipline is on record.",
   hard: [
     "Supply at 1,560 metres in January: ingredients, equipment and relief staff share one winter road with the rest of the town.",
     "Menu governance without compromise: Jain, halal, regional Indian and Swiss standards held in parallel, service after service.",
@@ -54,14 +54,14 @@ export const kitchenAt1560Metres: CaseStudyContent = {
     {
       slot: "cs5-01",
       subject: "Kitchen pass at full service, gloved hands plating",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Chefs plating at the kitchen pass during evening service",
       treatment: "warm pass light against navy shadow, no saturation push",
     },
     {
       slot: "cs5-02",
       subject: "The regional Indian line in full preparation, steam rising",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Cooks working the regional Indian line",
       treatment: "warm light, deep navy shadows",
     },
@@ -69,28 +69,28 @@ export const kitchenAt1560Metres: CaseStudyContent = {
       slot: "cs5-03",
       subject:
         "A separate preparation area set for Jain service, labels readable only as category",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "A separate preparation area set for Jain service",
       treatment: "cool daylight; no client names visible",
     },
     {
       slot: "cs5-04",
       subject: "Ingredients carried in from a snowbound delivery at the kitchen door",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Ingredients being carried in from a snowbound delivery",
       treatment: "cool alpine light, deep navy shadows",
     },
     {
       slot: "cs5-05",
       subject: "A Swiss table set for a delegation dinner, candlelight",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "A Swiss table set for a delegation dinner",
       treatment: "gold as candlelight, restrained",
     },
     {
       slot: "cs5-06",
       subject: "The kitchen brigade at its pre-service briefing",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "The kitchen brigade at its pre-service briefing",
       treatment: "cool daylight, faces only with consent flag",
     },
@@ -103,12 +103,12 @@ export const kitchenAt1560Metres: CaseStudyContent = {
   seo: {
     metaTitle: "The Kitchen at 1,560 Metres: Davos Catering | SKAAH",
     metaDescription:
-      "Multi-cuisine catering at 1,560 metres: regional Indian, Jain, halal and Swiss tables from our own kitchens through WEF week in Davos.",
+      "Multi-cuisine catering at 1,560 metres: regional Indian, Jain, halal and Swiss tables from our own kitchens through Davos Week in Davos.",
     primaryKeyword: "multi-cuisine catering Davos",
     secondaryKeywords: [
       "Jain catering Switzerland",
       "halal catering Davos",
-      "Indian catering WEF",
+      "Indian catering Davos",
     ],
   },
 };

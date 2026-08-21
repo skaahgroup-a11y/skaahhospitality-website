@@ -8,7 +8,7 @@ export const stays: ServiceContent = {
   seo: {
     metaTitle: "Group Hotels, Chalets & Serviced Apartments in Switzerland | SKAAH",
     metaDescription:
-      "Delegation blocks, chalet buyouts and serviced apartments near Zurich Airport, contracted and managed under one master account. Proven at WEF Davos.",
+      "Delegation blocks, chalet buyouts and serviced apartments near Zurich Airport, contracted and managed under one master account. Proven at Davos Week.",
     primaryKeyword: "group accommodation Switzerland",
   },
   cardTitle: "Stays",
@@ -82,8 +82,8 @@ export const stays: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four WEF years. One Swiss partner.",
-      "Accommodation blocks held and managed through four WEF Januaries, when rooms matter most.",
+      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Accommodation blocks held and managed through four Davos Januaries, when rooms matter most.",
     ],
     media: {
       slot: "stays-proof",

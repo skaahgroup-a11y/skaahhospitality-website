@@ -105,7 +105,7 @@ export function SiteHeader() {
   const closeMenu = () => setMenuOpen(false);
 
   const primaryLinks = [
-    { label: t("davosWef"), href: "/davos-wef" },
+    { label: t("davosWeek"), href: "/davos-week" },
     { label: t("work"), href: "/work" },
     { label: t("experiences"), href: "/experiences" },
     { label: t("insights"), href: "/insights" },

@@ -86,7 +86,7 @@ export const indianCuisineSwissAltitude: ArticleContent = {
     {
       heading: "One kitchen conversation",
       paragraphs: [
-        "If you take one practical step from this playbook, take this: bring us the guest list and its dietary laws early, before the venue if you can, because the menu shapes the logistics as often as the logistics shape the menu. Our kitchens have delivered multi-cuisine catering quietly through four WEF Januaries, at altitude and to protocol, and the same discipline scales down to a single working lunch.",
+        "If you take one practical step from this playbook, take this: bring us the guest list and its dietary laws early, before the venue if you can, because the menu shapes the logistics as often as the logistics shape the menu. Our kitchens have delivered multi-cuisine catering quietly through four Davos Januaries, at altitude and to protocol, and the same discipline scales down to a single working lunch.",
         "Every enquiry receives a first response within 48 hours, and event and MICE RFPs within one business day. Tell us the occasion, and we will propose the menu.",
       ],
     },
@@ -113,5 +113,5 @@ export const indianCuisineSwissAltitude: ArticleContent = {
         "Yes. We cook where the event is, including temporary kitchens at alpine venues, with menus written to the kitchen that will cook them.",
     },
   ],
-  relatedSlugs: ["wef-delegation-countdown"],
+  relatedSlugs: ["davos-delegation-countdown"],
 };

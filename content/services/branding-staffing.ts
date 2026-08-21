@@ -81,7 +81,7 @@ export const brandingStaffing: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four WEF years. One Swiss partner.",
+      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
       "Presentation is part of protocol: the space and the people in it speak for you before anyone says a word.",
     ],
   },

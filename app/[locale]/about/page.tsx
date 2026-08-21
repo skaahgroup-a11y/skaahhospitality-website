@@ -24,14 +24,14 @@ import type { MediaBrief } from "@/content-schemas/types";
 const seo = {
   metaTitle: "About SKAAH Hospitality: Swiss Precision, Global Fluency | SKAAH",
   metaDescription:
-    "Founded 2016 in Opfikon by the runway of Zurich Airport: hospitality and logistics under one roof, and the company behind four WEF years of delegation work in Switzerland.",
+    "Founded 2016 in Opfikon by the runway of Zurich Airport: hospitality and logistics under one roof, and the company behind four consecutive Davos Weeks of delegation work in Switzerland.",
 };
 
 export const metadata: Metadata = pageMetadata(seo, "/about");
 
 const whoWeAre = [
   "SKAAH Hospitality was founded in 2016 in Opfikon, by the runway of Zurich Airport, and has kept hospitality and logistics under one roof ever since. One team plans the visit, moves the people, holds the rooms and cooks the food, which is why nothing is lost between suppliers.",
-  "We are the company behind four WEF years of delegation work: the advance planning, the movements, the stays and the tables that let a demanding visit succeed quietly. [TO CONFIRM: founding narrative details]",
+  "We are the company behind four consecutive Davos Weeks of delegation work: the advance planning, the movements, the stays and the tables that let a demanding visit succeed quietly. [TO CONFIRM: founding narrative details]",
 ];
 
 // The five brand pillars (docs/01 scope), each with meaning in practice.

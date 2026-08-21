@@ -5,7 +5,7 @@
 
 import type { IconName } from "@/components/ui/Icon";
 
-export type MediaSource = "wef-archive" | "new-shoot" | "licensed-stock-fallback";
+export type MediaSource = "davos-archive" | "new-shoot" | "licensed-stock-fallback";
 
 export interface MediaBrief {
   slot: string;

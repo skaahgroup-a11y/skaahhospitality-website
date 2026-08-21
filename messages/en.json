@@ -1,7 +1,7 @@
 {
   "nav": {
     "services": "Services",
-    "davosWef": "Davos & WEF",
+    "davosWeek": "Davos Week",
     "destinations": "Destinations",
     "work": "Work",
     "experiences": "Experiences",
@@ -38,7 +38,7 @@
     "onThisPage": "On this page",
     "relatedServices": "Related services",
     "fullGuideComing": "Full guide coming; brief us meanwhile.",
-    "wefWeekHub": "WEF Week hub",
+    "davosWeekHub": "Davos Week hub",
     "toConfirm": "To confirm before launch"
   },
   "consent": {
@@ -88,7 +88,7 @@
     "title": "This page has moved on.",
     "body": "The address you followed does not exist. The compass below points to the busiest paths.",
     "toServices": "Explore our services",
-    "toDavos": "Davos & WEF Week guide",
+    "toDavos": "Davos Week guide",
     "toEnquiry": "Start your enquiry"
   },
   "error": {

@@ -8,7 +8,7 @@ export const foodCatering: ServiceContent = {
   seo: {
     metaTitle: "Multi-Cuisine Event Catering in Switzerland | SKAAH",
     metaDescription:
-      "Indian regional menus, Jain, halal and vegetarian tables, and Swiss fine dining from our own kitchens, working lunch to banquet. Proven at WEF Davos.",
+      "Indian regional menus, Jain, halal and vegetarian tables, and Swiss fine dining from our own kitchens, working lunch to banquet. Proven at Davos Week.",
     primaryKeyword: "Indian catering Switzerland",
     secondaryKeywords: [
       "halal catering Zurich",
@@ -86,8 +86,8 @@ export const foodCatering: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four WEF years. One Swiss partner.",
-      "Multi-cuisine catering delivered quietly through four WEF Januaries, at altitude and to protocol.",
+      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Multi-cuisine catering delivered quietly through four Davos Januaries, at altitude and to protocol.",
     ],
     media: {
       slot: "catering-proof",

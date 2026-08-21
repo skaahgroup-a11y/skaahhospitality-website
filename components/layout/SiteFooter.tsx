@@ -7,6 +7,7 @@ import {
   DESTINATION_LINKS,
   COMPANY_LINKS,
 } from "@/content/global";
+import { INDEPENDENCE_DISCLAIMER } from "@/content/disclaimer";
 import { CONTACT, DESCRIPTOR, GROUP_LINE, ORG } from "@/lib/site";
 
 export async function SiteFooter() {
@@ -133,6 +134,9 @@ export async function SiteFooter() {
               </li>
             </ul>
           </div>
+          <p className="mt-6 max-w-4xl text-xs leading-relaxed text-stone-500">
+            <Copy text={INDEPENDENCE_DISCLAIMER} />
+          </p>
           <p className="mt-4 text-xs text-stone-500">
             {String(year)} {ORG.name}. {t("allRights")}
           </p>

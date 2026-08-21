@@ -20,7 +20,7 @@ export default function NotFound() {
         <ButtonLink href="/services" variant="gold">
           {t("toServices")}
         </ButtonLink>
-        <ButtonLink href="/davos-wef" variant="outline-gold">
+        <ButtonLink href="/davos-week" variant="outline-gold">
           {t("toDavos")}
         </ButtonLink>
         <ButtonLink href="/enquiry" variant="outline-gold">

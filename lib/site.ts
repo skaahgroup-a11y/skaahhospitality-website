@@ -15,7 +15,7 @@ export const ORG = {
 } as const;
 
 export const DESCRIPTOR =
-  "The Swiss hospitality and logistics partner for government delegations and high-value corporate groups, proven at WEF Davos.";
+  "The Swiss hospitality and logistics partner for government delegations and high-value corporate groups, proven at Davos Week.";
 
 export const GROUP_LINE = "A SKAAH Group company";
 
@@ -23,7 +23,7 @@ export const RESPONSE_PROMISE =
   "Every enquiry receives a first response within 48 hours. Event and MICE RFPs within one business day.";
 
 export const FALLBACK_PROOF_LINE =
-  "Six Indian state government delegations. Four WEF years. One Swiss partner.";
+  "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.";
 
 export const CONTACT = {
   office: "Opfikon (Zurich Airport), Switzerland",

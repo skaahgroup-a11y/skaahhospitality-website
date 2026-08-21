@@ -15,7 +15,7 @@ export const returningDelegationDoubledScale: CaseStudyContent = {
   oneLineOutcome:
     "A returning delegation scaled up its Davos programme without growing its own planning effort.",
   brief:
-    "A delegation that had already run one WEF week with us returned with a larger brief: more principals, more meetings and a fuller programme, in a valley that had not grown to match. The ask underneath the growth was continuity: the same standards, the same operations lead and the same way of working, with the extra scale absorbed on our side of the table. Because the playbook, the supplier relationships and the protocol notes already existed, the second year started from an updated plan rather than a blank page. The delegation's own team scaled its week without scaling its workload, which is exactly what continuity is for.",
+    "A delegation that had already run one Davos Week with us returned with a larger brief: more principals, more meetings and a fuller programme, in a valley that had not grown to match. The ask underneath the growth was continuity: the same standards, the same operations lead and the same way of working, with the extra scale absorbed on our side of the table. Because the playbook, the supplier relationships and the protocol notes already existed, the second year started from an updated plan rather than a blank page. The delegation's own team scaled its week without scaling its workload, which is exactly what continuity is for.",
   hard: [
     "Growth in every line of the brief, against a valley whose capacity does not grow with it.",
     "Rising expectations: a second year is measured against the first, not against the market.",
@@ -56,7 +56,7 @@ export const returningDelegationDoubledScale: CaseStudyContent = {
       subject:
         "Two laminated run sheets side by side on the operations table, contents not legible",
       composition: "top-down",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Run sheets from two consecutive years on the operations table",
       treatment: "cool daylight, documents not legible",
     },
@@ -64,7 +64,7 @@ export const returningDelegationDoubledScale: CaseStudyContent = {
       slot: "cs3-02",
       subject:
         "Marshals briefing an enlarged driver team at a staging area, plates out of frame",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Marshals briefing drivers before a delegation movement",
       treatment:
         "cool alpine light, deep navy shadows; no number plates readable",
@@ -72,7 +72,7 @@ export const returningDelegationDoubledScale: CaseStudyContent = {
     {
       slot: "cs3-03",
       subject: "A longer kitchen pass in full evening service",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "The kitchen pass during a full evening service",
       treatment: "warm pass light against navy shadow",
     },
@@ -80,14 +80,14 @@ export const returningDelegationDoubledScale: CaseStudyContent = {
       slot: "cs3-04",
       subject:
         "Hotel lobby with delegation arrivals at scale, faces away from camera",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Delegation guests arriving at a Davos hotel",
       treatment: "restrained gold accents, faces not identifiable",
     },
     {
       slot: "cs3-05",
       subject: "An operations lead on the radio at night on the Promenade",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "An operations lead coordinating an evening movement in Davos",
       treatment: "gold as street light, deep navy shadows",
     },
@@ -99,13 +99,13 @@ export const returningDelegationDoubledScale: CaseStudyContent = {
     "food-catering",
   ],
   seo: {
-    metaTitle: "Returning Delegation, Doubled Scale at WEF | SKAAH",
+    metaTitle: "Returning Delegation, Doubled Scale at Davos | SKAAH",
     metaDescription:
-      "A returning state delegation scaled up its WEF Davos week year on year. Continuity as the product: same partner, same standards, no added client effort.",
+      "A returning state delegation scaled up its Davos Week week year on year. Continuity as the product: same partner, same standards, no added client effort.",
     primaryKeyword: "returning delegation Davos case study",
     secondaryKeywords: [
       "delegation logistics continuity",
-      "scaling a WEF delegation",
+      "scaling a Davos delegation",
     ],
   },
 };

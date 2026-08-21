@@ -13,12 +13,12 @@ export const homeSeo: SeoFields = {
   metaTitle:
     "Swiss Hospitality & Logistics for Delegations & Corporate Groups | SKAAH",
   metaDescription:
-    "One accountable Swiss partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and staffing. Proven at WEF Davos. First response within 48 hours.",
+    "One accountable Swiss partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and staffing. Proven at Davos Week. First response within 48 hours.",
   primaryKeyword: "government delegation support Switzerland",
   secondaryKeywords: [
     "Swiss hospitality and logistics partner",
     "DMC Switzerland delegations",
-    "WEF Davos logistics partner",
+    "Davos Week logistics partner",
   ],
 };
 
@@ -28,7 +28,7 @@ export const homeHero = {
   subline:
     "One accountable partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and people, delivered with Swiss precision.",
   proofLine:
-    "Proven at WEF Davos: six Indian state government delegations across four WEF years.",
+    "Proven at Davos Week: six Indian state government delegations across four consecutive Davos Weeks.",
   primaryCta: {
     label: "Start a delegation enquiry",
     href: "/enquiry?segment=delegation",
@@ -54,7 +54,7 @@ export const homeFilm: FilmBrief = {
 export const homePoster: MediaBrief = {
   slot: "hero-poster",
   subject: "Dawn over Davos rooftops in snow with gold light",
-  source: "wef-archive",
+  source: "davos-archive",
   alt: "Dawn over Davos rooftops in winter",
   treatment: "Cool alpine light, deep navy shadows, restrained gold accents",
 };
@@ -69,7 +69,7 @@ export const homeProof = {
     },
     {
       value: "4",
-      label: "consecutive WEF Davos years, 2023 to 2026",
+      label: "consecutive Davos Week years, 2023 to 2026",
       verified: true,
     },
     {
@@ -88,8 +88,8 @@ export const homeProof = {
     slot: "proof-bg",
     subject: "Night-time Davos Promenade with security lighting",
     composition: "wide, people as silhouettes",
-    source: "wef-archive",
-    alt: "Davos Promenade at night during WEF week",
+    source: "davos-archive",
+    alt: "Davos Promenade at night during Davos Week",
     treatment: "deep navy grade",
   } satisfies MediaBrief,
 };
@@ -102,8 +102,8 @@ export const homeServicesSection = {
 
 export const homeFlagship = {
   heading: "Trusted where the world watches.",
-  body: "Every January, Davos becomes the most demanding week in Swiss hospitality. For four WEF years we have handled the ground reality for six Indian state government delegations: accommodation blocks, protocol-aware transport, multi-cuisine catering and documentation, delivered quietly and on time.",
-  cta: { label: "Read the Davos & WEF Week guide", href: "/davos-wef" },
+  body: "Every January, Davos becomes the most demanding week in Swiss hospitality. For four consecutive Davos Weeks we have handled the ground reality for six Indian state government delegations: accommodation blocks, protocol-aware transport, multi-cuisine catering and documentation, delivered quietly and on time.",
+  cta: { label: "Read the Davos Week guide", href: "/davos-week" },
 };
 
 export const homeDestinationsSection = {

@@ -13,9 +13,9 @@ export const twoDelegationsOneWeek: CaseStudyContent = {
   destination: "Davos",
   groupSizeBand: "[TO CONFIRM: size band]",
   oneLineOutcome:
-    "2 delegations ran parallel programmes in the same WEF week, served by separated teams with information walls between them.",
+    "2 delegations ran parallel programmes in the same Davos Week, served by separated teams with information walls between them.",
   brief:
-    "In one WEF week, 2 state government delegations engaged us at the same time. Serving neighbours is a test of ethics before it is a test of logistics: each delegation competes for the same investors, the same venues and the same headlines, and each is entitled to a partner that behaves as if it were the only client. We ran the week as 2 separate operations: separated teams, separate operations leads, information walls between them, and a shared infrastructure layer of kitchens, vehicles and supplier capacity managed so that neither programme ever queued behind the other. Neither delegation's plans, guests or meetings were visible to the other at any point.",
+    "In one Davos Week, 2 state government delegations engaged us at the same time. Serving neighbours is a test of ethics before it is a test of logistics: each delegation competes for the same investors, the same venues and the same headlines, and each is entitled to a partner that behaves as if it were the only client. We ran the week as 2 separate operations: separated teams, separate operations leads, information walls between them, and a shared infrastructure layer of kitchens, vehicles and supplier capacity managed so that neither programme ever queued behind the other. Neither delegation's plans, guests or meetings were visible to the other at any point.",
   hard: [
     "2 programmes drawing on the same finite pool of beds, vehicles, rooms and kitchen capacity.",
     "Commercial and political sensitivity: neighbouring delegations competing for the same investors in the same week.",
@@ -55,7 +55,7 @@ export const twoDelegationsOneWeek: CaseStudyContent = {
       slot: "cs4-01",
       subject:
         "2 colour-coded run-sheet boards in separate operations rooms, contents not legible",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Separate operations boards for 2 parallel delegation programmes",
       treatment: "cool daylight, documents not legible",
     },
@@ -63,7 +63,7 @@ export const twoDelegationsOneWeek: CaseStudyContent = {
       slot: "cs4-02",
       subject:
         "Vehicles staged at dawn for one of the parallel movements, plates out of frame",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Vehicles staged at dawn for one of 2 parallel delegation movements",
       treatment:
         "cool alpine light, deep navy shadows; no number plates readable",
@@ -71,21 +71,21 @@ export const twoDelegationsOneWeek: CaseStudyContent = {
     {
       slot: "cs4-03",
       subject: "2 distinct menu lines in preparation in the same kitchen",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "2 menu lines in preparation in the same kitchen",
       treatment: "warm pass light against navy shadow",
     },
     {
       slot: "cs4-04",
       subject: "2 operations leads at work on the Promenade, radios in hand",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "2 operations leads coordinating separate programmes in Davos",
       treatment: "cool alpine light, faces not identifiable",
     },
     {
       slot: "cs4-05",
       subject: "An unbranded venue entrance prepared for a private programme",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "An unbranded venue entrance prepared for a private programme",
       treatment: "gold as doorway light, deep navy shadows",
     },
@@ -99,8 +99,8 @@ export const twoDelegationsOneWeek: CaseStudyContent = {
   seo: {
     metaTitle: "Two Delegations, One Week, Zero Collisions | SKAAH",
     metaDescription:
-      "Serving 2 state delegations in the same WEF week: separated teams, information walls and shared infrastructure, with no collisions between programmes.",
-    primaryKeyword: "parallel delegations WEF Davos",
+      "Serving 2 state delegations in the same Davos Week: separated teams, information walls and shared infrastructure, with no collisions between programmes.",
+    primaryKeyword: "parallel delegations Davos Week",
     secondaryKeywords: [
       "multi-client delegation operations",
       "delegation information walls",

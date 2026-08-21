@@ -44,7 +44,7 @@ export default async function WorkPage({
           subject:
             "Documentation packs, run sheets and archive binders on an operations table, contents not legible",
           composition: "top-down",
-          source: "wef-archive",
+          source: "davos-archive",
           alt: "Delegation documentation prepared for handover",
         }}
       />

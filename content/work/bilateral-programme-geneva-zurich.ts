@@ -1,4 +1,4 @@
-// CS6 per docs/02-content/05-work-case-studies.md. Angle: range beyond WEF
+// CS6 per docs/02-content/05-work-case-studies.md. Angle: range beyond Davos Week
 // week (multi-city movement, meeting staging, media handling). The spec marks
 // all facts [TO CONFIRM]; if the engagement cannot be verified in the archive,
 // this slot holds for the first post-launch engagement and the site launches
@@ -56,7 +56,7 @@ export const bilateralProgrammeGenevaZurich: CaseStudyContent = {
       slot: "cs6-01",
       subject:
         "Delegation vehicles waiting outside a Geneva venue, lake mist behind, plates out of frame",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Vehicles waiting outside a Geneva venue in morning mist",
       treatment:
         "cool lake light, deep navy shadows; no number plates readable",
@@ -64,7 +64,7 @@ export const bilateralProgrammeGenevaZurich: CaseStudyContent = {
     {
       slot: "cs6-02",
       subject: "Team members working on an intercity train between cities",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Team members working on an intercity train",
       treatment: "cool daylight through rail windows, documents not legible",
     },
@@ -72,14 +72,14 @@ export const bilateralProgrammeGenevaZurich: CaseStudyContent = {
       slot: "cs6-03",
       subject:
         "A meeting room prepared for a bilateral session in Zurich, flags in position",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "A meeting room prepared for a bilateral session in Zurich",
       treatment: "cool daylight, restrained gold accents",
     },
     {
       slot: "cs6-04",
       subject: "The Zurich Airport apron at dawn on departure day",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "The Zurich Airport apron at dawn",
       treatment: "gold as dawn light, deep navy shadows",
     },
@@ -93,7 +93,7 @@ export const bilateralProgrammeGenevaZurich: CaseStudyContent = {
   seo: {
     metaTitle: "A Bilateral Programme in Geneva & Zurich | SKAAH",
     metaDescription:
-      "Beyond WEF week: a government delegation moved between Geneva and Zurich for a bilateral programme, with meetings, movements and media under one plan.",
+      "Beyond Davos Week: a government delegation moved between Geneva and Zurich for a bilateral programme, with meetings, movements and media under one plan.",
     primaryKeyword: "government delegation Geneva Zurich",
     secondaryKeywords: [
       "bilateral meeting staging Switzerland",

@@ -3,10 +3,10 @@
 // delegation"); the named variant waits for written consent.
 import type { CaseStudyContent } from "@/content-schemas/types";
 
-export const firstTimeStateDelegationWef: CaseStudyContent = {
-  slug: "first-time-state-delegation-wef",
+export const firstTimeStateDelegationDavos: CaseStudyContent = {
+  slug: "first-time-state-delegation-davos",
   order: 2,
-  title: "A first-time state delegation at WEF",
+  title: "A first-time state delegation at Davos Week",
   consentGranted: false,
   segment: "delegation",
   year: "[TO CONFIRM: year]",
@@ -15,7 +15,7 @@ export const firstTimeStateDelegationWef: CaseStudyContent = {
   oneLineOutcome:
     "A first-time delegation ran its Davos week to a playbook it did not have to write.",
   brief:
-    "A first-time delegation of [TO CONFIRM: size] arrived with [TO CONFIRM: days] of programme and no Davos playbook. We supplied the playbook. WEF week punishes first-timers: accommodation is contracted out long before a first enquiry lands, distances that look short on a map take longer in January, and an investment programme needs rooms, staging and timing that the town does not hand over easily. Working with the delegation office from the first call, we ran the advance work, held the beds, staged the meetings and fed the delegation properly, so the officials could spend the week on the programme rather than on the town.",
+    "A first-time delegation of [TO CONFIRM: size] arrived with [TO CONFIRM: days] of programme and no Davos playbook. We supplied the playbook. Davos Week punishes first-timers: accommodation is contracted out long before a first enquiry lands, distances that look short on a map take longer in January, and an investment programme needs rooms, staging and timing that the town does not hand over easily. Working with the delegation office from the first call, we ran the advance work, held the beds, staged the meetings and fed the delegation properly, so the officials could spend the week on the programme rather than on the town.",
   hard: [
     "First-timer compression: decisions a returning delegation spreads over a year had to land in weeks.",
     "A late accommodation market, with delegation-grade beds in the valley largely contracted out.",
@@ -47,14 +47,14 @@ export const firstTimeStateDelegationWef: CaseStudyContent = {
       },
     ],
     summary:
-      "The delegation ran its first WEF week to a plan it did not have to invent. The final figures are with operations for sign-off; the playbook now belongs to the delegation.",
+      "The delegation ran its first Davos Week to a plan it did not have to invent. The final figures are with operations for sign-off; the playbook now belongs to the delegation.",
   },
   gallery: [
     {
       slot: "cs2-01",
       subject:
         "Advance recce: two planners walking an empty snow-covered venue forecourt",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Planners walking a venue forecourt during an advance recce",
       treatment:
         "cool alpine light, deep navy shadows, restrained gold accents",
@@ -62,21 +62,21 @@ export const firstTimeStateDelegationWef: CaseStudyContent = {
     {
       slot: "cs2-02",
       subject: "Investor meeting room set and checked before first use",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "A prepared investor meeting room before the first session",
       treatment: "cool daylight, no saturation push",
     },
     {
       slot: "cs2-03",
       subject: "Delegation luggage arriving at scale in a hotel service area",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Delegation luggage arriving at a Davos hotel",
       treatment: "cool alpine light, deep navy shadows",
     },
     {
       slot: "cs2-04",
       subject: "Kitchen line during an evening delegation dinner",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "The kitchen line during an evening delegation dinner",
       treatment: "warm pass light against navy shadow",
     },
@@ -84,7 +84,7 @@ export const firstTimeStateDelegationWef: CaseStudyContent = {
       slot: "cs2-05",
       subject:
         "Delegation members walking to an evening engagement, backs to camera",
-      source: "wef-archive",
+      source: "davos-archive",
       alt: "Delegation members walking to an evening engagement",
       treatment: "gold as lantern light, faces not identifiable",
     },
@@ -97,13 +97,13 @@ export const firstTimeStateDelegationWef: CaseStudyContent = {
     "media-production",
   ],
   seo: {
-    metaTitle: "A First-Time State Delegation at WEF | SKAAH",
+    metaTitle: "A First-Time State Delegation at Davos | SKAAH",
     metaDescription:
-      "How a first-time state delegation ran WEF week in Davos without a playbook of its own: advance recce, accommodation blocks, meeting rooms and cuisine.",
-    primaryKeyword: "first-time delegation WEF Davos",
+      "How a first-time state delegation ran Davos Week in Davos without a playbook of its own: advance recce, accommodation blocks, meeting rooms and cuisine.",
+    primaryKeyword: "first-time delegation Davos Week",
     secondaryKeywords: [
       "Davos delegation planning",
-      "WEF week accommodation delegations",
+      "Davos Week accommodation delegations",
     ],
   },
 };

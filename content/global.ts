@@ -45,5 +45,5 @@ export const COMPANY_LINKS: NavLink[] = [
   { label: "Experiences", href: "/experiences" },
   { label: "Insights", href: "/insights" },
   { label: "Partner with us", href: "/partners" },
-  { label: "Davos & WEF Week", href: "/davos-wef" },
+  { label: "Davos Week", href: "/davos-week" },
 ];

@@ -10,7 +10,7 @@ export const travelTransportImmigration: ServiceContent = {
     metaTitle:
       "Group Travel, Transport & Immigration Support in Switzerland | SKAAH",
     metaDescription:
-      "Group travel in Switzerland: visa and documentation support, meet-and-assist at Zurich and Geneva, fleets, coaches and rail. Proven at WEF Davos.",
+      "Group travel in Switzerland: visa and documentation support, meet-and-assist at Zurich and Geneva, fleets, coaches and rail. Proven at Davos Week.",
     primaryKeyword: "group transport Switzerland",
   },
   cardTitle: "Travel, Transport & Immigration",
@@ -91,8 +91,8 @@ export const travelTransportImmigration: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four WEF years. One Swiss partner.",
-      "Protocol-aware transport across four WEF Januaries, from Zurich Airport to the Graubünden valley.",
+      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Protocol-aware transport across four Davos Januaries, from Zurich Airport to the Graubünden valley.",
     ],
   },
   faqs: [

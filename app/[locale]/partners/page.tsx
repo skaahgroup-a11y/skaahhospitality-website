@@ -47,7 +47,7 @@ const partnerValues = [
   {
     title: "Delegation-grade operations when your client is a government",
     description:
-      "Protocol, secure movements and documentation discipline, proven across four WEF years.",
+      "Protocol, secure movements and documentation discipline, proven across four consecutive Davos Weeks.",
   },
 ];
 
