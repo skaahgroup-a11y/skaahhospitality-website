@@ -1,0 +1,154 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
+import { pageMetadata } from "@/lib/seo/meta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { serviceJsonLd, faqPageJsonLd } from "@/lib/seo/jsonld";
+import { PageHero } from "@/components/blocks/PageHero";
+import { Breadcrumbs } from "@/components/blocks/Breadcrumbs";
+import { CapabilityGrid } from "@/components/blocks/CapabilityGrid";
+import { StepRow } from "@/components/blocks/StepRow";
+import { FAQAccordion } from "@/components/blocks/FAQAccordion";
+import { RelatedServices } from "@/components/blocks/RelatedServices";
+import { CTABand } from "@/components/blocks/CTABand";
+import { BudgetBandTable } from "@/components/blocks/BudgetBandTable";
+import { MediaPlaceholder } from "@/components/ui/MediaPlaceholder";
+import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Copy } from "@/components/ui/Copy";
+import { services, getService } from "@/content/services";
+import { RESPONSE_PROMISE } from "@/lib/site";
+
+export function generateStaticParams() {
+  return services.map((service) => ({ slug: service.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const service = getService(slug);
+  if (!service) return {};
+  return pageMetadata(service.seo, `/services/${service.slug}`);
+}
+
+export default async function ServicePage({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}) {
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+  const service = getService(slug);
+  if (!service) notFound();
+
+  const related = service.relatedSlugs
+    .map((relatedSlug) => getService(relatedSlug))
+    .filter((entry) => entry !== undefined);
+
+  return (
+    <>
+      <JsonLd
+        data={[
+          serviceJsonLd({
+            name: service.cardTitle,
+            serviceType: service.seo.primaryKeyword ?? service.cardTitle,
+            path: `/services/${service.slug}`,
+          }),
+          faqPageJsonLd(service.faqs),
+        ]}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/services" },
+          { name: service.cardTitle, path: `/services/${service.slug}` },
+        ]}
+      />
+      <PageHero
+        eyebrow={service.cardTitle}
+        title={service.h1}
+        subline={service.subline}
+        cta={service.cta}
+        media={service.heroMedia}
+      />
+
+      {/* Who this serves */}
+      <Section surface="light">
+        <SectionHeading heading="Who this serves" />
+        <p className="prose-site mt-6 text-lg leading-relaxed">
+          <Copy text={service.whoThisServes} />
+        </p>
+      </Section>
+
+      {/* What we handle */}
+      <Section surface="ice">
+        <SectionHeading heading="What we handle" />
+        <div className="mt-12">
+          <CapabilityGrid items={service.capabilities} />
+        </div>
+      </Section>
+
+      {service.budgetBands ? (
+        <Section surface="light">
+          <SectionHeading heading="Indicative budget bands" />
+          <div className="mt-8 max-w-3xl">
+            <BudgetBandTable
+              rows={service.budgetBands.rows}
+              footnote={service.budgetBands.footnote}
+            />
+          </div>
+        </Section>
+      ) : null}
+
+      {/* How it runs */}
+      <Section surface={service.budgetBands ? "ice" : "light"}>
+        <SectionHeading heading="How it runs" />
+        <div className="mt-12">
+          <StepRow steps={service.processSteps} />
+        </div>
+      </Section>
+
+      {/* Proof block (dark) */}
+      <Section surface="dark">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            {service.proof.lines.map((line) => (
+              <p
+                key={line}
+                className="mt-4 font-display text-2xl font-medium leading-snug text-white first:mt-0"
+              >
+                <Copy text={line} />
+              </p>
+            ))}
+          </div>
+          {service.proof.media ? (
+            <MediaPlaceholder brief={service.proof.media} aspect="3:2" />
+          ) : null}
+        </div>
+      </Section>
+
+      {/* FAQs */}
+      <Section surface="light">
+        <SectionHeading heading="Questions organisers ask" />
+        <div className="mt-10 max-w-3xl">
+          <FAQAccordion faqs={service.faqs} />
+        </div>
+      </Section>
+
+      {/* Related services */}
+      <Section surface="ice">
+        <RelatedServices services={related} />
+      </Section>
+
+      <CTABand
+        headline="Tell us about your visit."
+        body={RESPONSE_PROMISE}
+        ctaLabel="Start your enquiry"
+        ctaHref="/enquiry"
+      />
+    </>
+  );
+}
