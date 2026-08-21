@@ -1,0 +1,30 @@
+# Dependencies
+/node_modules
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production
+/build
+
+# Runtime data (enquiry payloads, uploads, counters). Lives on the server
+# under shared/data per docs/08 section 3; never committed.
+/data
+
+# Misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# Env files: server .env is the single runtime secret store (docs/08 section 6)
+.env
+.env.local
+.env.*.local
+
+# Testing
+/coverage
+
+# Vitest
+/.vitest

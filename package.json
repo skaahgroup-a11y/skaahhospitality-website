@@ -1,0 +1,46 @@
+{
+  "name": "skaahhospitality-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "skaahhospitality.com, the website of SKAAH Hospitality GmbH (Opfikon, Zurich). Built to Statement of Work v1.3, see CLAUDE.md and /docs.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:production": "pnpm check:claims && cross-env NEXT_PUBLIC_ENV=production next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "check:claims": "node scripts/check-claims.mjs",
+    "seed:content": "node scripts/seed-content.mjs",
+    "export:content": "npx tsx scripts/export-content.ts"
+  },
+  "dependencies": {
+    "next": "^15.4.6",
+    "next-intl": "^4.1.0",
+    "nodemailer": "^9.0.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sharp": "^0.35.3",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.6",
+    "@fontsource/cormorant-garamond": "^5.2.5",
+    "@fontsource/inter": "^5.2.5",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@types/node": "^22.15.0",
+    "@types/nodemailer": "^8.0.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.25.0",
+    "eslint-config-next": "^15.4.6",
+    "tailwindcss": "^4.1.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  }
+}

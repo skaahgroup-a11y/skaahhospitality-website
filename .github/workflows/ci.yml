@@ -1,0 +1,42 @@
+# CI per docs/07 T0.4 and docs/08 section 6: typecheck, lint, unit tests,
+# claims gate, build. Axe and Lighthouse CI budget runs join once the
+# preview environment exists (tracked in docs/07 E5/E6).
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Unit tests
+        run: pnpm test
+
+      - name: Claims gate (staging level)
+        run: pnpm check:claims
+
+      - name: Build
+        run: pnpm build
