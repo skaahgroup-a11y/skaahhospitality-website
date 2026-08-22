@@ -1,0 +1,17 @@
+/en :: crit=0 serious=1 mod=1 minor=0
+/en/services :: crit=0 serious=1 mod=2 minor=0
+/en/services/government-delegations :: crit=0 serious=1 mod=1 minor=1
+/en/davos-week :: crit=0 serious=2 mod=1 minor=1
+/en/destinations :: crit=0 serious=1 mod=2 minor=0
+/en/destinations/zurich :: crit=0 serious=1 mod=1 minor=0
+/en/destinations/zermatt :: crit=0 serious=1 mod=1 minor=0
+/en/work :: crit=0 serious=1 mod=2 minor=0
+/en/work/six-states-one-swiss-partner :: crit=0 serious=2 mod=1 minor=1
+/en/experiences :: crit=0 serious=1 mod=1 minor=1
+/en/insights :: crit=0 serious=1 mod=1 minor=0
+/en/insights/davos-delegation-countdown :: crit=0 serious=1 mod=1 minor=0
+/en/about :: crit=0 serious=1 mod=1 minor=1
+/en/partners :: crit=0 serious=1 mod=1 minor=1
+/en/enquiry :: crit=0 serious=1 mod=0 minor=0
+/en/privacy :: crit=0 serious=1 mod=1 minor=0
+DONE

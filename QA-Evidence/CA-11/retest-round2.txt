@@ -1,0 +1,7 @@
+CA-11 round 2 retest, 2026-08-21
+Result: Fail
+
+node scripts/check-claims.mjs --production: exits 1 with 78 unresolved [TO CONFIRM markers across content/, messages and lib/site.ts; production builds are correctly blocked (build:production runs this gate first). Fail records the designed pre-launch state per workbook instruction: markers await client facts (mailboxes, WhatsApp/phone, LinkedIn, venue lists, approved disclaimer wording); the gate itself works as specified. Round 2: count reduced to the facts genuinely awaiting the client (metadata trims resolved none of these by design).
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

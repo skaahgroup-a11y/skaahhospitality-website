@@ -1,0 +1,8 @@
+SR-11 Retention purge job — BLOCKED pre-staging, with a genuine open item (2026-08-21)
+docs/05 s6 and docs/08 s5 require a retention purge job for enquiry data after
+"[TO CONFIRM: months]" — the retention period itself is still unconfirmed by the client.
+Pre-check: grep -ri "purge|retention" over lib/, app/, scripts/ => zero matches; scripts/ contains
+only check-claims.mjs, export-content.ts, seed-content.mjs. NO purge job exists in code yet.
+This is a genuine open item: even once the server exists there is nothing to schedule. Recording
+Blocked (server-side scheduling unavailable pre-staging) with the code gap explicitly noted;
+the purge job must be built and the retention months confirmed before launch.

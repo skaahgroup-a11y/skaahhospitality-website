@@ -1,0 +1,6 @@
+AC-08 pre-check, 2026-08-21: no <video> element in codebase or rendered /en (hero film pending Davos archive / Phase 1 shoot).
+
+grep -rn '<video|autoPlay|autoplay' components/ app/ => no matches
+curl -s http://127.0.0.1:3222/en | grep -c '<video' => 0
+
+Spec requirement stands for the film build: docs/04 C03 HeroFilm requires pause/play control bottom-right; docs/04 s(a11y): 'film has pause control and never conveys sole meaning'.

@@ -1,0 +1,35 @@
+=== FE-06 persisted JSON /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/enquiries/SKH-20260821-0006.json, checked 2026-08-21T22:52:17Z ===
+segment: general | expected: general
+reference: SKH-20260821-0006
+cuisines (catering only): None
+flags: {'verifiedDomain': False, 'manualCheck': False, 'utm': {}}
+locale: en
+--- full JSON ---
+{
+  "reference": "SKH-20260821-0006",
+  "segment": "general",
+  "submittedAt": "2026-08-21T22:52:08.876Z",
+  "contact": {
+    "name": "TEST Maria Keller",
+    "organisation": "",
+    "role": "",
+    "email": "test.general@keller-example.ch",
+    "phone": "",
+    "preferredChannel": "email"
+  },
+  "details": {
+    "subject": "TEST QA FE-06 general question",
+    "message": "TEST submission: do you also arrange private museum visits in Zurich?"
+  },
+  "attachments": [],
+  "flags": {
+    "verifiedDomain": false,
+    "manualCheck": false,
+    "utm": {}
+  },
+  "consent": {
+    "privacyVersion": "2026-08",
+    "acceptedAt": "2026-08-21T22:52:08.877Z"
+  },
+  "locale": "en"
+}

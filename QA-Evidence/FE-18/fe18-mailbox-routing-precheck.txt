@@ -1,0 +1,40 @@
+=== FE-18 mailbox routing pre-check (live routing Blocked - no Hostpoint mailboxes), 2026-08-21T22:54:37Z ===
+--- .env.example SEGMENT_MAILBOXES ---
+23:# Per-segment delivery mailboxes as JSON. [TO CONFIRM: final addresses]
+24-SEGMENT_MAILBOXES={"delegation":"delegations@skaahhospitality.com","mice":"mice@skaahhospitality.com","stay":"stays@skaahhospitality.com","catering":"catering@skaahhospitality.com","agency":"partners@skaahhospitality.com","general":"enquiry@skaahhospitality.com"}
+
+--- mapping parsed ---
+delegation   -> delegations@skaahhospitality.com
+mice         -> mice@skaahhospitality.com
+stay         -> stays@skaahhospitality.com
+catering     -> catering@skaahhospitality.com
+agency       -> partners@skaahhospitality.com
+general      -> enquiry@skaahhospitality.com
+all six segments mapped: True
+
+--- deliver.ts routing logic (segmentMailbox + mailbox leg, lines 10-19 and 82-94) ---
+function segmentMailbox(segment: string): string | undefined {
+  try {
+    const raw = process.env.SEGMENT_MAILBOXES;
+    if (!raw) return undefined;
+    const map = JSON.parse(raw) as Record<string, string>;
+    return map[segment];
+  } catch {
+    return undefined;
+  }
+}
+  // 1. Per-segment mailbox.
+  const mailbox = segmentMailbox(payload.segment);
+  if (mailbox) {
+    try {
+      await sendMail({
+        to: mailbox,
+        subject: `New ${payload.segment} enquiry ${payload.reference}`,
+        text: payloadSummary(payload),
+      });
+    } catch (error) {
+      await queueFailedJob("mailbox", payload, String(error));
+    }
+  }
+
+PRE-CHECK RESULT: mapping complete for all 6 segments; deliverEnquiry() resolves mailbox per payload.segment and mails the payload summary with subject 'New <segment> enquiry <reference>'. Live mailbox delivery untestable: no Hostpoint mailboxes/SMTP.

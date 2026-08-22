@@ -1,0 +1,69 @@
+CC-12 Legal pages vs docs/02.07 B — 2026-08-21
+
+== /privacy (H1: ['Privacy Policy']) — [TO CONFIRM] markers rendered: 9
+   marker: [TO CONFIRM: address, register no.]
+   marker: [TO CONFIRM: privacy mailbox]
+   marker: [TO CONFIRM: months]
+   marker: [TO CONFIRM: privacy mailbox]
+   marker: [TO CONFIRM: enquiry mailbox address]
+   marker: [TO CONFIRM: WhatsApp number]
+   marker: [TO CONFIRM: phone number]
+   marker: [TO CONFIRM: LinkedIn URL]
+   marker: [TO CONFIRM: replace with the approved standard disclaimer wording]
+
+== /imprint (H1: ['Imprint']) — [TO CONFIRM] markers rendered: 12
+   marker: [TO CONFIRM: registered address]
+   marker: [TO CONFIRM: commercial register number]
+   marker: [TO CONFIRM: VAT number]
+   marker: [TO CONFIRM: managing director(s)]
+   marker: [TO CONFIRM: enquiry mailbox address]
+   marker: [TO CONFIRM: phone number]
+   marker: [TO CONFIRM: WhatsApp number]
+   marker: [TO CONFIRM: enquiry mailbox address]
+   marker: [TO CONFIRM: WhatsApp number]
+   marker: [TO CONFIRM: phone number]
+   marker: [TO CONFIRM: LinkedIn URL]
+   marker: [TO CONFIRM: replace with the approved standard disclaimer wording]
+
+== /cookies (H1: ['Cookie Preferences']) — [TO CONFIRM] markers rendered: 5
+   marker: [TO CONFIRM: enquiry mailbox address]
+   marker: [TO CONFIRM: WhatsApp number]
+   marker: [TO CONFIRM: phone number]
+   marker: [TO CONFIRM: LinkedIn URL]
+   marker: [TO CONFIRM: replace with the approved standard disclaimer wording]
+
+Privacy structural checks:
+  contains 'SKAAH Hospitality GmbH': True
+  contains 'controller': True
+  contains 'FADP': True
+  contains 'GDPR': True
+  contains 'Switzerland': True
+  contains 'retention': False
+  contains 'processors': True
+  contains 'rights': True
+  contains 'privacy@skaahhospitality.com': True
+Imprint structural checks:
+  contains 'SKAAH Hospitality GmbH': True
+  contains 'register': True
+  contains 'VAT': True
+  contains 'Managing': True
+  contains 'Opfikon': True
+Cookies structural checks:
+  contains 'Necessary': True
+  contains 'Analytics': True
+  contains 'preferences': True
+  contains 'banner': True
+
+Correction to structural check: privacy retention section IS present as "How long we keep it — We keep
+enquiry data for [TO CONFIRM: months] after our last exchange..." (my keyword probe used 'retention';
+the page uses plain-English wording). All structural sections of docs/02.07 B are present on all 3 pages.
+
+HONEST VERDICT: FAIL (pending counsel input) — exactly as the workbook anticipates.
+The three legal pages are well-formed skeletons that follow docs/02.07 B structure (controller, purposes,
+legal bases FADP+GDPR, CH/EU storage, retention, processors, rights on /privacy; company/seat/register/VAT/
+directors on /imprint; category table + consent controls on /cookies), BUT counsel-final text is not yet
+available: register number, VAT number, registered address, managing directors, retention period and privacy
+mailbox all render as [TO CONFIRM] markers (9 on /privacy, 12 on /imprint, 5 on /cookies, incl. footer
+markers). These are not counsel-final legal pages and would be blocked by the production marker gate.
+Not a build defect — a content dependency on legal counsel — but per the governing standard the expected
+result ("legal pages final") is not met.

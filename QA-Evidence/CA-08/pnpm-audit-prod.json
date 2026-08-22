@@ -1,0 +1,214 @@
+{
+  "actions": [],
+  "advisories": {
+    "1117015": {
+      "findings": [
+        {
+          "version": "8.4.31",
+          "paths": [
+            ".>next>postcss"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/postcss/postcss/security/advisories/GHSA-qx2v-qp2m-jg93\n- https://nvd.nist.gov/vuln/detail/CVE-2026-41305\n- https://github.com/postcss/postcss/releases/tag/8.5.10\n- https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+      "created": "2026-04-24T15:31:42.000Z",
+      "id": 1117015,
+      "npm_advisory_id": null,
+      "overview": "# PostCSS: XSS via Unescaped `</style>` in CSS Stringify Output\n\n## Summary\n\nPostCSS v8.5.5 (latest) does not escape `</style>` sequences when stringifying CSS ASTs. When user-submitted CSS is parsed and re-stringified for embedding in HTML `<style>` tags, `</style>` in CSS values breaks out of the style context, enabling XSS.\n\n## Proof of Concept\n\n```javascript\nconst postcss = require('postcss');\n\n// Parse user CSS and re-stringify for page embedding\nconst userCSS = 'body { content: \"</style><script>alert(1)</script><style>\"; }';\nconst ast = postcss.parse(userCSS);\nconst output = ast.toResult().css;\nconst html = `<style>${output}</style>`;\n\nconsole.log(html);\n// <style>body { content: \"</style><script>alert(1)</script><style>\"; }</style>\n//\n// Browser: </style> closes the style tag, <script> executes\n```\n\n**Tested output** (Node.js v22, postcss v8.5.5):\n```\nInput: body { content: \"</style><script>alert(1)</script><style>\"; }\nOutput: body { content: \"</style><script>alert(1)</script><style>\"; }\nContains </style>: true\n```\n\n## Impact\n\nImpact non-bundler use cases since bundlers for XSS on their own. Requires some PostCSS plugin to have malware code, which can inject XSS to website.\n\n## Suggested Fix\n\nEscape `</style` in all stringified output values:\n```javascript\noutput = output.replace(/<\\/(style)/gi, '<\\\\/$1');\n```\n\n## Credits\nDiscovered and reported by [Sunil Kumar](https://tharvid.in) ([@TharVid](https://github.com/TharVid))",
+      "reported_by": null,
+      "title": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+      "metadata": null,
+      "cves": [
+        "CVE-2026-41305"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "postcss",
+      "vulnerable_versions": "<8.5.10",
+      "github_advisory_id": "GHSA-qx2v-qp2m-jg93",
+      "recommendation": "Upgrade to version 8.5.10 or later",
+      "patched_versions": ">=8.5.10",
+      "updated": "2026-04-24T15:31:44.000Z",
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-79"
+      ],
+      "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93"
+    },
+    "1124066": {
+      "findings": [
+        {
+          "version": "0.34.5",
+          "paths": [
+            ".>next>sharp"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/libvips/libvips/security/advisories/GHSA-2fcj-gj27-279x\n- https://github.com/libvips/libvips/security/advisories/GHSA-523x-vhfw-6r76\n- https://github.com/libvips/libvips/security/advisories/GHSA-jmwm-wc68-mhwm\n- https://github.com/libvips/libvips/security/advisories/GHSA-r98w-4fp7-m9c7\n- https://github.com/lovell/sharp/security/advisories/GHSA-f88m-g3jw-g9cj\n- https://github.com/advisories/GHSA-f88m-g3jw-g9cj",
+      "created": "2026-07-21T22:07:17.000Z",
+      "id": 1124066,
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nA number of vulnerabilities, two rated as \"High\" severity using CVSSv4, have been discovered and fixed in the upstream libvips dependency.\n\nThose processing untrusted input with versions of sharp prior to 0.35.0 are affected.\n\n### Patches\n\n#### Using prebuilt binaries provided by sharp?\n\nMost people rely on the prebuilt binaries provided by sharp.\n\nPlease upgrade sharp to the latest version, currently 0.35.3, which provides libvips 8.18.3.\n\n#### Using a globally-installed libvips?\n\nPlease ensure you are using the latest libvips 8.18.3.\n\n### Workarounds\nAdd the following to your code to prevent sharp from decoding GIF, TIFF and VIPS images.\n```js\nsharp.block({ operation: [\"VipsForeignLoadNsgif\", \"VipsForeignLoadTiff\", \"VipsForeignLoadVips\"] });\n```",
+      "reported_by": null,
+      "title": "sharp inherited vulnerabilities in libvips: CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591",
+      "metadata": null,
+      "cves": [],
+      "access": "public",
+      "severity": "high",
+      "module_name": "sharp",
+      "vulnerable_versions": "<0.35.0",
+      "github_advisory_id": "GHSA-f88m-g3jw-g9cj",
+      "recommendation": "Upgrade to version 0.35.0 or later",
+      "patched_versions": ">=0.35.0",
+      "updated": "2026-07-21T22:07:18.000Z",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "cwe": [
+        "CWE-1395"
+      ],
+      "url": "https://github.com/advisories/GHSA-f88m-g3jw-g9cj"
+    },
+    "1124252": {
+      "findings": [
+        {
+          "version": "8.4.31",
+          "paths": [
+            ".>next>postcss"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/postcss/postcss/security/advisories/GHSA-6g55-p6wh-862q\n- https://github.com/postcss/postcss/commit/aaec7b78b3ce2792585b4b300ef1bd5dd5b3e8ad\n- https://github.com/postcss/postcss/commit/c64b7488d2731dfa16213739b42c34faf5a9eba3\n- https://github.com/postcss/postcss/releases/tag/8.5.12\n- https://github.com/advisories/GHSA-6g55-p6wh-862q",
+      "created": "2026-07-23T15:06:16.000Z",
+      "id": 1124252,
+      "npm_advisory_id": null,
+      "overview": "## Summary\n\nPostCSS's `PreviousMap` parses the `/*# sourceMappingURL=PATH */` comment from any CSS string passed to `process()` and dereferences `PATH` against the local filesystem with no scheme, allowlist, or traversal check. An attacker who controls the CSS input can cause the host process to read any file readable by Node and leak the first ~10 bytes of its content through the resulting `JSON.parse` `SyntaxError` message. The bug also yields a precise file-existence oracle and a controllable-read primitive that may be combined with large-file targets for DoS. The behaviour is triggered with PostCSS's default options — no `from`, no `map`, no plugins required — and is therefore reachable from any pipeline that runs untrusted CSS through PostCSS (CMS themes, user-uploaded styles, browser-extension/userstyle processors, build pipelines for third-party packages, blog comment renderers, etc.).\n\n## Details\n\nThe dangerous chain lives in `lib/previous-map.js` and is wired into every `Input` construction at `lib/input.js:70-77`.\n\n`Input` constructor (`lib/input.js:70-77`):\n\n```js\nif (pathAvailable && sourceMapAvailable) {\n  let map = new PreviousMap(this.css, opts)\n  if (map.text) {\n    this.map = map\n    let file = map.consumer().file\n    if (!this.file && file) this.file = this.mapResolve(file)\n  }\n}\n```\n\n`PreviousMap` constructor (`lib/previous-map.js:17-29`):\n\n```js\nconstructor(css, opts) {\n  if (opts.map === false) return\n  this.loadAnnotation(css)\n  this.inline = this.startWith(this.annotation, 'data:')\n\n  let prev = opts.map ? opts.map.prev : undefined\n  let text = this.loadMap(opts.from, prev)\n  ...\n}\n```\n\nNote `opts.map === false` is the only short-circuit. With default options (`opts.map === undefined`), the rest of the constructor — including the filesystem read — executes.\n\n`loadAnnotation` (`lib/previous-map.js:72-84`) extracts the URL **without sanitisation**:\n\n```js\nloadAnnotation(css) {\n  let comments = css.match(/\\/\\*\\s*# sourceMappingURL=/g)\n  if (!comments) return\n  let start = css.lastIndexOf(comments.pop())\n  let end = css.indexOf('*/', start)\n  if (start > -1 && end > -1) {\n    this.annotation = this.getAnnotationURL(css.substring(start, end))\n  }\n}\n```\n\n`getAnnotationURL` (`lib/previous-map.js:59-61`) only strips the `/*# sourceMappingURL=` prefix and trims whitespace — no scheme check, no path normalisation, no allowlist.\n\n`loadMap` (`lib/previous-map.js:124-128`) — when `prev` is absent and the annotation is not an inline `data:` URI:\n\n```js\n} else if (this.annotation) {\n  let map = this.annotation\n  if (file) map = join(dirname(file), map)\n  return this.loadFile(map)\n}\n```\n\n* If `opts.from` is unset, `file` is undefined and the raw attacker-supplied path (e.g. `/etc/passwd`) is used directly.\n* If `opts.from` is set, `path.join(dirname(file), attackerPath)` is used. `path.join` does **not** block `..` segments, so `../../../../../etc/passwd` resolves outside the intended directory.\n\n`loadFile` (`lib/previous-map.js:86-92`) is the sink:\n\n```js\nloadFile(path) {\n  this.root = dirname(path)\n  if (existsSync(path)) {\n    this.mapFile = path\n    return readFileSync(path, 'utf-8').toString().trim()\n  }\n}\n```\n\nThe bytes are stored in `this.text`. `Input` immediately invokes `map.consumer()` (`lib/input.js:74`), which constructs a `SourceMapConsumer` (`lib/previous-map.js:33`). When the file is not valid source-map JSON (the common case), `source-map-js` calls `JSON.parse`, and V8's `SyntaxError` message embeds the first ~10 bytes of the file content:\n\n```\nUnexpected token 'r', \"root:x:0:0\"... is not valid JSON\n```\n\nThis error is propagated back to the caller. Any application that surfaces PostCSS errors (logs, HTTP 500 responses, build-tool output, debug pages) discloses those bytes to the attacker.\n\nTrust-boundary analysis:\n* Attacker controls: CSS input passed to `postcss().process(css, opts?)`.\n* Server resources: any file readable by the Node process — typically including app config, environment files, SSH keys, `/etc/passwd`, `/proc/self/environ`, etc.\n* No mitigations: there is no path validation, scheme allowlist, traversal check, or symlink check. The only relevant check (`startWith(annotation, 'data:')`) routes inline URIs to `decodeInline`; everything else hits `loadFile`.\n\nPrimitives obtained:\n* (a) **Arbitrary file read** — bytes loaded into Node memory.\n* (b) **Information disclosure** — first ~10 bytes leaked via `JSON.parse` `SyntaxError` message.\n* (c) **File-existence oracle** — non-existent paths return silently from `loadFile` (`existsSync` is false → returns undefined → no map text → no consumer call → no error). Existent non-JSON paths throw. Existent JSON paths succeed silently. Three distinguishable states.\n* (d) **DoS primitive** — directing the read at `/dev/zero`, very large files, or device files can stall or crash the process.\n\n## PoC\n\nAll commands executed against this repository's HEAD (postcss 8.5.10) on Node v22.12.0.\n\n**Vector 1 — Absolute path, default options (no `from`, no `map`):**\n\n```bash\n$ node -e 'const p=require(\"postcss\"); \\\n  try { p().process(\"a{color:red}\\n/*# sourceMappingURL=/etc/passwd */\"); } \\\n  catch(e){console.log(e.message)}'\nUnexpected token 'r', \"root:x:0:0\"... is not valid JSON\n```\n\nThe first 10 bytes of `/etc/passwd` (`root:x:0:0`) are leaked.\n\n**Vector 2 — Relative `..` traversal with `opts.from` set (simulates a build pipeline that pins `from` to the source file):**\n\n```bash\n$ node -e 'const p=require(\"postcss\"); \\\n  p().process(\"a{color:red}\\n/*# sourceMappingURL=../../../../../etc/passwd */\", \\\n              {from:\"/var/www/html/styles/main.css\", map:{inline:false}}) \\\n   .catch(e=>console.log(e.message))'\nUnexpected token 'r', \"root:x:0:0\"... is not valid JSON\n```\n\n`path.join('/var/www/html/styles', '../../../../../etc/passwd')` resolves to `/etc/passwd`.\n\n**Vector 3 — File-existence oracle:**\n\n```bash\n# Existing non-JSON file → throws (file confirmed to exist)\n$ node -e 'require(\"postcss\")().process(\"a{}\\n/*# sourceMappingURL=/etc/passwd */\")'\nSyntaxError: Unexpected token 'r', \"root:x:0:0\"... is not valid JSON\n\n# Non-existent file → returns silently (file confirmed absent)\n$ node -e 'r=require(\"postcss\")().process(\"a{}\\n/*# sourceMappingURL=/no/such/file */\"); console.log(\"ok\")'\nok\n```\n\n**Vector 4 — Custom file-content leak:**\n\n```bash\n$ printf 'API_KEY=sk-secret-12345\\n' > /tmp/server-secret.env\n$ node -e 'require(\"postcss\")().process(\"a{}\\n/*# sourceMappingURL=/tmp/server-secret.env */\")' 2>&1 | head -1\nSyntaxError: Unexpected token 'A', \"API_KEY=sk\"... is not valid JSON\n```\n\nThe first 10 bytes of `/tmp/server-secret.env` (`API_KEY=sk`) are leaked — sufficient to confirm a token's presence and, in many cases, recover its prefix.\n\n**Filesystem-call trace** (proves the read happens with no opts at all):\n\n```js\nconst fs = require('fs');\nconst orig = fs.readFileSync;\nfs.readFileSync = function(p){\n  if (typeof p==='string' && p.startsWith('/etc')) console.log('[FILE READ]:', p);\n  return orig.apply(this, arguments);\n};\nrequire('postcss')().process('a{}\\n/*# sourceMappingURL=/etc/hostname */');\n// → [FILE READ]: /etc/hostname\n// → SyntaxError: Unexpected token 'D', \"Debian-tri\"... is not valid JSON\n```\n\n## Impact\n\n* **Arbitrary file read** of any file readable by the Node process from any CSS-processing context that accepts attacker-influenced CSS. PostCSS has hundreds of millions of weekly npm downloads and is the standard CSS processor for build tools (webpack `postcss-loader`, vite, parcel, Next.js, Gatsby, etc.) and for runtime CSS-handling libraries (CSS Modules tools, CSS minifiers, theme processors). Any pipeline that runs untrusted user CSS — CMS theme uploads, user-styled blog posts, browser-extension/userstyle services, multi-tenant build farms, third-party-package build pipelines — is exposed.\n* **Confidentiality leak** of the first ~10 bytes of the targeted file via `JSON.parse` `SyntaxError`. This is enough to recover SSH-key headers, environment-variable prefixes (`API_KEY=sk…`), `/etc/passwd` records, the start of `/proc/self/environ`, and other high-value secrets, and to fingerprint the host (`Debian-tri…` from `/etc/hostname`).\n* **File-existence oracle** with three distinguishable response states (silent success, `JSON.parse` error, no-such-file silence), enabling reconnaissance of the host filesystem layout and confirmation of installed software, user accounts, and configuration files.\n* **DoS** by targeting `/dev/zero`, `/proc/kcore`, very large files, or named pipes — `readFileSync` is a synchronous, unbounded read.\n* **Default-on**: triggered with `postcss().process(css)` and no options. The only configuration that disables the bug is the explicit, undocumented-for-this-purpose `{ map: false }`.\n\n## Recommended Fix\n\nThe root cause is that `loadFile` accepts any path the attacker supplies inside a CSS comment. The annotation is meant for tooling, not for production CSS processing of untrusted input. Two layered fixes:\n\n1. **Refuse traversal/absolute paths in `loadMap`** (defence-in-depth):\n\n   ```js\n   // lib/previous-map.js\n   loadMap(file, prev) {\n     if (prev === false) return false\n     if (prev) { /* unchanged */ }\n     else if (this.inline) {\n       return this.decodeInline(this.annotation)\n     } else if (this.annotation) {\n       let annotation = this.annotation\n       // Reject schemes (other than data:, handled above) and absolute paths.\n       if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(annotation)) return\n       if (require('path').isAbsolute(annotation)) return\n       if (!file) return  // No base path → cannot safely resolve.\n       const base = require('path').resolve(require('path').dirname(file))\n       const resolved = require('path').resolve(base, annotation)\n       // Refuse anything that escapes the base directory.\n       if (resolved !== base && !resolved.startsWith(base + require('path').sep)) {\n         return\n       }\n       return this.loadFile(resolved)\n     }\n   }\n   ```\n\n2. **Require explicit opt-in to follow on-disk source-map annotations**: gate the `loadFile(map)` call in `loadMap` behind an option such as `opts.map.annotation === true` or `opts.map.followAnnotation === true`. Today, the only way to opt out is `{ map: false }`, which also disables in-memory previous-map handling. Inverting the default — only follow disk-resident annotations when explicitly asked — eliminates the entire attack surface for callers that pass untrusted CSS, while preserving build-tool use cases where the annotation is trusted.\n\nA user-facing changelog entry should warn that `postcss().process(untrustedCss)` previously read attacker-controlled paths, and recommend auditing applications that surfaced PostCSS errors to end users.",
+      "reported_by": null,
+      "title": "PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments",
+      "metadata": null,
+      "cves": [
+        "CVE-2026-45623"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "postcss",
+      "vulnerable_versions": "<=8.5.11",
+      "github_advisory_id": "GHSA-6g55-p6wh-862q",
+      "recommendation": "Upgrade to version 8.5.12 or later",
+      "patched_versions": ">=8.5.12",
+      "updated": "2026-07-23T15:06:17.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-22",
+        "CWE-200"
+      ],
+      "url": "https://github.com/advisories/GHSA-6g55-p6wh-862q"
+    },
+    "1130709": {
+      "findings": [
+        {
+          "version": "8.4.31",
+          "paths": [
+            ".>next>postcss"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/postcss/postcss/security/advisories/GHSA-fxqj-rqcc-2cmp\n- https://github.com/postcss/postcss/commit/7beca139e70f9075c6b19700fcb00dd8033e5da8\n- https://github.com/postcss/postcss/releases/tag/8.5.19\n- https://github.com/advisories/GHSA-fxqj-rqcc-2cmp",
+      "created": "2026-08-03T17:11:39.000Z",
+      "id": 1130709,
+      "npm_advisory_id": null,
+      "overview": "## Summary\n\nThe fix for GHSA-6g55-p6wh-862q added a guard in `lib/previous-map.js` `PreviousMap.loadFile()` that restricts an attacker-controlled `sourceMappingURL` (from a CSS comment) to a `.map` extension and, for untrusted maps, rejects `..` traversal and absolute paths. The traversal/absolute rejection is nested inside `if (cssFile) { ... }`. When PostCSS is invoked without the `from` option, `cssFile` is falsy and that branch is skipped, leaving only the `.map` extension check.\n\n`PreviousMap` is constructed by `lib/input.js` whenever `pathAvailable && sourceMapAvailable` (under Node with source-map available), independent of `opts.from`/`opts.map` (the constructor returns early only for `opts.map === false`). So `postcss([]).process(css)` on attacker CSS reaches `loadFile` with `cssFile` undefined, and an attacker `/*# sourceMappingURL=/abs/path/x.map */` (or `../`-traversing path) is read via `readFileSync`. When the file is valid JSON, its `sources` (filesystem paths) and `sourcesContent` (source contents) are disclosed in the generated source map.\n\n## Affected code (v8.5.22 — the release carrying the GHSA-6g55 fix)\n\n```js\n// lib/previous-map.js\nloadFile(path, cssFile, trusted) {\n  if (!trusted && !this.unsafeMap) {\n    if (!/\\.map$/i.test(path)) {\n      return undefined\n    }\n    if (cssFile) {                       // guard runs ONLY when `from` is set\n      let relativePath = relative(dirname(cssFile), path)\n      if (relativePath === '..' ||\n          relativePath.startsWith('..' + sep) ||\n          isAbsolute(relativePath)) {\n        return undefined\n      }\n    }\n  }\n  this.root = dirname(path)\n  if (existsSync(path)) {\n    this.mapFile = path\n    return readFileSync(path, 'utf-8').toString().trim()   // sink\n  }\n}\n\n// loadMap(): untrusted annotation path, trusted=false; file === opts.from\n} else if (this.annotation) {\n  let map = this.annotation\n  if (file) map = join(dirname(file), map)   // no `from` -> map stays the raw URL\n  let unknown = this.loadFile(map, file, false)  // file undefined -> cssFile falsy\n```\n\n## Proof of concept (verified on postcss 8.5.22)\n\n```js\nconst postcss = require('postcss')\nconst fs = require('fs')\n\n// a 'secret' sourcemap OUTSIDE any expected tree (stand-in for another project's .map)\nconst secret = '/tmp/pcpoc/secret_out_of_tree.map'\nfs.writeFileSync(secret, JSON.stringify({\n  version: 3, sources: ['/etc/REAL_PATH_LEAK'], mappings: '', names: [],\n  sourcesContent: ['TOP_SECRET_abcdef']\n}))\n\nconst css = 'a{color:red}\\n/*# sourceMappingURL=' + secret + ' */'\nconst leaks = m => m && JSON.stringify(m.toJSON ? m.toJSON() : m).includes('TOP_SECRET_abcdef')\n\n;(async () => {\n  // A) NO `from`  -> guard skipped -> arbitrary absolute .map read + disclosed\n  const a = await postcss([]).process(css, { map: true })\n  console.log('no from   -> leaked:', !!leaks(a.map))   // true\n\n  // B) WITH `from` -> guard active -> blocked\n  const b = await postcss([]).process(css, { from: '/tmp/pcpoc/in.css', map: true })\n  console.log('with from -> leaked:', !!leaks(b.map))    // false\n})()\n```\n\nObserved output on postcss 8.5.22:\n\n```\nno from   -> leaked: true      # sourcesContent 'TOP_SECRET_abcdef' AND sources '/etc/REAL_PATH_LEAK' appear in result.map\nwith from -> leaked: false     # guard rejects the absolute path\n```\n\n`../` traversal (no `from`) also succeeds; non-`.map` targets (`.txt`, `?x=.map`, `#.map`) are blocked by the `.map` check. The tested build contains the GHSA-6g55 fix (`this.json = JSON.parse(...)` in `loadMap`, `consumer()` uses `this.json || this.text`), so this is a residual of that fix.\n\n## Impact\n\nArbitrary `.map`-file read (absolute path or `../` traversal) and disclosure of the target map's `sources` (local filesystem paths) and `sourcesContent` (source) into the generated source map, for any consumer that runs PostCSS on attacker-influenced CSS without a `from` option and exposes `result.map` (online CSS playgrounds, minify/lint services, string-input build steps). Bounded to files ending in `.map` that parse as JSON.\n\n## Suggested fix\n\nApply the traversal/absolute-path rejection to the untrusted map path regardless of whether `cssFile` is present (resolve against `process.cwd()` when there is no `cssFile`, and reject absolute paths and `..` escape in all untrusted cases), or refuse to load an untrusted external map when no base file is known.",
+      "reported_by": null,
+      "title": "PostCSS: incomplete fix of GHSA-6g55-p6wh-862q — attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset",
+      "metadata": null,
+      "cves": [
+        "CVE-2026-69153"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "postcss",
+      "vulnerable_versions": "<=8.5.22",
+      "github_advisory_id": "GHSA-fxqj-rqcc-2cmp",
+      "recommendation": "Upgrade to version 8.5.23 or later",
+      "patched_versions": ">=8.5.23",
+      "updated": "2026-08-03T17:11:40.000Z",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "cwe": [
+        "CWE-22",
+        "CWE-200"
+      ],
+      "url": "https://github.com/advisories/GHSA-fxqj-rqcc-2cmp"
+    },
+    "1139510": {
+      "findings": [
+        {
+          "version": "8.4.31",
+          "paths": [
+            ".>next>postcss"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/postcss/postcss/security/advisories/GHSA-r28c-9q8g-f849\n- https://github.com/postcss/postcss/commit/95663d3eb7ba26f4854dd19d3b4f4425760cf56c\n- https://github.com/postcss/postcss/releases/tag/8.5.18\n- https://github.com/advisories/GHSA-r28c-9q8g-f849",
+      "created": "2026-07-24T16:24:55.000Z",
+      "id": 1139510,
+      "npm_advisory_id": null,
+      "overview": "## Vulnerability Details\n\n**File**: `lib/previous-map.js`\n**Line**: 87-98 (`loadFile`), 129-144 (`loadMap`)\n\n\n### Root Cause\nPostCSS auto-detects a `/*# sourceMappingURL=... */` comment inside the CSS text it is asked to parse and, unless the caller explicitly passes `map: false`, attempts to load that path from disk as a \"previous source map.\" This happens on every `postcss.parse()` / `postcss().process()` call by default (opt-out, not opt-in).\n\n`loadMap()` builds the candidate path via `join(dirname(opts.from), annotation)`, where `annotation` is the raw, attacker-controlled string from the CSS comment. `path.join()` normalizes but does not sandbox `..` segments, so a `../../../` prefix walks the resolved path outside the intended directory. If `opts.from` is not set at all, the annotation is used completely unmodified — an absolute path in the CSS comment is read verbatim.\n\n8.5.12 already fixed a strictly worse variant of this (any file, any extension, could be read) by requiring the resolved path to end in `.map` (`loadFile()`). That fix did not address the traversal itself, only the target extension. Since the `join(dirname(file), map)` logic has existed unchanged since PostCSS 8.0.0 (Feb 2020), any file ending in `.map` remains readable through this path in the current release (8.5.16).\n\nOnce loaded, `MapGenerator.isMap()` treats the mere presence of a loaded \"previous map\" as an implicit request to generate `result.map`, even when the caller never set the `map` option. If the loaded map has a `sourcesContent` field (common for maps emitted by bundlers/transpilers), that content is merged into `result.map` and returned to the caller — disclosing the traversed-to file's content to whoever supplied the CSS.\n\n### Attack Scenario\n1. A service accepts user-submitted CSS and runs it through PostCSS to lint/format/transform it, e.g. `postcss().process(userCss, { from: '/app/uploads/user123/input.css', to: '/app/uploads/user123/output.css' })` — idiomatic usage; `map` option untouched.\n2. Attacker submits CSS containing `/*# sourceMappingURL=../../../../some/other/app/dist/bundle.js.map */` (or an absolute path if `from` is unset).\n3. PostCSS reads that `.map` file and folds its `sourcesContent` into `result.map`.\n4. The service does what most build pipelines do with a truthy `result.map` — writes it next to the CSS output or returns it via API (source maps are meant to be consumed by browser devtools, so this is commonly public/served).\n5. Attacker retrieves the emitted map and reads out the traversed file's content.\n\n### Impact\nDisclosure of the contents of arbitrary `.map` files reachable via path traversal (or absolute path when `from` is unset) from the process's filesystem. Affects any application processing CSS it does not fully trust without explicitly passing `map: false`. No authentication or user interaction beyond submitting CSS text is required.\n\n### Vulnerable Code\n```js\nloadFile(path, cssFile, trusted) {\n  if (!trusted && !this.unsafeMap) {\n    if (!/\\.map$/i.test(path)) {\n      return undefined\n    }\n  }\n  this.root = dirname(path)\n  if (existsSync(path)) {\n    this.mapFile = path\n    return readFileSync(path, 'utf-8').toString().trim()\n  }\n}\n\nloadMap(file, prev) {\n  ...\n  } else if (this.annotation) {\n    let map = this.annotation\n    if (file) map = join(dirname(file), map)\n    let unknown = this.loadFile(map, file, false)\n    ...\n  }\n}\n```\n\n### Recommended Fix\nConstrain the resolved path to remain inside the CSS file's own directory instead of relying solely on a filename-extension check:\n```js\nloadFile(path, cssFile, trusted) {\n  if (!trusted && !this.unsafeMap) {\n    if (!/\\.map$/i.test(path)) {\n      return undefined\n    }\n    if (!cssFile) return undefined\n    let root = resolve(dirname(cssFile))\n    let resolvedPath = resolve(root, path)\n    if (resolvedPath !== root && !resolvedPath.startsWith(root + sep)) {\n      return undefined\n    }\n  }\n  this.root = dirname(path)\n  if (existsSync(path)) {\n    this.mapFile = path\n    return readFileSync(path, 'utf-8').toString().trim()\n  }\n}\n```\nI've implemented, tested (full existing test suite — 660/660 passing, plus new PoC-based regression checks for both the traversal and legitimate same-directory cases), and can share this fix on request or via a private fork if invited.\n\n### Verification\nDynamically confirmed on v8.5.16 (current npm release / repo HEAD) via a standalone Node.js harness against `lib/postcss.js`: a \"secret\" `.map` file placed two directories outside a simulated project directory was read via a crafted `sourceMappingURL` comment in otherwise-innocuous CSS, with its `sourcesContent` appearing verbatim in `result.map.toString()` — with no `map` option set by the caller. A second harness confirmed the simpler no-`from` case reads an absolute path directly. A third harness confirmed `map: false` is the only current workaround. The attached fix branch closes both vectors while keeping all 660 existing unit tests green.",
+      "reported_by": null,
+      "title": "PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure",
+      "metadata": null,
+      "cves": [
+        "CVE-2026-73646"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "postcss",
+      "vulnerable_versions": "<=8.5.17",
+      "github_advisory_id": "GHSA-r28c-9q8g-f849",
+      "recommendation": "Upgrade to version 8.5.18 or later",
+      "patched_versions": ">=8.5.18",
+      "updated": "2026-08-13T17:55:56.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-22"
+      ],
+      "url": "https://github.com/advisories/GHSA-r28c-9q8g-f849"
+    }
+  },
+  "muted": [],
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 2,
+      "high": 3,
+      "critical": 0
+    },
+    "dependencies": 129,
+    "devDependencies": 0,
+    "optionalDependencies": 0,
+    "totalDependencies": 129
+  }
+}

@@ -1,0 +1,14 @@
+Journey CM-10: viewport 1440x900, mobile emulation=false, X-Forwarded-For=10.4.10.1
+[1] Home loaded: "Swiss Hospitality & Logistics for Delegations & Corporate Groups | SKAAH"
+  [overflow /en] scrollWidth=1440 innerWidth=1440 => ok
+[2] Service page loaded: http://127.0.0.1:3222/en/services/government-delegations h1="Delegations, handled to protocol."
+  [overflow /en/services/government-delegations] scrollWidth=1440 innerWidth=1440 => ok
+[3] Hub loaded: http://127.0.0.1:3222/en/davos-week h1="Davos in January: a working guide."
+  [overflow /en/davos-week] scrollWidth=1440 innerWidth=1440 => ok
+[4] Enquiry page loaded: http://127.0.0.1:3222/en/enquiry
+  [overflow /en/enquiry (segment picker)] scrollWidth=1440 innerWidth=1440 => ok
+  [overflow /en/enquiry (wizard step)] scrollWidth=1440 innerWidth=1440 => ok
+  [overflow /en/enquiry (contact step)] scrollWidth=1440 innerWidth=1440 => ok
+[5] Enquiry submitted: HTTP 200, reference SKH-20260821-0028
+  [overflow /en/enquiry (success)] scrollWidth=1440 innerWidth=1440 => ok
+RESULT: PASS - journey completed=true, horizontal overflow on 0/7 checkpoints

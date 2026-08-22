@@ -1,0 +1,57 @@
+CC-13 Davos hub completeness — 2026-08-21 — GET /en/davos-week (HTTP 200)
+
+H1: Davos in January: a working guide.
+
+Body sections 1-8 (spec docs/02.03 outline, WEF wording per approved change log):
+  1. What Davos Week really is on the ground: PRESENT
+  2. The calendar that matters: PRESENT
+  3. Accommodation reality: PRESENT
+  4. Movement and the one-road problem: PRESENT
+  5. Catering at altitude: PRESENT
+  6. Protocol in a compressed town: PRESENT
+  7. What four consecutive Davos Weeks taught us: PRESENT
+  8. How SKAAH runs Davos Week: PRESENT
+
+Sticky section nav: <nav aria-label='On this page'> present: True | 'sticky' class on nav container: True
+  nav context:  On the ground <a href
+
+Countdown timeline (spec: 180/120/90/60/30 days + Week 0 rendered as timeline component):
+  180 days: PRESENT
+  120 days: PRESENT
+  90 days: PRESENT
+  60 days: PRESENT
+  30 days: PRESENT
+  Week 0: PRESENT
+  <ol/timeline markup around countdown: True
+
+FAQs section ('Questions delegations ask'): PRESENT
+  first 300 chars: Questions delegations ask When should we book for Davos Week? Accommodation strategy should be settled 6 months out; serious blocks sign at 4 months. Late is solvable, but expensive. Can you support a first-time delegation? Yes. First-timers are most of the value we add: the guide above is the short
+
+Proof rail ('The week, on file'): PRESENT
+  content: The week, on file Awaiting media ( davos-archive ): Convoy staging area before dawn, marshals checking a run sheet Vehicles staged before dawn for a delegation movement during Davos Week Awaiting media ( davos-archive ): Kitchen pass in full service, plated courses under the lamps Chefs at the kitchen pass during a Davos Week service Awaiting media ( davos-archive ): Davos Promenade at night during Davos Week, snow b
+
+Gallery: 'Awaiting' media placeholders sourced davos-archive on page: 14 occurrences;
+  sample gallery frames: ['Vehicles staged before dawn for a delegation movement during Davos Week', 'Chefs at the kitchen pass during a Davos Week service', 'The Davos Promenade at night during Davos Week', 'Event signage being installed in falling snow in Davos', 'Tagged delegation luggage lined up during a Davos Week arrival', 'The operations room during Davos Week']
+
+Where to go next / cross-links section: PRESENT
+Closing CTA: January rewards the prepared.
+
+FAQ schema: JSON-LD contains FAQPage: True | Question count in JSON-LD: 4
+Sticky nav CSS (300 chars before the nav): False -> []
+Proof rail stat cards + case-study links: fallback line present: False
+Links to /work case studies on hub: ['href="/en/work/six-states-one-swiss-partner"', 'href="/en/work/first-time-state-delegation-davos"']
+
+VERDICT: PASS — all 8 spec'd body sections present and populated; sticky 'On this page' nav; countdown
+timeline with all 6 milestones; FAQs rendered and schema-marked (FAQPage JSON-LD); proof rail with the
+approved fallback line, stat cards (2nd stat's value is a [TO CONFIRM] marker by design) and case-study
+links; gallery of 6 archive-briefed frames (placeholders pending Davos archive, by design).
+
+CORRECTION on the two probe windows above (verified with wider windows):
+- Sticky nav: nav container class IS sticky — class="sticky top-16 z-30 border-b border-ice-300 bg-white/95
+  backdrop-blur md:top-20" wrapping the aria-label="On this page" nav. CONFIRMED.
+- Proof rail: the approved fallback line + 2 stat cards ("[TO CONFIRM: movements run] movements run across
+  4 Davos Weeks", "[TO CONFIRM: guest-nights managed]" — marker values by design) render in the proof band
+  beside the operations-room figure; case-study links to /en/work/six-states-one-swiss-partner and
+  /en/work/first-time-state-delegation-davos present. CONFIRMED.
+- FAQ schema: FAQPage JSON-LD with 4 Question entities. CONFIRMED.
+Final verdict stands: PASS.

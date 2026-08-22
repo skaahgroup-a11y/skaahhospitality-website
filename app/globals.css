@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+/* Design tokens per docs/04-uiux-frontend.md section 1. Never use inline hex in components. */
+@theme {
+  --color-navy-950: #0e2c4a;
+  --color-navy-900: #164069;
+  --color-navy-800: #1e4f80;
+  --color-navy-700: #2a6094;
+  --color-ice-50: #f8fafb;
+  --color-ice-100: #f4f6f8;
+  --color-ice-200: #e7ecf0;
+  --color-ice-300: #d9e0e7;
+  --color-gold-500: #bfa05a;
+  --color-gold-600: #9a7b2d;
+  /* DECISION: two derived golds added after the WCAG audit (QA AC-05). The
+     docs/04 tokens assume eyebrow-size gold qualifies as large text; it does
+     not (13-14 px), so gold-700 carries small gold text on light surfaces
+     (>=4.5:1 on white, ice-50 and ice-100) and gold-400 carries small gold
+     text on navy-900/950. gold-500/600 remain for lines, icons and large
+     numerals exactly as docs/04 section 1 prescribes. */
+  --color-gold-700: #866b26;
+  --color-gold-400: #d2b878;
+  --color-green-700: #175a43;
+  --color-green-600: #1e6e52;
+  --color-stone-500: #5c6670;
+  --color-stone-400: #8a939c;
+  --color-white: #ffffff;
+  --color-error: #b4232a;
+  --color-success: #1e6e52;
+
+  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  --shadow-card:
+    0 1px 2px rgb(15 23 32 / 0.06), 0 8px 24px rgb(15 23 32 / 0.08);
+
+  --container-max: 1200px;
+  --container-wide: 1440px;
+  --gutter: 24px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-ice-50);
+    color: var(--color-navy-900);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Visible focus: gold ring on navy surfaces, navy ring on light (docs/04 section 5). */
+  :focus-visible {
+    outline: 2px solid var(--color-navy-900);
+    outline-offset: 2px;
+  }
+
+  [data-surface="dark"] :focus-visible,
+  [data-surface="dark"]:focus-visible {
+    outline-color: var(--color-gold-500);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-site {
+    margin-inline: auto;
+    width: 100%;
+    max-width: var(--container-max);
+    padding-inline: var(--gutter);
+  }
+
+  .container-wide {
+    margin-inline: auto;
+    width: 100%;
+    max-width: var(--container-wide);
+    padding-inline: var(--gutter);
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-gold-700);
+  }
+
+  [data-surface="dark"] .eyebrow {
+    color: var(--color-gold-400);
+  }
+
+  .display-1 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 2.75rem;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  .display-2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  .heading-2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 1.15;
+  }
+
+  .heading-3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+
+  @media (min-width: 768px) {
+    .display-1 {
+      font-size: 4.5rem;
+    }
+    .display-2 {
+      font-size: 3rem;
+    }
+    .heading-2 {
+      font-size: 2.25rem;
+    }
+    .heading-3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Gold hairline rule (docs/04 section 2: gold appears as 1 px lines). */
+  .hairline-gold {
+    border-color: var(--color-gold-500);
+    border-top-width: 1px;
+  }
+
+  /* Link hover: underline draw. */
+  .link-draw {
+    background-image: linear-gradient(
+      currentColor,
+      currentColor
+    );
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 240ms ease-out;
+  }
+
+  .link-draw:hover {
+    background-size: 100% 1px;
+  }
+
+  /* Scroll-in motion: fade + 8 px rise (docs/04 section 2), disabled under reduced motion. */
+  .rise-in {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: rise-in 240ms ease-out forwards;
+  }
+
+  @keyframes rise-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rise-in {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+  }
+
+  .prose-site {
+    max-width: 68ch;
+  }
+
+  .prose-site p + p {
+    margin-top: 1.25em;
+  }
+}

@@ -1,0 +1,49 @@
+== export tree ==
+articles.json
+case-studies.json
+destinations.json
+experiences.json
+home.json
+media/brand/skaah-group-logo-square.png
+media/brand/skaah-group-logo.jpg
+media/brand/skaah-hospitality-horizontal.svg
+media/brand/skaah-hospitality-icon-mono-blue.svg
+media/brand/skaah-hospitality-icon-mono-white.svg
+media/brand/skaah-hospitality-icon.svg
+media/brand/skaah-hospitality-primary.svg
+services.json
+
+== sizes ==
+928K	/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/exports/2026-08-21
+
+== manifest / sample head ==
+-- /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/exports/2026-08-21/case-studies.json
+[
+  {
+    "slug": "six-states-one-swiss-partner",
+    "order": 1,
+    "title": "Six states, one Swiss partner",
+    "consentGranted": false,
+    "segment": "delegation",
+    "year": "2023 to 2026",
+    "destination": "Davos",
+    "groupSizeBand": "Varies by delegation",
+    "oneLineOutcome": "6 state government delegations across 4 consecutive Davos Weeks, delivered by one Swiss partner.",
+    "br
+-- /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/exports/2026-08-21/services.json
+[
+  {
+    "slug": "government-delegations",
+    "order": 1,
+    "icon": "delegations",
+    "seo": {
+      "metaTitle": "Government Delegation Support in Switzerland | SKAAH",
+      "metaDescription": "Delegation-grade planning in Switzerland: protocol, visa and immigration liaison, secure ground transport, accommodation blocks, multi-cuisine catering and documentation. Proven at Davos Week.",
+    
+-- /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/exports/2026-08-21/articles.json
+[
+  {
+    "slug": "indian-cuisine-swiss-altitude",
+    "title": "Bringing Indian Cuisine to Swiss Altitude: A Catering Playbook",
+    "dek": "How we serve Indian regional menus, Jain and halal tables and Swiss fine dining at alpine venues: menu governance, dietary law in practice, kitchen logistics and the tasting protocol that locks a menu before anyone travels.",
+    "authorRole": "SKAAH Hospita

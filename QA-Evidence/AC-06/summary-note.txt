@@ -1,0 +1,11 @@
+AC-06 forms announced — BLOCKED for the prescribed method (no NVDA/VoiceOver in this Linux
+container). Programmatic pre-check executed and POSITIVE (wizard-aria-precheck.json,
+wizard-fieldset-precheck.json, wizard-errors.png):
+  - Validation errors render as <p role="alert" id="<field>-error"> ("Please complete this field.")
+  - Errored radio/checkbox groups are <fieldset> with <legend> and aria-describedby="<field>-error"
+    resolving to the role=alert node.
+  - Text fields (fields.tsx) carry label[for], aria-required, aria-invalid, aria-describedby.
+  - Radio/checkbox options are implicitly labelled (wrapped in <label> with visible text).
+  - Honeypot field is aria-hidden and off-screen (correctly excluded from AT).
+Residual risk for the human SR pass: no aria-live summary region and focus stays on the Next
+button after failed validation (no focus move to first error).

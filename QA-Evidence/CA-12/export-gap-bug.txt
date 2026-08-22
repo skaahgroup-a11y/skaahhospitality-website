@@ -1,0 +1,20 @@
+== BUG: stale import in scripts/export-content.ts ==
+19:  const davos = await import("../content/davos-wef").catch(() => null);
+30:  if (davos) write("davos-wef.json", davos);
+
+== content dir (hub file was renamed to davos-week.ts in the approved change, commit 8b6e82d) ==
+davos-week.ts
+ls: cannot access '/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/content/davos-wef.ts': No such file or directory
+
+== export output contains NO davos json, NO global.json, NO disclaimer.json ==
+articles.json
+case-studies.json
+destinations.json
+experiences.json
+home.json
+media
+services.json
+
+Effect: await import("../content/davos-wef").catch(() => null) resolves to null silently,
+so the Davos Week hub content (largest single page) is absent from the portability export.
+content/global.ts and content/disclaimer.ts are not referenced by the script at all.

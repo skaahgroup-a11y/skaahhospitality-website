@@ -1,0 +1,39 @@
+=== FE-03 persisted JSON /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/enquiries/SKH-20260821-0003.json, checked 2026-08-21T22:52:17Z ===
+segment: stay | expected: stay
+reference: SKH-20260821-0003
+cuisines (catering only): None
+flags: {'verifiedDomain': False, 'manualCheck': False, 'utm': {}}
+locale: en
+--- full JSON ---
+{
+  "reference": "SKH-20260821-0003",
+  "segment": "stay",
+  "submittedAt": "2026-08-21T22:52:08.815Z",
+  "contact": {
+    "name": "TEST Anil Kapoor",
+    "organisation": "TEST Kapoor Family Office",
+    "role": "Executive Assistant",
+    "email": "test.stay@kapoor-example.com",
+    "phone": "+41 79 555 0303",
+    "preferredChannel": "phone"
+  },
+  "details": {
+    "destination": "zermatt",
+    "checkIn": "2027-02-10",
+    "checkOut": "2027-02-17",
+    "roomsOccupants": "18 rooms, 24 guests",
+    "standard": "5-star",
+    "specialRequirements": "TEST QA FE-03: quiet floor, two connecting rooms"
+  },
+  "attachments": [],
+  "flags": {
+    "verifiedDomain": false,
+    "manualCheck": false,
+    "utm": {}
+  },
+  "consent": {
+    "privacyVersion": "2026-08",
+    "acceptedAt": "2026-08-21T22:52:08.815Z"
+  },
+  "locale": "en"
+}

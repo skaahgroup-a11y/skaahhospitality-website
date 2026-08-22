@@ -1,0 +1,60 @@
+=== FE-01 persisted artefacts, 2026-08-21T22:51:46Z ===
+--- find data/ ---
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/enquiries/SKH-20260821-0001.json
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/reference-counter.json
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/uploads/SKH-20260821-0001/TEST-delegation-brief.pdf
+--- data/enquiries/SKH-20260821-0001.json ---
+{
+  "reference": "SKH-20260821-0001",
+  "segment": "delegation",
+  "submittedAt": "2026-08-21T22:51:39.179Z",
+  "contact": {
+    "name": "TEST Rajesh Sharma",
+    "organisation": "TEST Government of Maharashtra Protocol Department",
+    "role": "Deputy Secretary (Protocol)",
+    "email": "test.protocol@maharashtra-example.gov.in",
+    "phone": "+91 22 5555 0101",
+    "preferredChannel": "email"
+  },
+  "details": {
+    "purpose": "davos-week",
+    "destinations": [
+      "zurich",
+      "davos"
+    ],
+    "arrivalDate": "2027-01-15",
+    "departureDate": "2027-01-22",
+    "datesNotFixed": false,
+    "sizeBand": "11-30",
+    "principalsCount": 3,
+    "needs": [
+      "accommodation",
+      "transport-convoy",
+      "protocol",
+      "catering"
+    ],
+    "securityNotes": "TEST submission - QA workbook FE-01"
+  },
+  "attachments": [
+    {
+      "file": "TEST-delegation-brief.pdf",
+      "bytes": 223,
+      "url": "data://uploads/SKH-20260821-0001/TEST-delegation-brief.pdf"
+    }
+  ],
+  "flags": {
+    "verifiedDomain": true,
+    "manualCheck": false,
+    "utm": {
+      "utm_source": "qa-workbook",
+      "utm_medium": "api-test"
+    }
+  },
+  "consent": {
+    "privacyVersion": "2026-08",
+    "acceptedAt": "2026-08-21T22:51:39.180Z"
+  },
+  "locale": "en"
+}--- upload sha256 comparison (source vs persisted) ---
+e1b700be68729b8f8f0dcc47a1a2e8d04cf1a7145798fd2b639cdf278738d106  /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/fe-work/TEST-delegation-brief.pdf
+e1b700be68729b8f8f0dcc47a1a2e8d04cf1a7145798fd2b639cdf278738d106  /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/uploads/SKH-20260821-0001/TEST-delegation-brief.pdf

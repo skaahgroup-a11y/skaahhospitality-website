@@ -1,0 +1,112 @@
+{
+ "accordion": {
+  "/en/davos-week": [
+   {
+    "text": "When should we book for Davos Week?",
+    "expanded": "false",
+    "controls": "_R_50lubsivb_-p-0",
+    "panelExists": true,
+    "panelRole": "region",
+    "panelLabelledby": "_R_50lubsivb_-h-0",
+    "labelledbyResolves": true,
+    "headingWrapped": true
+   },
+   {
+    "text": "Can you support a first-time delegation?",
+    "expanded": "false",
+    "controls": "_R_50lubsivb_-p-1",
+    "panelExists": true,
+    "panelRole": "region",
+    "panelLabelledby": "_R_50lubsivb_-h-1",
+    "labelledbyResolves": true,
+    "headingWrapped": true
+   },
+   {
+    "text": "Do you only work with Indian delegations?",
+    "expanded": "false",
+    "controls": "_R_50lubsivb_-p-2",
+    "panelExists": true,
+    "panelRole": "region",
+    "panelLabelledby": "_R_50lubsivb_-h-2",
+    "labelledbyResolves": true,
+    "headingWrapped": true
+   },
+   {
+    "text": "Do you handle participation in the annual meeting itself?",
+    "expanded": "false",
+    "controls": "_R_50lubsivb_-p-3",
+    "panelExists": true,
+    "panelRole": "region",
+    "panelLabelledby": "_R_50lubsivb_-h-3",
+    "labelledbyResolves": true,
+    "headingWrapped": true
+   }
+  ],
+  "toggle": {
+   "before": "false",
+   "after": "true",
+   "toggled": true
+  }
+ },
+ "menu": {
+  "desktop": [
+   {
+    "tag": "BUTTON",
+    "text": "Services",
+    "ariaExpanded": "false",
+    "ariaHaspopup": null,
+    "ariaControls": null,
+    "controlsResolves": null
+   },
+   {
+    "tag": "BUTTON",
+    "text": "Destinations",
+    "ariaExpanded": "false",
+    "ariaHaspopup": null,
+    "ariaControls": null,
+    "controlsResolves": null
+   },
+   {
+    "tag": "BUTTON",
+    "text": "",
+    "ariaExpanded": "false",
+    "ariaHaspopup": null,
+    "ariaControls": null,
+    "controlsResolves": null
+   }
+  ],
+  "afterOpen": {
+   "open": [
+    {
+     "text": "Services",
+     "controls": null
+    }
+   ],
+   "panels": [
+    null
+   ]
+  },
+  "afterEscape": [
+   {
+    "text": "Services",
+    "expanded": "false"
+   },
+   {
+    "text": "Destinations",
+    "expanded": "false"
+   },
+   {
+    "text": "",
+    "expanded": "false"
+   }
+  ],
+  "mobileBefore": {
+   "expanded": "false",
+   "controls": null,
+   "label": "Open menu"
+  },
+  "mobileAfter": {
+   "expanded": "true"
+  }
+ }
+}

@@ -1,0 +1,7 @@
+SS-09 round 2 retest, 2026-08-21
+Result: Pass
+
+404 half judged per workbook: unknown /en/* URL returns real HTTP 404 with the designed page (h1 'This page has moved on.', recovery links); non-prefixed unknown URL 307s to /en then 404s. Minor finding: the 404 response has NO <title> tag. 500 half not exercised (would require breaking the clone); app/[locale]/error.tsx client boundary exists and is filed. Round 2: root layout fallback metadata added; the 404 response now carries a title (verified live), status still a real 404.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

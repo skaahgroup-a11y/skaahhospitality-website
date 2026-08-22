@@ -1,0 +1,7 @@
+== tsconfig strict flags ==
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+== npx tsc --noEmit ==
+exit code: 0
+typescript version: Version 5.9.3

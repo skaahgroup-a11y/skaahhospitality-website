@@ -1,0 +1,99 @@
+CC-10 Metadata lengths and pattern — 2026-08-21 — all 36 routes under /en
+Rule: title <=60 chars AND ends '| SKAAH' (Home accepted as written per workbook); description <=155.
+
+page                                      | tlen | dlen | ends'| SKAAH' | flags
+about                                     |   64 |  185 | True  | TITLE 64>60,DESC 185>155
+cookies                                   |   38 |  126 | True  | 
+davos-week                                |   50 |  219 | True  | DESC 219>155
+destinations                              |   57 |  149 | True  | 
+destinations_davos                        |   48 |  169 | True  | DESC 169>155
+destinations_geneva                       |   58 |  147 | True  | 
+destinations_interlaken-jungfrau          |   53 |  154 | True  | 
+destinations_lucerne                      |   56 |  149 | True  | 
+destinations_st-moritz-engadin            |   47 |  147 | True  | 
+destinations_ticino-lugano                |   47 |  144 | True  | 
+destinations_zermatt                      |   51 |  137 | True  | 
+destinations_zurich                       |   66 |  160 | True  | TITLE 66>60,DESC 160>155
+enquiry                                   |   38 |  152 | True  | 
+experiences                               |   46 |  172 | True  | DESC 172>155
+home                                      |   72 |  198 | True  | DESC 198>155
+imprint                                   |   27 |  127 | True  | 
+insights                                  |   55 |  139 | True  | 
+insights_davos-delegation-countdown       |   46 |  160 | True  | DESC 160>155
+insights_indian-cuisine-swiss-altitude    |   52 |  150 | True  | 
+partners                                  |   60 |  163 | True  | DESC 163>155
+privacy                                   |   34 |  114 | True  | 
+services                                  |   55 |  139 | True  | 
+services_branding-staffing                |   71 |  138 | True  | TITLE 71>60
+services_food-catering                    |   51 |  150 | True  | 
+services_government-delegations           |   52 |  192 | True  | DESC 192>155
+services_media-production                 |   58 |  150 | True  | 
+services_mice-events                      |   58 |  178 | True  | DESC 178>155
+services_stays                            |   66 |  149 | True  | TITLE 66>60
+services_travel-transport-immigration     |   68 |  146 | True  | TITLE 68>60
+work                                      |   53 |  154 | True  | 
+work_bilateral-programme-geneva-zurich    |   48 |  152 | True  | 
+work_first-time-state-delegation-davos    |   46 |  152 | True  | 
+work_kitchen-at-1560-metres               |   51 |  136 | True  | 
+work_returning-delegation-doubled-scale   |   52 |  153 | True  | 
+work_six-states-one-swiss-partner         |   49 |  142 | True  | 
+work_two-delegations-one-week             |   50 |  152 | True  | 
+
+VIOLATIONS (exact lengths):
+  about: ['TITLE 64>60', 'DESC 185>155']
+    title(64): About SKAAH Hospitality: Swiss Precision, Global Fluency | SKAAH
+    desc(185): Founded 2016 in Opfikon by the runway of Zurich Airport: hospitality and logistics under one roof, and the company behind four consecutive Davos Weeks of delegation work in Switzerland.
+  davos-week: ['DESC 219>155']
+    title(50): Davos Week Logistics: The Delegation Guide | SKAAH
+    desc(219): How delegations and corporate groups actually operate in Davos during Davos Week: accommodation, transport, catering and protocol, from the Swiss partner behind six state delegations across four consecutive Davos Weeks.
+  destinations_davos: ['DESC 169>155']
+    title(48): Davos for Delegations: Beyond Davos Week | SKAAH
+    desc(169): Davos beyond Davos Week: year-round congress support, summer leadership retreats and pre-season recces, run by a partner with four consecutive Davos Weeks in the valley.
+  destinations_zurich: ['TITLE 66>60', 'DESC 160>155']
+    title(66): Zurich for Delegations & Corporate Events: Organiser Guide | SKAAH
+    desc(160): An organiser's guide to Zurich: arrivals at scale, venue archetypes, five-star and serviced-apartment stays, and what SKAAH runs on the ground in its home city.
+  experiences: ['DESC 172>155']
+    title(46): Signature Swiss Experiences for Groups | SKAAH
+    desc(172): Eight signature programmes for groups in Switzerland: private rail charters, alpine galas, lake evenings and Davos Week hosting, each designed and run by one Swiss partner.
+  home: ['DESC 198>155']
+    title(72): Swiss Hospitality & Logistics for Delegations & Corporate Groups | SKAAH
+    desc(198): One accountable Swiss partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and staffing. Proven at Davos Week. First response within 48 hours.
+  insights_davos-delegation-countdown: ['DESC 160>155']
+    title(46): The 180-Day Davos Delegation Countdown | SKAAH
+    desc(160): Davos Week planning, month by month: a working checklist from 180 days to Week 0, from the Swiss partner behind four consecutive Davos Weeks of delegation work.
+  partners: ['DESC 163>155']
+    title(60): Swiss Ground Partner for Agencies & Incentive Houses | SKAAH
+    desc(163): White-label Swiss execution for agencies and incentive houses: one costed proposal, protected commercials and delegation-grade operations under your brand or ours.
+  services_branding-staffing: ['TITLE 71>60']
+    title(71): Event Branding, Pavilions & Hospitality Staffing in Switzerland | SKAAH
+  services_government-delegations: ['DESC 192>155']
+    title(52): Government Delegation Support in Switzerland | SKAAH
+    desc(192): Delegation-grade planning in Switzerland: protocol, visa and immigration liaison, secure ground transport, accommodation blocks, multi-cuisine catering and documentation. Proven at Davos Week.
+  services_mice-events: ['DESC 178>155']
+    title(58): Corporate Events & Incentive Travel in Switzerland | SKAAH
+    desc(178): DMC-grade planning for meetings, incentives, conferences and events across Switzerland: venues, production, transport and hotels under one proposal, indicative budgets published.
+  services_stays: ['TITLE 66>60']
+    title(66): Group Hotels, Chalets & Serviced Apartments in Switzerland | SKAAH
+  services_travel-transport-immigration: ['TITLE 68>60']
+    title(68): Group Travel, Transport & Immigration Support in Switzerland | SKAAH
+
+Home title as written (72 chars): Swiss Hospitality & Logistics for Delegations & Corporate Groups | SKAAH
+
+SUMMARY & ROOT CAUSE:
+- Pattern check: 36/36 titles end with the "| SKAAH" family pattern (incl. "| SKAAH Hospitality",
+  "| SKAAH Insights" — both doc-spec'd). PASS on pattern.
+- Title length (<=60, docs/06-seo.md L23, Home exempt "as written"): 5 violations —
+  about (64), destinations_zurich (66), services_branding-staffing (71), services_stays (66),
+  services_travel-transport-immigration (68). ALL FIVE are verbatim metaTitle values from docs/02-content
+  (the spec's own metaTitles break the spec's own <=60 rule; 6 doc-spec'd titles incl. Home exceed 60).
+- Description length (<=155): 10 violations — home (198), about (185), davos-week (219),
+  destinations_davos (169), destinations_zurich (160), experiences (172),
+  insights_davos-delegation-countdown (160), partners (163), services_government-delegations (192),
+  services_mice-events (178). Four of these are doc-spec'd metaDescriptions already over 155 (191/178/197/203
+  chars in docs); several others were pushed over by the approved WEF -> "Davos Week"/"four consecutive Davos
+  Weeks" wording replacement, which lengthens strings (e.g. hub desc 203 -> 219).
+
+VERDICT: FAIL against the stated expected result (5 title-length + 10 description-length violations).
+Defect is primarily a spec/content-editing issue, not a template issue: the metadata pipeline renders the
+content-layer values faithfully, but those values (many inherited verbatim from docs/02, others lengthened by
+the approved wording change) exceed docs/06 limits. Recommend a metadata length pass before production.

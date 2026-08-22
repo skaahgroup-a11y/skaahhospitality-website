@@ -1,0 +1,10 @@
+SS-03 Sitemap valid and complete — 2026-08-21, agent 5
+xmllint --noout sitemap.xml => WELL-FORMED (exit 0). XSD validation against
+sitemaps.org schema not possible (external fetch blocked in this environment; deviation).
+URL count: 36 <url> entries.
+Expected from docs/01-scope.md s3 (27-page inventory): rows 1-20,22,23,25,26,27 are 25
+concrete routes; row 21 expands to 6 seeded case studies; row 24 expands to 2 seeded
+articles => 33 content routes. Plus legal surfaces /privacy /imprint /cookies => 36.
+Cross-check: sitemap contains exactly the 13 static paths + 7 services + 8 destinations +
+6 work + 2 insights, all under /en, hub at /davos-week (approved change log: renamed from
+/davos-wef). No stray URLs, no missing inventory pages. 404/500/api routes correctly absent.

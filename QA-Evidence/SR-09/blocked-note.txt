@@ -1,0 +1,4 @@
+SR-09 Restore drill — BLOCKED (2026-08-21)
+Hostpoint backups (hourly snapshots 24h, backups to 180 days, docs/08 s1) and the nightly export
+archive (docs/08 s32) do not exist pre-staging; there is nothing to restore from. No local
+equivalent is meaningful for a restore drill against provider backups.

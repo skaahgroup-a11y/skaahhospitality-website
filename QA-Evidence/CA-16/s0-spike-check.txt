@@ -1,0 +1,17 @@
+CA-16: S0 FreeBSD spike evidence check, clone @ 8b6e82d
+
+$ ls docs/decisions/ docs/decisions/S0.md
+ls: cannot access '/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/docs/decisions': No such file or directory
+ls: cannot access '/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/docs/decisions/S0.md': No such file or directory
+
+$ grep -rn 'S0' docs/ scripts/ .github/ (references to the spike)
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/docs/07-implementation-plan.md:6:T0.1 Init Next.js 15 TS strict + Tailwind v4 + tokens from docs/04 §1 · T0.2 next-intl `/en` routing, `messages/en.json` seeded with UI strings · T0.3 Payload 3 embedded at `/admin`, Postgres connection, auth, roles (admin, editor) · T0.4 CI: typecheck, lint, Vitest, Playwright shell, axe, Lighthouse CI budgets, `check:claims` script (scans build output for em/en dashes, forbidden claims, `[TO CONFIRM:`) · T0.5 Envs per docs/05 §3 with `.env.example` · T0.6 `pnpm seed:content` + `pnpm export:content` skeletons · T0.7 GitHub repo + Actions pipelines (CI on PR; staging deploy on main; production on tag v* with approval) wired to Hostpoint over SSH per docs/08 · T0.8 Run spike S0 on the Flex server and record `docs/decisions/S0.md`.
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/docs/08-server-requirements.md:18:- **FreeBSD native-module note (critical)**: `sharp` (image processing) and `better-sqlite3` must be installed **on the server** (`pnpm install` over SSH), not shipped from Linux CI. Phase 0 spike S0 verifies both build on the Flex platform. Fallbacks if either fails: pre-generated image renditions in CI + `images.unoptimized` for the optimizer, and Payload's MongoDB adapter (pure-JS driver; Hostpoint documents running MongoDB on Flex via CSC).
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/docs/08-server-requirements.md:45:## 7. Phase 0 spike S0 (run before any build epic; half a day)
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/docs/08-server-requirements.md:46:1. SSH in; confirm Node LTS version and pnpm. 2. `pnpm add sharp better-sqlite3` in a scratch dir; confirm both install on FreeBSD. 3. Hello-world Next standalone on 3002 behind an Nginx custom-mode site; confirm TLS + HSTS. 4. CSC service registered; survives restart. 5. Test mail from Hostpoint SMTP passes SPF/DKIM to Gmail and Outlook. 6. 100 MB upload to disk through the proxy (adjust Nginx `client_max_body_size` via panel/support if needed). Record results in the repo `docs/decisions/S0.md`; trigger fallbacks from §2 only if a step fails.
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/.github/workflows/deploy-staging.yml:5:# server order and spike S0 (docs/08 sections 1 and 7).
+
+$ find . -iname '*build*log*' (server build log)
+(none found)
+
+Environment fact: no Hostpoint Flex server / FreeBSD host exists yet (pre-staging audit); the spike cannot be executed from this environment. Pre-check filed: docs/decisions/S0.md does not exist in the repo either.

@@ -1,0 +1,2080 @@
+{
+ "/en": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      ".h-full.p-6.transition-shadow:nth-child(1) > .uppercase.tracking-wider.text-xs"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".h-full.p-6.transition-shadow:nth-child(2) > .uppercase.tracking-wider.text-xs"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".gap-4.mt-8.flex-wrap > a[href=\"https://wa.me/0\"][target=\"_blank\"][rel=\"noopener noreferrer\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".text-xs.mt-4.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/services": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center > .leading-none.flex-col > .font-display.text-xl.font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center > .leading-none.flex-col > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".border-ice-200.p-6.bg-white:nth-child(1) > .text-stone-400.mt-3.items-start"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".border-ice-200.p-6.bg-white:nth-child(2) > .text-stone-400.mt-3.items-start"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".border-ice-200.p-6.bg-white:nth-child(3) > .text-stone-400.mt-3.items-start"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-6.max-w-4xl.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-xs.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "heading-order",
+   "impact": "moderate",
+   "help": "Heading levels should only increase by one",
+   "nodes": [
+    {
+     "target": [
+      ".group.h-full.overflow-hidden:nth-child(1) > .p-6.flex-1.flex-col > h3"
+     ],
+     "summary": "Fix any of the following:\n  Heading order invalid"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/services/government-delegations": [
+  {
+   "id": "aria-allowed-role",
+   "impact": "minor",
+   "help": "ARIA role should be appropriate for the element",
+   "nodes": [
+    {
+     "target": [
+      "figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .text-xl.font-semibold.tracking-\\[0\\.08em\\]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1.py-2"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1.py-2"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".gap-x-6 > li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-xs.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/davos-week": [
+  {
+   "id": "aria-allowed-role",
+   "impact": "minor",
+   "help": "ARIA role should be appropriate for the element",
+   "nodes": [
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(1) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(2) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(3) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(4) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(5) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(6) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .text-xl.font-semibold.tracking-\\[0\\.08em\\]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1.py-2"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1.py-2"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".gap-x-6 > li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-xs.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "scrollable-region-focusable",
+   "impact": "serious",
+   "help": "Scrollable region must have keyboard access",
+   "nodes": [
+    {
+     "target": [
+      ".-mx-6"
+     ],
+     "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+    }
+   ]
+  }
+ ],
+ "/en/destinations": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3 > .leading-none.flex-col > .font-display.text-xl.tracking-\\[0\\.08em\\]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3 > .leading-none.flex-col > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-6.max-w-4xl.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".text-xs.mt-4.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "heading-order",
+   "impact": "moderate",
+   "help": "Heading levels should only increase by one",
+   "nodes": [
+    {
+     "target": [
+      ".group.h-full[href$=\"zurich\"] > .p-5.flex-1.flex-col > h3"
+     ],
+     "summary": "Fix any of the following:\n  Heading order invalid"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/destinations/zurich": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .text-xl.tracking-\\[0\\.08em\\].font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-xs.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/destinations/zermatt": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .font-display.text-xl.font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.text-stone-500 > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-stone-500.text-xs"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/work": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .font-display.text-xl.font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(1) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(2)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(1) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(4)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(2) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(2)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(2) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(4)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(3) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(2)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(3) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(4)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(4) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(2)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(4) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(4)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(5) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(2)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(5) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(4)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(6) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(2)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(6) > .p-6.flex-1.flex-col > .text-stone-400.flex-wrap.text-xs > span:nth-child(4)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.11 (foreground color: #8a939c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.leading-relaxed > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-stone-500.text-xs"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "heading-order",
+   "impact": "moderate",
+   "help": "Heading levels should only increase by one",
+   "nodes": [
+    {
+     "target": [
+      ".group.h-full.border-ice-200:nth-child(1) > .p-6.flex-1.flex-col > h3"
+     ],
+     "summary": "Fix any of the following:\n  Heading order invalid"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/work/six-states-one-swiss-partner": [
+  {
+   "id": "aria-allowed-role",
+   "impact": "minor",
+   "help": "ARIA role should be appropriate for the element",
+   "nodes": [
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(1) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(2) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(3) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(4) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(5) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      ".w-80.snap-start.md\\:w-\\[26rem\\]:nth-child(6) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .text-xl.font-semibold.tracking-\\[0\\.08em\\]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".gap-x-6 > li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.text-stone-500 > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "scrollable-region-focusable",
+   "impact": "serious",
+   "help": "Scrollable region must have keyboard access",
+   "nodes": [
+    {
+     "target": [
+      ".-mx-6"
+     ],
+     "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+    }
+   ]
+  }
+ ],
+ "/en/experiences": [
+  {
+   "id": "aria-allowed-role",
+   "impact": "minor",
+   "help": "ARIA role should be appropriate for the element",
+   "nodes": [
+    {
+     "target": [
+      "article:nth-child(1) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(2) > .lg\\:order-last"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(3) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(4) > .lg\\:order-last"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(5) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(6) > .lg\\:order-last"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(7) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(8) > .lg\\:order-last"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex > .leading-none.flex-col.flex > .font-display.text-xl.font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(1) > div > .mb-3.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(2) > div > .mb-3.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(3) > div > .mb-3.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(4) > div > .mb-3.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(5) > div > .mb-3.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(6) > div > .mb-3.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(7) > div > .mb-3.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(8) > div > .mb-3.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".border.hover\\:bg-gold-500[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-6.max-w-4xl.text-stone-500 > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-stone-500.text-xs"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/insights": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .font-display.text-xl.font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".block > .eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".group-hover\\:translate-x-1.mt-6.transition-transform"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".uppercase"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.text-stone-500 > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-stone-500.text-xs"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/insights/davos-delegation-countdown": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .items-center.gap-3.flex > .leading-none.flex-col.flex > .font-display.text-xl.font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .items-center.gap-3.flex > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1.py-2"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1.py-2"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "nav[aria-label=\"On this page\"] > .eyebrow.mb-4"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.69 (foreground color: #9a7b2d, background color: #f4f6f8, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".uppercase"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.text-xs.text-stone-500 > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-xs.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/about": [
+  {
+   "id": "aria-allowed-role",
+   "impact": "minor",
+   "help": "ARIA role should be appropriate for the element",
+   "nodes": [
+    {
+     "target": [
+      ".gap-10 > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(1) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    },
+    {
+     "target": [
+      "article:nth-child(2) > figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .font-semibold.tracking-\\[0\\.08em\\].font-display"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(1) > .p-6 > .mt-1.text-gold-600.font-medium"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "article:nth-child(2) > .p-6 > .mt-1.text-gold-600.font-medium"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".gap-x-6 > li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl.mt-6.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-xs.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/partners": [
+  {
+   "id": "aria-allowed-role",
+   "impact": "minor",
+   "help": "ARIA role should be appropriate for the element",
+   "nodes": [
+    {
+     "target": [
+      "figure"
+     ],
+     "summary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .text-xl.font-semibold.tracking-\\[0\\.08em\\]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.flex.items-center > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".hover\\:bg-gold-500.hover\\:text-navy-950[href=\"https://wa.me/0\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #bfa05a, background color: #164069, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".gap-x-6 > li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-6.max-w-4xl.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-xs.text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ],
+ "/en/enquiry": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .font-display.text-xl.font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .gap-3.items-center.flex > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1.py-2"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1.py-2"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.text-ice-100[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".bg-ice-100 > .mb-4.eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.69 (foreground color: #9a7b2d, background color: #f4f6f8, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-5 > a[href=\"https://wa.me/0\"][target=\"_blank\"][rel=\"noopener noreferrer\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.31 (foreground color: #bfa05a, background color: #f4f6f8, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mb-3"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #9a7b2d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".max-w-4xl > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-4.text-stone-500.text-xs"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  }
+ ],
+ "/en/privacy": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .items-center.gap-3.flex > .leading-none.flex-col.flex > .font-display.text-xl.font-semibold"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      "a[aria-label=\"Home\"] > .items-center.gap-3.flex > .leading-none.flex-col.flex > .text-\\[0\\.6rem\\].tracking-\\[0\\.32em\\].text-ice-100"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(1) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"davos-week\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".relative:nth-child(3) > .gap-1"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"work\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"experiences\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"insights\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".py-2.transition-colors[href$=\"about\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #f4f6f8, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".md\\:inline-flex"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #bfa05a, background color: #9aa8b4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".gap-x-6 > li:nth-child(4) > .text-stone-500"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".mt-6.max-w-4xl.text-xs > span:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": [
+      ".text-xs.mt-4"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.42 (foreground color: #5c6670, background color: #0e2c4a, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": [
+      ".bottom-6"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  }
+ ]
+}

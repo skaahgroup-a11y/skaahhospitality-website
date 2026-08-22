@@ -1,0 +1,6 @@
+SR-08 Runtime env protection — BLOCKED (server-side control, 2026-08-21)
+The control (.env chmod 600 on the Flex server, server .env as single runtime secret store,
+docs/08 s5/s6) cannot be tested without the server. Local pre-checks run:
+  1. gitleaks 8.24.3 full history scan (7 commits, 783 KB): no leaks found (gitleaks-report.json).
+  2. .gitignore covers .env/.env.local/.env.*.local (lines 21-24); git check-ignore .env confirms.
+  3. Only .env.example is committed; no .env in the working tree of the fresh clone.

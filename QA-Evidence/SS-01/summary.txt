@@ -1,0 +1,12 @@
+SS-01 Full crawl metas — 2026-08-21, agent 5
+Method deviation: Screaming Frog unavailable; custom Node crawler (crawl.mjs) over all 36
+sitemap.xml routes on http://127.0.0.1:3222 (staging-mode production build, commit 8b6e82d).
+
+Result: all 36 routes HTTP 200. Titles: 36/36 present, 0 duplicates.
+Meta descriptions: 36/36 present, 0 duplicates. See titles-descriptions.json (rows +
+missingTitle/missingDesc/duplicateTitles/duplicateDescriptions arrays, all empty) and
+crawl-full.json (raw extraction).
+
+Side observation (docs/06 s2 guidance, not this test's pass criteria): ~12 titles exceed
+60 chars even after entity decoding (worst: /en at ~72 chars decoded) and 10 descriptions
+exceed 155 chars (worst /en/davos-week at 219). None missing, none duplicated => Pass.

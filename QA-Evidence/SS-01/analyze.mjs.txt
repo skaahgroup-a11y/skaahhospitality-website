@@ -1,0 +1,85 @@
+import { readFileSync, writeFileSync } from "node:fs";
+const { pages } = JSON.parse(readFileSync("crawl.json", "utf8"));
+
+// ---- SS-01 titles/descriptions ----
+const s1 = pages.map((p) => ({ path: p.path, status: p.status, title: p.title, titleLen: p.title ? p.title.length : 0, description: p.description, descLen: p.description ? p.description.length : 0 }));
+const missingTitle = s1.filter((r) => !r.title);
+const missingDesc = s1.filter((r) => !r.description);
+const dupBy = (key) => {
+  const m = {};
+  for (const r of s1) { if (r[key]) (m[r[key]] ||= []).push(r.path); }
+  return Object.entries(m).filter(([, v]) => v.length > 1);
+};
+const report1 = { total: pages.length, missingTitle, missingDesc, duplicateTitles: dupBy("title"), duplicateDescriptions: dupBy("description"), rows: s1 };
+writeFileSync("out-ss01.json", JSON.stringify(report1, null, 2));
+
+// ---- SS-02 canonicals ----
+const s2 = pages.map((p) => {
+  const expected = `https://skaahhospitality.com${p.path}`;
+  return { path: p.path, canonical: p.canonical, selfReferencing: p.canonical === expected, absolute: !!p.canonical && /^https:\/\//.test(p.canonical), trailingSlash: !!p.canonical && p.canonical.endsWith("/") };
+});
+writeFileSync("out-ss02.json", JSON.stringify({ rows: s2, nonSelf: s2.filter((r) => !r.selfReferencing), anyTrailingSlash: s2.filter((r) => r.trailingSlash) }, null, 2));
+
+// ---- SS-05 JSON-LD ----
+const REQUIRED = {
+  Organization: ["name", "url"],
+  WebSite: ["name", "url"],
+  TravelAgency: ["name", "address", "url"],
+  Service: ["name", "provider", "areaServed", "serviceType"],
+  FAQPage: ["mainEntity"],
+  Article: ["headline", "author", "datePublished"],
+  BreadcrumbList: ["itemListElement"],
+};
+const ldReport = [];
+let ldErrors = 0;
+for (const p of pages) {
+  for (const [i, raw] of p.jsonld.entries()) {
+    let parsed, err = null;
+    try { parsed = JSON.parse(raw); } catch (e) { err = "JSON parse error: " + e.message; ldErrors++; }
+    const nodes = [];
+    const collect = (n) => { if (Array.isArray(n)) n.forEach(collect); else if (n && typeof n === "object") { if (n["@type"]) nodes.push(n); if (n["@graph"]) collect(n["@graph"]); } };
+    if (parsed) collect(parsed);
+    const typeChecks = nodes.map((n) => {
+      const types = Array.isArray(n["@type"]) ? n["@type"] : [n["@type"]];
+      const missing = [];
+      for (const t of types) { for (const req of REQUIRED[t] || []) if (n[req] === undefined) missing.push(`${t}.${req}`); }
+      if (missing.length) ldErrors++;
+      return { type: types.join(","), missing };
+    });
+    ldReport.push({ path: p.path, block: i, parseError: err, nodes: typeChecks });
+  }
+}
+const typesByPage = {};
+for (const r of ldReport) (typesByPage[r.path] ||= []).push(...r.nodes.map((n) => n.type));
+writeFileSync("out-ss05.json", JSON.stringify({ structuralErrors: ldErrors, blocks: ldReport.length, typesByPage, problems: ldReport.filter((r) => r.parseError || r.nodes.some((n) => n.missing.length)) }, null, 2));
+
+// ---- SS-08 social cards (5 pages) ----
+const socialPages = ["/en", "/en/services/government-delegations", "/en/davos-week", "/en/insights/davos-delegation-countdown", "/en/work/six-states-one-swiss-partner"];
+const s8 = pages.filter((p) => socialPages.includes(p.path)).map((p) => ({ path: p.path, og: p.og, twitter: p.twitter }));
+writeFileSync("out-ss08.json", JSON.stringify(s8, null, 2));
+
+// ---- SS-11 internal linking on 7 service pages ----
+const servicePages = pages.filter((p) => /^\/en\/services\/.+/.test(p.path));
+const caseSlugs = pages.filter((p) => /^\/en\/work\/.+/.test(p.path)).map((p) => p.path);
+const articleSlugs = pages.filter((p) => /^\/en\/insights\/.+/.test(p.path)).map((p) => p.path);
+const destSlugs = pages.filter((p) => /^\/en\/destinations\/.+/.test(p.path)).map((p) => p.path);
+const s11 = servicePages.map((p) => {
+  const links = [...new Set(p.anchorsMain)];
+  const hub = links.filter((l) => l === "/en/davos-week");
+  const dest = links.filter((l) => destSlugs.includes(l));
+  const cs = links.filter((l) => caseSlugs.includes(l));
+  const art = links.filter((l) => articleSlugs.includes(l));
+  return { path: p.path, hubLink: hub.length > 0, destinationLinks: dest, caseStudyLinks: cs, articleLinks: art, pass: hub.length > 0 && dest.length >= 1 && cs.length >= 1 && art.length >= 1, mainAnchorCount: links.length, allMainAnchors: links };
+});
+writeFileSync("out-ss11.json", JSON.stringify(s11, null, 2));
+
+// ---- SS-12 hreflang emitted? ----
+const withHreflang = pages.filter((p) => p.hreflangLinks.length > 0).map((p) => ({ path: p.path, hreflangLinks: p.hreflangLinks }));
+writeFileSync("out-ss12-hreflang.json", JSON.stringify({ pagesWithHreflang: withHreflang.length, detail: withHreflang }, null, 2));
+
+console.log("SS-01 missingTitle:", missingTitle.length, "missingDesc:", missingDesc.length, "dupTitles:", report1.duplicateTitles.length, "dupDescs:", report1.duplicateDescriptions.length);
+console.log("SS-02 nonSelf:", s2.filter((r) => !r.selfReferencing).length, "trailingSlash:", s2.filter((r) => r.trailingSlash).length);
+console.log("SS-05 blocks:", ldReport.length, "structuralErrors:", ldErrors);
+console.log("SS-08 pages:", s8.length);
+console.log("SS-11:", s11.map((r) => `${r.path.split("/").pop()}=${r.pass ? "PASS" : "FAIL"}`).join(" "));
+console.log("SS-12 pages emitting hreflang:", withHreflang.length);

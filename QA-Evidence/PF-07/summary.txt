@@ -1,0 +1,10 @@
+PF-07 JS budgets — figures from `pnpm build` (Next 15 production build) rerun on commit 8b6e82d in an isolated hardlink copy of the QA clone (running staging server left untouched). Full table in build-output.txt. next build reports gzip-compressed First Load JS.
+Budgets (docs/04): content routes <= 170 KB gz, /enquiry <= 240 KB gz.
+Key figures (First Load JS):
+  /[locale] (home)            123 kB
+  /[locale]/davos-week        124 kB
+  /[locale]/services/[slug]   124 kB
+  /[locale]/work              125 kB  (largest content route)
+  /[locale]/enquiry           130 kB
+  shared baseline             102 kB; middleware 46.3 kB
+All content routes 120-125 kB (<= 170 kB) and enquiry 130 kB (<= 240 kB): PASS with ~45 kB / 110 kB headroom.

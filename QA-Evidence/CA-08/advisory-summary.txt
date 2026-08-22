@@ -1,0 +1,5 @@
+moderate | postcss <8.5.10 | PostCSS has XSS via Unescaped </style> in its CSS Stringify Output | CVE-2026-41305 | patched: >=8.5.10 | findings: ["8.4.31"]
+high | sharp <0.35.0 | sharp inherited vulnerabilities in libvips: CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591 |  | patched: >=0.35.0 | findings: ["0.34.5"]
+high | postcss <=8.5.11 | PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments | CVE-2026-45623 | patched: >=8.5.12 | findings: ["8.4.31"]
+moderate | postcss <=8.5.22 | PostCSS: incomplete fix of GHSA-6g55-p6wh-862q — attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset | CVE-2026-69153 | patched: >=8.5.23 | findings: ["8.4.31"]
+high | postcss <=8.5.17 | PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure | CVE-2026-73646 | patched: >=8.5.18 | findings: ["8.4.31"]

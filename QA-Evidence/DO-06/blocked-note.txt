@@ -1,0 +1,2 @@
+DO-06 — BLOCKED (2026-08-21): Custom Service Control / supervisord survival-on-restart
+(docs/08 s2, spike S0 step 4) requires the Hostpoint server.

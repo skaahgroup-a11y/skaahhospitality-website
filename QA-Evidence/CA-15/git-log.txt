@@ -1,0 +1,34 @@
+8b6e82d Remove restricted trademark wordings; add independence disclaimer
+cd28ebd T3: Davos hub, destinations, work, insights, experiences, about, legal
+801dd4f T4: enquiry wizard, API, triage flags and delivery fan-out
+b78a768 T1-T3: design system, content layer, Home, services and destinations
+e747e11 T0: scaffold Next.js 15, Tailwind v4 tokens, next-intl /en routing
+ec87acd Import SoW v1.3 spec docs and brand assets
+9ecd60c Initial commit
+
+== per-commit stats ==
+COMMIT 8b6e82d Remove restricted trademark wordings; add independence disclaimer
+
+ 43 files changed, 347 insertions(+), 292 deletions(-)
+COMMIT cd28ebd T3: Davos hub, destinations, work, insights, experiences, about, legal
+
+ 35 files changed, 3875 insertions(+), 39 deletions(-)
+COMMIT 801dd4f T4: enquiry wizard, API, triage flags and delivery fan-out
+
+ 11 files changed, 1199 insertions(+)
+COMMIT b78a768 T1-T3: design system, content layer, Home, services and destinations
+
+ 75 files changed, 6225 insertions(+)
+COMMIT e747e11 T0: scaffold Next.js 15, Tailwind v4 tokens, next-intl /en routing
+
+ 30 files changed, 6463 insertions(+), 1 deletion(-)
+COMMIT ec87acd Import SoW v1.3 spec docs and brand assets
+
+ 31 files changed, 950 insertions(+)
+COMMIT 9ecd60c Initial commit
+
+ 1 file changed, 1 insertion(+)
+
+== assessment vs docs/07 / CLAUDE.md ==
+Standard: "tasks are commit-sized with IDs" (docs/07), "Small, reviewed commits per task ID, for example T3.4: build DestinationCard" (CLAUDE.md).
+Observed: 7 commits for the whole build. Messages are clear and mostly carry epic-level IDs (T0, T1-T3, T3, T4), but not per-task IDs (no T3.4-style granularity). Sizes: 75 files/6,225 insertions (b78a768) and 35 files/3,875 insertions (cd28ebd) in single commits; these bundle entire epics and are not reviewable-sized per the stated standard. Two commits (spec import, trademark amendment) are appropriately scoped.

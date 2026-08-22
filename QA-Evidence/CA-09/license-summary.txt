@@ -1,0 +1,9 @@
+MIT: @formatjs/fast-memoize, @formatjs/icu-messageformat-parser, @formatjs/icu-skeleton-parser, @formatjs/intl-localematcher, @img/colour, @next/env, @next/swc-linux-x64-gnu, @parcel/watcher, @parcel/watcher-linux-x64-glibc, @schummar/icu-type-parser, @types/node, client-only, content-type, icu-minify, is-extglob, is-glob, nanoid, negotiator, next, next-intl, next-intl-swc-plugin-extractor, node-addon-
+LGPL-3.0-or-later: @img/sharp-libvips-linux-x64
+Apache-2.0: @img/sharp-linux-x64, @swc/core, @swc/counter, @swc/helpers, @swc/types, detect-libc, sharp, typescript
+Apache-2.0 AND MIT: @swc/core-linux-x64-gnu
+CC-BY-4.0: caniuse-lite
+BSD-3-Clause: intl-messageformat, source-map-js
+MIT-0: nodemailer
+ISC: picocolors, semver
+0BSD: tslib

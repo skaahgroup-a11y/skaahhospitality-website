@@ -1,0 +1,7 @@
+AC-09 landmarks + headings, all 36 sitemap routes, 2026-08-21
+Method: fetched every route's SSR HTML from the sitemap and parsed heading/landmark tags
+(landmarks-headings-table.txt / .json).
+Exactly one h1: 36/36 PASS. header landmark: 36/36. exactly one main: 36/36. footer: 36/36.
+Heading order: 33/36 OK; 3 hub templates skip h1->h3 (/en/services, /en/destinations, /en/work) —
+card grids use h3 with no intervening h2. Matches axe moderate heading-order finding (AC-01).
+VERDICT: Fail (minor, scoped to the 3 hub templates' heading order; everything else passes).

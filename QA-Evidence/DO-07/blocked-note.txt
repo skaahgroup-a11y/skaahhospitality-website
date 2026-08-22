@@ -1,0 +1,4 @@
+DO-07 — BLOCKED (2026-08-21): health monitoring/alerting on the Hostpoint host requires the
+server. Local pre-check: GET /api/health on the QA server returns HTTP 200 with JSON body.
+{"status":"ok","time":"2026-08-21T23:15:41.668Z"}
+GET /api/health => HTTP 200

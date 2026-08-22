@@ -1,0 +1,21 @@
+=== FE-09 ~95 MB upload (delegation, cap 100 MB), 2026-08-21T22:52:47Z, X-Forwarded-For: 10.3.9.1 ===
+file: TEST-large-95mb.pdf, 99614729 bytes, sha256 c8abad9956ae3f10ca470368872426b9f578f53e95332feeb9b90cea07897ac9
+--- response (with timing) ---
+{"reference":"SKH-20260821-0007","segment":"delegation","ownerTeam":"The delegations team","promise":"48 hours"}
+HTTP_STATUS:200 time_total:1.611775s upload_size:99615454
+=== FE-09 persistence check, 2026-08-21T22:52:55Z ===
+total 97292
+drwxr-xr-x 2 root root     4096 Aug 21 22:52 .
+drwxr-xr-x 4 root root     4096 Aug 21 22:52 ..
+-rw-r--r-- 1 root root 99614729 Aug 21 22:52 TEST-large-95mb.pdf
+sha256 source vs persisted:
+c8abad9956ae3f10ca470368872426b9f578f53e95332feeb9b90cea07897ac9  /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/fe-work/TEST-large-95mb.pdf
+c8abad9956ae3f10ca470368872426b9f578f53e95332feeb9b90cea07897ac9  /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/uploads/SKH-20260821-0007/TEST-large-95mb.pdf
+--- attachments block of persisted JSON ---
+[
+  {
+    "file": "TEST-large-95mb.pdf",
+    "bytes": 99614729,
+    "url": "data://uploads/SKH-20260821-0007/TEST-large-95mb.pdf"
+  }
+]

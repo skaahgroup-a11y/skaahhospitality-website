@@ -1,0 +1,8 @@
+SR-06 Admin authentication — BLOCKED (2026-08-21)
+No CMS/admin surface exists in this build: Payload CMS is epic E2 and is not embedded
+(no /admin route; grep "payload" in package.json dependencies => absent). Staging basic auth
+is a Hostpoint Control-Panel-level password protection (docs/08 s27) and no Hostpoint server
+exists yet. Nothing to authenticate against => Blocked, not Fail (target does not yet exist,
+but the workbook treats this as a critical launch gate, so recording Blocked pre-staging).
+Pre-check: curl http://127.0.0.1:3222/admin => 404 (no unauthenticated admin exposed).
+GET /admin => HTTP 307

@@ -1,0 +1,362 @@
+[
+ {
+  "route": "/en",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,3,3,2,2,3,3,3,3,2,2,3,3,3,2,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/services",
+  "h1": 1,
+  "headingSeq": "1,3,3,3,3,3,3,3,2,3,3,3,2",
+  "orderOk": false,
+  "firstSkip": "h1->h3",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/davos-week",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,3,2,2,2,2,2,2,3,3,3,3,2,3,3,2,3,3,3,3,2,3,3,3,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations",
+  "h1": 1,
+  "headingSeq": "1,3,3,3,3,3,3,3,3,2",
+  "orderOk": false,
+  "firstSkip": "h1->h3",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/work",
+  "h1": 1,
+  "headingSeq": "1,3,3,3,3,3,3,2",
+  "orderOk": false,
+  "firstSkip": "h1->h3",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/experiences",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/insights",
+  "h1": 1,
+  "headingSeq": "1,2,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/about",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,2,3,3,2,2,3,3,3,3,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/partners",
+  "h1": 1,
+  "headingSeq": "1,2,3,3,3,3,3,2,3,3,3,2,3,3,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/enquiry",
+  "h1": 1,
+  "headingSeq": "1",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/privacy",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/imprint",
+  "h1": 1,
+  "headingSeq": "1,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/cookies",
+  "h1": 1,
+  "headingSeq": "1,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/services/government-delegations",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,2,3,3,3,3,3,2,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/services/mice-events",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,2,3,3,3,3,3,2,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/services/travel-transport-immigration",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,3,3,2,3,3,3,3,3,2,3,3,3,3,3,2,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/services/stays",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,3,2,3,3,3,3,3,2,3,3,3,3,2,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/services/food-catering",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,3,2,3,3,3,3,3,2,3,3,3,3,2,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/services/media-production",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,2,3,3,3,3,3,2,3,3,3,3,2,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/services/branding-staffing",
+  "h1": 1,
+  "headingSeq": "1,2,2,3,3,3,3,3,2,3,3,3,3,3,2,3,3,3,3,2,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations/zurich",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,3,3,3,3,3,3,2,3,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations/geneva",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,3,3,3,3,3,3,2,3,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations/lucerne",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,3,3,3,3,3,2,3,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations/davos",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,3,3,3,3,3,3,2,3,3,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations/interlaken-jungfrau",
+  "h1": 1,
+  "headingSeq": "1,2,3,3,3,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations/zermatt",
+  "h1": 1,
+  "headingSeq": "1,2,3,3,3,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations/st-moritz-engadin",
+  "h1": 1,
+  "headingSeq": "1,2,3,3,3,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/destinations/ticino-lugano",
+  "h1": 1,
+  "headingSeq": "1,2,3,3,3,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/work/six-states-one-swiss-partner",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/work/first-time-state-delegation-davos",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/work/returning-delegation-doubled-scale",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/work/two-delegations-one-week",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/work/kitchen-at-1560-metres",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/work/bilateral-programme-geneva-zurich",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/insights/indian-cuisine-swiss-altitude",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2,3,3,3,3,2,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ },
+ {
+  "route": "/en/insights/davos-delegation-countdown",
+  "h1": 1,
+  "headingSeq": "1,2,2,2,2,2,2,2,2,2,3,3,3,3,2,3,2",
+  "orderOk": true,
+  "firstSkip": "",
+  "header": true,
+  "main": 1,
+  "footer": true
+ }
+]

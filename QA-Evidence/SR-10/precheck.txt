@@ -1,0 +1,7 @@
+SR-10 Nightly export archive — BLOCKED (server-side cron, 2026-08-21)
+The nightly cron ("pnpm export:content" to ~/backups/export-YYYYMMDD.tar.gz, kept 30 days,
+docs/08 s32) requires the Hostpoint server. Local pre-check: the export script exists and is
+wired — package.json "export:content": "npx tsx scripts/export-content.ts"; the script dumps the
+typed content layer to exports/<date>/ as JSON plus media-brief manifest (scripts/export-content.ts,
+header comment references CLAUDE.md portability guardrail and docs/07 T0.6). Cron registration and
+tar.gz rotation are not represented in the repo (server-side by design).

@@ -1,0 +1,36 @@
+AC-12 target sizes: sampled interactive elements across 3 pages; WCAG 2.5.8 minimum 24x24 CSS px.
+
+[/en] A:Skip to content => 1x1px BELOW 24px
+[/en] A:Chat on WhatsApp => 38x38px OK
+[/en] A:Food & CateringMulti-cuisine kitche => 368x419.5px OK
+[/en] A:Government delegationProtocol-aware => 270x264.3px OK
+[/en] A:SKAAHHOSPITALITY => 148.6x40px OK
+[/en] A:Geneva & Lake Geneva => 153x17px BELOW 24px
+[/en] A:Experiences => 81.6x17px BELOW 24px
+[/en] A:Skip to content => 1x1px BELOW 24px (smallest-on-page)
+[/en/davos-week] A:Skip to content => 1x1px BELOW 24px
+[/en/davos-week] A:Chat on WhatsApp => 38x38px OK
+[/en/davos-week] A:Protocol => 79x42px OK
+[/en/davos-week] BUTTON:Do you handle participation in the  => 768x66.4px OK
+[/en/davos-week] A:Government & Diplomatic Delegations => 168.2x43.4px OK
+[/en/davos-week] A:Lucerne => 54.3x17px BELOW 24px
+[/en/davos-week] A:Insights => 51.5x17px BELOW 24px
+[/en/davos-week] A:Skip to content => 1x1px BELOW 24px (smallest-on-page)
+[/en/enquiry] A:Skip to content => 1x1px BELOW 24px
+[/en/enquiry] A:Experiences => 82.7x33px OK
+[/en/enquiry] BUTTON:Government delegationOfficial visit => 357x103.4px OK
+[/en/enquiry] A:enquiry@skaahhospitality.com => 206.6x17px BELOW 24px
+[/en/enquiry] A:Stays => 36.5x17px BELOW 24px
+[/en/enquiry] A:Lucerne => 54.3x17px BELOW 24px
+[/en/enquiry] A:About => 39.5x17px BELOW 24px
+[/en/enquiry] A:Skip to content => 1x1px BELOW 24px (smallest-on-page)
+
+Sampled 24 elements (incl. per-page smallest); 14 below 24x24.
+
+=== SPACING-EXCEPTION ANALYSIS (WCAG 2.5.8) ===
+Elements measured below 24x24 fall into three groups:
+1. "Skip to content" 1x1px: sr-only until keyboard-focused; when focused/visible it renders 146x42px (see AC-04 evidence). It is not a pointer target while hidden, so 2.5.8 does not apply in the hidden state.
+2. Stacked footer/nav text links (Zurich, Geneva, Lucerne, ... h=17px): measured center-to-center vertical spacing 36-37px (>= 24px), so a 24px-diameter circle centred on each target does not intersect any other target -> 2.5.8 spacing exception satisfied. Measured on /en footer destination column: gaps [36,37,36,36,37,36,37].
+3. mailto link "enquiry@skaahhospitality.com" (206x17px): inline within a text block -> 2.5.8 inline exception.
+All buttons, CTAs, wizard controls, segment cards, header items and the WhatsApp FAB sampled are >= 24x24 (33-420px).
+VERDICT: WCAG 2.5.8 Target Size (Minimum) met for all sampled targets (directly or via its documented exceptions). The workbook's literal ">=24x24 each" is stricter than the SC; deviations documented above.

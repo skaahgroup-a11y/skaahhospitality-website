@@ -1,0 +1,27 @@
+SS-06 NAP alignment — 2026-08-21, agent 5
+
+FOOTER (rendered, every page; captured from /en):
+  Name:    SKAAH Hospitality GmbH ("SKAAH HOSPITALITY" wordmark; legal name in
+           independence disclaimer line)
+  Address: Opfikon (Zurich Airport), Switzerland
+  Email:   enquiry@skaahhospitality.com  [TO CONFIRM: enquiry mailbox address badge]
+  Phone:   [TO CONFIRM: phone number]  (no tel: link rendered)
+  WhatsApp:[TO CONFIRM: WhatsApp number]
+
+ABOUT PAGE /en/about (rendered contact block):
+  Address: Opfikon (Zurich Airport), Switzerland
+  Email:   enquiry@skaahhospitality.com
+  Phone:   [TO CONFIRM: phone number]
+
+JSON-LD on /en/about (TravelAgency):
+  name: SKAAH Hospitality GmbH
+  address: PostalAddress { addressLocality: Opfikon, addressRegion: Zurich,
+           addressCountry: CH }
+  areaServed: CH   (no telephone / streetAddress / geo emitted — the exact street
+  address and phone are [TO CONFIRM]; omitting unverified facts from schema is the
+  documented truth-discipline behaviour, docs/06 s3 markers)
+
+VERDICT: the three surfaces are identical at the level of confirmed facts
+(Opfikon / Zurich Airport / Switzerland + enquiry@skaahhospitality.com + legal name).
+Phone is [TO CONFIRM] everywhere, consistently. Google Business Profile does not exist
+yet (docs/06 s6 launch-fortnight task) so GBP comparison is not possible pre-staging.

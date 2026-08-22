@@ -1,0 +1,6 @@
+=== FE-06 submission, 2026-08-21T22:52:08Z, X-Forwarded-For: 10.3.06.1 ===
+--- payload ---
+{"segment":"general","contact":{"name":"TEST Maria Keller","organisation":"","role":"","email":"test.general@keller-example.ch","phone":"","preferredChannel":"email"},"details":{"subject":"TEST QA FE-06 general question","message":"TEST submission: do you also arrange private museum visits in Zurich?"},"consentAccepted":true,"website":"","elapsedMs":29000,"utm":{},"locale":"en"}
+--- response ---
+{"reference":"SKH-20260821-0006","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"}
+HTTP_STATUS:200

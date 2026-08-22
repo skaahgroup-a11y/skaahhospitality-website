@@ -1,0 +1,5 @@
+=== FE-14 verifiedDomain (desk@invest.gov.in), X-Forwarded-For: 10.3.14.1, 2026-08-21T22:53:55Z ===
+response: {"reference":"SKH-20260821-0018","segment":"delegation","ownerTeam":"The delegations team","promise":"48 hours"}
+--- persisted flags (SKH-20260821-0018) ---
+email: desk@invest.gov.in
+flags: {"verifiedDomain": true, "manualCheck": false, "utm": {}}

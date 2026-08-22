@@ -1,0 +1,2 @@
+DO-05 — BLOCKED (2026-08-21): rollback drill (repoint current symlink to previous release,
+docs/08 s6) requires the Hostpoint release directory layout; no server exists pre-staging.

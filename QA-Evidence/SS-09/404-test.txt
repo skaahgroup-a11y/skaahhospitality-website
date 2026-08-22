@@ -1,0 +1,23 @@
+SS-09 Error status codes — 2026-08-21, agent 5
+
+== GET /en/this-page-does-not-exist-qa5
+HTTP/1.1 404 Not Found
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: camera=(), microphone=(), geolocation=()
+set-cookie: NEXT_LOCALE=en; Path=/; SameSite=lax
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+Rendered body: designed 404 page — h1 'This page has moved on.' with recovery links (see notfound-page.html)
+
+== GET /this-page-does-not-exist-qa5 (no locale prefix)
+status=307 location=http://127.0.0.1:3222/en/this-page-does-not-exist-qa5
+   -> middleware 307 to /en/... which then serves the 404 status:
+   final status=404
+
+FINDING (minor): the 404 response contains NO <title> tag (grep -c title = 0 on the body).
+
+500 half: forcing a genuine server error is not practical without modifying the clone.
+app/[locale]/error.tsx exists (client error boundary, see error-tsx-copy.txt);
+Next.js serves it with the designed layout on runtime errors. Not exercised live.

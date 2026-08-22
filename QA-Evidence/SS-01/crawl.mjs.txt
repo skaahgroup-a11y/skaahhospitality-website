@@ -1,0 +1,61 @@
+// QA crawler for SKAAH Hospitality staging build (SS-01/02/05/08/11)
+// Deviation: Screaming Frog unavailable; custom Node crawler over the sitemap inventory.
+import { writeFileSync } from "node:fs";
+
+const BASE = "http://127.0.0.1:3222";
+const res = await fetch(`${BASE}/sitemap.xml`);
+const xml = await res.text();
+const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+const paths = locs.map((u) => new URL(u).pathname);
+
+function attr(tag, name) {
+  const m = tag.match(new RegExp(`${name}="([^"]*)"`));
+  return m ? m[1] : null;
+}
+
+const pages = [];
+for (const p of paths) {
+  const r = await fetch(`${BASE}${p}`, { redirect: "manual" });
+  const html = await r.text();
+  const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1] ?? null;
+  const metas = [...html.matchAll(/<meta [^>]*>/g)].map((m) => m[0]);
+  const links = [...html.matchAll(/<link [^>]*>/g)].map((m) => m[0]);
+  const metaBy = (nameAttr, key) => {
+    const t = metas.find((m) => attr(m, nameAttr) === key);
+    return t ? attr(t, "content") : null;
+  };
+  const canonicalTag = links.find((l) => /rel="canonical"/.test(l));
+  const jsonld = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+  const hreflang = links.filter((l) => /hreflang=/.test(l));
+  // anchors: whole page (nav+footer included) and main-only
+  const mainMatch = html.match(/<main[\s\S]*?<\/main>/);
+  const anchorsIn = (s) => [...s.matchAll(/<a [^>]*href="([^"]*)"/g)].map((m) => m[1]);
+  pages.push({
+    path: p,
+    status: r.status,
+    title,
+    description: metaBy("name", "description"),
+    canonical: canonicalTag ? attr(canonicalTag, "href") : null,
+    og: {
+      title: metaBy("property", "og:title"),
+      description: metaBy("property", "og:description"),
+      image: metaBy("property", "og:image"),
+      url: metaBy("property", "og:url"),
+      type: metaBy("property", "og:type"),
+    },
+    twitter: {
+      card: metaBy("name", "twitter:card"),
+      title: metaBy("name", "twitter:title"),
+      description: metaBy("name", "twitter:description"),
+      image: metaBy("name", "twitter:image"),
+    },
+    robotsMeta: metaBy("name", "robots"),
+    hreflangLinks: hreflang,
+    jsonld,
+    anchorsMain: mainMatch ? anchorsIn(mainMatch[0]) : [],
+    anchorsAll: anchorsIn(html),
+  });
+  process.stderr.write(`${r.status} ${p}\n`);
+}
+writeFileSync(process.argv[2] || "crawl.json", JSON.stringify({ crawledAt: new Date().toISOString(), count: pages.length, pages }, null, 2));
+console.log(`Crawled ${pages.length} routes`);

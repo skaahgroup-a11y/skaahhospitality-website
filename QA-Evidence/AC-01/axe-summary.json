@@ -1,0 +1,457 @@
+[
+  {
+    "route": "/en",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 6,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/services",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 2,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 17,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "heading-order",
+          "nodes": 1,
+          "help": "Heading levels should only increase by one"
+        },
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/services/government-delegations",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 1,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 14,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": [
+        {
+          "id": "aria-allowed-role",
+          "nodes": 1,
+          "help": "ARIA role should be appropriate for the element"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/en/davos-week",
+    "critical": 0,
+    "serious": 2,
+    "moderate": 1,
+    "minor": 1,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 14,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        },
+        {
+          "id": "scrollable-region-focusable",
+          "nodes": 1,
+          "help": "Scrollable region must have keyboard access"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": [
+        {
+          "id": "aria-allowed-role",
+          "nodes": 6,
+          "help": "ARIA role should be appropriate for the element"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/en/destinations",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 2,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 14,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "heading-order",
+          "nodes": 1,
+          "help": "Heading levels should only increase by one"
+        },
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/destinations/zurich",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 14,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/destinations/zermatt",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 14,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/work",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 2,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 26,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "heading-order",
+          "nodes": 1,
+          "help": "Heading levels should only increase by one"
+        },
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/work/six-states-one-swiss-partner",
+    "critical": 0,
+    "serious": 2,
+    "moderate": 1,
+    "minor": 1,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 14,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        },
+        {
+          "id": "scrollable-region-focusable",
+          "nodes": 1,
+          "help": "Scrollable region must have keyboard access"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": [
+        {
+          "id": "aria-allowed-role",
+          "nodes": 6,
+          "help": "ARIA role should be appropriate for the element"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/en/experiences",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 1,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 22,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": [
+        {
+          "id": "aria-allowed-role",
+          "nodes": 8,
+          "help": "ARIA role should be appropriate for the element"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/en/insights",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 17,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/insights/davos-delegation-countdown",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 16,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/about",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 1,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 16,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": [
+        {
+          "id": "aria-allowed-role",
+          "nodes": 3,
+          "help": "ARIA role should be appropriate for the element"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/en/partners",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 1,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 14,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": [
+        {
+          "id": "aria-allowed-role",
+          "nodes": 1,
+          "help": "ARIA role should be appropriate for the element"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/en/enquiry",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 0,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 16,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [],
+      "minor": []
+    }
+  },
+  {
+    "route": "/en/privacy",
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 0,
+    "violations": {
+      "critical": [],
+      "serious": [
+        {
+          "id": "color-contrast",
+          "nodes": 13,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "moderate": [
+        {
+          "id": "region",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "minor": []
+    }
+  }
+]

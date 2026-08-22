@@ -1,0 +1,35 @@
+CA-05 Component inventory C01-C29 (docs/04 s3) vs components/ in qa-clone @ 8b6e82d
+Method: file listing of components/ + grep for missing IDs and equivalents.
+
+C01 Header            -> components/layout/SiteHeader.tsx            PRESENT
+C02 Footer            -> components/layout/SiteFooter.tsx            PRESENT
+C03 HeroFilm          -> components/blocks/HeroFilm.tsx              PRESENT (poster/film placeholder pending archive, DECISION comment at line 8)
+C04 ProofStrip        -> components/blocks/ProofStrip.tsx            PRESENT
+C05 ServiceCard       -> components/blocks/ServiceCard.tsx           PRESENT
+C06 SegmentRouter     -> components/blocks/SegmentRouter.tsx         PRESENT
+C07 StepRow           -> components/blocks/StepRow.tsx               PRESENT
+C08 CapabilityGrid    -> components/blocks/CapabilityGrid.tsx        PRESENT
+C09 BudgetBandTable   -> components/blocks/BudgetBandTable.tsx       PRESENT
+C10 CaseStudyCard     -> components/blocks/CaseStudyCard.tsx         PRESENT
+C11 CaseStudyMetaRow  -> components/blocks/CaseStudyMetaRow.tsx      PRESENT
+C12 StatCards         -> components/blocks/StatCards.tsx             PRESENT
+C13 DestinationCard   -> components/blocks/DestinationCard.tsx       PRESENT
+C14 Timeline          -> components/blocks/Timeline.tsx + HubTimeline.tsx  PRESENT
+C15 FAQAccordion      -> components/blocks/FAQAccordion.tsx          PRESENT
+C16 CTABand           -> components/blocks/CTABand.tsx               PRESENT
+C17 EnquiryWizard     -> components/forms/EnquiryWizard.tsx + fields.tsx   PRESENT
+C18 WhatsAppFAB       -> components/layout/WhatsAppFab.tsx           PRESENT
+C19 InsightCard       -> components/blocks/InsightCard.tsx           PRESENT
+C20 ArticleTOC        -> components/blocks/ArticleTOC.tsx            PRESENT
+C21 PullQuote         -> components/blocks/PullQuote.tsx             PRESENT
+C22 GalleryScroller   -> components/blocks/GalleryScroller.tsx       PRESENT
+C23 FilmBlock         -> (no file; grep FilmBlock = 0 hits)          MISSING (film assets are placeholders pending archive, but no documented deferral/DECISION found)
+C24 ConsentBanner     -> components/layout/ConsentBanner.tsx         PRESENT
+C25 Breadcrumbs       -> components/blocks/Breadcrumbs.tsx           PRESENT
+C26 LangSwitcher      -> (no file; grep LangSwitcher/locale-switch = 0 hits)  MISSING (spec: "built, hidden until locale >1"; not built, no DECISION found)
+C27 TrustRow          -> components/blocks/TrustRow.tsx              PRESENT
+C28 PartnerValueGrid  -> components/blocks/PartnerValueGrid.tsx      PRESENT
+C29 NoticeBar         -> (no file; grep NoticeBar = 0 hits)          MISSING (spec marks it "optional seasonal, CMS-toggled"; CMS not embedded yet, deferral defensible but undocumented)
+
+Score: 26/29 present. Missing: C23, C26, C29.
+Additional non-inventory components: HubNav, PageHero, PartnerCta, RelatedServices, VenueTable, WhatsAppLink, WorkFilters, CookiePreferences, SiteLogo, JsonLd, ui/{Button,Copy,Icon,MediaPlaceholder,Section,SectionHeading}.

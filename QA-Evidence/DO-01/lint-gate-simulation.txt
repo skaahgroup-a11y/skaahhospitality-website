@@ -1,0 +1,15 @@
+== seeded lint violations into lib/site.ts (var, unused var, == null) ==
+
+> skaahhospitality-website@0.1.0 lint /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone
+> eslint .
+
+
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/lib/site.ts
+  49:3  error    Unexpected var, use let or const instead        no-var
+  49:7  warning  'neverUsed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+ ELIFECYCLE  Command failed with exit code 1.
+LINT EXIT=1

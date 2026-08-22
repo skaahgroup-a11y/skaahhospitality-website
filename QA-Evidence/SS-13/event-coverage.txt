@@ -1,0 +1,31 @@
+SS-13 Analytics events (docs/06 s7, 13 named events) — 2026-08-21, agent 5
+Method: grep across app/, components/, lib/, content/ of the clone (commit 8b6e82d).
+All 13 names exist in the AnalyticsEvent union type (lib/analytics.ts); "wired" below
+means a real trackEvent() call site exists.
+
+Event                Wired  Where
+enquiry_start        YES    components/forms/EnquiryWizard.tsx:83,168 (segment prop)
+enquiry_step         YES    components/forms/EnquiryWizard.tsx:176 (segment, step)
+enquiry_submit       YES    components/forms/EnquiryWizard.tsx:284 (segment)
+enquiry_attachment   YES    components/forms/EnquiryWizard.tsx:267 (count/totalMB)
+whatsapp_click       YES    WhatsAppFab.tsx:31, SiteHeader.tsx:170, WhatsAppLink.tsx:26 (page)
+phone_click          NO     type declared only; zero call sites. No tel: link exists
+                            anywhere (phone number is [TO CONFIRM]/unconfigured), so
+                            there is currently nothing to attach it to — but the wiring
+                            is absent, so it will NOT start recording when the number
+                            lands unless code is added. FINDING.
+rfp_band_view        YES    components/blocks/BudgetBandTable.tsx:25 (on scroll into view)
+hub_timeline_engage  YES    components/blocks/HubTimeline.tsx:21
+case_study_read      YES    components/blocks/CaseStudyMetaRow.tsx:43 (75% scroll, slug)
+article_read         NO     type declared only; zero call sites. Article pages
+                            (app/[locale]/insights/[slug]/page.tsx) render ArticleTOC/
+                            FAQAccordion etc. but import no read-depth tracker, while
+                            the sibling case_study_read IS implemented. FINDING.
+partner_cta_click    YES    components/blocks/PartnerCta.tsx:22 (/partners CTA band)
+film_play            N.A.   HeroFilm.tsx renders a gradient stand-in, no <video>
+film_pause           N.A.   element until the hero film master is delivered (component
+                            comment, docs/02 media plan) — no player to instrument yet.
+
+Coverage: 9 of 13 wired; 2 missing (phone_click, article_read); 2 N.A. pending film.
+Consent note: trackEvent no-ops until visitor consent + NEXT_PUBLIC_PLAUSIBLE_DOMAIN
+(lib/analytics.ts) — firing not observable live here; wiring judged from source.

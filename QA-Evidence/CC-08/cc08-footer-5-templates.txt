@@ -1,0 +1,68 @@
+CC-08 Footer treatment on 5 page templates (+hub) — 2026-08-21
+
+== home (template: home)
+  descriptor line: PRESENT
+  quiet group line: PRESENT
+  contact block (address): PRESENT
+  contact block (email): PRESENT
+  independence disclaimer: PRESENT
+  disclaimer [TO CONFIRM] marker (expected on staging): PRESENT
+  legal links: PRESENT
+
+== services/government-delegations (template: service)
+  descriptor line: PRESENT
+  quiet group line: PRESENT
+  contact block (address): PRESENT
+  contact block (email): PRESENT
+  independence disclaimer: PRESENT
+  disclaimer [TO CONFIRM] marker (expected on staging): PRESENT
+  legal links: PRESENT
+  footer identical to home footer: YES
+
+== destinations/zurich (template: destination-full)
+  descriptor line: PRESENT
+  quiet group line: PRESENT
+  contact block (address): PRESENT
+  contact block (email): PRESENT
+  independence disclaimer: PRESENT
+  disclaimer [TO CONFIRM] marker (expected on staging): PRESENT
+  legal links: PRESENT
+  footer identical to home footer: YES
+
+== work/six-states-one-swiss-partner (template: case-study)
+  descriptor line: PRESENT
+  quiet group line: PRESENT
+  contact block (address): PRESENT
+  contact block (email): PRESENT
+  independence disclaimer: PRESENT
+  disclaimer [TO CONFIRM] marker (expected on staging): PRESENT
+  legal links: PRESENT
+  footer identical to home footer: YES
+
+== insights/davos-delegation-countdown (template: article)
+  descriptor line: PRESENT
+  quiet group line: PRESENT
+  contact block (address): PRESENT
+  contact block (email): PRESENT
+  independence disclaimer: PRESENT
+  disclaimer [TO CONFIRM] marker (expected on staging): PRESENT
+  legal links: PRESENT
+  footer identical to home footer: YES
+
+== davos-week (template: hub, bonus check)
+  descriptor line: PRESENT
+  quiet group line: PRESENT
+  contact block (address): PRESENT
+  contact block (email): PRESENT
+  independence disclaimer: PRESENT
+  disclaimer [TO CONFIRM] marker (expected on staging): PRESENT
+  legal links: PRESENT
+  footer identical to home footer: YES
+
+Full rendered footer text (home):
+ SKAAH HOSPITALITY The Swiss hospitality and logistics partner for government delegations and high-value corporate groups, proven at Davos Week. Services Government &amp; Diplomatic Delegations Meetings, Incentives &amp; Events Travel, Transport &amp; Immigration Stays Food &amp; Catering Media &amp; Production Branding, Marketing &amp; Staffing Destinations Zurich Geneva &amp; Lake Geneva Lucerne Davos Interlaken &amp; Jungfrau Zermatt St. Moritz &amp; Engadin Ticino &amp; Lugano Company About Work Experiences Insights Partner with us Davos Week Contact Opfikon (Zurich Airport), Switzerland enquiry@skaahhospitality.com [TO CONFIRM: enquiry mailbox address] WhatsApp [TO CONFIRM: WhatsApp number] Phone [TO CONFIRM: phone number] A SKAAH Group company Privacy Imprint Cookie preferences LinkedIn [TO CONFIRM: LinkedIn URL] SKAAH Hospitality GmbH is an independent Swiss company. We are not affiliated with, endorsed by or otherwise connected to the World Economic Forum, and we play no role in accreditation for, or participation in, its events. WEF and World Economic Forum are trademarks of their owner. Our services are hospitality and logistics, arranged independently for our clients around major event weeks in Switzerland. [TO CONFIRM: replace with the approved standard disclaimer wording] 2026 SKAAH Hospitality GmbH . All rights reserved. 
+
+Hub-specific check: disclaimer occurrences in hub page BODY (before <footer>): 1 -> hub carries its own on-page disclaimer in addition to the footer
+VERDICT: PASS — descriptor, quiet group line ('A SKAAH Group company'), contact block and independence
+disclaimer all present and byte-identical across all 5 sampled templates (+hub). Disclaimer wording and
+contact details carry [TO CONFIRM] markers by design on staging (client-approved text/details pending).

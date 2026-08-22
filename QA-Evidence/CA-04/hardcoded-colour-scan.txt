@@ -1,0 +1,8 @@
+grep -rniE '#[0-9a-f]{3,8}\b' app/ components/ (excluding globals.css token file): 0 matches
+
+rgb()/rgba()/hsl() literals outside globals.css:
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/components/blocks/HeroFilm.tsx:42:        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(191,160,90,0.14),transparent_55%)]"
+
+named CSS colours check (bg-red, text-blue etc tailwind default palette):
+      1 /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/components/ui/Copy.tsx:15:text-amber-900
+      1 /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/components/ui/Copy.tsx:15:bg-amber-200

@@ -1,0 +1,2 @@
+AC-11 blocked, 2026-08-21: NVDA and VoiceOver are unavailable in this Linux container (Chromium only, no screen readers).
+Programmatic pre-checks filed under AC-06 (form announcement DOM), AC-07 (accordion/menu ARIA), AC-09 (landmarks/headings) all executed.

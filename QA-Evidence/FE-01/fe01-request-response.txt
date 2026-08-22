@@ -1,0 +1,21 @@
+=== FE-01 delegation happy path, 2026-08-21T22:51:39Z, X-Forwarded-For: 10.3.1.1 ===
+--- payload ---
+{"segment":"delegation",
+ "contact":{"name":"TEST Rajesh Sharma","organisation":"TEST Government of Maharashtra Protocol Department","role":"Deputy Secretary (Protocol)","email":"test.protocol@maharashtra-example.gov.in","phone":"+91 22 5555 0101","preferredChannel":"email"},
+ "details":{"purpose":"davos-week","destinations":["zurich","davos"],"arrivalDate":"2027-01-15","departureDate":"2027-01-22","datesNotFixed":false,"sizeBand":"11-30","principalsCount":3,"needs":["accommodation","transport-convoy","protocol","catering"],"securityNotes":"TEST submission - QA workbook FE-01"},
+ "consentAccepted":true,"website":"","elapsedMs":45000,
+ "utm":{"utm_source":"qa-workbook","utm_medium":"api-test"},"locale":"en"}
+--- request/response ---
+HTTP/1.1 200 OK
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: camera=(), microphone=(), geolocation=()
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+content-type: application/json
+Date: Fri, 21 Aug 2026 22:51:39 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+{"reference":"SKH-20260821-0001","segment":"delegation","ownerTeam":"The delegations team","promise":"48 hours"}

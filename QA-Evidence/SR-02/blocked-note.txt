@@ -1,0 +1,6 @@
+SR-02 Enquiry endpoints on Swiss host — BLOCKED (pre-staging audit, 2026-08-21)
+The /api/enquiry endpoint currently runs only on the local QA server (127.0.0.1:3222); no Swiss host exists yet.
+Pre-check run locally: POST /api/enquiry persists to DATA_DIR/enquiries/<reference>.json on local disk with no
+third-country calls in code (nodemailer SMTP + optional SHEET_WEBHOOK_URL are unset in this environment and both
+are queue-on-failure, see lib/enquiry/). Residency design: docs/08 s5. Verification must be re-run on the
+Hostpoint staging host once provisioned.

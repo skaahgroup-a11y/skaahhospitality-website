@@ -1,0 +1,4 @@
+SR-12 Admin audit log — BLOCKED (2026-08-21)
+The admin audit log (docs/05 s6) attaches to the Payload CMS admin (epic E2), which is not yet
+embedded; no admin actions exist to log. Pre-check: grep -ri "audit" over lib/, app/ => no audit
+log implementation (expected at this phase). Re-test with epic E2.

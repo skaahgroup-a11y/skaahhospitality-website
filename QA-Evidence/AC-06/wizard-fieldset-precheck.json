@@ -1,0 +1,51 @@
+{
+ "fieldsets": [
+  {
+   "legend": "Purpose of the visit *",
+   "ariaDescribedby": "purpose-error",
+   "describedbyTarget": {
+    "role": "alert",
+    "text": "Please complete this field."
+   }
+  },
+  {
+   "legend": "Destination(s)",
+   "ariaDescribedby": null,
+   "describedbyTarget": null
+  },
+  {
+   "legend": "Delegation size band *",
+   "ariaDescribedby": "sizeBand-error",
+   "describedbyTarget": {
+    "role": "alert",
+    "text": "Please complete this field."
+   }
+  }
+ ],
+ "radios": [
+  {
+   "implicitLabel": true,
+   "labelText": "Davos Week"
+  },
+  {
+   "implicitLabel": true,
+   "labelText": "Bilateral or trade mission"
+  },
+  {
+   "implicitLabel": true,
+   "labelText": "Other official visit"
+  },
+  {
+   "implicitLabel": true,
+   "labelText": "Zurich"
+  },
+  {
+   "implicitLabel": true,
+   "labelText": "Geneva & Lake Geneva"
+  },
+  {
+   "implicitLabel": true,
+   "labelText": "Lucerne"
+  }
+ ]
+}

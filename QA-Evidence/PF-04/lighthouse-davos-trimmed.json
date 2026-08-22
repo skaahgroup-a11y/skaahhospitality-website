@@ -1,0 +1,632 @@
+{
+ "finalDisplayedUrl": "http://127.0.0.1:3222/en/davos-week",
+ "fetchTime": "2026-08-21T23:05:47.976Z",
+ "lighthouseVersion": "13.4.1",
+ "configSettings": {
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "throttling": {
+   "rttMs": 150,
+   "throughputKbps": 1638.4,
+   "requestLatencyMs": 562.5,
+   "downloadThroughputKbps": 1474.5600000000002,
+   "uploadThroughputKbps": 675,
+   "cpuSlowdownMultiplier": 4
+  },
+  "screenEmulation": {
+   "mobile": true,
+   "width": 412,
+   "height": 823,
+   "deviceScaleFactor": 1.75,
+   "disabled": false
+  }
+ },
+ "performanceScore": 0.94,
+ "audits": {
+  "metrics": {
+   "id": "metrics",
+   "title": "Metrics",
+   "description": "Collects all available metrics.",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "numericValue": 3145,
+   "numericUnit": "millisecond",
+   "details": {
+    "type": "debugdata",
+    "items": [
+     {
+      "firstContentfulPaint": 912,
+      "largestContentfulPaint": 3004,
+      "interactive": 3145,
+      "speedIndex": 912,
+      "totalBlockingTime": 78,
+      "maxPotentialFID": 128,
+      "cumulativeLayoutShift": 0,
+      "cumulativeLayoutShiftMainFrame": 0,
+      "timeToFirstByte": 456,
+      "observedTimeOrigin": 0,
+      "observedTimeOriginTs": 6350241357,
+      "observedNavigationStart": 0,
+      "observedNavigationStartTs": 6350241357,
+      "observedFirstPaint": 129,
+      "observedFirstPaintTs": 6350369881,
+      "observedFirstContentfulPaint": 129,
+      "observedFirstContentfulPaintTs": 6350369881,
+      "observedFirstContentfulPaintAllFrames": 129,
+      "observedFirstContentfulPaintAllFramesTs": 6350369881,
+      "observedLargestContentfulPaint": 129,
+      "observedLargestContentfulPaintTs": 6350369881,
+      "observedLargestContentfulPaintAllFrames": 129,
+      "observedLargestContentfulPaintAllFramesTs": 6350369881,
+      "observedTraceEnd": 2555,
+      "observedTraceEndTs": 6352795914,
+      "observedLoad": 168,
+      "observedLoadTs": 6350409749,
+      "observedDomContentLoaded": 117,
+      "observedDomContentLoadedTs": 6350357857,
+      "observedCumulativeLayoutShift": 0,
+      "observedCumulativeLayoutShiftMainFrame": 0,
+      "observedFirstVisualChange": 128,
+      "observedFirstVisualChangeTs": 6350369357,
+      "observedLastVisualChange": 219,
+      "observedLastVisualChangeTs": 6350460357,
+      "observedSpeedIndex": 158,
+      "observedSpeedIndexTs": 6350399456
+     },
+     {
+      "lcpInvalidated": false
+     }
+    ]
+   }
+  },
+  "largest-contentful-paint": {
+   "id": "largest-contentful-paint",
+   "title": "Largest Contentful Paint",
+   "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+   "score": 0.78,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 3004.003925,
+   "numericUnit": "millisecond",
+   "displayValue": "3.0 s",
+   "scoringOptions": {
+    "p10": 2500,
+    "median": 4000
+   }
+  },
+  "cumulative-layout-shift": {
+   "id": "cumulative-layout-shift",
+   "title": "Cumulative Layout Shift",
+   "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 0,
+   "numericUnit": "unitless",
+   "displayValue": "0",
+   "scoringOptions": {
+    "p10": 0.1,
+    "median": 0.25
+   },
+   "details": {
+    "type": "debugdata",
+    "items": [
+     {
+      "cumulativeLayoutShiftMainFrame": 0,
+      "newEngineResult": {
+       "cumulativeLayoutShift": 0,
+       "cumulativeLayoutShiftMainFrame": 0
+      },
+      "newEngineResultDiffered": false
+     }
+    ]
+   }
+  },
+  "total-blocking-time": {
+   "id": "total-blocking-time",
+   "title": "Total Blocking Time",
+   "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+   "score": 0.99,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 78,
+   "numericUnit": "millisecond",
+   "displayValue": "80 ms",
+   "scoringOptions": {
+    "p10": 200,
+    "median": 600
+   }
+  },
+  "first-contentful-paint": {
+   "id": "first-contentful-paint",
+   "title": "First Contentful Paint",
+   "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 911.5572999999999,
+   "numericUnit": "millisecond",
+   "displayValue": "0.9 s",
+   "scoringOptions": {
+    "p10": 1800,
+    "median": 3000
+   }
+  },
+  "speed-index": {
+   "id": "speed-index",
+   "title": "Speed Index",
+   "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 911.5572999999999,
+   "numericUnit": "millisecond",
+   "displayValue": "0.9 s",
+   "scoringOptions": {
+    "p10": 3387,
+    "median": 5800
+   }
+  },
+  "server-response-time": {
+   "id": "server-response-time",
+   "title": "Initial server response time was short",
+   "description": "Keep the server response time for the main document short because all other requests depend on it. [Learn more about the Time to First Byte metric](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 7,
+   "numericUnit": "millisecond",
+   "displayValue": "Root document took 10 ms",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "responseTime",
+      "valueType": "timespanMs",
+      "label": "Time Spent"
+     }
+    ],
+    "items": [
+     {
+      "url": "http://127.0.0.1:3222/en/davos-week",
+      "responseTime": 7
+     }
+    ],
+    "overallSavingsMs": 0
+   },
+   "guidanceLevel": 1
+  },
+  "layout-shifts": {
+   "id": "layout-shifts",
+   "title": "Avoid large layout shifts",
+   "description": "These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout shifts may not be included in the CLS metric value due to [windowing](https://web.dev/articles/cls#what_is_cls). [Learn how to improve CLS](https://web.dev/articles/optimize-cls)",
+   "score": null,
+   "scoreDisplayMode": "notApplicable",
+   "metricSavings": {
+    "CLS": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "node",
+      "valueType": "node",
+      "subItemsHeading": {
+       "key": "extra"
+      },
+      "label": "Element"
+     },
+     {
+      "key": "score",
+      "valueType": "numeric",
+      "subItemsHeading": {
+       "key": "cause",
+       "valueType": "text"
+      },
+      "granularity": 0.001,
+      "label": "Layout shift score"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 2
+  },
+  "lcp-breakdown-insight": {
+   "id": "lcp-breakdown-insight",
+   "title": "LCP breakdown",
+   "description": "Each [subpart has specific improvement strategies](https://developer.chrome.com/docs/performance/insights/lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "metricSavings": {
+    "LCP": 0
+   },
+   "details": {
+    "type": "list",
+    "items": [
+     {
+      "type": "table",
+      "headings": [
+       {
+        "key": "label",
+        "valueType": "text",
+        "label": "Subpart"
+       },
+       {
+        "key": "duration",
+        "valueType": "ms",
+        "label": "Duration"
+       }
+      ],
+      "items": [
+       {
+        "subpart": "timeToFirstByte",
+        "label": "Time to first byte",
+        "duration": 11.754
+       },
+       {
+        "subpart": "elementRenderDelay",
+        "label": "Element render delay",
+        "duration": 116.77
+       }
+      ]
+     },
+     {
+      "type": "node",
+      "lhId": "page-0-P",
+      "path": "2,HTML,1,BODY,5,MAIN,3,SECTION,0,DIV,2,P",
+      "selector": "main#main > section.relative > div.container-site > p.mt-5",
+      "boundingRect": {
+       "top": 377,
+       "bottom": 523,
+       "left": 24,
+       "right": 388,
+       "width": 364,
+       "height": 146
+      },
+      "snippet": "<p class=\"mt-5 max-w-2xl text-lg leading-relaxed text-ice-200\">",
+      "nodeLabel": "The most demanding week in Swiss hospitality, explained by the partner that has…"
+     }
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "network-requests": {
+   "id": "network-requests",
+   "title": "Network Requests",
+   "description": "Lists the network requests that were made during page load.",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "protocol",
+      "valueType": "text",
+      "label": "Protocol"
+     },
+     {
+      "key": "networkRequestTime",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Network Request Time"
+     },
+     {
+      "key": "networkEndTime",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Network End Time"
+     },
+     {
+      "key": "transferSize",
+      "valueType": "bytes",
+      "displayUnit": "kb",
+      "granularity": 1,
+      "label": "Transfer Size"
+     },
+     {
+      "key": "resourceSize",
+      "valueType": "bytes",
+      "displayUnit": "kb",
+      "granularity": 1,
+      "label": "Resource Size"
+     },
+     {
+      "key": "statusCode",
+      "valueType": "text",
+      "label": "Status Code"
+     },
+     {
+      "key": "mimeType",
+      "valueType": "text",
+      "label": "MIME Type"
+     },
+     {
+      "key": "resourceType",
+      "valueType": "text",
+      "label": "Resource Type"
+     }
+    ],
+    "items": [
+     {
+      "url": "/en/davos-week",
+      "resourceType": "Document",
+      "transferSize": 29803,
+      "mimeType": "text/html"
+     },
+     {
+      "url": "/_next/static/media/0e4e843640321a14-s.p.woff2",
+      "resourceType": "Font",
+      "transferSize": 23864,
+      "mimeType": "font/woff2"
+     },
+     {
+      "url": "/_next/static/media/37a9a8cdaa7a9619-s.p.woff2",
+      "resourceType": "Font",
+      "transferSize": 23780,
+      "mimeType": "font/woff2"
+     },
+     {
+      "url": "/_next/static/media/8fb1a96451cec840-s.p.woff2",
+      "resourceType": "Font",
+      "transferSize": 24920,
+      "mimeType": "font/woff2"
+     },
+     {
+      "url": "/_next/static/media/b7b43acee81d05a8-s.p.woff2",
+      "resourceType": "Font",
+      "transferSize": 24740,
+      "mimeType": "font/woff2"
+     },
+     {
+      "url": "/_next/static/media/ef6d3f52c547a6e3-s.p.woff2",
+      "resourceType": "Font",
+      "transferSize": 24132,
+      "mimeType": "font/woff2"
+     },
+     {
+      "url": "/_next/image?url=%2Fbrand%2Fskaah-group-logo-square.png&w=96&q=75",
+      "resourceType": "Image",
+      "transferSize": 4233,
+      "mimeType": "image/webp"
+     },
+     {
+      "url": "/_next/static/css/a16aeb3954e45d8f.css",
+      "resourceType": "Stylesheet",
+      "transferSize": 8767,
+      "mimeType": "text/css"
+     },
+     {
+      "url": "/_next/static/chunks/webpack-5504a56de2d33d75.js",
+      "resourceType": "Script",
+      "transferSize": 2260,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/3466f3f1-c96f853f58dc03ee.js",
+      "resourceType": "Script",
+      "transferSize": 54963,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/706-669b7b2d1b550351.js",
+      "resourceType": "Script",
+      "transferSize": 46885,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/main-app-3f3a29d85e1eb118.js",
+      "resourceType": "Script",
+      "transferSize": 1071,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/424-26d7038c52a95b75.js",
+      "resourceType": "Script",
+      "transferSize": 3951,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/app/not-found-6489d095f6addeac.js",
+      "resourceType": "Script",
+      "transferSize": 697,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/293-1b6f68a58f0877d4.js",
+      "resourceType": "Script",
+      "transferSize": 14305,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/app/%5Blocale%5D/davos-week/page-735908a134498b60.js",
+      "resourceType": "Script",
+      "transferSize": 5328,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/551-f9393c73593cfea9.js",
+      "resourceType": "Script",
+      "transferSize": 8230,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/app/%5Blocale%5D/layout-a4b808e8ffa82110.js",
+      "resourceType": "Script",
+      "transferSize": 5810,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/app/%5Blocale%5D/error-a38556d03ef8e9c3.js",
+      "resourceType": "Script",
+      "transferSize": 2767,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/icon.png?c7fff62a556d4f79",
+      "resourceType": "Other",
+      "transferSize": 11605,
+      "mimeType": "image/png"
+     },
+     {
+      "url": "/en?_rsc=Qw94cKjjMA8u0E25",
+      "resourceType": "Fetch",
+      "transferSize": 12068,
+      "mimeType": "text/x-component"
+     },
+     {
+      "url": "/en/enquiry?_rsc=Qw94cKjjMA8u0E25",
+      "resourceType": "Fetch",
+      "transferSize": 7488,
+      "mimeType": "text/x-component"
+     },
+     {
+      "url": "/en/privacy?_rsc=Qw94cKjjMA8u0E25",
+      "resourceType": "Fetch",
+      "transferSize": 9166,
+      "mimeType": "text/x-component"
+     },
+     {
+      "url": "/_next/static/chunks/app/%5Blocale%5D/page-859e30c97860a163.js",
+      "resourceType": "Script",
+      "transferSize": 3926,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/app/%5Blocale%5D/enquiry/page-e3cbc37248eb9eb9.js",
+      "resourceType": "Script",
+      "transferSize": 10815,
+      "mimeType": "application/javascript"
+     },
+     {
+      "url": "/_next/static/chunks/app/%5Blocale%5D/privacy/page-c4708c0aa5d476ef.js",
+      "resourceType": "Script",
+      "transferSize": 918,
+      "mimeType": "application/javascript"
+     }
+    ],
+    "debugData": {
+     "type": "debugdata",
+     "networkStartTimeTs": 6350243079,
+     "initiators": [
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 319
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 437
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 555
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 673
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 791
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 992
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1085
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1194
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1267
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1344
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1426
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1503
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1590
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1667
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1773
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1850
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 1947
+      },
+      {
+       "type": "parser",
+       "url": "http://127.0.0.1:3222/en/davos-week",
+       "lineNumber": 0,
+       "columnNumber": 2043
+      }
+     ]
+    }
+   }
+  }
+ }
+}

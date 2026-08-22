@@ -1,0 +1,9 @@
+=== FE-16 reference format: three consecutive submissions, 2026-08-21T22:54:03Z ===
+submission 1 (X-Forwarded-For: 10.3.16.1): {"reference":"SKH-20260821-0020","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"}
+submission 2 (X-Forwarded-For: 10.3.16.2): {"reference":"SKH-20260821-0021","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"}
+submission 3 (X-Forwarded-For: 10.3.16.3): {"reference":"SKH-20260821-0022","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"}
+--- format check: pattern SKH-YYYYMMDD-#### with today's UTC date 20260821 ---
+
+OBSERVATION (minor, informational): nextReference() is called before attachment validation (app/api/enquiry/route.ts line 102),
+so rejected uploads (FE-10, FE-11) consume a daily sequence number - visible as gaps 0008/0009 in data/enquiries/.
+References remain unique and strictly increasing; no spec clause forbids gaps.

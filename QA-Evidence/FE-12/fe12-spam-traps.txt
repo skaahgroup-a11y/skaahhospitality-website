@@ -1,0 +1,25 @@
+=== FE-12 honeypot + time-trap, 2026-08-21T22:53:32Z ===
+--- case A: website field filled (X-Forwarded-For: 10.3.12.1) ---
+{"reference":"SKH-20260821-0011","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"}
+HTTP_STATUS:200
+--- case B: elapsedMs=100 (X-Forwarded-For: 10.3.12.2) ---
+{"reference":"SKH-20260821-0012","segment":"general","ownerTeam":"The SKAAH team","promise":"48 hours"}
+HTTP_STATUS:200
+--- data/spam/ contents ---
+SKH-20260821-0011.json
+SKH-20260821-0012.json
+--- data/enquiries/ (must NOT contain the two spam references) ---
+SKH-20260821-0001.json
+SKH-20260821-0002.json
+SKH-20260821-0003.json
+SKH-20260821-0004.json
+SKH-20260821-0005.json
+SKH-20260821-0006.json
+SKH-20260821-0007.json
+SKH-20260821-0010.json
+--- spam rows (grep the TEST names) ---
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/spam/SKH-20260821-0011.json
+/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/spam/SKH-20260821-0012.json
+(no match in enquiries/ - correct)
+--- queue dir (nothing delivered/queued for spam) ---
+(no queue dir - nothing queued)

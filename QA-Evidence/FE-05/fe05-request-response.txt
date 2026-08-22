@@ -1,0 +1,6 @@
+=== FE-05 submission, 2026-08-21T22:52:08Z, X-Forwarded-For: 10.3.05.1 ===
+--- payload ---
+{"segment":"agency","contact":{"name":"TEST Vikram Singh","organisation":"TEST Horizon Incentives Pvt Ltd","role":"Director","email":"test.partner@horizon-example.in","phone":"+91 11 5555 0505","preferredChannel":"email"},"details":{"agencyName":"TEST Horizon Incentives Pvt Ltd","markets":"India, GCC","clientMix":"corporate incentives, some government","opportunity":"TEST QA FE-05: 80-pax incentive to Interlaken Q2 2027","volume":"seasonal"},"consentAccepted":true,"website":"","elapsedMs":47000,"utm":{},"locale":"en"}
+--- response ---
+{"reference":"SKH-20260821-0005","segment":"agency","ownerTeam":"The partnerships team","promise":"48 hours"}
+HTTP_STATUS:200

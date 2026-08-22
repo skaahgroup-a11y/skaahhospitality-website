@@ -1,0 +1,17 @@
+=== FE-10 120 MB upload (cap 100 MB), 2026-08-21T22:53:06Z, X-Forwarded-For: 10.3.10.1 ===
+file: TEST-oversize-120mb.pdf, 125829129 bytes
+{"error":"file_size","file":"TEST-oversize-120mb.pdf"}
+HTTP_STATUS:422 time_total:0.479664s
+--- no upload dir or enquiry row should exist for a new reference after rejection ---
+SKH-20260821-0001.json
+SKH-20260821-0002.json
+SKH-20260821-0003.json
+SKH-20260821-0004.json
+SKH-20260821-0005.json
+SKH-20260821-0006.json
+SKH-20260821-0007.json
+SKH-20260821-0001
+SKH-20260821-0007
+--- UI hint (messages/en.json enquiry.attachmentsHint) ---
+68:    "attachmentsHint": "Up to 100 MB in total (PDF, Word, Excel, PowerPoint, JPG, PNG, MP4). Larger files: we will send a secure upload link.",
+69:    "attachmentsHintGeneral": "Optional attachment up to 25 MB.",

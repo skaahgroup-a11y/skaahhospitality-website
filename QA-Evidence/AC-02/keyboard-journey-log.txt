@@ -1,0 +1,163 @@
+[0] Consent banner dismissed via Tab + Enter ("Necessary only")
+[1] Dropdown opened with Enter; tabbed into it, focused "Government & Diplomatic Delegations"
+[2] Enter navigated to http://127.0.0.1:3222/en/services/government-delegations
+[3] Enter on header "Davos Week" -> http://127.0.0.1:3222/en/davos-week
+[4] Enter on "Start an enquiry" -> http://127.0.0.1:3222/en/enquiry
+[5] Segment picked with Enter; focus moved to step heading: H2:"Your message" (SR orientation)
+[6] Wizard step completed keyboard-only (Tab to fields, typed, Enter on Continue); contact step reached
+[7] No keyboard trap detected on contact step: true (60 Tab presses cycle through document, focus never stuck)
+RESULT: PASS - full journey navigable with keyboard only; segment pick and wizard step operable; no traps.
+NOTE: radio-chip fields in other segments use native radio inputs (sr-only) operable with arrow keys; this run used the general segment (text fields).
+
+=== TAB PATH LOG ===
+[consent] Tab-> A:"Skip to content"
+[consent] Tab-> A:"Home"
+[consent] Tab-> BUTTON:"Services"
+[consent] Tab-> A:"Davos Week"
+[consent] Tab-> BUTTON:"Destinations"
+[consent] Tab-> A:"Work"
+[consent] Tab-> A:"Experiences"
+[consent] Tab-> A:"Insights"
+[consent] Tab-> A:"About"
+[consent] Tab-> A:"Chat on WhatsApp"
+[consent] Tab-> A:"Start an enquiry"
+[consent] Tab-> A:"Start a delegation enquiry"
+[consent] Tab-> A:"Explore our services"
+[consent] Tab-> A:"See the work"
+[consent] Tab-> A:"Government & Diplomatic DelegationsProtocol, immig"
+[consent] Tab-> A:"Meetings, Incentives & EventsBoard meetings to 1,0"
+[consent] Tab-> A:"Travel, Transport & ImmigrationVisas, arrivals, fl"
+[consent] Tab-> A:"StaysHotels, chalets and serviced apartments, bloc"
+[consent] Tab-> A:"Food & CateringMulti-cuisine kitchens, including y"
+[consent] Tab-> A:"Media & ProductionPhotography and film that docume"
+[consent] Tab-> A:"Branding, Marketing & StaffingPavilions, collatera"
+[consent] Tab-> A:"Read the Davos Week guide"
+[consent] Tab-> A:"ZurichSwitzerland's arrival city: airport precisio"
+[consent] Tab-> A:"Geneva & Lake GenevaDiplomacy's home ground: lakef"
+[consent] Tab-> A:"LucerneThe incentive heartland: lake, Pilatus and "
+[consent] Tab-> A:"Davos Week hubDavosThe Davos Week address, and a y"
+[consent] Tab-> A:"All destinations"
+[consent] Tab-> A:"Government delegationProtocol-aware planning and d"
+[consent] Tab-> A:"Corporate organiserMeetings, incentives and events"
+[consent] Tab-> A:"Agency partnerWhite-label Swiss execution under yo"
+[consent] Tab-> A:"Private clientStays and programmes handled with th"
+[consent] Tab-> A:"All insights"
+[consent] Tab-> A:"7 min readBringing Indian Cuisine to Swiss Altitud"
+[consent] Tab-> A:"9 min readThe 180-Day Davos Delegation CountdownA "
+[consent] Tab-> A:"Start your enquiry"
+[consent] Tab-> A:"WhatsApp us"
+[consent] Tab-> A:"SKAAHHOSPITALITY"
+[consent] Tab-> A:"Government & Diplomatic Delegations"
+[consent] Tab-> A:"Meetings, Incentives & Events"
+[consent] Tab-> A:"Travel, Transport & Immigration"
+[consent] Tab-> A:"Stays"
+[consent] Tab-> A:"Food & Catering"
+[consent] Tab-> A:"Media & Production"
+[consent] Tab-> A:"Branding, Marketing & Staffing"
+[consent] Tab-> A:"Zurich"
+[consent] Tab-> A:"Geneva & Lake Geneva"
+[consent] Tab-> A:"Lucerne"
+[consent] Tab-> A:"Davos"
+[consent] Tab-> A:"Interlaken & Jungfrau"
+[consent] Tab-> A:"Zermatt"
+[consent] Tab-> A:"St. Moritz & Engadin"
+[consent] Tab-> A:"Ticino & Lugano"
+[consent] Tab-> A:"About"
+[consent] Tab-> A:"Work"
+[consent] Tab-> A:"Experiences"
+[consent] Tab-> A:"Insights"
+[consent] Tab-> A:"Partner with us"
+[consent] Tab-> A:"Davos Week"
+[consent] Tab-> A:"enquiry@skaahhospitality.com"
+[consent] Tab-> A:"A SKAAH Group company"
+[consent] Tab-> A:"Privacy"
+[consent] Tab-> A:"Imprint"
+[consent] Tab-> A:"Cookie preferences"
+[consent] Tab-> A:"Chat on WhatsApp"
+[consent] Tab-> A:"Privacy policy"
+[consent] Tab-> BUTTON:"Allow analytics"
+[consent] Tab-> BUTTON:"Necessary only"
+[home-header] Tab-> A:"Skip to content"
+[home-header] Tab-> A:"Home"
+[home-header] Tab-> BUTTON:"Services"
+[home-header] Enter -> open Services dropdown
+[dropdown] Tab-> A:"Government & Diplomatic Delegations"
+[service-header] Tab-> A:"Davos Week"
+[hub-header] Tab-> BUTTON:"Destinations"
+[hub-header] Tab-> A:"Work"
+[hub-header] Tab-> A:"Experiences"
+[hub-header] Tab-> A:"Insights"
+[hub-header] Tab-> A:"About"
+[hub-header] Tab-> A:"Chat on WhatsApp"
+[hub-header] Tab-> A:"Start an enquiry"
+[picker] Tab-> BUTTON:"Government delegationOfficial visits, protocol-awa"
+[picker] Tab-> BUTTON:"Event / MICE RFPMeetings, incentives, conferences "
+[picker] Tab-> BUTTON:"Stay requestHotels, chalets and serviced apartment"
+[picker] Tab-> BUTTON:"Catering briefMulti-cuisine kitchens, from working"
+[picker] Tab-> BUTTON:"Agency partnershipWhite-label Swiss execution for "
+[picker] Tab-> BUTTON:"General enquiryAnything that does not fit the path"
+[step] Tab-> INPUT:"subject"
+[step] Tab-> TEXTAREA:"message"
+[step] Tab-> INPUT:""
+[step] Tab-> BUTTON:"Back"
+[step] Tab-> BUTTON:"Continue"
+[contact] Tab-> INPUT:name
+[contact] Tab-> INPUT:organisation
+[contact] Tab-> INPUT:role
+[contact] Tab-> INPUT:email
+[contact] Tab-> INPUT:phone
+[contact] Tab-> INPUT:
+[contact] Tab-> INPUT:
+[contact] Tab-> A:Privacy policy
+[contact] Tab-> BUTTON:Back
+[contact] Tab-> BUTTON:Submit enquiry
+[contact] Tab-> A:enquiry@skaahhospitality.com
+[contact] Tab-> A:WhatsApp us
+[contact] Tab-> A:SKAAHHOSPITALITY
+[contact] Tab-> A:Government & Diplomatic Delegations
+[contact] Tab-> A:Meetings, Incentives & Events
+[contact] Tab-> A:Travel, Transport & Immigration
+[contact] Tab-> A:Stays
+[contact] Tab-> A:Food & Catering
+[contact] Tab-> A:Media & Production
+[contact] Tab-> A:Branding, Marketing & Staffing
+[contact] Tab-> A:Zurich
+[contact] Tab-> A:Geneva & Lake Geneva
+[contact] Tab-> A:Lucerne
+[contact] Tab-> A:Davos
+[contact] Tab-> A:Interlaken & Jungfrau
+[contact] Tab-> A:Zermatt
+[contact] Tab-> A:St. Moritz & Engadin
+[contact] Tab-> A:Ticino & Lugano
+[contact] Tab-> A:About
+[contact] Tab-> A:Work
+[contact] Tab-> A:Experiences
+[contact] Tab-> A:Insights
+[contact] Tab-> A:Partner with us
+[contact] Tab-> A:Davos Week
+[contact] Tab-> A:enquiry@skaahhospitality.com
+[contact] Tab-> A:A SKAAH Group company
+[contact] Tab-> A:Privacy
+[contact] Tab-> A:Imprint
+[contact] Tab-> A:Cookie preferences
+[contact] Tab-> BODY:{"@context":"https://schema.org","@type":"Organiza
+[contact] Tab-> A:Skip to content
+[contact] Tab-> A:Home
+[contact] Tab-> BUTTON:Services
+[contact] Tab-> A:Davos Week
+[contact] Tab-> BUTTON:Destinations
+[contact] Tab-> A:Work
+[contact] Tab-> A:Experiences
+[contact] Tab-> A:Insights
+[contact] Tab-> A:About
+[contact] Tab-> A:Chat on WhatsApp
+[contact] Tab-> A:Start an enquiry
+[contact] Tab-> A:Home
+[contact] Tab-> INPUT:name
+[contact] Tab-> INPUT:organisation
+[contact] Tab-> INPUT:role
+[contact] Tab-> INPUT:email
+[contact] Tab-> INPUT:phone
+[contact] Tab-> INPUT:
+[contact] Tab-> INPUT:
+[contact] Tab-> A:Privacy policy

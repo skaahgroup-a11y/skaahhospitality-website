@@ -1,0 +1,15 @@
+PF-08 Film loading behaviour — components/blocks/HeroFilm.tsx (commit 8b6e82d), key lines:
+
+  // C03 HeroFilm: the poster is the LCP element; the film is injected after
+  // idle, gated on Save-Data and prefers-reduced-motion (docs/04 section 6).
+  // DECISION: until the hero film master and poster are delivered (docs/02
+  // media plan), this renders the poster treatment as a gradient stand-in and
+  // carries the film brief; the video swap client component attaches when the
+  // provider assets exist.
+
+Findings:
+- No <video> element exists anywhere in the component tree (grep "<video" across app/ and components/ returns nothing); the hero renders a pure CSS gradient poster treatment. Film brief text renders as a staging-only note (hidden when NEXT_PUBLIC_ENV === "production", HeroFilm.tsx line 68).
+- The Save-Data / reduced-motion gating exists only as the stated DESIGN (comment referencing docs/04 section 6); the video-swap client component is not yet implemented, consistent with pending media.
+- Global reduced-motion handling does exist in CSS (app/globals.css lines 62 and 185: @media (prefers-reduced-motion: reduce) blocks disabling motion utilities).
+- docs/04-uiux-frontend.md line 73 confirms the intended design: poster is LCP, video injected after requestIdleCallback post-LCP, connection.saveData and reduced-motion gate, HLS with MP4 fallback.
+Verdict: N.A. pending media, gating design documented but not yet implemented in code (nothing to gate).

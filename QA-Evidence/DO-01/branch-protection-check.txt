@@ -1,0 +1,11 @@
+== branch protection check attempt (gh api) ==
+/bin/bash: line 1: gh: command not found
+
+== origin default branch ==
+main @ 9ecd60c (Initial commit); audited commit 8b6e82d is on branch claude/skaah-hospitality-website-nn3b8x, not yet merged via PR
+
+== REST attempt ==
+curl https://api.github.com/repos/skaahgroup-a11y/skaahhospitality-website/branches/main/protection -> 403
+"GitHub access is not enabled for this session" (session proxy); gh CLI not installed.
+Conclusion: GitHub-side enforcement (required status checks / branch protection on main) cannot be demonstrated from this environment. Local gate steps ARE proven: ci.yml carries typecheck, lint, unit tests, claims gate, build; seeded lint error fails with exit 1 (lint-gate-simulation.txt); clean tree passes all steps (clean-gate-baseline.txt, CA-02, CA-10).
+Also noted: docs/07 T0.4 additionally lists Playwright shell, axe and Lighthouse CI budgets for CI; these are absent, with a deferral comment at the top of ci.yml (tracked to E5/E6).

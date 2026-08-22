@@ -1,0 +1,82 @@
+[
+  {
+    "path": "/en",
+    "og": {
+      "title": "Swiss Hospitality &amp; Logistics for Delegations &amp; Corporate Groups | SKAAH",
+      "description": "One accountable Swiss partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and staffing. Proven at Davos Week. First response within 48 hours.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png",
+      "url": "https://skaahhospitality.com/en",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Swiss Hospitality &amp; Logistics for Delegations &amp; Corporate Groups | SKAAH",
+      "description": "One accountable Swiss partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and staffing. Proven at Davos Week. First response within 48 hours.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png"
+    }
+  },
+  {
+    "path": "/en/davos-week",
+    "og": {
+      "title": "Davos Week Logistics: The Delegation Guide | SKAAH",
+      "description": "How delegations and corporate groups actually operate in Davos during Davos Week: accommodation, transport, catering and protocol, from the Swiss partner behind six state delegations across four consecutive Davos Weeks.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png",
+      "url": "https://skaahhospitality.com/en/davos-week",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Davos Week Logistics: The Delegation Guide | SKAAH",
+      "description": "How delegations and corporate groups actually operate in Davos during Davos Week: accommodation, transport, catering and protocol, from the Swiss partner behind six state delegations across four consecutive Davos Weeks.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png"
+    }
+  },
+  {
+    "path": "/en/services/government-delegations",
+    "og": {
+      "title": "Government Delegation Support in Switzerland | SKAAH",
+      "description": "Delegation-grade planning in Switzerland: protocol, visa and immigration liaison, secure ground transport, accommodation blocks, multi-cuisine catering and documentation. Proven at Davos Week.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png",
+      "url": "https://skaahhospitality.com/en/services/government-delegations",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Government Delegation Support in Switzerland | SKAAH",
+      "description": "Delegation-grade planning in Switzerland: protocol, visa and immigration liaison, secure ground transport, accommodation blocks, multi-cuisine catering and documentation. Proven at Davos Week.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png"
+    }
+  },
+  {
+    "path": "/en/work/six-states-one-swiss-partner",
+    "og": {
+      "title": "Six States, One Swiss Partner: Davos Week | SKAAH",
+      "description": "Across 4 Davos Weeks, 6 Indian state government delegations engaged SKAAH as one Swiss partner for Davos in January: the aggregate case study.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png",
+      "url": "https://skaahhospitality.com/en/work/six-states-one-swiss-partner",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Six States, One Swiss Partner: Davos Week | SKAAH",
+      "description": "Across 4 Davos Weeks, 6 Indian state government delegations engaged SKAAH as one Swiss partner for Davos in January: the aggregate case study.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png"
+    }
+  },
+  {
+    "path": "/en/insights/davos-delegation-countdown",
+    "og": {
+      "title": "The 180-Day Davos Delegation Countdown | SKAAH",
+      "description": "Davos Week planning, month by month: a working checklist from 180 days to Week 0, from the Swiss partner behind four consecutive Davos Weeks of delegation work.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png",
+      "url": "https://skaahhospitality.com/en/insights/davos-delegation-countdown",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "The 180-Day Davos Delegation Countdown | SKAAH",
+      "description": "Davos Week planning, month by month: a working checklist from 180 days to Week 0, from the Swiss partner behind four consecutive Davos Weeks of delegation work.",
+      "image": "https://skaahhospitality.com/brand/skaah-group-logo-square.png"
+    }
+  }
+]

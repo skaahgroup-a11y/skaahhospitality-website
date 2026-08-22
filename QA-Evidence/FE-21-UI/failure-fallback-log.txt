@@ -1,0 +1,9 @@
+[0] page.route installed: all requests to /api/enquiry aborted (network failure simulation)
+[1] Error screen appeared with title "Something went wrong."
+[2] Error screen offers: Try again button=true, WhatsApp=true, e-mail=true
+[3] Fallback links: ["Home -> /en","WhatsApp -> https://wa.me/0","enquiry@skaahhospitality.com -> mailto:enquiry@skaahhospitality.com","enquiry@skaahhospitality.com -> mailto:enquiry@skaahhospitality.com","WhatsApp us -> https://wa.me/0"]
+[4] After "Try again" the contact step reappears with data retained: {"name":"QA Agent Four","organisation":"QA Workbook","email":"fe21@example.com"}
+[5] Step data also retained: {"subject":"FE-21 failure fallback test","message":"This submission is aborted at network level."}
+[6] After unroute, retry submission succeeded: HTTP 200, success screen shown
+RESULT: PASS - error screen with retry/WhatsApp/e-mail, data retained, retry completes
+NOTE: WhatsApp link is https://wa.me/0 because NEXT_PUBLIC_WHATSAPP_NUMBER is a [TO CONFIRM] placeholder in this environment.

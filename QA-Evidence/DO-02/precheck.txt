@@ -1,0 +1,11 @@
+DO-02 CI pipeline green on PR — BLOCKED (2026-08-21)
+The GitHub Actions pipeline cannot run against the Hostpoint pipeline pre-staging, and no PR run
+history is available to this audit environment. Pre-check vs docs/08 s6 ("CI on every PR:
+typecheck, lint, unit, axe, Lighthouse CI budgets, check:claims; merge blocked on red"):
+.github/workflows/ci.yml EXISTS and runs on pull_request + push to main with steps:
+  typecheck (tsc --noEmit), lint (pnpm lint), unit tests (pnpm test),
+  claims gate (pnpm check:claims, staging level), build (pnpm build).
+DEVIATION from docs/08 s6: axe and Lighthouse CI budget steps are NOT in the workflow; the YAML
+header comment documents this as deferred "once the preview environment exists (tracked in
+docs/07 E5/E6)". Branch-protection "merge blocked on red" is a GitHub repo setting not verifiable
+from the clone. Evidence: ci.yml.txt.

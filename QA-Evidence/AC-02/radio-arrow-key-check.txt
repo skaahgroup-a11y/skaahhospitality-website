@@ -1,0 +1,4 @@
+after ArrowDown: davos-week=false bilateral-trade=true other-official=false
+after ArrowDown x2: davos-week=false bilateral-trade=false other-official=true
+after ArrowUp: davos-week=false bilateral-trade=true other-official=false
+after Space: davos-week=false bilateral-trade=true other-official=false

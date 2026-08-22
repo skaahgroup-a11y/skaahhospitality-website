@@ -1,0 +1,297 @@
+{
+  "total": 36,
+  "missingTitle": [],
+  "missingDesc": [],
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "rows": [
+    {
+      "path": "/en",
+      "status": 200,
+      "title": "Swiss Hospitality &amp; Logistics for Delegations &amp; Corporate Groups | SKAAH",
+      "titleLen": 80,
+      "description": "One accountable Swiss partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and staffing. Proven at Davos Week. First response within 48 hours.",
+      "descLen": 198
+    },
+    {
+      "path": "/en/services",
+      "status": 200,
+      "title": "Hospitality &amp; Logistics Services in Switzerland | SKAAH",
+      "titleLen": 59,
+      "description": "Seven services, one accountable partner: delegations, MICE, travel and immigration, stays, catering, media and staffing across Switzerland.",
+      "descLen": 139
+    },
+    {
+      "path": "/en/davos-week",
+      "status": 200,
+      "title": "Davos Week Logistics: The Delegation Guide | SKAAH",
+      "titleLen": 50,
+      "description": "How delegations and corporate groups actually operate in Davos during Davos Week: accommodation, transport, catering and protocol, from the Swiss partner behind six state delegations across four consecutive Davos Weeks.",
+      "descLen": 219
+    },
+    {
+      "path": "/en/destinations",
+      "status": 200,
+      "title": "Switzerland Destinations for Delegations &amp; Events | SKAAH",
+      "titleLen": 61,
+      "description": "Eight organiser guides to Switzerland: Zurich, Geneva, Lucerne, Davos and beyond, covering venues, stays, movement and what SKAAH runs in each place.",
+      "descLen": 149
+    },
+    {
+      "path": "/en/work",
+      "status": 200,
+      "title": "Our Work: Delegations &amp; Events in Switzerland | SKAAH",
+      "titleLen": 57,
+      "description": "Selected engagements across Switzerland, told the way we run them: the brief, what made it hard and what happened. Names appear only with written consent.",
+      "descLen": 154
+    },
+    {
+      "path": "/en/experiences",
+      "status": 200,
+      "title": "Signature Swiss Experiences for Groups | SKAAH",
+      "titleLen": 46,
+      "description": "Eight signature programmes for groups in Switzerland: private rail charters, alpine galas, lake evenings and Davos Week hosting, each designed and run by one Swiss partner.",
+      "descLen": 172
+    },
+    {
+      "path": "/en/insights",
+      "status": 200,
+      "title": "Planning Intelligence for Swiss Visits | SKAAH Insights",
+      "titleLen": 55,
+      "description": "Working guides for organisers of Swiss visits: delegation countdowns, catering playbooks and planning intelligence written from the ground.",
+      "descLen": 139
+    },
+    {
+      "path": "/en/about",
+      "status": 200,
+      "title": "About SKAAH Hospitality: Swiss Precision, Global Fluency | SKAAH",
+      "titleLen": 64,
+      "description": "Founded 2016 in Opfikon by the runway of Zurich Airport: hospitality and logistics under one roof, and the company behind four consecutive Davos Weeks of delegation work in Switzerland.",
+      "descLen": 185
+    },
+    {
+      "path": "/en/partners",
+      "status": 200,
+      "title": "Swiss Ground Partner for Agencies &amp; Incentive Houses | SKAAH",
+      "titleLen": 64,
+      "description": "White-label Swiss execution for agencies and incentive houses: one costed proposal, protected commercials and delegation-grade operations under your brand or ours.",
+      "descLen": 163
+    },
+    {
+      "path": "/en/enquiry",
+      "status": 200,
+      "title": "Start Your Enquiry | SKAAH Hospitality",
+      "titleLen": 38,
+      "description": "Tell us about your visit: delegation, event, stay, catering or partnership. First response within 48 hours; Event and MICE RFPs within one business day.",
+      "descLen": 152
+    },
+    {
+      "path": "/en/privacy",
+      "status": 200,
+      "title": "Privacy Policy | SKAAH Hospitality",
+      "titleLen": 34,
+      "description": "How SKAAH Hospitality GmbH collects, uses, stores and protects personal data under the Swiss FADP and the EU GDPR.",
+      "descLen": 114
+    },
+    {
+      "path": "/en/imprint",
+      "status": 200,
+      "title": "Imprint | SKAAH Hospitality",
+      "titleLen": 27,
+      "description": "Company information for SKAAH Hospitality GmbH: registered seat in Opfikon (Zurich), Switzerland, register details and contact.",
+      "descLen": 127
+    },
+    {
+      "path": "/en/cookies",
+      "status": 200,
+      "title": "Cookie Preferences | SKAAH Hospitality",
+      "titleLen": 38,
+      "description": "The cookies and browser storage this site uses, what each category does, and the controls for allowing or declining analytics.",
+      "descLen": 126
+    },
+    {
+      "path": "/en/services/government-delegations",
+      "status": 200,
+      "title": "Government Delegation Support in Switzerland | SKAAH",
+      "titleLen": 52,
+      "description": "Delegation-grade planning in Switzerland: protocol, visa and immigration liaison, secure ground transport, accommodation blocks, multi-cuisine catering and documentation. Proven at Davos Week.",
+      "descLen": 192
+    },
+    {
+      "path": "/en/services/mice-events",
+      "status": 200,
+      "title": "Corporate Events &amp; Incentive Travel in Switzerland | SKAAH",
+      "titleLen": 62,
+      "description": "DMC-grade planning for meetings, incentives, conferences and events across Switzerland: venues, production, transport and hotels under one proposal, indicative budgets published.",
+      "descLen": 178
+    },
+    {
+      "path": "/en/services/travel-transport-immigration",
+      "status": 200,
+      "title": "Group Travel, Transport &amp; Immigration Support in Switzerland | SKAAH",
+      "titleLen": 72,
+      "description": "Group travel in Switzerland: visa and documentation support, meet-and-assist at Zurich and Geneva, fleets, coaches and rail. Proven at Davos Week.",
+      "descLen": 146
+    },
+    {
+      "path": "/en/services/stays",
+      "status": 200,
+      "title": "Group Hotels, Chalets &amp; Serviced Apartments in Switzerland | SKAAH",
+      "titleLen": 70,
+      "description": "Delegation blocks, chalet buyouts and serviced apartments near Zurich Airport, contracted and managed under one master account. Proven at Davos Week.",
+      "descLen": 149
+    },
+    {
+      "path": "/en/services/food-catering",
+      "status": 200,
+      "title": "Multi-Cuisine Event Catering in Switzerland | SKAAH",
+      "titleLen": 51,
+      "description": "Indian regional menus, Jain, halal and vegetarian tables, and Swiss fine dining from our own kitchens, working lunch to banquet. Proven at Davos Week.",
+      "descLen": 150
+    },
+    {
+      "path": "/en/services/media-production",
+      "status": 200,
+      "title": "Event Photography &amp; Film Production in Switzerland | SKAAH",
+      "titleLen": 62,
+      "description": "Photography and film for delegations and corporate programmes: consent-aware, same-day edits, secure delivery. Documented properly, cleared correctly.",
+      "descLen": 150
+    },
+    {
+      "path": "/en/services/branding-staffing",
+      "status": 200,
+      "title": "Event Branding, Pavilions &amp; Hospitality Staffing in Switzerland | SKAAH",
+      "titleLen": 75,
+      "description": "Pavilion branding, signage, print and digital collateral, and trained multilingual hospitality staff who represent you the way you intend.",
+      "descLen": 138
+    },
+    {
+      "path": "/en/destinations/zurich",
+      "status": 200,
+      "title": "Zurich for Delegations &amp; Corporate Events: Organiser Guide | SKAAH",
+      "titleLen": 70,
+      "description": "An organiser&#x27;s guide to Zurich: arrivals at scale, venue archetypes, five-star and serviced-apartment stays, and what SKAAH runs on the ground in its home city.",
+      "descLen": 165
+    },
+    {
+      "path": "/en/destinations/geneva",
+      "status": 200,
+      "title": "Geneva &amp; Lake Geneva for Delegations &amp; Conferences | SKAAH",
+      "titleLen": 66,
+      "description": "An organiser&#x27;s guide to Geneva and Lake Geneva: congress capacity, palace-hotel stays, cross-border movement and what SKAAH runs along the Riviera.",
+      "descLen": 152
+    },
+    {
+      "path": "/en/destinations/lucerne",
+      "status": 200,
+      "title": "Lucerne for Incentives &amp; Events: Organiser Guide | SKAAH",
+      "titleLen": 60,
+      "description": "An organiser&#x27;s guide to Lucerne: lakefront venues, steamer and mountain logistics, split-hotel strategies and the incentives SKAAH runs on the water.",
+      "descLen": 154
+    },
+    {
+      "path": "/en/destinations/davos",
+      "status": 200,
+      "title": "Davos for Delegations: Beyond Davos Week | SKAAH",
+      "titleLen": 48,
+      "description": "Davos beyond Davos Week: year-round congress support, summer leadership retreats and pre-season recces, run by a partner with four consecutive Davos Weeks in the valley.",
+      "descLen": 169
+    },
+    {
+      "path": "/en/destinations/interlaken-jungfrau",
+      "status": 200,
+      "title": "Interlaken &amp; Jungfrau for Groups &amp; Incentives | SKAAH",
+      "titleLen": 61,
+      "description": "Two lakes, high-altitude rail and venues at both levels: what organisers need to know about Interlaken and the Jungfrau region, and what SKAAH runs there.",
+      "descLen": 154
+    },
+    {
+      "path": "/en/destinations/zermatt",
+      "status": 200,
+      "title": "Zermatt for Executive Retreats &amp; Incentives | SKAAH",
+      "titleLen": 55,
+      "description": "Car-free logistics under the Matterhorn: how groups, luggage and programmes actually move in Zermatt, and what SKAAH runs in the village.",
+      "descLen": 137
+    },
+    {
+      "path": "/en/destinations/st-moritz-engadin",
+      "status": 200,
+      "title": "St. Moritz &amp; Engadin for Premium Events | SKAAH",
+      "titleLen": 51,
+      "description": "Palace hotels, a twice-Olympic valley and a winter calendar that competes for beds: the organiser&#x27;s view of St. Moritz and the Engadin, with SKAAH.",
+      "descLen": 152
+    },
+    {
+      "path": "/en/destinations/ticino-lugano",
+      "status": 200,
+      "title": "Ticino &amp; Lugano for Retreats &amp; Launches | SKAAH",
+      "titleLen": 55,
+      "description": "Switzerland in Italian: lakefront conference capacity, a Mediterranean register and real shoulder-season value in Ticino and Lugano, with SKAAH.",
+      "descLen": 144
+    },
+    {
+      "path": "/en/work/six-states-one-swiss-partner",
+      "status": 200,
+      "title": "Six States, One Swiss Partner: Davos Week | SKAAH",
+      "titleLen": 49,
+      "description": "Across 4 Davos Weeks, 6 Indian state government delegations engaged SKAAH as one Swiss partner for Davos in January: the aggregate case study.",
+      "descLen": 142
+    },
+    {
+      "path": "/en/work/first-time-state-delegation-davos",
+      "status": 200,
+      "title": "A First-Time State Delegation at Davos | SKAAH",
+      "titleLen": 46,
+      "description": "How a first-time state delegation ran Davos Week in Davos without a playbook of its own: advance recce, accommodation blocks, meeting rooms and cuisine.",
+      "descLen": 152
+    },
+    {
+      "path": "/en/work/returning-delegation-doubled-scale",
+      "status": 200,
+      "title": "Returning Delegation, Doubled Scale at Davos | SKAAH",
+      "titleLen": 52,
+      "description": "A returning state delegation scaled up its Davos Week week year on year. Continuity as the product: same partner, same standards, no added client effort.",
+      "descLen": 153
+    },
+    {
+      "path": "/en/work/two-delegations-one-week",
+      "status": 200,
+      "title": "Two Delegations, One Week, Zero Collisions | SKAAH",
+      "titleLen": 50,
+      "description": "Serving 2 state delegations in the same Davos Week: separated teams, information walls and shared infrastructure, with no collisions between programmes.",
+      "descLen": 152
+    },
+    {
+      "path": "/en/work/kitchen-at-1560-metres",
+      "status": 200,
+      "title": "The Kitchen at 1,560 Metres: Davos Catering | SKAAH",
+      "titleLen": 51,
+      "description": "Multi-cuisine catering at 1,560 metres: regional Indian, Jain, halal and Swiss tables from our own kitchens through Davos Week in Davos.",
+      "descLen": 136
+    },
+    {
+      "path": "/en/work/bilateral-programme-geneva-zurich",
+      "status": 200,
+      "title": "A Bilateral Programme in Geneva &amp; Zurich | SKAAH",
+      "titleLen": 52,
+      "description": "Beyond Davos Week: a government delegation moved between Geneva and Zurich for a bilateral programme, with meetings, movements and media under one plan.",
+      "descLen": 152
+    },
+    {
+      "path": "/en/insights/indian-cuisine-swiss-altitude",
+      "status": 200,
+      "title": "Indian Catering in Switzerland: The Playbook | SKAAH",
+      "titleLen": 52,
+      "description": "Indian catering in Switzerland done properly: menu governance, Jain and halal practice, kitchen logistics at altitude and the tasting protocol we run.",
+      "descLen": 150
+    },
+    {
+      "path": "/en/insights/davos-delegation-countdown",
+      "status": 200,
+      "title": "The 180-Day Davos Delegation Countdown | SKAAH",
+      "titleLen": 46,
+      "description": "Davos Week planning, month by month: a working checklist from 180 days to Week 0, from the Swiss partner behind four consecutive Davos Weeks of delegation work.",
+      "descLen": 160
+    }
+  ]
+}

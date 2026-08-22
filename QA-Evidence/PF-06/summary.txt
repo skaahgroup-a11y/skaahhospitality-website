@@ -1,0 +1,5 @@
+PF-06 INP — real INP is a field/interaction metric; a lab Lighthouse navigation run cannot measure it. TBT used as the documented lab proxy (deviation).
+TBT (simulated 4G mobile, 4x CPU throttle):
+/en 42.5 ms | /en/services/government-delegations 86 ms | /en/services/mice-events 83 ms | /en/davos-week 78 ms | /en/enquiry 89 ms
+All well under the ~200 ms proxy threshold. Main-thread work is light (mostly React hydration). No interaction latency was exercised (no INP measurement).
+Source: the five trimmed Lighthouse JSONs under PF-01..PF-05 (audits["total-blocking-time"]).

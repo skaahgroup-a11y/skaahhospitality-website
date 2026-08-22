@@ -1,0 +1,7 @@
+AC-05 round 2 retest, 2026-08-21
+Result: Pass
+
+Round 2 retest: AA-compliant small-gold tokens added (gold-700 #866B26 for light surfaces, gold-400 #D2B878 for navy, DECISION documented in globals.css); footer copy moved to ice tokens; small stone-400 text raised to stone-500; gold buttons and outline links moved to gold-400 fills; header idle state raised to navy-950/90 so it never sits translucent over light content; placeholder scrim strengthened. axe color-contrast: 0 nodes across 10 templates (was 247), 0 critical violations.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.

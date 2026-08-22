@@ -1,0 +1,23 @@
+SR-04 Security headers — FAIL (2026-08-21)
+Method deviation: securityheaders.com unreachable from this environment; graded locally from
+next.config.ts and live curl -I of http://127.0.0.1:3222 (headers-en.txt, headers-api-health.txt).
+
+PRESENT on every response (next.config.ts securityHeaders, source "/:path*"):
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+Also: poweredByHeader disabled (no X-Powered-By observed).
+
+MISSING vs docs/05 s6 ("CSP with nonces, HSTS, frame-ancestors none"):
+  1. Content-Security-Policy — absent entirely; no nonce plumbing exists in the app. This is an
+     app-level responsibility and cannot be delegated to the Nginx proxy for nonce-based CSP
+     (nonces must be generated per-request by the app). Genuine gap => Fail.
+  2. CSP frame-ancestors 'none' — absent (X-Frame-Options: DENY is the legacy partial equivalent).
+  3. Strict-Transport-Security — absent from the app, but next.config.ts carries a DECISION
+     comment: HSTS and TLS terminate at the Hostpoint Nginx proxy per docs/08 s3/s27
+     ("skaahhospitality.com -> proxy 3001, Let's Encrypt, HSTS per Hostpoint Nginx guide").
+     HSTS absence at app level is therefore by documented design, verifiable only once the
+     proxy exists; the CSP absence is not covered by any such decision.
+Approx securityheaders.com grade for the current set: ~C (would cap without CSP even after HSTS
+is added at the proxy).

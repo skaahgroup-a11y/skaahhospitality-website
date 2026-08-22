@@ -1,0 +1,47 @@
+=== FE-19 persisted JSON vs docs/05 section 7 schema, field by field, 2026-08-21T22:54:57Z ===
+sample row: data/enquiries/SKH-20260821-0001.json (FE-01 delegation submission with attachment)
+
+--- docs/05-architecture.md section 7 schema ---
+## 7. Enquiry payload schema (persisted JSON, CRM-ready)
+```json
+{
+  "reference": "SKH-20260814-0042",
+  "segment": "delegation|mice|stay|catering|agency|general",
+  "submittedAt": "ISO-8601",
+  "contact": {"name":"","organisation":"","role":"","email":"","phone":"","preferredChannel":"email|phone|whatsapp"},
+  "details": {"...segment-specific per docs/02-content/07"},
+  "attachments": [{"file":"","bytes":0,"url":"signed"}],
+  "flags": {"verifiedDomain":false,"manualCheck":false,"utm":{}},
+  "consent": {"privacyVersion":"","acceptedAt":"ISO-8601"},
+  "locale": "en"
+}
+```
+
+reference (SKH-YYYYMMDD-####)      OK             actual: SKH-20260821-0001
+segment (enum)                     OK             actual: delegation
+submittedAt ISO-8601               OK             actual: 2026-08-21T22:51:39.179Z
+contact.name                       OK             actual: TEST Rajesh Sharma
+contact.organisation               OK             actual: TEST Government of Maharashtra Protocol Department
+contact.role                       OK             actual: Deputy Secretary (Protocol)
+contact.email                      OK             actual: test.protocol@maharashtra-example.gov.in
+contact.phone                      OK             actual: +91 22 5555 0101
+contact.preferredChannel           OK             actual: email
+contact.preferredChannel enum      OK             actual: email
+details (segment-specific object)  OK             actual: ['purpose', 'destinations', 'arrivalDate', 'departureDate', 'datesNotFixed', 'sizeBand', 'principalsCount', 'needs', 'securityNotes']
+attachments array                  OK             actual: 1 item(s)
+attachments[0].file                OK             actual: TEST-delegation-brief.pdf
+attachments[0].bytes               OK             actual: 223
+attachments[0].url                 OK             actual: data://uploads/SKH-20260821-0001/TEST-delegation-brief.pdf
+flags.verifiedDomain               OK             actual: True
+flags.manualCheck                  OK             actual: False
+flags.utm                          OK             actual: {'utm_source': 'qa-workbook', 'utm_medium': 'api-test'}
+consent.privacyVersion             OK             actual: 2026-08
+consent.acceptedAt                 OK             actual: 2026-08-21T22:51:39.180Z
+locale                             OK             actual: en
+no undocumented top-level fields   OK             actual: none
+
+RESULT: 22/22 checks OK, 0 failed
+
+DEVIATION NOTE: schema example shows attachments[].url as 'signed' (signed bucket URL).
+Implementation persists url as data://uploads/<ref>/<file> - a documented interim decision in lib/enquiry/store.ts
+(DECISION comment: local disk under DATA_DIR until the CH/EU bucket exists; signed URLs land in task T4.3).

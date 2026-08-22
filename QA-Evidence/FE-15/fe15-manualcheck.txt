@@ -1,0 +1,5 @@
+=== FE-15 manualCheck (gmail + 61-plus + no organisation), X-Forwarded-For: 10.3.15.1, 2026-08-21T22:53:55Z ===
+response: {"reference":"SKH-20260821-0019","segment":"delegation","ownerTeam":"The delegations team","promise":"48 hours"}
+--- persisted flags (SKH-20260821-0019) ---
+email: test.fe15@gmail.com | organisation: '' | sizeBand: 61-plus
+flags: {"verifiedDomain": false, "manualCheck": true, "utm": {}}

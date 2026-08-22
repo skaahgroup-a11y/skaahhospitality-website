@@ -1,0 +1,11 @@
+PF-01 LCP Home — Lighthouse 12.x, mobile emulation, simulated 4G (default lantern throttling: 150ms RTT / 1.6Mbps), CHROME_PATH=chromium-1194. Lab run on datacentre host, NOT a Moto-class device.
+URL: http://127.0.0.1:3222/en
+Performance score: 0.95
+LCP (simulated 4G mobile): 3000 ms  -> FAILS the docs/04 budget "LCP < 2.0 s (Lighthouse CI mobile)"
+FCP 910 ms | Speed Index 910 ms | TBT 42.5 ms | CLS 0 | server-response-time 6 ms
+Observed (unthrottled trace): LCP 118 ms.
+LCP element: NOT the poster stand-in. It is the hero subline paragraph:
+  main#main > section.relative > div.container-site > p.mt-6
+  "One accountable partner for government delegations and high-value corporate gro..."
+(The hero poster is a CSS gradient stand-in pending media, so it produces no image LCP candidate; largest text block wins.)
+LCP breakdown (observed): TTFB 11.3 ms + element render delay 106 ms. The 3.0 s simulated figure is driven by the render-blocking CSS + 5 self-hosted preloaded WOFF2 font chain under simulated 4G.

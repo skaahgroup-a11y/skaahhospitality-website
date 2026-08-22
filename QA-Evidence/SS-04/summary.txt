@@ -1,0 +1,10 @@
+SS-04 Robots split — 2026-08-21, agent 5
+Live staging (NEXT_PUBLIC_ENV unset => isProductionEnv() false):
+GET /robots.txt returns 200 with "User-Agent: *\nDisallow: /" (robots-staging-live.txt)
+=> full disallow proven live.
+Production branch: app/robots.ts (app-robots.ts.txt) returns allow "/" with
+disallow ["/api/"] and sitemap ${SITE_URL}/sitemap.xml when
+process.env.NEXT_PUBLIC_ENV === "production" (isProductionEnv-excerpt.txt).
+Production behaviour proven by source inspection only — only the staging server is live
+in this environment (workbook-prescribed method). Note: docs/06 s4 also expects
+host-level basic auth on staging; that is a Hostpoint concern, not testable pre-staging.

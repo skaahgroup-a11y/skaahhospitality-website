@@ -1,0 +1,69 @@
+[A] Delegation step 1 submitted empty => 2 role=alert inline errors: ["Please complete this field.","Please complete this field."]
+[A-DOM] fieldsets: [
+  {
+    "legend": "Purpose of the visit *",
+    "ariaDescribedby": "purpose-error",
+    "describedElExists": true,
+    "errorText": "Please complete this field.",
+    "errorRole": "alert"
+  },
+  {
+    "legend": "Destination(s)",
+    "ariaDescribedby": null,
+    "describedElExists": null,
+    "errorText": null,
+    "errorRole": null
+  },
+  {
+    "legend": "Delegation size band *",
+    "ariaDescribedby": "sizeBand-error",
+    "describedElExists": true,
+    "errorText": "Please complete this field.",
+    "errorRole": "alert"
+  }
+]
+[B] Contact step submitted empty; field semantics: [
+  {
+    "id": "name",
+    "ariaRequired": "true",
+    "ariaInvalid": "true",
+    "ariaDescribedby": "name-error",
+    "linkedErrorText": "Please complete this field.",
+    "linkedErrorRole": "alert"
+  },
+  {
+    "id": "organisation",
+    "ariaRequired": "true",
+    "ariaInvalid": "true",
+    "ariaDescribedby": "organisation-error",
+    "linkedErrorText": "Please complete this field.",
+    "linkedErrorRole": "alert"
+  },
+  {
+    "id": "role",
+    "ariaRequired": null,
+    "ariaInvalid": "false",
+    "ariaDescribedby": null,
+    "linkedErrorText": null,
+    "linkedErrorRole": null
+  },
+  {
+    "id": "email",
+    "ariaRequired": "true",
+    "ariaInvalid": "true",
+    "ariaDescribedby": "email-error",
+    "linkedErrorText": "Please complete this field.",
+    "linkedErrorRole": "alert"
+  },
+  {
+    "id": "phone",
+    "ariaRequired": null,
+    "ariaInvalid": "false",
+    "ariaDescribedby": null,
+    "linkedErrorText": null,
+    "linkedErrorRole": null
+  }
+]
+[B] role=alert messages on contact step: ["Please complete this field.","Please complete this field.","Please complete this field."]
+[C] Invalid email format => {"ariaInvalid":"true","describedby":"email-error","errorText":"Please enter a valid e-mail address.","errorRole":"alert"}
+[D] activeElement after interactions: BUTTON / Submit enquiry (wizard focuses the step heading (tabindex=-1) on each phase change per EnquiryWizard.tsx line 118-120)

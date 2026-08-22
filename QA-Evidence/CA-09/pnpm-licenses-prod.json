@@ -1,0 +1,644 @@
+{
+  "MIT": [
+    {
+      "name": "@formatjs/fast-memoize",
+      "versions": [
+        "3.1.7"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@formatjs+fast-memoize@3.1.7/node_modules/@formatjs/fast-memoize"
+      ],
+      "license": "MIT",
+      "author": "Long Ho",
+      "homepage": "https://github.com/formatjs/formatjs#readme",
+      "description": "fork of fast-memoize and support esm"
+    },
+    {
+      "name": "@formatjs/icu-messageformat-parser",
+      "versions": [
+        "3.5.17"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@formatjs+icu-messageformat-parser@3.5.17/node_modules/@formatjs/icu-messageformat-parser"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/formatjs/formatjs#readme"
+    },
+    {
+      "name": "@formatjs/icu-skeleton-parser",
+      "versions": [
+        "2.1.11"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@formatjs+icu-skeleton-parser@2.1.11/node_modules/@formatjs/icu-skeleton-parser"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/formatjs/formatjs#readme"
+    },
+    {
+      "name": "@formatjs/intl-localematcher",
+      "versions": [
+        "0.8.13"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@formatjs+intl-localematcher@0.8.13/node_modules/@formatjs/intl-localematcher"
+      ],
+      "license": "MIT",
+      "author": "Long Ho",
+      "homepage": "https://github.com/formatjs/formatjs#readme",
+      "description": "Intl.LocaleMatcher ponyfill"
+    },
+    {
+      "name": "@img/colour",
+      "versions": [
+        "1.1.0"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@img+colour@1.1.0/node_modules/@img/colour"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/lovell/colour#readme",
+      "description": "The ESM-only 'color' package made compatible for use with CommonJS runtimes"
+    },
+    {
+      "name": "@next/env",
+      "versions": [
+        "15.5.23"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@next+env@15.5.23/node_modules/@next/env"
+      ],
+      "license": "MIT",
+      "author": "Next.js Team",
+      "homepage": "https://github.com/vercel/next.js#readme",
+      "description": "Next.js dotenv file loading"
+    },
+    {
+      "name": "@next/swc-linux-x64-gnu",
+      "versions": [
+        "15.5.23"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@next+swc-linux-x64-gnu@15.5.23/node_modules/@next/swc-linux-x64-gnu"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vercel/next.js#readme"
+    },
+    {
+      "name": "@parcel/watcher",
+      "versions": [
+        "2.6.0"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@parcel+watcher@2.6.0/node_modules/@parcel/watcher"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/parcel-bundler/watcher#readme",
+      "description": "A native C++ Node module for querying and subscribing to filesystem events. Used by Parcel 2."
+    },
+    {
+      "name": "@parcel/watcher-linux-x64-glibc",
+      "versions": [
+        "2.6.0"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@parcel+watcher-linux-x64-glibc@2.6.0/node_modules/@parcel/watcher-linux-x64-glibc"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/parcel-bundler/watcher#readme",
+      "description": "A native C++ Node module for querying and subscribing to filesystem events. Used by Parcel 2."
+    },
+    {
+      "name": "@schummar/icu-type-parser",
+      "versions": [
+        "1.21.5"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@schummar+icu-type-parser@1.21.5/node_modules/@schummar/icu-type-parser"
+      ],
+      "license": "MIT",
+      "author": "Marco Schumacher",
+      "homepage": "https://github.com/schummar/schummar-translate#readme",
+      "description": "TypeScript powered ICU message parser."
+    },
+    {
+      "name": "@types/node",
+      "versions": [
+        "22.20.1"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@types+node@22.20.1/node_modules/@types/node"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+      "description": "TypeScript definitions for node"
+    },
+    {
+      "name": "client-only",
+      "versions": [
+        "0.0.1"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/client-only@0.0.1/node_modules/client-only"
+      ],
+      "license": "MIT",
+      "homepage": "https://reactjs.org/",
+      "description": "This is a marker package to indicate that a module can only be used in Client Components."
+    },
+    {
+      "name": "content-type",
+      "versions": [
+        "2.1.0"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/content-type@2.1.0/node_modules/content-type"
+      ],
+      "license": "MIT",
+      "author": "Douglas Christopher Wilson",
+      "homepage": "https://github.com/jshttp/content-type#readme",
+      "description": "Create and parse HTTP Content-Type header"
+    },
+    {
+      "name": "icu-minify",
+      "versions": [
+        "4.13.7"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/icu-minify@4.13.7/node_modules/icu-minify"
+      ],
+      "license": "MIT",
+      "author": "Jan Amann",
+      "homepage": "https://next-intl.dev",
+      "description": "ICU message format compiler with a <1KB runtime bundle footprint"
+    },
+    {
+      "name": "is-extglob",
+      "versions": [
+        "2.1.1"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/is-extglob@2.1.1/node_modules/is-extglob"
+      ],
+      "license": "MIT",
+      "author": "Jon Schlinkert",
+      "homepage": "https://github.com/jonschlinkert/is-extglob",
+      "description": "Returns true if a string has an extglob."
+    },
+    {
+      "name": "is-glob",
+      "versions": [
+        "4.0.3"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/is-glob@4.0.3/node_modules/is-glob"
+      ],
+      "license": "MIT",
+      "author": "Jon Schlinkert",
+      "homepage": "https://github.com/micromatch/is-glob",
+      "description": "Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a better user experience."
+    },
+    {
+      "name": "nanoid",
+      "versions": [
+        "3.3.18"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/nanoid@3.3.18/node_modules/nanoid"
+      ],
+      "license": "MIT",
+      "author": "Andrey Sitnik",
+      "homepage": "https://github.com/ai/nanoid#readme",
+      "description": "A tiny (116 bytes), secure URL-friendly unique string ID generator"
+    },
+    {
+      "name": "negotiator",
+      "versions": [
+        "1.1.0"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/negotiator@1.1.0/node_modules/negotiator"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/negotiator#readme",
+      "description": "HTTP content negotiation"
+    },
+    {
+      "name": "next",
+      "versions": [
+        "15.5.23"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/next@15.5.23_react-dom@19.2.8_react@19.2.8__react@19.2.8/node_modules/next"
+      ],
+      "license": "MIT",
+      "homepage": "https://nextjs.org",
+      "description": "The React Framework"
+    },
+    {
+      "name": "next-intl",
+      "versions": [
+        "4.13.7"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/next-intl@4.13.7_next@15.5.23_react-dom@19.2.8_react@19.2.8__react@19.2.8__react@19.2.8_typescript@5.9.3/node_modules/next-intl"
+      ],
+      "license": "MIT",
+      "author": "Jan Amann",
+      "homepage": "https://next-intl.dev",
+      "description": "Internationalization (i18n) for Next.js"
+    },
+    {
+      "name": "next-intl-swc-plugin-extractor",
+      "versions": [
+        "4.13.7"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/next-intl-swc-plugin-extractor@4.13.7/node_modules/next-intl-swc-plugin-extractor"
+      ],
+      "license": "MIT",
+      "author": "강동윤",
+      "homepage": "https://next-intl.dev",
+      "description": "SWC plugin for extracting inline messages."
+    },
+    {
+      "name": "node-addon-api",
+      "versions": [
+        "7.1.1"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/node-addon-api@7.1.1/node_modules/node-addon-api"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/nodejs/node-addon-api",
+      "description": "Node.js API (Node-API)"
+    },
+    {
+      "name": "picomatch",
+      "versions": [
+        "4.0.5"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/picomatch@4.0.5/node_modules/picomatch"
+      ],
+      "license": "MIT",
+      "author": "Jon Schlinkert",
+      "homepage": "https://github.com/micromatch/picomatch",
+      "description": "Blazing fast and accurate glob matcher written in JavaScript, with no dependencies and full support for standard and extended Bash glob features, including braces, extglobs, POSIX brackets, and regular expressions."
+    },
+    {
+      "name": "po-parser",
+      "versions": [
+        "2.2.0"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/po-parser@2.2.0/node_modules/po-parser"
+      ],
+      "license": "MIT",
+      "author": "Jan Amann",
+      "homepage": "https://github.com/amannn/po-parser",
+      "description": "Parses and serializes `.po` file content."
+    },
+    {
+      "name": "postcss",
+      "versions": [
+        "8.4.31"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/postcss@8.4.31/node_modules/postcss"
+      ],
+      "license": "MIT",
+      "author": "Andrey Sitnik",
+      "homepage": "https://postcss.org/",
+      "description": "Tool for transforming styles with JS plugins"
+    },
+    {
+      "name": "react",
+      "versions": [
+        "19.2.8"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/react@19.2.8/node_modules/react"
+      ],
+      "license": "MIT",
+      "homepage": "https://react.dev/",
+      "description": "React is a JavaScript library for building user interfaces."
+    },
+    {
+      "name": "react-dom",
+      "versions": [
+        "19.2.8"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/react-dom@19.2.8_react@19.2.8/node_modules/react-dom"
+      ],
+      "license": "MIT",
+      "homepage": "https://react.dev/",
+      "description": "React package for working with the DOM."
+    },
+    {
+      "name": "scheduler",
+      "versions": [
+        "0.27.0"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler"
+      ],
+      "license": "MIT",
+      "homepage": "https://react.dev/",
+      "description": "Cooperative scheduler for the browser environment."
+    },
+    {
+      "name": "styled-jsx",
+      "versions": [
+        "5.1.6"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/styled-jsx@5.1.6_react@19.2.8/node_modules/styled-jsx"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vercel/styled-jsx#readme",
+      "description": "Full CSS support for JSX without compromises"
+    },
+    {
+      "name": "undici-types",
+      "versions": [
+        "6.21.0"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/undici-types@6.21.0/node_modules/undici-types"
+      ],
+      "license": "MIT",
+      "homepage": "https://undici.nodejs.org",
+      "description": "A stand-alone types package for Undici"
+    },
+    {
+      "name": "use-intl",
+      "versions": [
+        "4.13.7"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/use-intl@4.13.7_react@19.2.8/node_modules/use-intl"
+      ],
+      "license": "MIT",
+      "author": "Jan Amann",
+      "homepage": "https://next-intl.dev",
+      "description": "Internationalization (i18n) for React"
+    },
+    {
+      "name": "zod",
+      "versions": [
+        "3.25.76"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/zod@3.25.76/node_modules/zod"
+      ],
+      "license": "MIT",
+      "author": "Colin McDonnell",
+      "homepage": "https://zod.dev",
+      "description": "TypeScript-first schema declaration and validation library with static type inference"
+    }
+  ],
+  "LGPL-3.0-or-later": [
+    {
+      "name": "@img/sharp-libvips-linux-x64",
+      "versions": [
+        "1.2.4",
+        "1.3.2"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@img+sharp-libvips-linux-x64@1.2.4/node_modules/@img/sharp-libvips-linux-x64",
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@img+sharp-libvips-linux-x64@1.3.2/node_modules/@img/sharp-libvips-linux-x64"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "author": "Lovell Fuller",
+      "homepage": "https://sharp.pixelplumbing.com",
+      "description": "Prebuilt libvips and dependencies for use with sharp on Linux (glibc) x64"
+    }
+  ],
+  "Apache-2.0": [
+    {
+      "name": "@img/sharp-linux-x64",
+      "versions": [
+        "0.34.5",
+        "0.35.3"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@img+sharp-linux-x64@0.34.5/node_modules/@img/sharp-linux-x64",
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@img+sharp-linux-x64@0.35.3/node_modules/@img/sharp-linux-x64"
+      ],
+      "license": "Apache-2.0",
+      "author": "Lovell Fuller",
+      "homepage": "https://sharp.pixelplumbing.com",
+      "description": "Prebuilt sharp for use with Linux (glibc) x64"
+    },
+    {
+      "name": "@swc/core",
+      "versions": [
+        "1.15.47"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@swc+core@1.15.47/node_modules/@swc/core"
+      ],
+      "license": "Apache-2.0",
+      "author": "강동윤",
+      "homepage": "https://swc.rs",
+      "description": "Super-fast alternative for babel"
+    },
+    {
+      "name": "@swc/counter",
+      "versions": [
+        "0.1.3"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@swc+counter@0.1.3/node_modules/@swc/counter"
+      ],
+      "license": "Apache-2.0",
+      "author": "강동윤",
+      "homepage": "https://swc.rs",
+      "description": "Downloade counter for the swc project"
+    },
+    {
+      "name": "@swc/helpers",
+      "versions": [
+        "0.5.15"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@swc+helpers@0.5.15/node_modules/@swc/helpers"
+      ],
+      "license": "Apache-2.0",
+      "author": "강동윤",
+      "homepage": "https://swc.rs",
+      "description": "External helpers for the swc project."
+    },
+    {
+      "name": "@swc/types",
+      "versions": [
+        "0.1.28"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@swc+types@0.1.28/node_modules/@swc/types"
+      ],
+      "license": "Apache-2.0",
+      "author": "강동윤",
+      "homepage": "https://swc.rs",
+      "description": "Typings for the swc project."
+    },
+    {
+      "name": "detect-libc",
+      "versions": [
+        "2.1.2"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/detect-libc@2.1.2/node_modules/detect-libc"
+      ],
+      "license": "Apache-2.0",
+      "author": "Lovell Fuller",
+      "homepage": "https://github.com/lovell/detect-libc#readme",
+      "description": "Node.js module to detect the C standard library (libc) implementation family and version"
+    },
+    {
+      "name": "sharp",
+      "versions": [
+        "0.34.5",
+        "0.35.3"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/sharp@0.34.5/node_modules/sharp",
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/sharp@0.35.3_@types+node@22.20.1/node_modules/sharp"
+      ],
+      "license": "Apache-2.0",
+      "author": "Lovell Fuller",
+      "homepage": "https://sharp.pixelplumbing.com",
+      "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images"
+    },
+    {
+      "name": "typescript",
+      "versions": [
+        "5.9.3"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/typescript@5.9.3/node_modules/typescript"
+      ],
+      "license": "Apache-2.0",
+      "author": "Microsoft Corp.",
+      "homepage": "https://www.typescriptlang.org/",
+      "description": "TypeScript is a language for application scale JavaScript development"
+    }
+  ],
+  "Apache-2.0 AND MIT": [
+    {
+      "name": "@swc/core-linux-x64-gnu",
+      "versions": [
+        "1.15.47"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/@swc+core-linux-x64-gnu@1.15.47/node_modules/@swc/core-linux-x64-gnu"
+      ],
+      "license": "Apache-2.0 AND MIT",
+      "author": "강동윤",
+      "homepage": "https://swc.rs",
+      "description": "Super-fast alternative for babel"
+    }
+  ],
+  "CC-BY-4.0": [
+    {
+      "name": "caniuse-lite",
+      "versions": [
+        "1.0.30001809"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/caniuse-lite@1.0.30001809/node_modules/caniuse-lite"
+      ],
+      "license": "CC-BY-4.0",
+      "author": "Ben Briggs",
+      "homepage": "https://github.com/browserslist/caniuse-lite#readme",
+      "description": "A smaller version of caniuse-db, with only the essentials!"
+    }
+  ],
+  "BSD-3-Clause": [
+    {
+      "name": "intl-messageformat",
+      "versions": [
+        "11.2.14"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/intl-messageformat@11.2.14/node_modules/intl-messageformat"
+      ],
+      "license": "BSD-3-Clause",
+      "author": "Eric Ferraiuolo",
+      "homepage": "https://github.com/formatjs/formatjs",
+      "description": "Formats ICU Message strings with number, date, plural, and select placeholders to create localized messages."
+    },
+    {
+      "name": "source-map-js",
+      "versions": [
+        "1.2.1"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/source-map-js@1.2.1/node_modules/source-map-js"
+      ],
+      "license": "BSD-3-Clause",
+      "author": "Valentin 7rulnik Semirulnik",
+      "homepage": "https://github.com/7rulnik/source-map-js",
+      "description": "Generates and consumes source maps"
+    }
+  ],
+  "MIT-0": [
+    {
+      "name": "nodemailer",
+      "versions": [
+        "9.0.5"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/nodemailer@9.0.5/node_modules/nodemailer"
+      ],
+      "license": "MIT-0",
+      "author": "Andris Reinman",
+      "homepage": "https://nodemailer.com/",
+      "description": "Easy as cake e-mail sending from your Node.js applications"
+    }
+  ],
+  "ISC": [
+    {
+      "name": "picocolors",
+      "versions": [
+        "1.1.1"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/picocolors@1.1.1/node_modules/picocolors"
+      ],
+      "license": "ISC",
+      "author": "Alexey Raspopov",
+      "homepage": "https://github.com/alexeyraspopov/picocolors#readme",
+      "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors"
+    },
+    {
+      "name": "semver",
+      "versions": [
+        "7.8.5"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/semver@7.8.5/node_modules/semver"
+      ],
+      "license": "ISC",
+      "author": "GitHub Inc.",
+      "homepage": "https://github.com/npm/node-semver#readme",
+      "description": "The semantic version parser used by npm."
+    }
+  ],
+  "0BSD": [
+    {
+      "name": "tslib",
+      "versions": [
+        "2.8.1"
+      ],
+      "paths": [
+        "/tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/node_modules/.pnpm/tslib@2.8.1/node_modules/tslib"
+      ],
+      "license": "0BSD",
+      "author": "Microsoft Corp.",
+      "homepage": "https://www.typescriptlang.org/",
+      "description": "Runtime library for TypeScript helper functions"
+    }
+  ]
+}

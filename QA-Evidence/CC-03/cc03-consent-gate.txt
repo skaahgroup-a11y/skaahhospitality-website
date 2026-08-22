@@ -1,0 +1,74 @@
+CC-03 Consent gate code path — 2026-08-21 — commit 8b6e82d
+
+1) consentGranted values across ALL 6 seeded case studies (content/work/*.ts):
+content/work/bilateral-programme-geneva-zurich.ts:12:  consentGranted: false,
+content/work/first-time-state-delegation-davos.ts:10:  consentGranted: false,
+content/work/kitchen-at-1560-metres.ts:10:  consentGranted: false,
+content/work/returning-delegation-doubled-scale.ts:10:  consentGranted: false,
+content/work/six-states-one-swiss-partner.ts:9:  consentGranted: false,
+content/work/two-delegations-one-week.ts:10:  consentGranted: false,
+
+2) Schema contract (content-schemas/types.ts lines 131-141):
+export interface CaseStudyContent {
+  slug: string;
+  order: number;
+  title: string;
+  // Named states render only where consentGranted is true; otherwise the
+  // approved fallback phrasing is used (CLAUDE.md claim discipline).
+  consentGranted: boolean;
+  segment: EnquirySegment;
+  year: string;
+  destination: string;
+  groupSizeBand: string;
+
+3) Claims gate script exists (scripts/check-claims.mjs) and enforces the named-state ban at build time:
+const root = process.cwd();
+const productionGate = process.argv.includes("--production");
+
+const SCAN_DIRS = ["app", "components", "content", "content-schemas", "lib", "messages", "i18n"];
+const EXTENSIONS = new Set([".ts", ".tsx", ".json", ".css", ".mjs"]);
+
+const NAMED_STATES = [
+  "Maharashtra",
+  "Uttar Pradesh",
+  "Telangana",
+  "Karnataka",
+  "Assam",
+  "Kerala",
+];
+
+const failures = [];
+
+function walk(dir) {
+  let entries;
+  try {
+    entries = readdirSync(dir);
+...
+      relative !== "content/disclaimer.ts" &&
+      /\bWEF\b|world economic forum/i.test(line)
+    ) {
+      failures.push(`${where}: restricted trademark wording (WEF marks)`);
+    }
+    for (const state of NAMED_STATES) {
+      if (line.includes(state)) {
+        failures.push(
+          `${where}: named state "${state}" outside consent gating`,
+        );
+      }
+    }
+    if (
+      productionGate &&
+      markerGateApplies(relative) &&
+      line.includes("[TO CONFIRM")
+
+4) Claims gate run against the content layer of the fresh clone:
+check:claims passed: no long dashes or forbidden claims ([TO CONFIRM markers permitted on staging).
+
+5) Rendered-output proof: CC-02 sweep of all 36 rendered pages (raw HTML incl. <title>, meta, JSON-LD)
+   found ZERO occurrences of Maharashtra/Uttar Pradesh/Telangana/Karnataka/Assam/Kerala (see QA-Evidence/CC-02/).
+
+NOTE: the prescribed method (toggle consentGranted in the CMS and watch the named variant appear) is
+unavailable — Payload CMS (epic E2) is not yet embedded; content lives in the typed content layer.
+CMS toggle test DEFERRED to E2. Verified instead: data (all consentGranted:false), build-time gate,
+and rendered output (no state names anywhere). PullQuote component comments C21 'rendered only where
+consent is granted'; no pull quotes render on any case study in this build.

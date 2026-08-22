@@ -1,0 +1,12 @@
+AC-01 axe scan, 16 templates (15 workbook + /en/privacy), 2026-08-21
+Method: playwright 
+ + @axe-core/playwright AxeBuilder({page}).analyze(), Chromium 1194, default WCAG ruleset.
+RESULT: ZERO critical violations on all 16 templates => Pass against the expected result.
+Serious/moderate totals across all templates (node counts):
+  serious color-contrast: 247 nodes (see AC-05 for the full breakdown by color pair)
+  serious scrollable-region-focusable: 2 nodes (on /en/davos-week and /en/work/six-states-one-swiss-partner)
+  moderate region: 15 nodes (content outside landmarks)
+  moderate heading-order: 3 nodes (the 3 hub pages, see AC-09)
+  minor aria-allowed-role: 25 nodes
+Files: axe-run.txt (per-route console), axe-summary.json (per-route counts+ids),
+axe-full-violations.json (all violations, node targets + failure summaries, html blobs trimmed for size).

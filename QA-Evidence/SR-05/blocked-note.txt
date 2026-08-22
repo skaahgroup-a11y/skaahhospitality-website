@@ -1,0 +1,5 @@
+SR-05 TLS grade — BLOCKED (2026-08-21)
+No TLS endpoint exists pre-staging: the QA build serves plain HTTP on 127.0.0.1:3222 and per
+docs/08 s3 TLS will terminate at the Hostpoint Nginx proxy with Let's Encrypt. SSL Labs is
+additionally unreachable from this environment. No programmatic pre-check possible without a
+TLS listener. Re-test against https://staging.skaahhospitality.com after server order.

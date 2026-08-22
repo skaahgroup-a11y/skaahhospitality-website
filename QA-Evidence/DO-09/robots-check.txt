@@ -1,0 +1,8 @@
+DO-09 Staging robots exclusion — BLOCKED overall (staging host does not exist), but the
+staging-mode robots behaviour IS verified on this server (NEXT_PUBLIC_ENV unset = staging
+semantics): GET /robots.txt on the QA build returns a full disallow:
+User-Agent: *
+Disallow: /
+
+
+(HTTP 200)

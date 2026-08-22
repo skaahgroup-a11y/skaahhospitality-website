@@ -1,0 +1,18 @@
+sharp@0.34.5
+└─┬ next@15.5.23
+  ├─┬ next-intl@4.13.7
+  │ └── skaahhospitality-website@0.1.0 (dependencies)
+  └── skaahhospitality-website@0.1.0 (dependencies)
+
+sharp@0.35.3
+└── skaahhospitality-website@0.1.0 (dependencies)
+
+Found 2 versions of sharp
+---
+postcss@8.4.31
+└─┬ next@15.5.23
+  ├─┬ next-intl@4.13.7
+  │ └── skaahhospitality-website@0.1.0 (dependencies)
+  └── skaahhospitality-website@0.1.0 (dependencies)
+
+Found 1 version of postcss

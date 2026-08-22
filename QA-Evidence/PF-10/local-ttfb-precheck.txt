@@ -1,0 +1,14 @@
+PF-10 geo probes pre-check, 2026-08-21T23:10:53Z
+WebPageTest Zurich/Mumbai unavailable in this environment (no external SaaS). Local TTFB from same host as substitute pre-check (no network RTT included; Hostpoint server does not exist yet).
+http://127.0.0.1:3222/en run1: ttfb=0.004802s total=0.004863s code=200
+http://127.0.0.1:3222/en run2: ttfb=0.004103s total=0.004195s code=200
+http://127.0.0.1:3222/en run3: ttfb=0.003662s total=0.003710s code=200
+http://127.0.0.1:3222/en/davos-week run1: ttfb=0.004700s total=0.004773s code=200
+http://127.0.0.1:3222/en/davos-week run2: ttfb=0.004187s total=0.004248s code=200
+http://127.0.0.1:3222/en/davos-week run3: ttfb=0.003847s total=0.003904s code=200
+http://127.0.0.1:3222/en/services/government-delegations run1: ttfb=0.003856s total=0.003902s code=200
+http://127.0.0.1:3222/en/services/government-delegations run2: ttfb=0.003430s total=0.003483s code=200
+http://127.0.0.1:3222/en/services/government-delegations run3: ttfb=0.003850s total=0.003886s code=200
+http://127.0.0.1:3222/en/enquiry run1: ttfb=0.003138s total=0.003186s code=200
+http://127.0.0.1:3222/en/enquiry run2: ttfb=0.003640s total=0.003679s code=200
+http://127.0.0.1:3222/en/enquiry run3: ttfb=0.003045s total=0.003095s code=200

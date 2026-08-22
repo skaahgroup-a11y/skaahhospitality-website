@@ -1,0 +1,31 @@
+SS-11 Internal linking rules (docs/06 s2: every service page must link the hub,
+>=1 destination, >=1 case study, >=1 article) — 2026-08-21, agent 5
+Method: crawled all 7 service pages; anchors extracted from <main> (editorial content)
+and from the whole document (chrome included). Raw data: service-page-links.json.
+
+Page (path under /en/services/)     hub   dest(main)  case-study  article   verdict
+government-delegations              YES   0           0           0         FAIL
+mice-events                         YES   0           0           0         FAIL
+travel-transport-immigration        YES   0           0           0         FAIL
+stays                               YES   0           0           0         FAIL
+food-catering                       YES   0           0           0         FAIL
+media-production                    YES   0           0           0         FAIL
+branding-staffing                   YES   0           0           0         FAIL
+
+Detail:
+- Hub link (/en/davos-week) IS present in main content on all 7 pages.
+- Destination links: none in main content on any service page. The 8 destination
+  links that appear in the whole-document scan are the sitewide footer nav column,
+  identical chrome on every page — not the editorial cross-links docs/06 s2 requires
+  ("link plan lives in each content file's cross-links").
+- Case-study links: ZERO links to any /en/work/<slug> anywhere on any service page
+  (only the /en/work listing link in header/footer nav).
+- Article links: ZERO links to any /en/insights/<slug> anywhere on any service page
+  (only the /en/insights listing link in nav).
+- Root cause in the content layer: content/services/*.ts each carry only
+  relatedSlugs pointing at TWO OTHER SERVICES (e.g. government-delegations.ts:132
+  relatedSlugs: ["travel-transport-immigration","food-catering"]); no destination /
+  case-study / article cross-link fields exist or are rendered (RelatedServices.tsx
+  renders services only).
+
+VERDICT: 0 of 7 service pages meet the docs/06 s2 internal-linking rule => FAIL.

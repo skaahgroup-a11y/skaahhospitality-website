@@ -1,0 +1,8 @@
+check:claims failed with 3 finding(s):
+
+  content/home.ts:171: long dash found (em or en dash)
+  content/home.ts:171: forbidden claim (international organisations)
+  content/home.ts:171: restricted trademark wording (WEF marks)
+
+Fix dash and claim findings now; [TO CONFIRM markers are allowed on staging.
+SEEDED EXIT=1

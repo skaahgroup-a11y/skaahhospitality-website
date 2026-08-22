@@ -1,0 +1,52 @@
+=== FE-17 acknowledgement mail template audit (SMTP unset - live mail Blocked), 2026-08-21T22:54:37Z ===
+--- lib/enquiry/deliver.ts lines 123-142 (acknowledgement mail) ---
+  // 3. Acknowledgement mail to the enquirer, restating the segment promise.
+  try {
+    await sendMail({
+      to: payload.contact.email,
+      subject: `Received: your enquiry ${payload.reference}`,
+      text: [
+        `Dear ${payload.contact.name},`,
+        "",
+        `Thank you. Your enquiry has been received under reference ${payload.reference}.`,
+        `${spec?.ownerTeam ?? "The SKAAH team"} replies within ${promise}.`,
+        "",
+        "What helps next: dates if they firm up, party size changes, and any documents you did not attach.",
+        "",
+        "SKAAH Hospitality GmbH",
+        "Opfikon (Zurich Airport), Switzerland",
+      ].join("\n"),
+    });
+  } catch (error) {
+    await queueFailedJob("acknowledgement", payload, String(error));
+  }
+
+--- per-segment promises from lib/enquiry/segments.ts ---
+46:  ownerTeam: string;
+47:  promise: string;
+71:    ownerTeam: "The delegations team",
+72:    promise: "48 hours",
+175:    ownerTeam: "The events team",
+176:    promise: "one business day",
+279:    ownerTeam: "The stays team",
+280:    promise: "48 hours",
+330:    ownerTeam: "The catering team",
+331:    promise: "48 hours",
+395:    ownerTeam: "The partnerships team",
+396:    promise: "48 hours",
+440:    ownerTeam: "The SKAAH team",
+441:    promise: "48 hours",
+
+--- sendMail SMTP-unset guard (deliver.ts lines 27-32) ---
+async function sendMail(message: MailMessage): Promise<void> {
+  const host = process.env.SMTP_HOST;
+  if (!host) {
+    console.info(`[enquiry] SMTP unset, skipping mail to ${message.to}`);
+    return;
+  }
+
+AUDIT FINDINGS:
+1. Reference: included ('your enquiry ${payload.reference}' in subject and 'under reference ${payload.reference}' in body). YES
+2. Per-segment promise: included via spec.promise ('${spec?.ownerTeam} replies within ${promise}') - mice='one business day', others='48 hours'. YES
+3. Contact/signature block: 'SKAAH Hospitality GmbH / Opfikon (Zurich Airport), Switzerland'. Present but minimal - no phone/e-mail line (numbers are [TO CONFIRM] in .env.example, unconfigured pre-staging).
+4. Live delivery: SMTP_HOST unset => sendMail logs and returns; no live mail possible in this environment (Blocked leg).

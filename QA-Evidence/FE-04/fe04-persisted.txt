@@ -1,0 +1,45 @@
+=== FE-04 persisted JSON /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone/data/enquiries/SKH-20260821-0004.json, checked 2026-08-21T22:52:17Z ===
+segment: catering | expected: catering
+reference: SKH-20260821-0004
+cuisines (catering only): ['regional-indian', 'jain', 'vegetarian', 'swiss-international']
+flags: {'verifiedDomain': False, 'manualCheck': False, 'utm': {}}
+locale: en
+--- full JSON ---
+{
+  "reference": "SKH-20260821-0004",
+  "segment": "catering",
+  "submittedAt": "2026-08-21T22:52:08.837Z",
+  "contact": {
+    "name": "TEST Sunita Rao",
+    "organisation": "TEST Rao Wedding Planners",
+    "role": "Founder",
+    "email": "test.catering@raoplanners-example.com",
+    "phone": "+91 99 5555 0404",
+    "preferredChannel": "whatsapp"
+  },
+  "details": {
+    "dates": "2027-06-12 to 2027-06-14",
+    "venueStatus": "booked",
+    "guests": 220,
+    "serviceStyle": "banquet",
+    "cuisines": [
+      "regional-indian",
+      "jain",
+      "vegetarian",
+      "swiss-international"
+    ],
+    "dietaryNotes": "TEST QA FE-04: strict Jain section, nut allergy at head table",
+    "kitchenAccessUnknown": false
+  },
+  "attachments": [],
+  "flags": {
+    "verifiedDomain": false,
+    "manualCheck": false,
+    "utm": {}
+  },
+  "consent": {
+    "privacyVersion": "2026-08",
+    "acceptedAt": "2026-08-21T22:52:08.837Z"
+  },
+  "locale": "en"
+}

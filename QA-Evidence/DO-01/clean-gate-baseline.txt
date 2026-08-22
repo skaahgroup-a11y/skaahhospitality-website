@@ -1,0 +1,17 @@
+== clean-tree gate steps run locally (baseline) ==
+-- pnpm lint --
+
+> skaahhospitality-website@0.1.0 lint /tmp/claude-0/-home-user-skaahhospitality-website/8f5810ff-1b7c-5358-98a1-73188aac1ec3/scratchpad/qa-clone
+> eslint .
+
+LINT CLEAN EXIT=0
+-- pnpm test --
+ ✓ lib/enquiry/flags.test.ts (13 tests) 10ms
+ ✓ lib/enquiry/reference.test.ts (3 tests) 3ms
+
+ Test Files  3 passed (3)
+      Tests  25 passed (25)
+   Start at  22:48:20
+   Duration  464ms (transform 198ms, setup 0ms, collect 237ms, tests 17ms, environment 0ms, prepare 276ms)
+
+-- typecheck: see QA-Evidence/CA-02 (exit 0); claims gate: see QA-Evidence/CA-10 (exit 0); build: production build serving at 127.0.0.1:3222 --

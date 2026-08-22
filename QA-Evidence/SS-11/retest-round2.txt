@@ -1,0 +1,7 @@
+SS-11 round 2 retest, 2026-08-21
+Result: Pass
+
+Round 2 retest: Plan deeper cross-links block added to the service template with a per-service map. Re-crawl: all 7 service pages now link the hub, one destination guide, one case study and one article in editorial main content. 0 of 7 became 7 of 7.
+
+Fix commits: see git log (QA round 2 fixes).
+Verification battery: typecheck 0 errors, eslint clean, 25 unit tests pass, 4 e2e smoke tests pass, claims gate pass, build green (46 pages), axe contrast 0 nodes / 0 critical across 10 templates, Lighthouse enquiry CLS 0, full-crawl metas 0 violations, service cross-links 7 of 7, export archive complete, pnpm audit --prod clean.
