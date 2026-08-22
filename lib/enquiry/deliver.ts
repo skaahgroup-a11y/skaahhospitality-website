@@ -134,7 +134,7 @@ export async function deliverEnquiry(payload: EnquiryPayload): Promise<void> {
         "What helps next: dates if they firm up, party size changes, and any documents you did not attach.",
         "",
         "SKAAH Hospitality GmbH",
-        "Opfikon (Zurich Airport), Switzerland",
+        "Glärnischstrasse 39, 8152 Opfikon, Switzerland",
       ].join("\n"),
     });
   } catch (error) {

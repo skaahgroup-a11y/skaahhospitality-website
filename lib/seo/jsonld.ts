@@ -16,6 +16,14 @@ export function organizationJsonLd(): JsonLdObject {
     url: SITE_URL,
     logo: `${SITE_URL}/brand/skaah-group-logo-square.png`,
     identifier: ORG.registration,
+    vatID: ORG.vat,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: ORG.registeredAddress.street,
+      postalCode: ORG.registeredAddress.postalCode,
+      addressLocality: ORG.registeredAddress.locality,
+      addressCountry: "CH",
+    },
     sameAs,
     parentOrganization: {
       "@type": "Organization",
@@ -41,8 +49,12 @@ export function localBusinessJsonLd(): JsonLdObject {
     name: ORG.name,
     url: SITE_URL,
     image: `${SITE_URL}/brand/skaah-group-logo-square.png`,
+    identifier: ORG.registration,
+    vatID: ORG.vat,
     address: {
       "@type": "PostalAddress",
+      streetAddress: ORG.registeredAddress.street,
+      postalCode: ORG.registeredAddress.postalCode,
       addressLocality: "Opfikon",
       addressRegion: "Zurich",
       addressCountry: "CH",

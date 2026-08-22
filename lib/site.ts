@@ -10,8 +10,15 @@ export const ORG = {
   parent: "SKAAH Group AG",
   seat: "Opfikon (Zurich Airport), Switzerland",
   groupUrl: "https://skaah.com",
-  // Swiss UID, confirmed by the client on 22 August 2026.
+  // Company facts confirmed by the client on 22 August 2026.
   registration: "CHE-473.516.098",
+  vat: "CHE-473.516.098 MWST",
+  registeredAddress: {
+    street: "Glärnischstrasse 39",
+    postalCode: "8152",
+    locality: "Opfikon",
+    country: "Switzerland",
+  },
   // [TO CONFIRM: LinkedIn URL]
   linkedInUrl: "",
 } as const;
@@ -35,7 +42,7 @@ export const FALLBACK_PROOF_LINE =
   "Six Indian delegations. Four consecutive Davos Weeks. One Swiss partner.";
 
 export const CONTACT = {
-  office: "Opfikon (Zurich Airport), Switzerland",
+  office: "Glärnischstrasse 39, 8152 Opfikon, Switzerland",
   email: "enquiry@skaahhospitality.com",
   emailConfirm: "[TO CONFIRM: enquiry mailbox address]",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",

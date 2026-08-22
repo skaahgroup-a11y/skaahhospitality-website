@@ -66,11 +66,26 @@ const pillars = [
 ];
 
 // Portrait brief per spec: navy backdrop, soft key, no retouch gloss.
+// Roles confirmed by the client on 22 August 2026; bios and portraits pending.
 const leaders: { name: string; role: string; bio: string; media: MediaBrief }[] =
   [
     {
+      name: "Mrs. Haritha Kavi",
+      role: "Chairperson and Managing Director",
+      bio: "[TO CONFIRM: bio 60-80 words + portrait]",
+      media: {
+        slot: "about-leader-haritha-kavi",
+        subject:
+          "Portrait of Mrs. Haritha Kavi, Chairperson and Managing Director",
+        composition: "navy backdrop, soft key light",
+        treatment: "no retouch gloss",
+        source: "new-shoot",
+        alt: "Portrait of Mrs. Haritha Kavi, Chairperson and Managing Director of SKAAH Hospitality",
+      },
+    },
+    {
       name: "Mr. Amar Kavi",
-      role: "CEO",
+      role: "Chief Executive Officer",
       bio: "[TO CONFIRM: bio 60-80 words + portrait]",
       media: {
         slot: "about-leader-amar-kavi",

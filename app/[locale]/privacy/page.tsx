@@ -30,7 +30,7 @@ const sections: LegalSection[] = [
   {
     heading: "Who is responsible",
     paragraphs: [
-      "The controller for the personal data described on this page is SKAAH Hospitality GmbH, Opfikon (Zurich), Switzerland, registered under CHE-473.516.098 [TO CONFIRM: registered street address]. SKAAH Hospitality GmbH is part of SKAAH Group AG.",
+      "The controller for the personal data described on this page is SKAAH Hospitality GmbH, Glärnischstrasse 39, 8152 Opfikon, Switzerland, registered under CHE-473.516.098. SKAAH Hospitality GmbH is part of SKAAH Group AG.",
       `Questions about this policy or about your personal data can be sent to ${PRIVACY_EMAIL}.`,
     ],
   },

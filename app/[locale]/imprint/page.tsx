@@ -17,18 +17,23 @@ const seo = {
 
 export const metadata: Metadata = pageMetadata(seo, "/imprint");
 
+// Company facts confirmed by the client on 22 August 2026.
 const companyRows: { label: string; value: string }[] = [
   { label: "Company", value: `${ORG.name}, part of ${ORG.parent}` },
   {
-    label: "Registered seat",
-    value: "Opfikon (Zurich), Switzerland [TO CONFIRM: registered address]",
+    label: "Registered address",
+    value: "Glärnischstrasse 39, 8152 Opfikon, Switzerland",
   },
   {
     label: "Commercial register",
     value: "CHE-473.516.098",
   },
-  { label: "VAT number", value: "[TO CONFIRM: VAT number]" },
-  { label: "Managing director(s)", value: "[TO CONFIRM: managing director(s)]" },
+  { label: "VAT number", value: "CHE-473.516.098 MWST" },
+  {
+    label: "Chairperson and Managing Director",
+    value: "Mrs. Haritha Kavi",
+  },
+  { label: "Chief Executive Officer", value: "Mr. Amar Kavi" },
 ];
 
 export default async function ImprintPage({
