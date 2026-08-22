@@ -7,7 +7,6 @@ import { EnquiryWizard } from "@/components/forms/EnquiryWizard";
 import { TrustRow } from "@/components/blocks/TrustRow";
 import { PhoneLink } from "@/components/blocks/PhoneLink";
 import { WhatsAppLink } from "@/components/blocks/WhatsAppLink";
-import { Copy } from "@/components/ui/Copy";
 import { CONTACT, RESPONSE_PROMISE } from "@/lib/site";
 
 const seo = {
@@ -69,8 +68,7 @@ export default async function EnquiryPage({
                     className="link-draw font-medium"
                   >
                     {CONTACT.email}
-                  </a>{" "}
-                  <Copy text={CONTACT.emailConfirm} />
+                  </a>
                 </p>
               </address>
               <div className="mt-5">

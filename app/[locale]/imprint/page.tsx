@@ -87,8 +87,7 @@ export default async function ImprintPage({
                 className="link-draw font-medium text-navy-900"
               >
                 {CONTACT.email}
-              </a>{" "}
-              <Copy text={CONTACT.emailConfirm} />
+              </a>
             </p>
             <p className="mt-2">
               Phone <Copy text={CONTACT.phoneConfirm} />

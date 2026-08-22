@@ -96,20 +96,9 @@ const leaders: { name: string; role: string; bio: string; media: MediaBrief }[] 
         alt: "Portrait of Mr. Amar Kavi, CEO of SKAAH Hospitality",
       },
     },
-    {
-      name: "Mr. Hanuma Kuna",
-      role: "CTO / Enterprise Architect",
-      bio: "[TO CONFIRM: bio 60-80 words + portrait]",
-      media: {
-        slot: "about-leader-hanuma-kuna",
-        subject: "Portrait of Mr. Hanuma Kuna, CTO / Enterprise Architect",
-        composition: "navy backdrop, soft key light",
-        treatment: "no retouch gloss",
-        source: "new-shoot",
-        alt: "Portrait of Mr. Hanuma Kuna, CTO and Enterprise Architect of SKAAH Hospitality",
-      },
-    },
   ];
+// Client instruction, 22 August 2026: Mr. Hanuma Kuna sits on the SKAAH Tech
+// leadership team and is not listed for the Hospitality business.
 
 const groupBand = [
   "SKAAH Hospitality GmbH is part of SKAAH Group AG, a diversified Swiss group active across technologies, real estate, industries and hospitality.",

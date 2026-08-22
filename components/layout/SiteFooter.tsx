@@ -86,8 +86,7 @@ export async function SiteFooter() {
                     className="link-draw hover:text-gold-400"
                   >
                     {CONTACT.email}
-                  </a>{" "}
-                  <Copy text={CONTACT.emailConfirm} />
+                  </a>
                 </p>
                 <p>
                   WhatsApp <Copy text={CONTACT.whatsappConfirm} />

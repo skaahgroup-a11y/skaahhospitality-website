@@ -43,8 +43,8 @@ export const FALLBACK_PROOF_LINE =
 
 export const CONTACT = {
   office: "Glärnischstrasse 39, 8152 Opfikon, Switzerland",
+  // Confirmed 22 August 2026: one shared mailbox serves every segment for now.
   email: "enquiry@skaahhospitality.com",
-  emailConfirm: "[TO CONFIRM: enquiry mailbox address]",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",
   whatsappConfirm: "[TO CONFIRM: WhatsApp number]",
   phoneNumber: process.env.NEXT_PUBLIC_PHONE_NUMBER ?? "",
