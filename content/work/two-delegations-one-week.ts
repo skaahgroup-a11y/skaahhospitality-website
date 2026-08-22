@@ -15,7 +15,7 @@ export const twoDelegationsOneWeek: CaseStudyContent = {
   oneLineOutcome:
     "2 delegations ran parallel programmes in the same Davos Week, served by separated teams with information walls between them.",
   brief:
-    "In one Davos Week, 2 state government delegations engaged us at the same time. Serving neighbours is a test of ethics before it is a test of logistics: each delegation competes for the same investors, the same venues and the same headlines, and each is entitled to a partner that behaves as if it were the only client. We ran the week as 2 separate operations: separated teams, separate operations leads, information walls between them, and a shared infrastructure layer of kitchens, vehicles and supplier capacity managed so that neither programme ever queued behind the other. Neither delegation's plans, guests or meetings were visible to the other at any point.",
+    "In one Davos Week, 2 Indian delegations engaged us at the same time. Serving neighbours is a test of ethics before it is a test of logistics: each delegation competes for the same investors, the same venues and the same headlines, and each is entitled to a partner that behaves as if it were the only client. We ran the week as 2 separate operations: separated teams, separate operations leads, information walls between them, and a shared infrastructure layer of kitchens, vehicles and supplier capacity managed so that neither programme ever queued behind the other. Neither delegation's plans, guests or meetings were visible to the other at any point.",
   hard: [
     "2 programmes drawing on the same finite pool of beds, vehicles, rooms and kitchen capacity.",
     "Commercial and political sensitivity: neighbouring delegations competing for the same investors in the same week.",
@@ -99,7 +99,7 @@ export const twoDelegationsOneWeek: CaseStudyContent = {
   seo: {
     metaTitle: "Two Delegations, One Week, Zero Collisions | SKAAH",
     metaDescription:
-      "Serving 2 state delegations in the same Davos Week: separated teams, information walls and shared infrastructure, with no collisions between programmes.",
+      "Serving 2 delegations in the same Davos Week: separated teams, information walls and shared infrastructure, with no collisions between programmes.",
     primaryKeyword: "parallel delegations Davos Week",
     secondaryKeywords: [
       "multi-client delegation operations",

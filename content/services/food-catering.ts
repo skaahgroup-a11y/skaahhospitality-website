@@ -86,7 +86,7 @@ export const foodCatering: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Six Indian delegations. Four consecutive Davos Weeks. One Swiss partner.",
       "Multi-cuisine catering delivered quietly through four Davos Januaries, at altitude and to protocol.",
     ],
     media: {

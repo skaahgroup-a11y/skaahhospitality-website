@@ -10,9 +10,18 @@ export const ORG = {
   parent: "SKAAH Group AG",
   seat: "Opfikon (Zurich Airport), Switzerland",
   groupUrl: "https://skaah.com",
+  // Swiss UID, confirmed by the client on 22 August 2026.
+  registration: "CHE-473.516.098",
   // [TO CONFIRM: LinkedIn URL]
   linkedInUrl: "",
 } as const;
+
+// Government-sector references, per the client instruction of 22 August 2026:
+// individual public-sector bodies are not named on the website pending
+// clearances; the named India-corridor relationships are CII and Invest India.
+// The claims gate (scripts/check-claims.mjs) enforces this.
+export const INDIA_CORRIDOR_LINE =
+  "In the India corridor we work with the Confederation of Indian Industry (CII) and Invest India.";
 
 export const DESCRIPTOR =
   "The Swiss hospitality and logistics partner for government delegations and high-value corporate groups, proven at Davos Week.";
@@ -23,7 +32,7 @@ export const RESPONSE_PROMISE =
   "Every enquiry receives a first response within 48 hours. Event and MICE RFPs within one business day.";
 
 export const FALLBACK_PROOF_LINE =
-  "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.";
+  "Six Indian delegations. Four consecutive Davos Weeks. One Swiss partner.";
 
 export const CONTACT = {
   office: "Opfikon (Zurich Airport), Switzerland",

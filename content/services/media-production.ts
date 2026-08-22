@@ -79,7 +79,7 @@ export const mediaProduction: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Six Indian delegations. Four consecutive Davos Weeks. One Swiss partner.",
       "Delegation weeks are documented to the client's rules, not to ours: a discipline learned across four consecutive Davos Weeks.",
     ],
   },

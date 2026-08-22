@@ -38,7 +38,7 @@ export interface HubCrossLink {
 export const davosWeekSeo: SeoFields = {
   metaTitle: "Davos Week Logistics: The Delegation Guide | SKAAH",
   metaDescription:
-    "How delegations actually operate during Davos Week: accommodation, movement, catering and protocol, from the partner behind six state delegations.",
+    "How delegations actually operate during Davos Week: accommodation, movement, catering and protocol, from the partner behind six Indian delegations.",
   primaryKeyword: "Davos Week logistics partner",
   secondaryKeywords: [
     "delegation accommodation Davos",
@@ -57,7 +57,7 @@ export const davosWeekHero: {
   eyebrow: "Davos Week",
   h1: "Davos in January: a working guide.",
   subline:
-    "The most demanding week in Swiss hospitality, explained by the partner that has run it for six Indian state government delegations across four consecutive Davos Weeks.",
+    "The most demanding week in Swiss hospitality, explained by the partner that has run it for six Indian delegations across four consecutive Davos Weeks.",
   cta: {
     label: "Plan your Davos Week with us",
     href: "/enquiry?segment=delegation&context=davos-week",
@@ -89,7 +89,7 @@ export const davosWeekGround: HubProseSection = {
   paragraphs: [
     "For most of the year, Davos is a working congress town in an alpine valley. For one week in January it becomes the most demanding address in Swiss hospitality. The population multiplies. The valley keeps its one road in. Security perimeters redraw the town daily, so a distance that looks like a short walk on the map can turn into a long detour through a checkpoint, and a venue that sat a few minutes away in December can sit behind an accreditation line in January.",
     "Every scarce resource in town obeys the same rule: it is contracted months out or it is gone. Beds, vehicles, kitchen capacity, trained staff, meeting rooms and even storage are spoken for long before the week begins. None of this is hidden; the town runs on it. Organisations that arrive assuming problems can be solved locally discover that the local solutions were sold in the autumn.",
-    "The teams that succeed treat Davos as an operation, not a trip. They plan against the constraints instead of hoping around them, they secure capacity early and precisely, and they arrive with decisions already made, so the week itself is execution rather than negotiation. That is the discipline this guide describes. We have run it for 6 Indian state government delegations across 4 Davos Weeks, and the pattern holds every year: the week rewards preparation and punishes improvisation. The sections below walk through the parts that decide the outcome: the calendar, the beds, the movements, the food and the protocol.",
+    "The teams that succeed treat Davos as an operation, not a trip. They plan against the constraints instead of hoping around them, they secure capacity early and precisely, and they arrive with decisions already made, so the week itself is execution rather than negotiation. That is the discipline this guide describes. We have run it for 6 Indian delegations across 4 Davos Weeks, and the pattern holds every year: the week rewards preparation and punishes improvisation. The sections below walk through the parts that decide the outcome: the calendar, the beds, the movements, the food and the protocol.",
   ],
 };
 
@@ -228,7 +228,7 @@ export const davosWeekOperatingModel: {
   id: "how-we-run",
   heading: "How SKAAH runs Davos Week",
   intro: [
-    "Everything above condenses into one operating model, and it is deliberately simple, because Davos Week punishes complexity. You get one accountable lead, a fixed daily rhythm, a short escalation path and a debrief that closes the loop while the week is still warm. The same model has carried 6 Indian state government delegations across 4 Davos Weeks, and it serves corporate groups without modification.",
+    "Everything above condenses into one operating model, and it is deliberately simple, because Davos Week punishes complexity. You get one accountable lead, a fixed daily rhythm, a short escalation path and a debrief that closes the loop while the week is still warm. The same model has carried 6 Indian delegations across 4 Davos Weeks, and it serves corporate groups without modification.",
   ],
   items: [
     {
@@ -281,16 +281,16 @@ export const davosWeekCaseStudies: {
   href: string;
 }[] = [
   {
-    title: "Six states, one Swiss partner",
+    title: "Six delegations, one Swiss partner",
     description:
-      "The aggregate record: 6 state government delegations across 4 consecutive Davos Weeks, delivered by one Swiss partner.",
-    href: "/work/six-states-one-swiss-partner",
+      "The aggregate record: 6 Indian delegations across 4 consecutive Davos Weeks, delivered by one Swiss partner.",
+    href: "/work/six-delegations-one-swiss-partner",
   },
   {
-    title: "A first-time state delegation at Davos Week",
+    title: "A first-time delegation at Davos Week",
     description:
       "A first-time delegation ran its Davos week to a playbook it did not have to write.",
-    href: "/work/first-time-state-delegation-davos",
+    href: "/work/first-time-delegation-davos",
   },
 ];
 
@@ -309,7 +309,7 @@ export const davosWeekFaqs: Faq[] = [
   {
     question: "Do you only work with Indian delegations?",
     answer:
-      "No. Our proof is Indian state delegations; our capability is delegation-grade operations for any government or corporate group.",
+      "No. Our proof is Indian delegations; our capability is delegation-grade operations for any government or corporate group.",
   },
   {
     question: "Do you handle participation in the annual meeting itself?",

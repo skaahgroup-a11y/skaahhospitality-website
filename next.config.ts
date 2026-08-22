@@ -60,9 +60,19 @@ const nextConfig: NextConfig = {
         "/en/insights/wef-delegation-countdown",
         "/en/insights/davos-delegation-countdown",
       ],
+      // Case-study slugs renamed twice: first for trademark wording, then to
+      // drop government client references pending clearances (22 Aug 2026).
       [
         "/en/work/first-time-state-delegation-wef",
+        "/en/work/first-time-delegation-davos",
+      ],
+      [
         "/en/work/first-time-state-delegation-davos",
+        "/en/work/first-time-delegation-davos",
+      ],
+      [
+        "/en/work/six-states-one-swiss-partner",
+        "/en/work/six-delegations-one-swiss-partner",
       ],
     ];
     return renamed.map(([source, destination]) => ({

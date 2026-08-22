@@ -15,7 +15,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
-import { RESPONSE_PROMISE } from "@/lib/site";
+import { RESPONSE_PROMISE, INDIA_CORRIDOR_LINE } from "@/lib/site";
 import {
   homeSeo,
   homeHero,
@@ -99,6 +99,9 @@ export default async function HomePage({
           <h2 className="display-2 text-white">{homeFlagship.heading}</h2>
           <p className="mt-6 text-lg leading-relaxed text-ice-200">
             {homeFlagship.body}
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-ice-200">
+            {INDIA_CORRIDOR_LINE}
           </p>
           <div className="mt-8">
             <StatCards

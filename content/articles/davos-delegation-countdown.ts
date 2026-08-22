@@ -30,7 +30,7 @@ export const davosDelegationCountdown: ArticleContent = {
       paragraphs: [
         "For one week in January, Davos becomes the most demanding address in Swiss hospitality. The town's population multiplies, the valley has one road in, and security perimeters redraw distances that look short on a map. Every scarce resource of the week (beds, vehicles, kitchen capacity, trained staff) is contracted months before the first delegate lands.",
         "The teams that arrive composed share one habit: they treat Davos as an operation, not a trip. Decisions taken early are cheap and reversible. The same decisions taken late are expensive and final. At 180 days you choose from the valley's full inventory; at 30 days you take what remains, at whatever it costs.",
-        "What follows expands the countdown from our Davos Week hub into a working checklist, month by month. It is written from four consecutive Davos Weeks of running the week for six Indian state government delegations, and it is written for the organiser who answers for every minute of the visit.",
+        "What follows expands the countdown from our Davos Week hub into a working checklist, month by month. It is written from four consecutive Davos Weeks of running the week for six Indian delegations, and it is written for the organiser who answers for every minute of the visit.",
         "Read the day-marks as the latest responsible moment for each decision, not as an ideal. If you are inside one of them already, do not skip the earlier work; compress it. The sequence matters more than the dates, because each stage buys the information the next one spends.",
       ],
     },
@@ -118,7 +118,7 @@ export const davosDelegationCountdown: ArticleContent = {
     {
       heading: "Engaging a Swiss partner",
       paragraphs: [
-        "This countdown is deliberately partner-neutral: a capable office can run it alone. What a Swiss partner adds is position and accountability: inventory already contracted, ground knowledge already walked, and one counterpart who answers for the whole operation instead of a dozen suppliers answering for fragments. Our capability is delegation-grade operations for any government or corporate group; our evidence is six Indian state government delegations across four consecutive Davos Weeks.",
+        "This countdown is deliberately partner-neutral: a capable office can run it alone. What a Swiss partner adds is position and accountability: inventory already contracted, ground knowledge already walked, and one counterpart who answers for the whole operation instead of a dozen suppliers answering for fragments. Our capability is delegation-grade operations for any government or corporate group; our evidence is six Indian delegations across four consecutive Davos Weeks.",
         "The earliest conversation is also the cheapest one. An hour spent at 180 days settles questions that no negotiation can recover at 30. Every enquiry receives a first response within 48 hours, and event and MICE RFPs within one business day.",
         "The one-page version of this countdown exists as a printable checklist. It is available on request through our enquiry form; leaving an email address is optional, and the checklist is not gated.",
       ],

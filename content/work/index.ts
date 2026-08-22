@@ -1,14 +1,14 @@
 import type { CaseStudyContent } from "@/content-schemas/types";
-import { sixStatesOneSwissPartner } from "./six-states-one-swiss-partner";
-import { firstTimeStateDelegationDavos } from "./first-time-state-delegation-davos";
+import { sixDelegationsOneSwissPartner } from "./six-delegations-one-swiss-partner";
+import { firstTimeDelegationDavos } from "./first-time-delegation-davos";
 import { returningDelegationDoubledScale } from "./returning-delegation-doubled-scale";
 import { twoDelegationsOneWeek } from "./two-delegations-one-week";
 import { kitchenAt1560Metres } from "./kitchen-at-1560-metres";
 import { bilateralProgrammeGenevaZurich } from "./bilateral-programme-geneva-zurich";
 
 export const caseStudies: CaseStudyContent[] = [
-  sixStatesOneSwissPartner,
-  firstTimeStateDelegationDavos,
+  sixDelegationsOneSwissPartner,
+  firstTimeDelegationDavos,
   returningDelegationDoubledScale,
   twoDelegationsOneWeek,
   kitchenAt1560Metres,

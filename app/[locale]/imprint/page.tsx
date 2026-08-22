@@ -25,7 +25,7 @@ const companyRows: { label: string; value: string }[] = [
   },
   {
     label: "Commercial register",
-    value: "[TO CONFIRM: commercial register number]",
+    value: "CHE-473.516.098",
   },
   { label: "VAT number", value: "[TO CONFIRM: VAT number]" },
   { label: "Managing director(s)", value: "[TO CONFIRM: managing director(s)]" },

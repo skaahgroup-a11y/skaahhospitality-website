@@ -91,7 +91,7 @@ export const travelTransportImmigration: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Six Indian delegations. Four consecutive Davos Weeks. One Swiss partner.",
       "Protocol-aware transport across four Davos Januaries, from Zurich Airport to the Graubünden valley.",
     ],
   },

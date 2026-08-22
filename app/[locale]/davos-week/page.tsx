@@ -19,7 +19,11 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import { Copy } from "@/components/ui/Copy";
-import { FALLBACK_PROOF_LINE, RESPONSE_PROMISE } from "@/lib/site";
+import {
+  FALLBACK_PROOF_LINE,
+  INDIA_CORRIDOR_LINE,
+  RESPONSE_PROMISE,
+} from "@/lib/site";
 import { INDEPENDENCE_DISCLAIMER } from "@/content/disclaimer";
 import {
   davosWeekSeo,
@@ -224,6 +228,9 @@ export default async function DavosWefHubPage({
       <Section surface="dark">
         <p className="max-w-3xl font-display text-3xl font-medium leading-snug text-white md:text-4xl">
           {FALLBACK_PROOF_LINE}
+        </p>
+        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-ice-200">
+          {INDIA_CORRIDOR_LINE}
         </p>
         <div className="mt-10 max-w-3xl">
           <StatCards surface="dark" stats={davosWeekProofStats} />

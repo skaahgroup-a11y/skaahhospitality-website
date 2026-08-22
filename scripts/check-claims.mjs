@@ -87,6 +87,14 @@ function scanFile(file) {
     ) {
       failures.push(`${where}: restricted trademark wording (WEF marks)`);
     }
+    // Government client references pending clearances (client instruction,
+    // 22 August 2026): no state or central government wording on the site;
+    // the named India-corridor references are CII and Invest India only.
+    if (/state government|central government|state delegation/i.test(line)) {
+      failures.push(
+        `${where}: government client reference pending clearance (state or central government wording)`,
+      );
+    }
     for (const state of NAMED_STATES) {
       if (line.includes(state)) {
         failures.push(

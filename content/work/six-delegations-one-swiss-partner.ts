@@ -2,10 +2,10 @@
 // Consent-independent: written entirely in fallback phrasing, no state names.
 import type { CaseStudyContent } from "@/content-schemas/types";
 
-export const sixStatesOneSwissPartner: CaseStudyContent = {
-  slug: "six-states-one-swiss-partner",
+export const sixDelegationsOneSwissPartner: CaseStudyContent = {
+  slug: "six-delegations-one-swiss-partner",
   order: 1,
-  title: "Six states, one Swiss partner",
+  title: "Six delegations, one Swiss partner",
   consentGranted: false,
   segment: "delegation",
   year: "2023 to 2026",
@@ -14,9 +14,9 @@ export const sixStatesOneSwissPartner: CaseStudyContent = {
   // so no single size band applies (docs/02-content/05, CS1).
   groupSizeBand: "Varies by delegation",
   oneLineOutcome:
-    "6 state government delegations across 4 consecutive Davos Weeks, delivered by one Swiss partner.",
+    "6 Indian delegations across 4 consecutive Davos Weeks, delivered by one Swiss partner.",
   brief:
-    "Across four consecutive Davos Weeks, six Indian state government delegations engaged SKAAH as their single Swiss partner for the hardest week in the calendar: Davos in January. Each delegation arrived with its own protocol, its own precedence order, its own cuisine and its own programme of meetings and bilaterals. Each needed beds, vehicles, kitchens and staging in a valley where capacity is contracted out months ahead. Our answer was the same every year: one contract, one costed plan, one operations lead accountable around the clock, and a team that had already walked the ground. This entry aggregates those engagements; individual delegations are named only with written consent.",
+    "Across four consecutive Davos Weeks, six Indian delegations engaged SKAAH as their single Swiss partner for the hardest week in the calendar: Davos in January. Each delegation arrived with its own protocol, its own precedence order, its own cuisine and its own programme of meetings and bilaterals. Each needed beds, vehicles, kitchens and staging in a valley where capacity is contracted out months ahead. Our answer was the same every year: one contract, one costed plan, one operations lead accountable around the clock, and a team that had already walked the ground. This entry aggregates those engagements; individual delegations are named only with written consent.",
   hard: [
     "Beds, vehicles and kitchen capacity in the valley are contracted out months ahead of Davos Week.",
     "6 different protocols, precedence orders and cuisines, with no room to blur one delegation into another.",
@@ -32,7 +32,7 @@ export const sixStatesOneSwissPartner: CaseStudyContent = {
   ],
   outcome: {
     stats: [
-      { value: "6", label: "state government delegations", verified: true },
+      { value: "6", label: "Indian delegations", verified: true },
       { value: "4", label: "Davos Weeks, 2023 to 2026", verified: true },
       {
         value:
@@ -42,7 +42,7 @@ export const sixStatesOneSwissPartner: CaseStudyContent = {
       },
     ],
     summary:
-      "One Swiss partner delivered 6 state government delegations across 4 consecutive Davos Weeks. The pattern is the product: capacity held early, protocol respected in the detail, and one office answerable for the whole week.",
+      "One Swiss partner delivered 6 Indian delegations across 4 consecutive Davos Weeks. The pattern is the product: capacity held early, protocol respected in the detail, and one office answerable for the whole week.",
   },
   // 6 archive frames per the media plan pointer; no frame ships without a
   // manifest row and consent review (docs/02-content/05).
@@ -106,7 +106,7 @@ export const sixStatesOneSwissPartner: CaseStudyContent = {
   seo: {
     metaTitle: "Six States, One Swiss Partner: Davos Week | SKAAH",
     metaDescription:
-      "Across 4 Davos Weeks, 6 Indian state government delegations engaged SKAAH as one Swiss partner for Davos in January: the aggregate case study.",
+      "Across 4 Davos Weeks, 6 Indian delegations engaged SKAAH as one Swiss partner for Davos in January: the aggregate case study.",
     primaryKeyword: "Davos Week delegation case study",
     secondaryKeywords: [
       "government delegation Davos",

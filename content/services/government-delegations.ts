@@ -93,8 +93,9 @@ export const governmentDelegations: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Six Indian delegations. Four consecutive Davos Weeks. One Swiss partner.",
       "Four consecutive Davos Weeks without a public misstep. [TO CONFIRM: approved phrasing]",
+      "In the India corridor we work with the Confederation of Indian Industry (CII) and Invest India.",
     ],
     media: {
       slot: "deleg-proof",

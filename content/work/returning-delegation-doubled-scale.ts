@@ -101,7 +101,7 @@ export const returningDelegationDoubledScale: CaseStudyContent = {
   seo: {
     metaTitle: "Returning Delegation, Doubled Scale at Davos | SKAAH",
     metaDescription:
-      "A returning state delegation scaled up its Davos Week week year on year. Continuity as the product: same partner, same standards, no added client effort.",
+      "A returning delegation scaled up its Davos Week week year on year. Continuity as the product: same partner, same standards, no added client effort.",
     primaryKeyword: "returning delegation Davos case study",
     secondaryKeywords: [
       "delegation logistics continuity",

@@ -28,7 +28,7 @@ export const homeHero = {
   subline:
     "One accountable partner for government delegations and high-value corporate groups: events, stays, transport, cuisine, media and people, delivered with Swiss precision.",
   proofLine:
-    "Proven at Davos Week: six Indian state government delegations across four consecutive Davos Weeks.",
+    "Proven at Davos Week: six Indian delegations across four consecutive Davos Weeks.",
   primaryCta: {
     label: "Start a delegation enquiry",
     href: "/enquiry?segment=delegation",
@@ -64,7 +64,7 @@ export const homeProof = {
   stats: [
     {
       value: "6",
-      label: "Indian state government delegations supported",
+      label: "Indian delegations supported",
       verified: true,
     },
     {
@@ -102,7 +102,7 @@ export const homeServicesSection = {
 
 export const homeFlagship = {
   heading: "Trusted where the world watches.",
-  body: "Every January, Davos becomes the most demanding week in Swiss hospitality. For four consecutive Davos Weeks we have handled the ground reality for six Indian state government delegations: accommodation blocks, protocol-aware transport, multi-cuisine catering and documentation, delivered quietly and on time.",
+  body: "Every January, Davos becomes the most demanding week in Swiss hospitality. For four consecutive Davos Weeks we have handled the ground reality for six Indian delegations: accommodation blocks, protocol-aware transport, multi-cuisine catering and documentation, delivered quietly and on time.",
   cta: { label: "Read the Davos Week guide", href: "/davos-week" },
 };
 

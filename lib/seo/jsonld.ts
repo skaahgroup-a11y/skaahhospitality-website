@@ -15,6 +15,7 @@ export function organizationJsonLd(): JsonLdObject {
     name: ORG.name,
     url: SITE_URL,
     logo: `${SITE_URL}/brand/skaah-group-logo-square.png`,
+    identifier: ORG.registration,
     sameAs,
     parentOrganization: {
       "@type": "Organization",

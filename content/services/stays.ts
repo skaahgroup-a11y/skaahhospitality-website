@@ -82,7 +82,7 @@ export const stays: ServiceContent = {
   ],
   proof: {
     lines: [
-      "Six Indian state government delegations. Four consecutive Davos Weeks. One Swiss partner.",
+      "Six Indian delegations. Four consecutive Davos Weeks. One Swiss partner.",
       "Accommodation blocks held and managed through four Davos Januaries, when rooms matter most.",
     ],
     media: {

@@ -33,7 +33,7 @@ const crossLinkMap: Record<
 > = {
   "government-delegations": {
     destination: "davos",
-    caseStudy: "six-states-one-swiss-partner",
+    caseStudy: "six-delegations-one-swiss-partner",
     article: "davos-delegation-countdown",
   },
   "mice-events": {
@@ -48,7 +48,7 @@ const crossLinkMap: Record<
   },
   stays: {
     destination: "zurich",
-    caseStudy: "first-time-state-delegation-davos",
+    caseStudy: "first-time-delegation-davos",
     article: "davos-delegation-countdown",
   },
   "food-catering": {
@@ -63,7 +63,7 @@ const crossLinkMap: Record<
   },
   "branding-staffing": {
     destination: "davos",
-    caseStudy: "six-states-one-swiss-partner",
+    caseStudy: "six-delegations-one-swiss-partner",
     article: "indian-cuisine-swiss-altitude",
   },
 };

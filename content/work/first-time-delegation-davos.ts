@@ -1,12 +1,12 @@
 // CS2 per docs/02-content/05-work-case-studies.md. Consent not granted, so
-// generic phrasing throughout ("the delegation office", "a first-time state
+// generic phrasing throughout ("the delegation office", "a first-time
 // delegation"); the named variant waits for written consent.
 import type { CaseStudyContent } from "@/content-schemas/types";
 
-export const firstTimeStateDelegationDavos: CaseStudyContent = {
-  slug: "first-time-state-delegation-davos",
+export const firstTimeDelegationDavos: CaseStudyContent = {
+  slug: "first-time-delegation-davos",
   order: 2,
-  title: "A first-time state delegation at Davos Week",
+  title: "A first-time delegation at Davos Week",
   consentGranted: false,
   segment: "delegation",
   year: "[TO CONFIRM: year]",
@@ -97,9 +97,9 @@ export const firstTimeStateDelegationDavos: CaseStudyContent = {
     "media-production",
   ],
   seo: {
-    metaTitle: "A First-Time State Delegation at Davos | SKAAH",
+    metaTitle: "A First-Time Delegation at Davos | SKAAH",
     metaDescription:
-      "How a first-time state delegation ran Davos Week in Davos without a playbook of its own: advance recce, accommodation blocks, meeting rooms and cuisine.",
+      "How a first-time delegation ran Davos Week in Davos without a playbook of its own: advance recce, accommodation blocks, meeting rooms and cuisine.",
     primaryKeyword: "first-time delegation Davos Week",
     secondaryKeywords: [
       "Davos delegation planning",
