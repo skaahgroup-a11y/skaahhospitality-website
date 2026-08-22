@@ -100,9 +100,12 @@ const leaders: { name: string; role: string; bio: string; media: MediaBrief }[] 
 // Client instruction, 22 August 2026: Mr. Hanuma Kuna sits on the SKAAH Tech
 // leadership team and is not listed for the Hospitality business.
 
+// Elaichi AG reference per the client note of 22 August 2026: sister company
+// invested in food truck, restaurant, catering and delivery businesses.
 const groupBand = [
   "SKAAH Hospitality GmbH is part of SKAAH Group AG, a diversified Swiss group active across technologies, real estate, industries and hospitality.",
   "The group is the balance sheet and the standards behind our promises.",
+  "Within that family, our sister company Elaichi AG invests in restaurant, food truck, catering and delivery businesses in Switzerland, deepening the food and beverage capability around our kitchens.",
   "Its companies share one discipline: commitments are made carefully and kept.",
 ];
 
@@ -244,15 +247,26 @@ export default async function AboutPage({
               {sentence}
             </p>
           ))}
-          <a
-            href={ORG.groupUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-draw mt-6 inline-flex items-center gap-2 text-sm font-medium text-gold-400"
-          >
-            skaah.com
-            <Icon name="arrow-right" size={18} />
-          </a>
+          <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3">
+            <a
+              href={ORG.groupUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-draw inline-flex items-center gap-2 text-sm font-medium text-gold-400"
+            >
+              skaah.com
+              <Icon name="arrow-right" size={18} />
+            </a>
+            <a
+              href="https://www.elaichi.ch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-draw inline-flex items-center gap-2 text-sm font-medium text-gold-400"
+            >
+              elaichi.ch
+              <Icon name="arrow-right" size={18} />
+            </a>
+          </div>
         </div>
       </Section>
 

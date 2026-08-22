@@ -88,6 +88,7 @@ export const foodCatering: ServiceContent = {
     lines: [
       "Six Indian delegations. Four consecutive Davos Weeks. One Swiss partner.",
       "Multi-cuisine catering delivered quietly through four Davos Januaries, at altitude and to protocol.",
+      "Food and beverage runs in the family: our sister company Elaichi AG invests in restaurant, food truck, catering and delivery businesses in Switzerland.",
     ],
     media: {
       slot: "catering-proof",
